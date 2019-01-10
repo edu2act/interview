@@ -6,15 +6,15 @@
 
 - 题目在线查看：[https://edu2act.github.io/interview/](https://edu2act.github.io/interview/)
 - 当前题目数量：
-	1. Java基础  [0]
-	1. JDBC  [0]
-	1. Jsp&Servlet  [0]
-	1. Hibernate  [0]
-	1. Mybatis  [0]
-	1. Spring  [29]
-	1. EJB  [0]
-	1. WebService  [0]
-	1. 设计模式  [0]
-	1. 数据结构  [0]
-	1. 其它  [0]
+	- Java基础  [0]
+	- JDBC  [0]
+	- Jsp&Servlet  [0]
+	- Hibernate  [0]
+	- Mybatis  [0]
+	- Spring  [29]
+	- EJB  [0]
+	- WebService  [0]
+	- 设计模式  [0]
+	- 数据结构  [0]
+	- 其它  [0]
 
