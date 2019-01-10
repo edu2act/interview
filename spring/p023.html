@@ -1,0 +1,969 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>请举例说明@Qualifier 注解？ · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="p024.html" />
+    
+    
+    <link rel="prev" href="p022.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://github.com/edu2act" target="_blank" class="custom-link"><img src="../images/logo.png" height="35" /></a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                        <b>2.1.</b>
+                    
+                    语法1
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                        <b>2.2.</b>
+                    
+                    异常
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                        <b>2.3.</b>
+                    
+                    集合
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                        <b>2.4.</b>
+                    
+                    线程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" >
+            
+                <span>
+            
+                    
+                        <b>2.5.</b>
+                    
+                    IO流
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+                <span>
+            
+                    
+                        <b>2.6.</b>
+                    
+                    Socket
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    JDBC
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    Jsp&Servlet
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    Hibernate
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+                <span>
+            
+                    
+                        <b>7.</b>
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="p001.html">
+            
+                <a href="p001.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    什么是 Spring 框架？Spring 框架有哪些主要模块？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="p002.html">
+            
+                <a href="p002.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    使用 Spring 框架能带来哪些好处？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="p003.html">
+            
+                <a href="p003.html">
+            
+                    
+                        <b>7.3.</b>
+                    
+                    什么是控制反转(IOC)？什么是依赖注入？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="p004.html">
+            
+                <a href="p004.html">
+            
+                    
+                        <b>7.4.</b>
+                    
+                    请解释下 Spring 框架中的 IOC？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="p005.html">
+            
+                <a href="p005.html">
+            
+                    
+                        <b>7.5.</b>
+                    
+                    BeanFactory 和 ApplicationContext 有什么区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="p006.html">
+            
+                <a href="p006.html">
+            
+                    
+                        <b>7.6.</b>
+                    
+                    Spring 提供几种配置方式来设置元数据？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="p007.html">
+            
+                <a href="p007.html">
+            
+                    
+                        <b>7.7.</b>
+                    
+                    如何使用 XML 配置的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="p008.html">
+            
+                <a href="p008.html">
+            
+                    
+                        <b>7.8.</b>
+                    
+                    如何用基于 Java 配置的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="p009.html">
+            
+                <a href="p009.html">
+            
+                    
+                        <b>7.9.</b>
+                    
+                    怎样用注解的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="p010.html">
+            
+                <a href="p010.html">
+            
+                    
+                        <b>7.10.</b>
+                    
+                    请解释 Spring Bean 的生命周期？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="p011.html">
+            
+                <a href="p011.html">
+            
+                    
+                        <b>7.11.</b>
+                    
+                    Spring Bean 作用域之间的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="p012.html">
+            
+                <a href="p012.html">
+            
+                    
+                        <b>7.12.</b>
+                    
+                    什么是 Spring inner beans？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="p013.html">
+            
+                <a href="p013.html">
+            
+                    
+                        <b>7.13.</b>
+                    
+                    Spring 框架中的单例 Beans 是线程安全的么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="p014.html">
+            
+                <a href="p014.html">
+            
+                    
+                        <b>7.14.</b>
+                    
+                    请举例说明如何在 Spring 中注入一个 Java 集合？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="p015.html">
+            
+                <a href="p015.html">
+            
+                    
+                        <b>7.15.</b>
+                    
+                    如何向 Spring Bean 中注入 java.util.Properties？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="p016.html">
+            
+                <a href="p016.html">
+            
+                    
+                        <b>7.16.</b>
+                    
+                    请解释 Spring Bean 的自动装配？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="p017.html">
+            
+                <a href="p017.html">
+            
+                    
+                        <b>7.17.</b>
+                    
+                    请解释各种自动装配模式的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="p018.html">
+            
+                <a href="p018.html">
+            
+                    
+                        <b>7.18.</b>
+                    
+                    如何开启基于注解的自动装配？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="p019.html">
+            
+                <a href="p019.html">
+            
+                    
+                        <b>7.19.</b>
+                    
+                    自动装配有哪些局限性？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="p020.html">
+            
+                <a href="p020.html">
+            
+                    
+                        <b>7.20.</b>
+                    
+                    在 Spring 中可以注入 null 或空字符串吗？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="p021.html">
+            
+                <a href="p021.html">
+            
+                    
+                        <b>7.21.</b>
+                    
+                    请举例解释@Required Annotation？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.22" data-path="p022.html">
+            
+                <a href="p022.html">
+            
+                    
+                        <b>7.22.</b>
+                    
+                    请举例解释@Autowired 注解？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.23" data-path="p023.html">
+            
+                <a href="p023.html">
+            
+                    
+                        <b>7.23.</b>
+                    
+                    请举例说明@Qualifier 注解？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.24" data-path="p024.html">
+            
+                <a href="p024.html">
+            
+                    
+                        <b>7.24.</b>
+                    
+                    构造方法注入和设值注入有什么区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.25" data-path="p025.html">
+            
+                <a href="p025.html">
+            
+                    
+                        <b>7.25.</b>
+                    
+                    Spring 框架中有哪些不同类型的事件？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.26" data-path="p026.html">
+            
+                <a href="p026.html">
+            
+                    
+                        <b>7.26.</b>
+                    
+                    FileSystemResource 和 ClassPathResource 有何区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.27" data-path="p027.html">
+            
+                <a href="p027.html">
+            
+                    
+                        <b>7.27.</b>
+                    
+                    Spring 框架中都用到了哪些设计模式？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.28" data-path="p028.html">
+            
+                <a href="p028.html">
+            
+                    
+                        <b>7.28.</b>
+                    
+                    在 Spring 框架中如何更有效的使用 JDBC？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.29" data-path="p029.html">
+            
+                <a href="p029.html">
+            
+                    
+                        <b>7.29.</b>
+                    
+                    Spring5 新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    EJB
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+                <span>
+            
+                    
+                        <b>9.</b>
+                    
+                    WebService
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10" >
+            
+                <span>
+            
+                    
+                        <b>10.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+                <span>
+            
+                    
+                        <b>11.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12" >
+            
+                <span>
+            
+                    
+                        <b>12.</b>
+                    
+                    其它
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >请举例说明@Qualifier 注解？</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x8BF7;&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;qualifier-&#x6CE8;&#x89E3;&#xFF1F;">&#x8BF7;&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;@Qualifier &#x6CE8;&#x89E3;&#xFF1F;</h4>
+<p>@Qualifier &#x6CE8;&#x89E3;&#x610F;&#x5473;&#x7740;&#x53EF;&#x4EE5;&#x5728;&#x88AB;&#x6807;&#x6CE8; bean &#x7684;&#x5B57;&#x6BB5;&#x4E0A;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x88C5;&#x914D;&#x3002;Qualifier &#x6CE8;&#x89E3;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x53D6;&#x6D88; Spring &#x4E0D;&#x80FD;&#x53D6;&#x6D88;&#x7684; bean &#x5E94;&#x7528;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x5C06;&#x4F1A;&#x5728; Customer &#x7684; person &#x5C5E;&#x6027;&#x4E2D;&#x81EA;&#x52A8;&#x88C5;&#x914D; person &#x7684;&#x503C;&#x3002;</p>
+<pre class="language-"><code class="lang-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Customer</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> Person person<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x8981;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6765;&#x914D;&#x7F6E; Person &#x7C7B;&#x3002;</p>
+<pre class="language-"><code class="lang-XML"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>customer<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.gupaoedu.common.Customer<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>personA<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.gupaoedu.common.Person<span class="token punctuation">&quot;</span></span> <span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lokesh<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bean</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>personB<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.gupaoedu.common.Person<span class="token punctuation">&quot;</span></span> <span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>alex<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bean</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Spring &#x4F1A;&#x77E5;&#x9053;&#x8981;&#x81EA;&#x52A8;&#x88C5;&#x914D;&#x54EA;&#x4E2A; person bean &#x4E48;&#xFF1F;&#x4E0D;&#x4F1A;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x8FD0;&#x884C;&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x65F6;&#xFF0C;&#x4F1A;&#x629B;&#x51FA;&#x4E0B;&#x9762;&#x7684;&#x5F02;&#x5E38;&#xFF1A;</p>
+<pre class="language-"><code>Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException:
+    No unique bean of type [com.gupaoedu.common.Person] is defined:
+        expected single matching bean but found 2: [personA, personB]
+</code></pre><p>&#x8981;&#x89E3;&#x51B3;&#x4E0A;&#x9762;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528; @Quanlifier &#x6CE8;&#x89E3;&#x6765;&#x544A;&#x8BC9; Spring &#x5BB9;&#x5668;&#x8981;&#x88C5;&#x914D;&#x54EA;&#x4E2A; bean&#xFF1A;</p>
+<pre class="language-"><code class="lang-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Customer</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token annotation punctuation">@Qualifier</span><span class="token punctuation">(</span><span class="token string">&quot;personA&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> Person person<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="p022.html" class="navigation navigation-prev " aria-label="Previous page: 请举例解释@Autowired 注解？">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="p024.html" class="navigation navigation-next " aria-label="Next page: 构造方法注入和设值注入有什么区别？">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"请举例说明@Qualifier 注解？","level":"7.23","depth":1,"next":{"title":"构造方法注入和设值注入有什么区别？","level":"7.24","depth":1,"path":"spring/p024.md","ref":"spring/p024.md","articles":[]},"previous":{"title":"请举例解释@Autowired 注解？","level":"7.22","depth":1,"path":"spring/p022.md","ref":"spring/p022.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"prism-themes":{},"splitter":{},"search-plus":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"../images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"spring/p023.md","mtime":"2019-01-08T01:50:20.551Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-10T09:26:02.589Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
