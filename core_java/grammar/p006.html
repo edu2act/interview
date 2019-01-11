@@ -1,0 +1,1216 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>重载(Overload)与重写(Override)的区别？ · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="p005.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://github.com/edu2act" target="_blank" class="custom-link"><img src="./images/logo.png" height="35" /></a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                        <b>2.1.</b>
+                    
+                    语法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="p001.html">
+            
+                <a href="p001.html">
+            
+                    
+                        <b>2.1.1.</b>
+                    
+                    面向对象的三大特性？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="p002.html">
+            
+                <a href="p002.html">
+            
+                    
+                        <b>2.1.2.</b>
+                    
+                    面向对象的四大特征？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="p003.html">
+            
+                <a href="p003.html">
+            
+                    
+                        <b>2.1.3.</b>
+                    
+                    面向对象的五大原则？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="p004.html">
+            
+                <a href="p004.html">
+            
+                    
+                        <b>2.1.4.</b>
+                    
+                    什么是低耦合高内聚？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="p005.html">
+            
+                <a href="p005.html">
+            
+                    
+                        <b>2.1.5.</b>
+                    
+                    Java中的作用域的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.6" data-path="p006.html">
+            
+                <a href="p006.html">
+            
+                    
+                        <b>2.1.6.</b>
+                    
+                    重载(Overload)与重写(Override)的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                        <b>2.2.</b>
+                    
+                    异常
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                        <b>2.3.</b>
+                    
+                    集合
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                        <b>2.4.</b>
+                    
+                    线程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" >
+            
+                <span>
+            
+                    
+                        <b>2.5.</b>
+                    
+                    IO流
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+                <span>
+            
+                    
+                        <b>2.6.</b>
+                    
+                    Socket
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    JDBC
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    Jsp&Servlet
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    Hibernate
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+                <span>
+            
+                    
+                        <b>7.</b>
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="../../spring/p001.html">
+            
+                <a href="../../spring/p001.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    什么是 Spring 框架？Spring 框架有哪些主要模块？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../spring/p002.html">
+            
+                <a href="../../spring/p002.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    使用 Spring 框架能带来哪些好处？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../spring/p003.html">
+            
+                <a href="../../spring/p003.html">
+            
+                    
+                        <b>7.3.</b>
+                    
+                    什么是控制反转(IOC)？什么是依赖注入？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../spring/p004.html">
+            
+                <a href="../../spring/p004.html">
+            
+                    
+                        <b>7.4.</b>
+                    
+                    请解释下 Spring 框架中的 IOC？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../../spring/p005.html">
+            
+                <a href="../../spring/p005.html">
+            
+                    
+                        <b>7.5.</b>
+                    
+                    BeanFactory 和 ApplicationContext 有什么区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../../spring/p006.html">
+            
+                <a href="../../spring/p006.html">
+            
+                    
+                        <b>7.6.</b>
+                    
+                    Spring 提供几种配置方式来设置元数据？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../../spring/p007.html">
+            
+                <a href="../../spring/p007.html">
+            
+                    
+                        <b>7.7.</b>
+                    
+                    如何使用 XML 配置的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="../../spring/p008.html">
+            
+                <a href="../../spring/p008.html">
+            
+                    
+                        <b>7.8.</b>
+                    
+                    如何用基于 Java 配置的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="../../spring/p009.html">
+            
+                <a href="../../spring/p009.html">
+            
+                    
+                        <b>7.9.</b>
+                    
+                    怎样用注解的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="../../spring/p010.html">
+            
+                <a href="../../spring/p010.html">
+            
+                    
+                        <b>7.10.</b>
+                    
+                    请解释 Spring Bean 的生命周期？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="../../spring/p011.html">
+            
+                <a href="../../spring/p011.html">
+            
+                    
+                        <b>7.11.</b>
+                    
+                    Spring Bean 作用域之间的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.12" data-path="../../spring/p012.html">
+            
+                <a href="../../spring/p012.html">
+            
+                    
+                        <b>7.12.</b>
+                    
+                    什么是 Spring inner beans？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.13" data-path="../../spring/p013.html">
+            
+                <a href="../../spring/p013.html">
+            
+                    
+                        <b>7.13.</b>
+                    
+                    Spring 框架中的单例 Beans 是线程安全的么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.14" data-path="../../spring/p014.html">
+            
+                <a href="../../spring/p014.html">
+            
+                    
+                        <b>7.14.</b>
+                    
+                    请举例说明如何在 Spring 中注入一个 Java 集合？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.15" data-path="../../spring/p015.html">
+            
+                <a href="../../spring/p015.html">
+            
+                    
+                        <b>7.15.</b>
+                    
+                    如何向 Spring Bean 中注入 java.util.Properties？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.16" data-path="../../spring/p016.html">
+            
+                <a href="../../spring/p016.html">
+            
+                    
+                        <b>7.16.</b>
+                    
+                    请解释 Spring Bean 的自动装配？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.17" data-path="../../spring/p017.html">
+            
+                <a href="../../spring/p017.html">
+            
+                    
+                        <b>7.17.</b>
+                    
+                    请解释各种自动装配模式的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.18" data-path="../../spring/p018.html">
+            
+                <a href="../../spring/p018.html">
+            
+                    
+                        <b>7.18.</b>
+                    
+                    如何开启基于注解的自动装配？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.19" data-path="../../spring/p019.html">
+            
+                <a href="../../spring/p019.html">
+            
+                    
+                        <b>7.19.</b>
+                    
+                    自动装配有哪些局限性？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.20" data-path="../../spring/p020.html">
+            
+                <a href="../../spring/p020.html">
+            
+                    
+                        <b>7.20.</b>
+                    
+                    在 Spring 中可以注入 null 或空字符串吗？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.21" data-path="../../spring/p021.html">
+            
+                <a href="../../spring/p021.html">
+            
+                    
+                        <b>7.21.</b>
+                    
+                    请举例解释@Required Annotation？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.22" data-path="../../spring/p022.html">
+            
+                <a href="../../spring/p022.html">
+            
+                    
+                        <b>7.22.</b>
+                    
+                    请举例解释@Autowired 注解？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.23" data-path="../../spring/p023.html">
+            
+                <a href="../../spring/p023.html">
+            
+                    
+                        <b>7.23.</b>
+                    
+                    请举例说明@Qualifier 注解？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.24" data-path="../../spring/p024.html">
+            
+                <a href="../../spring/p024.html">
+            
+                    
+                        <b>7.24.</b>
+                    
+                    构造方法注入和设值注入有什么区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.25" data-path="../../spring/p025.html">
+            
+                <a href="../../spring/p025.html">
+            
+                    
+                        <b>7.25.</b>
+                    
+                    Spring 框架中有哪些不同类型的事件？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.26" data-path="../../spring/p026.html">
+            
+                <a href="../../spring/p026.html">
+            
+                    
+                        <b>7.26.</b>
+                    
+                    FileSystemResource 和 ClassPathResource 有何区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.27" data-path="../../spring/p027.html">
+            
+                <a href="../../spring/p027.html">
+            
+                    
+                        <b>7.27.</b>
+                    
+                    Spring 框架中都用到了哪些设计模式？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.28" data-path="../../spring/p028.html">
+            
+                <a href="../../spring/p028.html">
+            
+                    
+                        <b>7.28.</b>
+                    
+                    在 Spring 框架中如何更有效的使用 JDBC？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.29" data-path="../../spring/p029.html">
+            
+                <a href="../../spring/p029.html">
+            
+                    
+                        <b>7.29.</b>
+                    
+                    Spring5 新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    EJB
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+                <span>
+            
+                    
+                        <b>9.</b>
+                    
+                    WebService
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10" >
+            
+                <span>
+            
+                    
+                        <b>10.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+                <span>
+            
+                    
+                        <b>11.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12" >
+            
+                <span>
+            
+                    
+                        <b>12.</b>
+                    
+                    其它
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >重载(Overload)与重写(Override)的区别？</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;&#xFF1F;">&#x91CD;&#x5199;(Override)&#x4E0E;&#x91CD;&#x8F7D;(Overload)&#x7684;&#x533A;&#x522B;&#xFF1F;</h4>
+<p>&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#x548C;&#x91CD;&#x8F7D;&#x662F;Java &#x591A;&#x6001;&#x6027;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x73B0;&#x3002;</p>
+<p>&#x91CD;&#x5199;Overriding &#x662F;&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x4E4B;&#x95F4;&#x591A;&#x6001;&#x6027;&#x7684;&#x4E00;&#x79CD;&#x8868;&#x73B0;&#xFF0C;&#x91CD;&#x8F7D;Overloading &#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4E2D;&#x591A;&#x6001;&#x6027;&#x7684;&#x4E00;&#x79CD;&#x8868;&#x73B0;&#x3002;</p>
+<hr>
+<h5 id="&#x91CD;&#x5199;override">&#x91CD;&#x5199;(Override)</h5>
+<p>&#x91CD;&#x5199;&#x662F;&#x5B50;&#x7C7B;&#x5BF9;&#x7236;&#x7C7B;&#x7684;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x7F16;&#x5199;, &#x8FD4;&#x56DE;&#x503C;&#x548C;&#x5F62;&#x53C2;&#x90FD;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x3002;&#x5373;&#x5916;&#x58F3;&#x4E0D;&#x53D8;&#xFF0C;&#x6838;&#x5FC3;&#x91CD;&#x5199;&#xFF01;</p>
+<p>&#x91CD;&#x5199;&#x7684;&#x597D;&#x5904;&#x5728;&#x4E8E;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#xFF0C;&#x5B9A;&#x4E49;&#x7279;&#x5B9A;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x884C;&#x4E3A;&#x3002; &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5B50;&#x7C7B;&#x80FD;&#x591F;&#x6839;&#x636E;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x91CD;&#x5199;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x629B;&#x51FA;&#x65B0;&#x7684;&#x68C0;&#x67E5;&#x5F02;&#x5E38;&#x6216;&#x8005;&#x6BD4;&#x88AB;&#x91CD;&#x5199;&#x65B9;&#x6CD5;&#x7533;&#x660E;&#x66F4;&#x52A0;&#x5BBD;&#x6CDB;&#x7684;&#x5F02;&#x5E38;&#x3002;&#x4F8B;&#x5982;&#xFF1A; &#x7236;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7533;&#x660E;&#x4E86;&#x4E00;&#x4E2A;&#x68C0;&#x67E5;&#x5F02;&#x5E38; IOException&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x91CD;&#x5199;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x80FD;&#x629B;&#x51FA; Exception &#x5F02;&#x5E38;&#xFF0C;&#x56E0;&#x4E3A; Exception &#x662F; IOException &#x7684;&#x7236;&#x7C7B;&#xFF0C;&#x53EA;&#x80FD;&#x629B;&#x51FA; IOException &#x7684;&#x5B50;&#x7C7B;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x5728;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x539F;&#x5219;&#x91CC;&#xFF0C;&#x91CD;&#x5199;&#x610F;&#x5473;&#x7740;&#x53EF;&#x4EE5;&#x91CD;&#x5199;&#x4EFB;&#x4F55;&#x73B0;&#x6709;&#x65B9;&#x6CD5;&#x3002;&#x5B9E;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">class</span> <span class="token class-name">Animal</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x52A8;&#x7269;&#x53EF;&#x4EE5;&#x79FB;&#x52A8;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x72D7;&#x53EF;&#x4EE5;&#x8DD1;&#x548C;&#x8D70;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestDog</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      Animal a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Animal &#x5BF9;&#x8C61;</span>
+      Animal b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// Dog &#x5BF9;&#x8C61;</span>
+      a<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x6267;&#x884C; Animal &#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+      b<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x6267;&#x884C; Dog &#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x5B9E;&#x4F8B;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>&#x52A8;&#x7269;&#x53EF;&#x4EE5;&#x79FB;&#x52A8;
+&#x72D7;&#x53EF;&#x4EE5;&#x8DD1;&#x548C;&#x8D70;
+</code></pre><p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5C3D;&#x7BA1;b&#x5C5E;&#x4E8E;Animal&#x7C7B;&#x578B;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x8FD0;&#x884C;&#x7684;&#x662F;Dog&#x7C7B;&#x7684;move&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#xFF0C;&#x53EA;&#x662F;&#x68C0;&#x67E5;&#x53C2;&#x6570;&#x7684;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x3002;&#x7136;&#x800C;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;Java&#x865A;&#x62DF;&#x673A;(JVM)&#x6307;&#x5B9A;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x5E76;&#x4E14;&#x8FD0;&#x884C;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x80FD;&#x7F16;&#x8BD1;&#x6210;&#x529F;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;Animal&#x7C7B;&#x4E2D;&#x5B58;&#x5728;move&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x800C;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x8FD0;&#x884C;&#x7684;&#x662F;&#x7279;&#x5B9A;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x601D;&#x8003;&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">class</span> <span class="token class-name">Animal</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x52A8;&#x7269;&#x53EF;&#x4EE5;&#x79FB;&#x52A8;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x72D7;&#x53EF;&#x4EE5;&#x8DD1;&#x548C;&#x8D70;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">bark</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x72D7;&#x53EF;&#x4EE5;&#x5420;&#x53EB;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestDog</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      Animal a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Animal &#x5BF9;&#x8C61;</span>
+      Animal b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// Dog &#x5BF9;&#x8C61;</span>
+      a<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x6267;&#x884C; Animal &#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+      b<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x6267;&#x884C; Dog &#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+      b<span class="token punctuation">.</span><span class="token function">bark</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x5B9E;&#x4F8B;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>TestDog.java:30: cannot find symbol
+symbol  : method bark()
+location: class Animal
+                b.bark();
+                 ^
+</code></pre><p>&#x8BE5;&#x7A0B;&#x5E8F;&#x5C06;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#xFF0C;&#x56E0;&#x4E3A;b&#x7684;&#x5F15;&#x7528;&#x7C7B;&#x578B;Animal&#x6CA1;&#x6709;bark&#x65B9;&#x6CD5;&#x3002;</p>
+<h6 id="&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#x89C4;&#x5219;">&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#x89C4;&#x5219;</h6>
+<ul>
+<li>&#x53C2;&#x6570;&#x5217;&#x8868;&#x5FC5;&#x987B;&#x5B8C;&#x5168;&#x4E0E;&#x88AB;&#x91CD;&#x5199;&#x65B9;&#x6CD5;&#x7684;&#x76F8;&#x540C;&#xFF1B;</li>
+<li>&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x5B8C;&#x5168;&#x4E0E;&#x88AB;&#x91CD;&#x5199;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x76F8;&#x540C;&#xFF1B;</li>
+<li>&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x4E0D;&#x80FD;&#x6BD4;&#x7236;&#x7C7B;&#x4E2D;&#x88AB;&#x91CD;&#x5199;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x66F4;&#x4F4E;&#x3002;&#x4F8B;&#x5982;&#xFF1A;&#x5982;&#x679C;&#x7236;&#x7C7B;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x88AB;&#x58F0;&#x660E;&#x4E3A;public&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x91CD;&#x5199;&#x8BE5;&#x65B9;&#x6CD5;&#x5C31;&#x4E0D;&#x80FD;&#x58F0;&#x660E;&#x4E3A;protected&#x3002;</li>
+<li>&#x7236;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x88AB;&#x5B83;&#x7684;&#x5B50;&#x7C7B;&#x91CD;&#x5199;&#x3002;</li>
+<li>&#x58F0;&#x660E;&#x4E3A;final&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x88AB;&#x91CD;&#x5199;&#x3002;</li>
+<li>&#x58F0;&#x660E;&#x4E3A;static&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x88AB;&#x91CD;&#x5199;&#xFF0C;&#x4F46;&#x662F;&#x80FD;&#x591F;&#x88AB;&#x518D;&#x6B21;&#x58F0;&#x660E;&#x3002;</li>
+<li>&#x5B50;&#x7C7B;&#x548C;&#x7236;&#x7C7B;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5305;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x91CD;&#x5199;&#x7236;&#x7C7B;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x9664;&#x4E86;&#x58F0;&#x660E;&#x4E3A;private&#x548C;final&#x7684;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x5B50;&#x7C7B;&#x548C;&#x7236;&#x7C7B;&#x4E0D;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5305;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x5B50;&#x7C7B;&#x53EA;&#x80FD;&#x591F;&#x91CD;&#x5199;&#x7236;&#x7C7B;&#x7684;&#x58F0;&#x660E;&#x4E3A;public&#x548C;protected&#x7684;&#x975E;final&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x91CD;&#x5199;&#x7684;&#x65B9;&#x6CD5;&#x80FD;&#x591F;&#x629B;&#x51FA;&#x4EFB;&#x4F55;&#x975E;&#x5F3A;&#x5236;&#x5F02;&#x5E38;&#xFF0C;&#x65E0;&#x8BBA;&#x88AB;&#x91CD;&#x5199;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x5426;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x91CD;&#x5199;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x629B;&#x51FA;&#x65B0;&#x7684;&#x5F3A;&#x5236;&#x6027;&#x5F02;&#x5E38;&#xFF0C;&#x6216;&#x8005;&#x6BD4;&#x88AB;&#x91CD;&#x5199;&#x65B9;&#x6CD5;&#x58F0;&#x660E;&#x7684;&#x66F4;&#x5E7F;&#x6CDB;&#x7684;&#x5F3A;&#x5236;&#x6027;&#x5F02;&#x5E38;&#xFF0C;&#x53CD;&#x4E4B;&#x5219;&#x53EF;&#x4EE5;&#x3002;</li>
+<li>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x88AB;&#x91CD;&#x5199;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x7EE7;&#x627F;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x4E0D;&#x80FD;&#x91CD;&#x5199;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</li>
+</ul>
+<h6 id="super&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F7F;&#x7528;">Super&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F7F;&#x7528;</h6>
+<p>&#x5F53;&#x9700;&#x8981;&#x5728;&#x5B50;&#x7C7B;&#x4E2D;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x88AB;&#x91CD;&#x5199;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8981;&#x4F7F;&#x7528;super&#x5173;&#x952E;&#x5B57;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">class</span> <span class="token class-name">Animal</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x52A8;&#x7269;&#x53EF;&#x4EE5;&#x79FB;&#x52A8;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Dog</span> <span class="token keyword">extends</span> <span class="token class-name">Animal</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x5E94;&#x7528;super&#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x72D7;&#x53EF;&#x4EE5;&#x8DD1;&#x548C;&#x8D70;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestDog</span><span class="token punctuation">{</span>
+   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      Animal b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Dog &#x5BF9;&#x8C61;</span>
+      b<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x6267;&#x884C; Dog&#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x5B9E;&#x4F8B;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code>&#x52A8;&#x7269;&#x53EF;&#x4EE5;&#x79FB;&#x52A8;
+&#x72D7;&#x53EF;&#x4EE5;&#x8DD1;&#x548C;&#x8D70;
+</code></pre><hr>
+<h5 id="&#x91CD;&#x8F7D;overload">&#x91CD;&#x8F7D;(Overload)</h5>
+<p>&#x91CD;&#x8F7D;&#x662F;&#x5728;&#x4E00;&#x4E2A;&#x7C7B;&#x91CC;&#x9762;&#xFF0C;&#x65B9;&#x6CD5;&#x540D;&#x5B57;&#x76F8;&#x540C;&#xFF0C;&#x800C;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x3002;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x76F8;&#x540C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x91CD;&#x8F7D;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x6216;&#x8005;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF09;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x6700;&#x5E38;&#x7528;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x6784;&#x9020;&#x5668;&#x7684;&#x91CD;&#x8F7D;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Overloading</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;test1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;test2&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>   
+
+    <span class="token comment">// &#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x987A;&#x5E8F;&#x4E0D;&#x540C;</span>
+    <span class="token keyword">public</span> String <span class="token function">test</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span>String s<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;test3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;returntest3&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>   
+
+    <span class="token keyword">public</span> String <span class="token function">test</span><span class="token punctuation">(</span>String s<span class="token punctuation">,</span><span class="token keyword">int</span> a<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;test4&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;returntest4&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>   
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        Overloading o <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Overloading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>o<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        o<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>o<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">&quot;test3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>o<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">&quot;test4&quot;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<h5 id="&#x91CD;&#x5199;&#x4E0E;&#x91CD;&#x8F7D;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;">&#x91CD;&#x5199;&#x4E0E;&#x91CD;&#x8F7D;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x533A;&#x522B;&#x70B9;</th>
+<th>&#x91CD;&#x8F7D;&#x65B9;&#x6CD5;</th>
+<th>&#x91CD;&#x5199;&#x65B9;&#x6CD5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x53C2;&#x6570;&#x5217;&#x8868;</td>
+<td>&#x5FC5;&#x987B;&#x4FEE;&#x6539;</td>
+<td>&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;</td>
+</tr>
+<tr>
+<td>&#x8FD4;&#x56DE;&#x7C7B;&#x578B;</td>
+<td>&#x53EF;&#x4EE5;&#x4FEE;&#x6539;</td>
+<td>&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;</td>
+</tr>
+<tr>
+<td>&#x5F02;&#x5E38;</td>
+<td>&#x53EF;&#x4EE5;&#x4FEE;&#x6539;</td>
+<td>&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x6216;&#x5220;&#x9664;&#xFF0C;&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x629B;&#x51FA;&#x65B0;&#x7684;&#x6216;&#x8005;&#x66F4;&#x5E7F;&#x7684;&#x5F02;&#x5E38;</td>
+</tr>
+<tr>
+<td>&#x8BBF;&#x95EE;</td>
+<td>&#x53EF;&#x4EE5;&#x4FEE;&#x6539;</td>
+<td>&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x505A;&#x66F4;&#x4E25;&#x683C;&#x7684;&#x9650;&#x5236;&#xFF08;&#x53EF;&#x4EE5;&#x964D;&#x4F4E;&#x9650;&#x5236;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#x548C;&#x91CD;&#x8F7D;&#x662F;Java&#x591A;&#x6001;&#x6027;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x73B0;&#xFF0C;&#x91CD;&#x5199;&#x662F;&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x4E4B;&#x95F4;&#x591A;&#x6001;&#x6027;&#x7684;&#x4E00;&#x79CD;&#x8868;&#x73B0;&#xFF0C;&#x91CD;&#x8F7D;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x6210;&#x591A;&#x6001;&#x7684;&#x5177;&#x4F53;&#x8868;&#x73B0;&#x5F62;&#x5F0F;&#x3002;</p>
+<ol>
+<li>&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x591A;&#x4E2A;&#x65B9;&#x6CD5;&#x540D;&#x76F8;&#x540C;,&#x800C;&#x4ED6;&#x4EEC;&#x7684;&#x53C2;&#x6570;&#x7684;&#x6570;&#x91CF;&#x4E0D;&#x540C;&#x6216;&#x6570;&#x91CF;&#x76F8;&#x540C;&#x800C;&#x7C7B;&#x578B;&#x548C;&#x6B21;&#x5E8F;&#x4E0D;&#x540C;,&#x5219;&#x79F0;&#x4E3A;&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x8F7D;&#x3002;</li>
+<li>&#x65B9;&#x6CD5;&#x91CD;&#x5199;&#x662F;&#x5728;&#x5B50;&#x7C7B;&#x5B58;&#x5728;&#x65B9;&#x6CD5;&#x4E0E;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x540D;&#x5B57;&#x76F8;&#x540C;,&#x800C;&#x4E14;&#x53C2;&#x6570;&#x7684;&#x4E2A;&#x6570;&#x4E0E;&#x7C7B;&#x578B;&#x4E00;&#x6837;,&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x4E00;&#x6837;&#x7684;&#x65B9;&#x6CD5;,&#x5C31;&#x79F0;&#x4E3A;&#x91CD;&#x5199;&#x3002;</li>
+<li>&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x591A;&#x6001;&#x6027;&#x8868;&#x73B0;,&#x800C;&#x65B9;&#x6CD5;&#x91CD;&#x5199;&#x662F;&#x5B50;&#x7C7B;&#x4E0E;&#x7236;&#x7C7B;&#x7684;&#x4E00;&#x79CD;&#x591A;&#x6001;&#x6027;&#x8868;&#x73B0;&#x3002;</li>
+</ol>
+<p><img src="images/p006_1.png" width="600">
+<img src="images/p006_2.jpg" width="600"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="p005.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Java中的作用域的区别？">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"重载(Overload)与重写(Override)的区别？","level":"2.1.6","depth":2,"next":{"title":"异常","level":"2.2","depth":1,"ref":"","articles":[]},"previous":{"title":"Java中的作用域的区别？","level":"2.1.5","depth":2,"path":"core_java/grammar/p005.md","ref":"core_java/grammar/p005.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"prism-themes":{},"splitter":{},"search-plus":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p006.md","mtime":"2019-01-11T02:58:55.474Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-11T03:01:10.494Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
