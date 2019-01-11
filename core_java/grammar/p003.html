@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-hans" >
     <head>
-        <title>面向对象的五大原则？ · Java面试题</title>
+        <title>面向对象的六大原则 · Java面试题</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -30,6 +30,10 @@
             
                 
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
                 
             
                 
@@ -152,7 +156,7 @@
                     
                         <b>2.1.1.</b>
                     
-                    面向对象的三大特性？
+                    面向对象的三大特性
             
                 </a>
             
@@ -167,7 +171,7 @@
                     
                         <b>2.1.2.</b>
                     
-                    面向对象的四大特征？
+                    面向对象的四大特征
             
                 </a>
             
@@ -182,7 +186,7 @@
                     
                         <b>2.1.3.</b>
                     
-                    面向对象的五大原则？
+                    面向对象的六大原则
             
                 </a>
             
@@ -197,7 +201,7 @@
                     
                         <b>2.1.4.</b>
                     
-                    什么是低耦合高内聚？
+                    什么是低耦合高内聚
             
                 </a>
             
@@ -212,7 +216,7 @@
                     
                         <b>2.1.5.</b>
                     
-                    Java中的作用域的区别？
+                    Java中的作用域的区别
             
                 </a>
             
@@ -227,7 +231,22 @@
                     
                         <b>2.1.6.</b>
                     
-                    重载(Overload)与重写(Override)的区别？
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="p007.html">
+            
+                <a href="p007.html">
+            
+                    
+                        <b>2.1.7.</b>
+                    
+                    String、StringBuilder、StringBuffer的区别
             
                 </a>
             
@@ -941,7 +960,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >面向对象的五大原则？</a>
+        <a href="../.." >面向对象的六大原则</a>
     </h1>
 </div>
 
@@ -956,17 +975,133 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x4E94;&#x5927;&#x539F;&#x5219;&#xFF1F;">&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x4E94;&#x5927;&#x539F;&#x5219;&#xFF1F;</h4>
-<h5 id="&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;srpsingle-responsibility-principle">&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;SRP(Single Responsibility Principle)</h5>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x516D;&#x5927;&#x539F;&#x5219;&#xFF1F;"><b> </b>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x516D;&#x5927;&#x539F;&#x5219;&#xFF1F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;srpsingle-responsibility-principle"><b>1. </b>&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;SRP(Single Responsibility Principle)</a></li><li><span class="title-icon "></span><a href="#&#x5F00;&#x653E;&#x5C01;&#x95ED;&#x539F;&#x5219;ocpopen&#xFF0D;close-principle"><b>2. </b>&#x5F00;&#x653E;&#x5C01;&#x95ED;&#x539F;&#x5219;OCP(Open&#xFF0D;Close Principle)</a></li><li><span class="title-icon "></span><a href="#&#x91CC;&#x5F0F;&#x66FF;&#x6362;&#x539F;&#x5219;lspthe-liskov-substitution-principle-lsp"><b>3. </b>&#x91CC;&#x5F0F;&#x66FF;&#x6362;&#x539F;&#x5219;LSP(the Liskov Substitution Principle LSP)</a></li><li><span class="title-icon "></span><a href="#&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;dipthe-dependency-inversion-principle-dip"><b>4. </b>&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;DIP(the Dependency Inversion Principle DIP)</a></li><li><span class="title-icon "></span><a href="#&#x63A5;&#x53E3;&#x5206;&#x79BB;&#x539F;&#x5219;ispthe-interface-segregation-principle-isp"><b>5. </b>&#x63A5;&#x53E3;&#x5206;&#x79BB;&#x539F;&#x5219;ISP(the Interface Segregation Principle ISP)</a></li><li><span class="title-icon "></span><a href="#&#x8FEA;&#x7C73;&#x7279;&#x539F;&#x5219;lodthe-law-of-demeter-lod"><b>6. </b>&#x8FEA;&#x7C73;&#x7279;&#x539F;&#x5219;LOD(the Law of Demeter LOD)</a></li><li><span class="title-icon "></span><a href="#&#x603B;&#x7ED3;"><b>7. </b>&#x603B;&#x7ED3;</a></li></ul></ul></div><a href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x516D;&#x5927;&#x539F;&#x5219;&#xFF1F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x516D;&#x5927;&#x539F;&#x5219;&#xFF1F;"><a name="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x516D;&#x5927;&#x539F;&#x5219;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x516D;&#x5927;&#x539F;&#x5219;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x516D;&#x5927;&#x539F;&#x5219;&#xFF1F;</h1>
+<ul>
+<li>&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;&#x2014;&#x2014;SRP</li>
+<li>&#x5F00;&#x95ED;&#x539F;&#x5219;&#x2014;&#x2014;OCP</li>
+<li>&#x91CC;&#x5F0F;&#x66FF;&#x6362;&#x539F;&#x5219;&#x2014;&#x2014;LSP</li>
+<li>&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;&#x2014;&#x2014;DIP</li>
+<li>&#x63A5;&#x53E3;&#x9694;&#x79BB;&#x539F;&#x5219;&#x2014;&#x2014;ISP</li>
+<li>&#x8FEA;&#x7C73;&#x7279;&#x539F;&#x5219;&#x2014;&#x2014;LOD</li>
+</ul>
+<h2 id="&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;srpsingle-responsibility-principle"><a name="&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;srpsingle-responsibility-principle" class="anchor-navigation-ex-anchor" href="#&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;srpsingle-responsibility-principle"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;SRP(Single Responsibility Principle)</h2>
 <p>&#x662F;&#x6307;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x529F;&#x80FD;&#x8981;&#x5355;&#x4E00;&#xFF0C;&#x4E0D;&#x80FD;&#x5305;&#x7F57;&#x4E07;&#x8C61;&#x3002;&#x5982;&#x540C;&#x4E00;&#x4E2A;&#x4EBA;&#x4E00;&#x6837;&#xFF0C;&#x5206;&#x914D;&#x7684;&#x5DE5;&#x4F5C;&#x4E0D;&#x80FD;&#x592A;&#x591A;&#xFF0C;&#x5426;&#x5219;&#x4E00;&#x5929;&#x5230;&#x665A;&#x867D;&#x7136;&#x5FD9;&#x5FD9;&#x788C;&#x788C;&#x7684;&#xFF0C;&#x4F46;&#x6548;&#x7387;&#x5374;&#x9AD8;&#x4E0D;&#x8D77;&#x6765;&#x3002;</p>
-<h5 id="&#x5F00;&#x653E;&#x5C01;&#x95ED;&#x539F;&#x5219;ocpopen&#xFF0D;close-principle">&#x5F00;&#x653E;&#x5C01;&#x95ED;&#x539F;&#x5219;OCP(Open&#xFF0D;Close Principle)</h5>
+<p>&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;&#x7684;&#x5B9A;&#x4E49;&#x662F;&#x5C31;&#x4E00;&#x4E2A;&#x7C7B;&#x800C;&#x8A00;&#xFF0C;&#x5E94;&#x8BE5;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x5F15;&#x8D77;&#x4ED6;&#x53D8;&#x5316;&#x7684;&#x539F;&#x56E0;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x4E00;&#x4E2A;&#x7C7B;&#x5E94;&#x8BE5;&#x53EA;&#x8D1F;&#x8D23;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x8D1F;&#x8D23;&#x4E86;&#x65B9;&#x6CD5;M1,&#x65B9;&#x6CD5;M2&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5F53;M1&#x65B9;&#x6CD5;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;M1&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5C31;&#x6709;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;M2&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x5DE5;&#x4F5C;&#x3002;&#x8FD9;&#x4E2A;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x671F;&#x5F85;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x5374;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x3002;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x628A;M1&#x65B9;&#x6CD5;&#xFF0C;M2&#x65B9;&#x6CD5;&#x5355;&#x72EC;&#x5206;&#x79BB;&#x6210;&#x4E24;&#x4E2A;&#x7C7B;&#x3002;&#x8BA9;&#x6BCF;&#x4E2A;&#x7C7B;&#x53EA;&#x4E13;&#x5FC3;&#x5904;&#x7406;&#x81EA;&#x5DF1;&#x7684;&#x65B9;&#x6CD5;&#x3002;
+&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;&#x7684;&#x597D;&#x5904;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<ol>
+<li>&#x53EF;&#x4EE5;&#x964D;&#x4F4E;&#x7C7B;&#x7684;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x4E00;&#x4E2A;&#x7C7B;&#x53EA;&#x8D1F;&#x8D23;&#x4E00;&#x9879;&#x804C;&#x8D23;&#xFF0C;&#x8FD9;&#x6837;&#x903B;&#x8F91;&#x4E5F;&#x7B80;&#x5355;&#x5F88;&#x591A;</li>
+<li>&#x63D0;&#x9AD8;&#x7C7B;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#xFF0C;&#x548C;&#x7CFB;&#x7EDF;&#x7684;&#x7EF4;&#x62A4;&#x6027;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x4F1A;&#x6709;&#x5176;&#x4ED6;&#x5947;&#x602A;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5E72;&#x6270;&#x6211;&#x4EEC;&#x7406;&#x89E3;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x542B;&#x4E49;</li>
+<li>&#x5F53;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x80FD;&#x5C06;&#x53D8;&#x5316;&#x7684;&#x5F71;&#x54CD;&#x964D;&#x5230;&#x6700;&#x5C0F;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x4F1A;&#x5728;&#x8FD9;&#x4E2A;&#x7C7B;&#x4E2D;&#x505A;&#x51FA;&#x4FEE;&#x6539;&#x3002;</li>
+</ol>
+</blockquote>
+<h2 id="&#x5F00;&#x653E;&#x5C01;&#x95ED;&#x539F;&#x5219;ocpopen&#xFF0D;close-principle"><a name="&#x5F00;&#x653E;&#x5C01;&#x95ED;&#x539F;&#x5219;ocpopen&#xFF0D;close-principle" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x653E;&#x5C01;&#x95ED;&#x539F;&#x5219;ocpopen&#xFF0D;close-principle"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5F00;&#x653E;&#x5C01;&#x95ED;&#x539F;&#x5219;OCP(Open&#xFF0D;Close Principle)</h2>
 <p>&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5728;&#x6269;&#x5C55;&#x6027;&#x65B9;&#x9762;&#x5E94;&#x8BE5;&#x662F;&#x5F00;&#x653E;&#x7684;&#x800C;&#x5728;&#x66F4;&#x6539;&#x6027;&#x65B9;&#x9762;&#x5E94;&#x8BE5;&#x662F;&#x5C01;&#x95ED;&#x7684;&#x3002;&#x6BD4;&#x5982;&#xFF1A;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x6A21;&#x5757;&#xFF0C;&#x539F;&#x6765;&#x53EA;&#x670D;&#x52A1;&#x7AEF;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x73B0;&#x5728;&#x8981;&#x52A0;&#x5165;&#x5BA2;&#x6237;&#x7AEF;&#x529F;&#x80FD;&#xFF0C;&#x90A3;&#x4E48;&#x5E94;&#x5F53;&#x5728;&#x4E0D;&#x7528;&#x4FEE;&#x6539;&#x670D;&#x52A1;&#x7AEF;&#x529F;&#x80FD;&#x4EE3;&#x7801;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;&#x5C31;&#x80FD;&#x591F;&#x589E;&#x52A0;&#x5BA2;&#x6237;&#x7AEF;&#x529F;&#x80FD;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x8981;&#x6C42;&#x5728;&#x8BBE;&#x8BA1;&#x4E4B;&#x521D;&#xFF0C;&#x5C31;&#x5E94;&#x5F53;&#x5C06;&#x670D;&#x52A1;&#x7AEF;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x5206;&#x5F00;&#xFF0C;&#x516C;&#x5171;&#x90E8;&#x5206;&#x62BD;&#x8C61;&#x51FA;&#x6765;&#x3002;</p>
-<h5 id="&#x91CC;&#x5F0F;&#x66FF;&#x6362;&#x539F;&#x5219;lspthe-liskov-substitution-principle-lsp">&#x91CC;&#x5F0F;&#x66FF;&#x6362;&#x539F;&#x5219;LSP(the Liskov Substitution Principle LSP)</h5>
+<p>&#x5F00;&#x95ED;&#x539F;&#x5219;&#x548C;&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;&#x4E00;&#x6837;&#xFF0C;&#x662F;&#x975E;&#x5E38;&#x57FA;&#x7840;&#x800C;&#x4E14;&#x4E00;&#x822C;&#x662F;&#x5E38;&#x8BC6;&#x7684;&#x539F;&#x5219;&#x3002;&#x5F00;&#x95ED;&#x539F;&#x5219;&#x7684;&#x5B9A;&#x4E49;&#x662F;&#x8F6F;&#x4EF6;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;(&#x7C7B;&#xFF0C;&#x6A21;&#x5757;&#xFF0C;&#x51FD;&#x6570;&#x7B49;)&#x5E94;&#x8BE5;&#x5BF9;&#x4E8E;&#x6269;&#x5C55;&#x662F;&#x5F00;&#x653E;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x4FEE;&#x6539;&#x662F;&#x5173;&#x95ED;&#x7684;&#x3002;</p>
+<p>&#x5F53;&#x9700;&#x6C42;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5BF9;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5C3D;&#x91CF;&#x53BB;&#x6269;&#x5C55;&#x539F;&#x6765;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x53BB;&#x4FEE;&#x6539;&#x539F;&#x6765;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x8D77;&#x66F4;&#x591A;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51C6;&#x5219;&#x548C;&#x5355;&#x4E00;&#x804C;&#x8D23;&#x539F;&#x5219;&#x4E00;&#x6837;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5927;&#x5BB6;&#x90FD;&#x8FD9;&#x6837;&#x53BB;&#x8BA4;&#x4E3A;&#x4F46;&#x662F;&#x53C8;&#x6CA1;&#x89C4;&#x5B9A;&#x5177;&#x4F53;&#x8BE5;&#x5982;&#x4F55;&#x53BB;&#x505A;&#x7684;&#x4E00;&#x79CD;&#x539F;&#x5219;&#x3002;</p>
+<p>&#x5F00;&#x95ED;&#x539F;&#x5219;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x786E;&#x4FDD;&#x4ED6;&#xFF0C;&#x6211;&#x4EEC;&#x7528;&#x62BD;&#x8C61;&#x53BB;&#x6784;&#x5EFA;&#x6846;&#x67B6;&#xFF0C;&#x7528;&#x5B9E;&#x73B0;&#x6269;&#x5C55;&#x7EC6;&#x8282;&#x3002;&#x8FD9;&#x6837;&#x5F53;&#x53D1;&#x751F;&#x4FEE;&#x6539;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x76F4;&#x63A5;&#x7528;&#x62BD;&#x8C61;&#x4E86;&#x6D3E;&#x751F;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7C7B;&#x53BB;&#x5B9E;&#x73B0;&#x4FEE;&#x6539;&#x3002;</p>
+<h2 id="&#x91CC;&#x5F0F;&#x66FF;&#x6362;&#x539F;&#x5219;lspthe-liskov-substitution-principle-lsp"><a name="&#x91CC;&#x5F0F;&#x66FF;&#x6362;&#x539F;&#x5219;lspthe-liskov-substitution-principle-lsp" class="anchor-navigation-ex-anchor" href="#&#x91CC;&#x5F0F;&#x66FF;&#x6362;&#x539F;&#x5219;lspthe-liskov-substitution-principle-lsp"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x91CC;&#x5F0F;&#x66FF;&#x6362;&#x539F;&#x5219;LSP(the Liskov Substitution Principle LSP)</h2>
 <p>&#x5B50;&#x7C7B;&#x5E94;&#x5F53;&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#x7236;&#x7C7B;&#x5E76;&#x51FA;&#x73B0;&#x5728;&#x7236;&#x7C7B;&#x80FD;&#x591F;&#x51FA;&#x73B0;&#x7684;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x3002;&#x6BD4;&#x5982;&#xFF1A;&#x516C;&#x53F8;&#x641E;&#x5E74;&#x5EA6;&#x665A;&#x4F1A;&#xFF0C;&#x6240;&#x6709;&#x5458;&#x5DE5;&#x53EF;&#x4EE5;&#x53C2;&#x52A0;&#x62BD;&#x5956;&#xFF0C;&#x90A3;&#x4E48;&#x4E0D;&#x7BA1;&#x662F;&#x8001;&#x5458;&#x5DE5;&#x8FD8;&#x662F;&#x65B0;&#x5458;&#x5DE5;&#xFF0C;&#x4E5F;&#x4E0D;&#x7BA1;&#x662F;&#x603B;&#x90E8;&#x5458;&#x5DE5;&#x8FD8;&#x662F;&#x5916;&#x6D3E;&#x5458;&#x5DE5;&#xFF0C;&#x90FD;&#x5E94;&#x5F53;&#x53EF;&#x4EE5;&#x53C2;&#x52A0;&#x62BD;&#x5956;&#xFF0C;&#x5426;&#x5219;&#x8FD9;&#x516C;&#x53F8;&#x5C31;&#x4E0D;&#x548C;&#x8C10;&#x4E86;&#x3002;</p>
-<h5 id="&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;dipthe-dependency-inversion-principle-dip">&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;DIP(the Dependency Inversion Principle DIP)</h5>
+<p>&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x539F;&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;&#x3002;&#x4ED6;&#x7684;&#x5B9A;&#x4E49;</p>
+<blockquote>
+<p>&#x5982;&#x679C;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x4E3A;T1&#x7684;&#x5BF9;&#x8C61;o1,&#x90FD;&#x6709;&#x7C7B;&#x578B;&#x4E3A;T2&#x7684;&#x5BF9;&#x8C61;o2,&#x4F7F;&#x5F97;&#x4EE5;T1&#x5B9A;&#x4E49;&#x7684;&#x6240;&#x6709;&#x7A0B;&#x5E8F;P&#x5728;&#x6240;&#x6709;&#x5BF9;&#x8C61;o1&#x90FD;&#x66FF;&#x6362;&#x6210;o2&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7A0B;&#x5E8F;P&#x7684;&#x884C;&#x4E3A;&#x90FD;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x90A3;&#x4E48;&#x7C7B;&#x578B;T2&#x662F;&#x7C7B;&#x578B;T1&#x7684;&#x5B50;&#x7C7B;&#x578B;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x6837;&#x8BF4;&#x6709;&#x70B9;&#x590D;&#x6742;&#xFF0C;&#x5176;&#x5B9E;&#x6709;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5B9A;&#x4E49;</p>
+<blockquote>
+<p>&#x6240;&#x6709;&#x5F15;&#x7528;&#x57FA;&#x7C7B;&#x7684;&#x5730;&#x65B9;&#x5FC5;&#x987B;&#x80FD;&#x591F;&#x900F;&#x660E;&#x5730;&#x4F7F;&#x7528;&#x5176;&#x5B50;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+</blockquote>
+<p>&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x539F;&#x5219;&#x901A;&#x4FD7;&#x7684;&#x53BB;&#x8BB2;&#x5C31;&#x662F;&#xFF1A;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x53BB;&#x6269;&#x5C55;&#x7236;&#x7C7B;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x7236;&#x7C7B;&#x539F;&#x6709;&#x7684;&#x529F;&#x80FD;&#x3002;&#x4ED6;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x51E0;&#x5C42;&#x610F;&#x601D;&#xFF1A;</p>
+<ol>
+<li>&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x7236;&#x7C7B;&#x7684;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x8986;&#x76D6;&#x7236;&#x7C7B;&#x7684;&#x975E;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x81EA;&#x5DF1;&#x72EC;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x5F53;&#x5B50;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#x5019;&#xFF0C;&#x65B9;&#x6CD5;&#x7684;&#x5F62;&#x53C2;&#x8981;&#x6BD4;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x66F4;&#x52A0;&#x5BBD;&#x677E;&#x3002;</li>
+<li>&#x5F53;&#x5B50;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x7236;&#x7C7B;&#x7684;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x8981;&#x6BD4;&#x7236;&#x7C7B;&#x66F4;&#x4E25;&#x683C;&#x3002;</li>
+</ol>
+<p>&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x539F;&#x5219;&#x4E4B;&#x6240;&#x4EE5;&#x8FD9;&#x6837;&#x8981;&#x6C42;&#x662F;&#x56E0;&#x4E3A;&#x7EE7;&#x627F;&#x6709;&#x5F88;&#x591A;&#x7F3A;&#x70B9;&#xFF0C;&#x4ED6;&#x867D;&#x7136;&#x662F;&#x590D;&#x7528;&#x4EE3;&#x7801;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x7EE7;&#x627F;&#x5728;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x4E0A;&#x8FDD;&#x53CD;&#x4E86;&#x5C01;&#x88C5;&#x3002;&#x7236;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x5BF9;&#x5B50;&#x7C7B;&#x90FD;&#x662F;&#x900F;&#x660E;&#x7684;&#xFF0C;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x4FEE;&#x6539;&#x7236;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x3002;&#x8FD9;&#x4E5F;&#x5BFC;&#x81F4;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x6C42;&#x53D8;&#x66F4;&#xFF0C;&#x5B50;&#x7C7B;&#x5BF9;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x590D;&#x5199;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x5B50;&#x7C7B;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;&#x6240;&#x4EE5;&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x6CD5;&#x5219;&#x88AB;&#x63D0;&#x51FA;&#x6765;&#x3002;</p>
+<p>&#x786E;&#x4FDD;&#x7A0B;&#x5E8F;&#x9075;&#x5FAA;&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x539F;&#x5219;&#x53EF;&#x4EE5;&#x8981;&#x6C42;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x5EFA;&#x7ACB;&#x62BD;&#x8C61;&#xFF0C;&#x901A;&#x8FC7;&#x62BD;&#x8C61;&#x53BB;&#x5EFA;&#x7ACB;&#x89C4;&#x8303;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x5B9E;&#x73B0;&#x53BB;&#x6269;&#x5C55;&#x7EC6;&#x8282;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x8033;&#x719F;&#xFF0C;&#x5BF9;&#xFF0C;&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x539F;&#x5219;&#x548C;&#x5F00;&#x95ED;&#x539F;&#x5219;&#x5F80;&#x5F80;&#x662F;&#x76F8;&#x4E92;&#x4F9D;&#x5B58;&#x7684;&#x3002;</p>
+<h2 id="&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;dipthe-dependency-inversion-principle-dip"><a name="&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;dipthe-dependency-inversion-principle-dip" class="anchor-navigation-ex-anchor" href="#&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;dipthe-dependency-inversion-principle-dip"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;DIP(the Dependency Inversion Principle DIP)</h2>
 <p>&#x5177;&#x4F53;&#x4F9D;&#x8D56;&#x62BD;&#x8C61;&#xFF0C;&#x4E0A;&#x5C42;&#x4F9D;&#x8D56;&#x4E0B;&#x5C42;&#x3002;&#x5047;&#x8BBE;B&#x662F;&#x8F83;A&#x4F4E;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x4F46;B&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;A&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;B&#x4E0D;&#x5E94;&#x5F53;&#x76F4;&#x63A5;&#x4F7F;&#x7528;A&#x4E2D;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#xFF1A; &#x800C;&#x5E94;&#x5F53;&#x7531;B&#x5B9A;&#x4E49;&#x4E00;&#x62BD;&#x8C61;&#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x7531;A&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x62BD;&#x8C61;&#x63A5;&#x53E3;&#xFF0C;B&#x53EA;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x62BD;&#x8C61;&#x63A5;&#x53E3;&#xFF1A;&#x8FD9;&#x6837;&#x5C31;&#x8FBE;&#x5230;&#x4E86;&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x7684;&#x76EE;&#x7684;&#xFF0C;B&#x4E5F;&#x89E3;&#x9664;&#x4E86;&#x5BF9;A&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x53CD;&#x8FC7;&#x6765;&#x662F;A&#x4F9D;&#x8D56;&#x4E8E;B&#x5B9A;&#x4E49;&#x7684;&#x62BD;&#x8C61;&#x63A5;&#x53E3;&#x3002;&#x901A;&#x8FC7;&#x4E0A;&#x5C42;&#x6A21;&#x5757;&#x96BE;&#x4EE5;&#x907F;&#x514D;&#x4F9D;&#x8D56;&#x4E0B;&#x5C42;&#x6A21;&#x5757;&#xFF0C;&#x5047;&#x5982;B&#x4E5F;&#x76F4;&#x63A5;&#x4F9D;&#x8D56;A&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EF;&#x80FD; &#x9020;&#x6210;&#x5FAA;&#x73AF;&#x4F9D;&#x8D56;&#x3002;&#x4E00;&#x4E2A;&#x5E38;&#x89C1;&#x7684;&#x95EE;&#x9898;&#x5C31;&#x662F;&#x7F16;&#x8BD1;A&#x6A21;&#x5757;&#x65F6;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x5305;&#x542B;&#x5230;B&#x6A21;&#x5757;&#x7684;cpp&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x7F16;&#x8BD1;B&#x65F6;&#x540C;&#x6837;&#x8981;&#x76F4;&#x63A5;&#x5305;&#x542B;&#x5230;A&#x7684;cpp&#x6587;&#x4EF6;&#x3002;</p>
-<h5 id="&#x63A5;&#x53E3;&#x5206;&#x79BB;&#x539F;&#x5219;ispthe-interface-segregation-principle-isp">&#x63A5;&#x53E3;&#x5206;&#x79BB;&#x539F;&#x5219;ISP(the Interface Segregation Principle ISP)</h5>
+<p>&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;&#x6307;&#x7684;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x89E3;&#x8026;&#x65B9;&#x5F0F;&#xFF0C;&#x4F7F;&#x5F97;&#x9AD8;&#x5C42;&#x6B21;&#x7684;&#x6A21;&#x5757;&#x4E0D;&#x5E94;&#x8BE5;&#x4F9D;&#x8D56;&#x4E8E;&#x4F4E;&#x5C42;&#x6B21;&#x7684;&#x6A21;&#x5757;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x4F9D;&#x8D56;&#x6A21;&#x5757;&#x88AB;&#x98A0;&#x5012;&#x4E86;&#x3002;
+&#x8FD9;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x8BA9;&#x4EBA;&#x96BE;&#x61C2;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#x5C31;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p>&#x9AD8;&#x5C42;&#x6A21;&#x5757;&#x4E0D;&#x5E94;&#x8BE5;&#x4F9D;&#x8D56;&#x5E95;&#x5C42;&#x6A21;&#x5757;&#xFF0C;&#x4E24;&#x8005;&#x90FD;&#x5E94;&#x8BE5;&#x4F9D;&#x8D56;&#x5176;&#x62BD;&#x8C61;
+&#x62BD;&#x8C61;&#x4E0D;&#x5E94;&#x8BE5;&#x4F9D;&#x8D56;&#x7EC6;&#x8282;
+&#x7EC6;&#x8282;&#x5E94;&#x8BE5;&#x4F9D;&#x8D56;&#x62BD;&#x8C61;</p>
+</blockquote>
+<p>&#x5728;Java &#x4E2D;&#x62BD;&#x8C61;&#x6307;&#x7684;&#x662F;&#x63A5;&#x53E3;&#x6216;&#x8005;&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x4E24;&#x8005;&#x7686;&#x4E0D;&#x80FD;&#x5B9E;&#x4F8B;&#x5316;&#x3002;&#x800C;&#x7EC6;&#x8282;&#x5C31;&#x662F;&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5B9E;&#x73B0;&#x4E86;&#x63A5;&#x53E3;&#x6216;&#x8005;&#x7EE7;&#x627F;&#x4E86;&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x7C7B;&#x3002;&#x4ED6;&#x662F;&#x53EF;&#x4EE5;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x3002;&#x9AD8;&#x5C42;&#x6A21;&#x5757;&#x6307;&#x7684;&#x662F;&#x8C03;&#x7528;&#x7AEF;&#xFF0C;&#x5E95;&#x5C42;&#x6A21;&#x5757;&#x662F;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#x3002;&#x5728;Java&#x4E2D;&#xFF0C;&#x4F9D;&#x8D56;&#x5012;&#x7F6E;&#x539F;&#x5219;&#x662F;&#x6307;&#x6A21;&#x5757;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x662F;&#x901A;&#x8FC7;&#x62BD;&#x8C61;&#x6765;&#x53D1;&#x751F;&#x7684;&#xFF0C;&#x5B9E;&#x73B0;&#x7C7B;&#x4E4B;&#x95F4;&#x4E0D;&#x53D1;&#x751F;&#x76F4;&#x63A5;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x5176;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x662F;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x662F;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4FD7;&#x79F0;&#x7684;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7F16;&#x7A0B;&#x3002;
+&#x6211;&#x4EEC;&#x4E0B;&#x9762;&#x6709;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8BB2;&#x8FF0;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x662F;&#x5DE5;&#x4EBA;&#x7528;&#x9524;&#x5B50;&#x6765;&#x4FEE;&#x7406;&#x4E1C;&#x897F;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Hammer</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> String <span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;&#x7528;&#x9524;&#x5B50;&#x4FEE;&#x7406;&#x4E1C;&#x897F;&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Worker</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">fix</span><span class="token punctuation">(</span>Hammer hammer<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5DE5;&#x4EBA;&quot;</span> <span class="token operator">+</span> hammer<span class="token punctuation">.</span><span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Worker</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fix</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Hammer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8981;&#x65B0;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#xFF0C;&#x5DE5;&#x4EBA;&#x7528; &#x87BA;&#x4E1D;&#x5200;&#x6765;&#x4FEE;&#x7406;&#x4E1C;&#x897F;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x7C7B;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x662F;&#x5F88;&#x96BE;&#x505A;&#x7684;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;Worker&#x7C7B;&#x4F9D;&#x8D56;&#x4E8E;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;Hammer&#x3002;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x7528;&#x5230;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7F16;&#x7A0B;&#x7684;&#x601D;&#x60F3;&#xFF0C;&#x6539;&#x6210;&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Tools</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> String <span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x7684;Worker&#x662F;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x6765;&#x4E8E;&#x5176;&#x4ED6;&#x7EC6;&#x8282;&#x7C7B;&#x8FDB;&#x884C;&#x4F9D;&#x8D56;&#x3002;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Worker</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">fix</span><span class="token punctuation">(</span>Tools tool<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5DE5;&#x4EBA;&quot;</span> <span class="token operator">+</span> tool<span class="token punctuation">.</span><span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Worker</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fix</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Hammer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">new</span> <span class="token class-name">Worker</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fix</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Screwdriver</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x7684;Hammer&#x7C7B;&#x4E0E;Screwdriver&#x7C7B;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Hammer</span> <span class="token keyword">implements</span> <span class="token class-name">Tools</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> String <span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;&#x7528;&#x9524;&#x5B50;&#x4FEE;&#x7406;&#x4E1C;&#x897F;&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Screwdriver</span> <span class="token keyword">implements</span> <span class="token class-name">Tools</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> String <span class="token function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;&#x7528;&#x87BA;&#x4E1D;&#x5200;&#x4FEE;&#x7406;&#x4E1C;&#x897F;&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x901A;&#x8FC7;&#x9762;&#x5411;&#x63A5;&#x53E3;&#x7F16;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x6709;&#x4E86;&#x5F88;&#x9AD8;&#x7684;&#x6269;&#x5C55;&#x6027;&#xFF0C;&#x964D;&#x4F4E;&#x4E86;&#x4EE3;&#x7801;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x5EA6;&#xFF0C;&#x63D0;&#x9AD8;&#x4E86;&#x7CFB;&#x7EDF;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x3002;</p>
+<h2 id="&#x63A5;&#x53E3;&#x5206;&#x79BB;&#x539F;&#x5219;ispthe-interface-segregation-principle-isp"><a name="&#x63A5;&#x53E3;&#x5206;&#x79BB;&#x539F;&#x5219;ispthe-interface-segregation-principle-isp" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x53E3;&#x5206;&#x79BB;&#x539F;&#x5219;ispthe-interface-segregation-principle-isp"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x63A5;&#x53E3;&#x5206;&#x79BB;&#x539F;&#x5219;ISP(the Interface Segregation Principle ISP)</h2>
 <p>&#x6A21;&#x5757;&#x95F4;&#x8981;&#x901A;&#x8FC7;&#x62BD;&#x8C61;&#x63A5;&#x53E3;&#x9694;&#x79BB;&#x5F00;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x901A;&#x8FC7;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x5F3A;&#x8026;&#x5408;&#x8D77;&#x6765;</p>
+<p>&#x63A5;&#x53E3;&#x9694;&#x79BB;&#x539F;&#x5219;&#x7684;&#x5B9A;&#x4E49;&#x662F;</p>
+<blockquote>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x5E94;&#x8BE5;&#x4F9D;&#x8D56;&#x4ED6;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x63A5;&#x53E3;</p>
+</blockquote>
+<p>&#x6362;&#x4E00;&#x79CD;&#x8BF4;&#x6CD5;&#x5C31;&#x662F;&#x7C7B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x5E94;&#x8BE5;&#x5EFA;&#x7ACB;&#x5728;&#x6700;&#x5C0F;&#x7684;&#x63A5;&#x53E3;&#x4E0A;&#x3002;&#x8FD9;&#x6837;&#x8BF4;&#x597D;&#x50CF;&#x66F4;&#x96BE;&#x61C2;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#x3002;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x5728;Java&#x4E2D;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7C7B;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x90A3;&#x5FC5;&#x7136;&#x5C31;&#x8981;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;A&#x548C;&#x7C7B;B&#x901A;&#x8FC7;&#x63A5;&#x53E3;I&#x6765;&#x4F9D;&#x8D56;&#xFF0C;&#x7C7B;B&#x662F;&#x5BF9;&#x7C7B;A&#x4F9D;&#x8D56;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;I&#x6709;5&#x4E2A;&#x65B9;&#x6CD5;&#x3002;&#x4F46;&#x662F;&#x7C7B;A&#x4E0E;&#x7C7B;B&#x53EA;&#x901A;&#x8FC7;&#x65B9;&#x6CD5;1,2,3&#x4F9D;&#x8D56;&#xFF0C;&#x7136;&#x540E;&#x7C7B;C&#x4E0E;&#x7C7B;D&#x901A;&#x8FC7;&#x63A5;&#x53E3;I&#x6765;&#x4F9D;&#x8D56;&#xFF0C;&#x7C7B;D&#x662F;&#x5BF9;&#x7C7B;C&#x4F9D;&#x8D56;&#x7684;&#x5B9E;&#x73B0;&#x4F46;&#x662F;&#x4ED6;&#x4EEC;&#x5374;&#x662F;&#x901A;&#x8FC7;&#x65B9;&#x6CD5;1,4,5&#x4F9D;&#x8D56;&#x3002;&#x90A3;&#x4E48;&#x662F;&#x5FC5;&#x5728;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7C7B;B&#x5C31;&#x8981;&#x6709;&#x5B9E;&#x73B0;&#x4ED6;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x65B9;&#x6CD5;4&#x548C;&#x65B9;&#x6CD5;5 &#x800C;&#x7C7B;D&#x5C31;&#x8981;&#x5B9E;&#x73B0;&#x4ED6;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x65B9;&#x6CD5;2&#xFF0C;&#x548C;&#x65B9;&#x6CD5;3&#x3002;&#x8FD9;&#x7B80;&#x76F4;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x707E;&#x96BE;&#x7684;&#x8BBE;&#x8BA1;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5BF9;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x62C6;&#x5206;&#xFF0C;&#x5C31;&#x662F;&#x628A;&#x63A5;&#x53E3;&#x5206;&#x6210;&#x6EE1;&#x8DB3;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x7684;&#x6700;&#x5C0F;&#x63A5;&#x53E3;&#xFF0C;&#x7C7B;B&#x4E0E;&#x7C7B;D&#x4E0D;&#x9700;&#x8981;&#x53BB;&#x5B9E;&#x73B0;&#x4E0E;&#x4ED6;&#x4EEC;&#x65E0;&#x5173;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x3002;&#x6BD4;&#x5982;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x63A5;&#x53E3;&#x62C6;&#x6210;3&#x4E2A;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x4EC5;&#x4EC5;&#x7531;&#x65B9;&#x6CD5;1&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x63A5;&#x53E3;&#x662F;&#x5305;&#x542B;2,3&#x65B9;&#x6CD5;&#x7684;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x63A5;&#x53E3;&#x662F;&#x5305;&#x542B;4,5&#x65B9;&#x6CD5;&#x7684;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x8BBE;&#x8BA1;&#x5C31;&#x6EE1;&#x8DB3;&#x4E86;&#x63A5;&#x53E3;&#x9694;&#x79BB;&#x539F;&#x5219;&#x3002;</p>
+<p>&#x4EE5;&#x4E0A;&#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#x7528;&#x82F1;&#x6587;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x53EF;&#x4EE5;&#x7EC4;&#x6210;SOLID &#xFF0C;&#x6EE1;&#x8DB3;&#x8FD9;&#x4E2A;5&#x4E2A;&#x539F;&#x5219;&#x7684;&#x7A0B;&#x5E8F;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;&#x6EE1;&#x8DB3;&#x4E86;SOLID&#x51C6;&#x5219;&#x3002;</p>
+<h2 id="&#x8FEA;&#x7C73;&#x7279;&#x539F;&#x5219;lodthe-law-of-demeter-lod"><a name="&#x8FEA;&#x7C73;&#x7279;&#x539F;&#x5219;lodthe-law-of-demeter-lod" class="anchor-navigation-ex-anchor" href="#&#x8FEA;&#x7C73;&#x7279;&#x539F;&#x5219;lodthe-law-of-demeter-lod"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x8FEA;&#x7C73;&#x7279;&#x539F;&#x5219;LOD(the Law of Demeter LOD)</h2>
+<p>&#x8FEA;&#x7C73;&#x7279;&#x6CD5;&#x5219;&#xFF08;Law of Demeter&#xFF09;&#x53C8;&#x53EB;&#x4F5C;&#x6700;&#x5C11;&#x77E5;&#x8BC6;&#x539F;&#x5219;&#xFF08;Least Knowledge Principle &#x7B80;&#x5199;LKP&#xFF09;&#xFF0C;&#x5C31;&#x662F;&#x8BF4;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5E94;&#x5F53;&#x5BF9;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x6709;&#x5C3D;&#x53EF;&#x80FD;&#x5C11;&#x7684;&#x4E86;&#x89E3;,&#x4E0D;&#x548C;&#x964C;&#x751F;&#x4EBA;&#x8BF4;&#x8BDD;&#x3002;&#x4ED6;&#x7684;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<blockquote>
+<p>&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5E94;&#x8BE5;&#x5BF9;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x4FDD;&#x6301;&#x6700;&#x5C0F;&#x7684;&#x4E86;&#x89E3;&#x3002;</p>
+</blockquote>
+<p>&#x56E0;&#x4E3A;&#x7C7B;&#x4E0E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x8D8A;&#x5BC6;&#x5207;&#xFF0C;&#x8026;&#x5408;&#x5EA6;&#x8D8A;&#x5927;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x7C7B;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x5BF9;&#x53E6;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5F71;&#x54CD;&#x4E5F;&#x8D8A;&#x5927;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E5F;&#x662F;&#x6211;&#x4EEC;&#x63D0;&#x5021;&#x7684;&#x8F6F;&#x4EF6;&#x7F16;&#x7A0B;&#x7684;&#x603B;&#x7684;&#x539F;&#x5219;&#xFF1A;&#x4F4E;&#x8026;&#x5408;&#xFF0C;&#x9AD8;&#x5185;&#x805A;&#x3002;
+&#x8FEA;&#x7C73;&#x7279;&#x6CD5;&#x5219;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x7B80;&#x5355;&#x7684;&#x5B9A;&#x4E49;</p>
+<blockquote>
+<p>&#x53EA;&#x4E0E;&#x76F4;&#x63A5;&#x7684;&#x670B;&#x53CB;&#x901A;&#x4FE1;&#x3002;&#x9996;&#x5148;&#x6765;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x4EC0;&#x4E48;&#x662F;&#x76F4;&#x63A5;&#x7684;&#x670B;&#x53CB;&#xFF1A;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x4E0E;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x6709;&#x8026;&#x5408;&#x5173;&#x7CFB;&#xFF0C;&#x53EA;&#x8981;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x6709;&#x8026;&#x5408;&#x5173;&#x7CFB;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x8BF4;&#x8FD9;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x662F;&#x670B;&#x53CB;&#x5173;&#x7CFB;&#x3002;&#x8026;&#x5408;&#x7684;&#x65B9;&#x5F0F;&#x5F88;&#x591A;&#xFF0C;&#x4F9D;&#x8D56;&#x3001;&#x5173;&#x8054;&#x3001;&#x7EC4;&#x5408;&#x3001;&#x805A;&#x5408;&#x7B49;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x51FA;&#x73B0;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x3001;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x3001;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x503C;&#x4E2D;&#x7684;&#x7C7B;&#x4E3A;&#x76F4;&#x63A5;&#x7684;&#x670B;&#x53CB;&#xFF0C;&#x800C;&#x51FA;&#x73B0;&#x5728;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x4E2D;&#x7684;&#x7C7B;&#x5219;&#x4E0D;&#x662F;&#x76F4;&#x63A5;&#x7684;&#x670B;&#x53CB;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x964C;&#x751F;&#x7684;&#x7C7B;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x4F5C;&#x4E3A;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#x5728;&#x7C7B;&#x7684;&#x5185;&#x90E8;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x73B0;&#x5B9E;&#x751F;&#x6D3B;&#x4E2D;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x8BB2;&#x89E3;&#x4E00;&#x4E0B;&#x3002;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x5F20;CD,&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x53BB;&#x97F3;&#x50CF;&#x5E97;&#x53BB;&#x95EE;&#x8001;&#x677F;&#x6709;&#x6CA1;&#x6709;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x90A3;&#x5F20;CD&#xFF0C;&#x8001;&#x677F;&#x8BF4;&#x73B0;&#x5728;&#x6CA1;&#x6709;&#xFF0C;&#x7B49;&#x6709;&#x7684;&#x65F6;&#x5019;&#x4F60;&#x4EEC;&#x6765;&#x62FF;&#x5C31;&#x884C;&#x4E86;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x8001;&#x677F;&#x662F;&#x4ECE;&#x54EA;&#x91CC;&#xFF0C;&#x600E;&#x4E48;&#x83B7;&#x5F97;&#x7684;&#x90A3;&#x5F20;CD&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x548C;&#x8001;&#x677F;&#xFF08;&#x76F4;&#x63A5;&#x670B;&#x53CB;&#xFF09;&#x6C9F;&#x901A;&#xFF0C;&#x81F3;&#x4E8E;&#x8001;&#x677F;&#x4ECE;&#x4ED6;&#x7684;&#x670B;&#x53CB;&#x90A3;&#x91CC;&#x901A;&#x8FC7;&#x4F55;&#x79CD;&#x6761;&#x4EF6;&#x5F97;&#x5230;&#x7684;CD&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x5173;&#x5FC3;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x548C;&#x8001;&#x677F;&#x7684;&#x670B;&#x53CB;&#xFF08;&#x964C;&#x751F;&#x4EBA;&#xFF09;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C31;&#x662F;&#x8FEA;&#x7C73;&#x7279;&#x7684;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x3002;&#x8BF4;&#x767D;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x4E2D;&#x4ECB;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x8001;&#x677F;&#x8FD9;&#x4E2A;&#x4E2D;&#x4ECB;&#x6765;&#x548C;&#x771F;&#x6B63;&#x63D0;&#x4F9B;CD&#x7684;&#x4EBA;&#x53D1;&#x751F;&#x8054;&#x7CFB;&#x3002;</p>
+<h2 id="&#x603B;&#x7ED3;"><a name="&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>7. &#x603B;&#x7ED3;</h2>
+<p>&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x516D;&#x5927;&#x539F;&#x5219;&#xFF0C;&#x5C31;&#x5199;&#x5B8C;&#x4E86;&#x3002;&#x6211;&#x4EEC;&#x770B;&#x51FA;&#x6765;&#xFF0C;&#x8FD9;&#x4E9B;&#x539F;&#x5219;&#x5176;&#x5B9E;&#x90FD;&#x662F;&#x5E94;&#x5BF9;&#x4E0D;&#x65AD;&#x6539;&#x53D8;&#x7684;&#x9700;&#x6C42;&#x3002;&#x6BCF;&#x5F53;&#x9700;&#x6C42;&#x53D8;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5229;&#x7528;&#x8FD9;&#x4E9B;&#x539F;&#x5219;&#x6765;&#x4F7F;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x6539;&#x52A8;&#x91CF;&#x6700;&#x5C0F;&#xFF0C;&#x800C;&#x4E14;&#x6240;&#x9020;&#x6210;&#x7684;&#x5F71;&#x54CD;&#x4E5F;&#x662F;&#x6700;&#x5C0F;&#x7684;&#x3002;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x770B;&#x8FD9;&#x4E9B;&#x539F;&#x5219;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x53D1;&#x73B0;&#x5F88;&#x591A;&#x539F;&#x5219;&#x5E76;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x516C;&#x5F0F;&#x5316;&#x7684;&#x7ED3;&#x8BBA;&#xFF0C;&#x800C;&#x5373;&#x4F7F;&#x63D0;&#x4F9B;&#x4E86;&#x516C;&#x5F0F;&#x5316;&#x7684;&#x7ED3;&#x8BBA;&#x7684;&#x539F;&#x5219;&#x4E5F;&#x53EA;&#x662F;&#x5EFA;&#x8BAE;&#x53BB;&#x8FD9;&#x6837;&#x505A;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#xFF0C;&#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#x672C;&#x6765;&#x5C31;&#x662F;&#x4ECE;&#x5F88;&#x591A;&#x5B9E;&#x9645;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x4ED6;&#x662F;&#x4E00;&#x4E2A;&#x7ECF;&#x9A8C;&#x5316;&#x7684;&#x7ED3;&#x8BBA;&#x3002;&#x600E;&#x4E48;&#x53BB;&#x7528;&#x5B83;&#xFF0C;&#x7528;&#x597D;&#x4ED6;&#xFF0C;&#x5C31;&#x8981;&#x4F9D;&#x9760;&#x8BBE;&#x8BA1;&#x8005;&#x7684;&#x7ECF;&#x9A8C;&#x3002;&#x5426;&#x5219;&#x4E00;&#x5473;&#x8005;&#x53BB;&#x4F7F;&#x7528;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x4EE3;&#x7801;&#x51FA;&#x73B0;&#x8FC7;&#x5EA6;&#x8BBE;&#x8BA1;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x5927;&#x591A;&#x6570;&#x7684;&#x539F;&#x5219;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x63D0;&#x53D6;&#x51FA;&#x62BD;&#x8C61;&#x548C;&#x63A5;&#x53E3;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x751F;&#x8FC7;&#x5EA6;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x5F88;&#x591A;&#x62BD;&#x8C61;&#x7C7B;&#x548C;&#x63A5;&#x53E3;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x7CFB;&#x7EDF;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x3002;&#x8BA9;&#x672C;&#x6765;&#x5F88;&#x5C0F;&#x7684;&#x9879;&#x76EE;&#x53D8;&#x5F97;&#x5F88;&#x5E9E;&#x5927;&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x4E5F;&#x662F;Java&#x7684;&#x7279;&#x6027;&#xFF08;&#x4EFB;&#x4F55;&#x7684;&#x5C0F;&#x9879;&#x76EE;&#x90FD;&#x4F1A;&#x505A;&#x6210;&#x4E2D;&#x578B;&#x7684;&#x9879;&#x76EE;&#xFF09;&#x3002;</p>
 
                                 
                                 </section>
@@ -994,12 +1129,12 @@
 
             
                 
-                <a href="p002.html" class="navigation navigation-prev " aria-label="Previous page: 面向对象的四大特征？">
+                <a href="p002.html" class="navigation navigation-prev " aria-label="Previous page: 面向对象的四大特征">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="p004.html" class="navigation navigation-next " aria-label="Next page: 什么是低耦合高内聚？">
+                <a href="p004.html" class="navigation navigation-next " aria-label="Next page: 什么是低耦合高内聚">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1010,7 +1145,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"面向对象的五大原则？","level":"2.1.3","depth":2,"next":{"title":"什么是低耦合高内聚？","level":"2.1.4","depth":2,"path":"core_java/grammar/p004.md","ref":"core_java/grammar/p004.md","articles":[]},"previous":{"title":"面向对象的四大特征？","level":"2.1.2","depth":2,"path":"core_java/grammar/p002.md","ref":"core_java/grammar/p002.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"prism-themes":{},"splitter":{},"search-plus":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p003.md","mtime":"2019-01-11T01:28:33.778Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-11T03:01:10.494Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"面向对象的六大原则","level":"2.1.3","depth":2,"next":{"title":"什么是低耦合高内聚","level":"2.1.4","depth":2,"path":"core_java/grammar/p004.md","ref":"core_java/grammar/p004.md","articles":[]},"previous":{"title":"面向对象的四大特征","level":"2.1.2","depth":2,"path":"core_java/grammar/p002.md","ref":"core_java/grammar/p002.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p003.md","mtime":"2019-01-11T05:19:02.638Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-11T08:13:26.152Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

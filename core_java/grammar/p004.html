@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-hans" >
     <head>
-        <title>什么是低耦合高内聚？ · Java面试题</title>
+        <title>什么是低耦合高内聚 · Java面试题</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -30,6 +30,10 @@
             
                 
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
                 
             
                 
@@ -152,7 +156,7 @@
                     
                         <b>2.1.1.</b>
                     
-                    面向对象的三大特性？
+                    面向对象的三大特性
             
                 </a>
             
@@ -167,7 +171,7 @@
                     
                         <b>2.1.2.</b>
                     
-                    面向对象的四大特征？
+                    面向对象的四大特征
             
                 </a>
             
@@ -182,7 +186,7 @@
                     
                         <b>2.1.3.</b>
                     
-                    面向对象的五大原则？
+                    面向对象的六大原则
             
                 </a>
             
@@ -197,7 +201,7 @@
                     
                         <b>2.1.4.</b>
                     
-                    什么是低耦合高内聚？
+                    什么是低耦合高内聚
             
                 </a>
             
@@ -212,7 +216,7 @@
                     
                         <b>2.1.5.</b>
                     
-                    Java中的作用域的区别？
+                    Java中的作用域的区别
             
                 </a>
             
@@ -227,7 +231,22 @@
                     
                         <b>2.1.6.</b>
                     
-                    重载(Overload)与重写(Override)的区别？
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="p007.html">
+            
+                <a href="p007.html">
+            
+                    
+                        <b>2.1.7.</b>
+                    
+                    String、StringBuilder、StringBuffer的区别
             
                 </a>
             
@@ -941,7 +960,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >什么是低耦合高内聚？</a>
+        <a href="../.." >什么是低耦合高内聚</a>
     </h1>
 </div>
 
@@ -956,8 +975,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;&#xFF1F;">&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;&#xFF1F;</h4>
-<h5 id="&#x8026;&#x5408;">&#x8026;&#x5408;</h5>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;&#xFF1F;"><b> </b>&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;&#xFF1F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8026;&#x5408;"><b>1. </b>&#x8026;&#x5408;</a></li><li><span class="title-icon "></span><a href="#&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;"><b>2. </b>&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;</a></li></ul></ul></div><a href="#&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;&#xFF1F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;&#xFF1F;"><a name="&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;&#xFF1F;</h1>
+<h2 id="&#x8026;&#x5408;"><a name="&#x8026;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x8026;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8026;&#x5408;</h2>
 <p>&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x4E2D;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x5EA6;&#x5C31;&#x662F;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x6027;&#x3002;&#x6307;&#x5BFC;&#x4F7F;&#x7528;&#x548C;&#x7EF4;&#x62A4;&#x5BF9;&#x8C61;&#x7684;&#x4E3B;&#x8981;&#x95EE;&#x9898;&#x662F;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x591A;&#x91CD;&#x4F9D;&#x8D56;&#x6027;&#x3002;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x8D8A;&#x9AD8;&#xFF0C;&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x8D8A;&#x9AD8;&#x3002;&#x56E0;&#x6B64;&#x5BF9;&#x8C61;&#x7684;&#x8BBE;&#x8BA1;&#x5E94;&#x4F7F;&#x7C7B;&#x548C;&#x6784;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x6700;&#x5C0F;&#x3002;</p>
 <p>&#x6709;&#x8F6F;&#x786C;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#xFF0C;&#x8FD8;&#x6709;&#x8F6F;&#x4EF6;&#x5404;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x3002;
 &#x8026;&#x5408;&#x6027;&#x662F;&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;&#x4E2D;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x5173;&#x8054;&#x7684;&#x5EA6;&#x91CF;&#x3002;&#x5B83;&#x53D6;&#x51B3;&#x4E8E;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x63A5;&#x53E3;&#x7684;&#x590D;&#x6742;&#x7A0B;&#x5EA6;&#x3001;&#x8C03;&#x7528;&#x6A21;&#x5757;&#x7684;&#x65B9;&#x5F0F;&#x4EE5;&#x53CA;&#x54EA;&#x4E9B;&#x4FE1;&#x606F;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x3002;</p>
@@ -972,7 +991,7 @@
 <li><strong>&#x975E;&#x76F4;&#x63A5;&#x8026;&#x5408;</strong> &#x3002;&#x4E24;&#x4E2A;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x5173;&#x7CFB;&#xFF0C;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#x5B8C;&#x5168;&#x662F;&#x901A;&#x8FC7;&#x4E3B;&#x6A21;&#x5757;&#x7684;&#x63A7;&#x5236;&#x548C;&#x8C03;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;</li>
 </ul>
 <p>&#x8026;&#x5408;&#x662F;&#x5F71;&#x54CD;&#x8F6F;&#x4EF6;&#x590D;&#x6742;&#x7A0B;&#x5EA6;&#x548C;&#x8BBE;&#x8BA1;&#x8D28;&#x91CF;&#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x56E0;&#x7D20;&#xFF0C;&#x5728;&#x8BBE;&#x8BA1;&#x4E0A;&#x6211;&#x4EEC;&#x5E94;&#x91C7;&#x7528;&#x4EE5;&#x4E0B;&#x539F;&#x5219;&#xFF1A;&#x5982;&#x679C;&#x6A21;&#x5757;&#x95F4;&#x5FC5;&#x987B;&#x5B58;&#x5728;&#x8026;&#x5408;&#xFF0C;&#x5C31;&#x5C3D;&#x91CF;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x8026;&#x5408;&#xFF0C;&#x5C11;&#x7528;&#x63A7;&#x5236;&#x8026;&#x5408;&#xFF0C;&#x9650;&#x5236;&#x516C;&#x5171;&#x8026;&#x5408;&#x7684;&#x8303;&#x56F4;&#xFF0C;&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5185;&#x5BB9;&#x8026;&#x5408;&#x3002;</p>
-<h5 id="&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;">&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;</h5>
+<h2 id="&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;"><a name="&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;</h2>
 <p><img src="images/p004.png" height="180"></p>
 <p>&#x5185;&#x805A;&#x6807;&#x5FD7;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5185;&#x5404;&#x4E2A;&#x5143;&#x7D20;&#x5F7C;&#x6B64;&#x7ED3;&#x5408;&#x7684;&#x7D27;&#x5BC6;&#x7A0B;&#x5EA6;&#xFF0C;&#x5B83;&#x662F;&#x4FE1;&#x606F;&#x9690;&#x853D;&#x548C;&#x5C40;&#x90E8;&#x5316;&#x6982;&#x5FF5;&#x7684;&#x81EA;&#x7136;&#x6269;&#x5C55;&#x3002;&#x5185;&#x805A;&#x662F;&#x4ECE;&#x529F;&#x80FD;&#x89D2;&#x5EA6;&#x6765;&#x5EA6;&#x91CF;&#x6A21;&#x5757;&#x5185;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x5185;&#x805A;&#x6A21;&#x5757;&#x5E94;&#x5F53;&#x6070;&#x597D;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#x3002;&#x5B83;&#x63CF;&#x8FF0;&#x7684;&#x662F;&#x6A21;&#x5757;&#x5185;&#x7684;&#x529F;&#x80FD;&#x8054;&#x7CFB;&#x3002;</p>
 <p>&#x8026;&#x5408;&#x662F;&#x8F6F;&#x4EF6;&#x7ED3;&#x6784;&#x4E2D;&#x5404;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x8FDE;&#x63A5;&#x7684;&#x4E00;&#x79CD;&#x5EA6;&#x91CF;&#xFF0C;&#x8026;&#x5408;&#x5F3A;&#x5F31;&#x53D6;&#x51B3;&#x4E8E;&#x6A21;&#x5757;&#x95F4;&#x63A5;&#x53E3;&#x7684;&#x590D;&#x6742;&#x7A0B;&#x5EA6;&#x3001;&#x8FDB;&#x5165;&#x6216;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x70B9;&#x4EE5;&#x53CA;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x7684;&#x6570;&#x636E;&#x3002; &#x7A0B;&#x5E8F;&#x8BB2;&#x7A76;&#x7684;&#x662F;&#x4F4E;&#x8026;&#x5408;&#xFF0C;&#x9AD8;&#x5185;&#x805A;&#x3002;&#x5C31;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5185;&#x7684;&#x5404;&#x4E2A;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x8981;&#x9AD8;&#x5EA6;&#x7D27;&#x5BC6;&#xFF0C;&#x4F46;&#x662F;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x4E92;&#x4F9D;&#x5B58;&#x5EA6;&#x5374;&#x8981;&#x4E0D;&#x90A3;&#x4E48;&#x7D27;&#x5BC6;&#x3002;</p>
@@ -1004,12 +1023,12 @@
 
             
                 
-                <a href="p003.html" class="navigation navigation-prev " aria-label="Previous page: 面向对象的五大原则？">
+                <a href="p003.html" class="navigation navigation-prev " aria-label="Previous page: 面向对象的六大原则">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="p005.html" class="navigation navigation-next " aria-label="Next page: Java中的作用域的区别？">
+                <a href="p005.html" class="navigation navigation-next " aria-label="Next page: Java中的作用域的区别">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1020,7 +1039,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"什么是低耦合高内聚？","level":"2.1.4","depth":2,"next":{"title":"Java中的作用域的区别？","level":"2.1.5","depth":2,"path":"core_java/grammar/p005.md","ref":"core_java/grammar/p005.md","articles":[]},"previous":{"title":"面向对象的五大原则？","level":"2.1.3","depth":2,"path":"core_java/grammar/p003.md","ref":"core_java/grammar/p003.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"prism-themes":{},"splitter":{},"search-plus":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p004.md","mtime":"2019-01-11T01:46:56.908Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-11T03:01:10.494Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"什么是低耦合高内聚","level":"2.1.4","depth":2,"next":{"title":"Java中的作用域的区别","level":"2.1.5","depth":2,"path":"core_java/grammar/p005.md","ref":"core_java/grammar/p005.md","articles":[]},"previous":{"title":"面向对象的六大原则","level":"2.1.3","depth":2,"path":"core_java/grammar/p003.md","ref":"core_java/grammar/p003.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p004.md","mtime":"2019-01-11T05:54:58.603Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-11T08:13:26.152Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

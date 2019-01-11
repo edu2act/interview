@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-hans" >
     <head>
-        <title>面向对象的四大特征？ · Java面试题</title>
+        <title>面向对象的四大特征 · Java面试题</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -30,6 +30,10 @@
             
                 
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
                 
             
                 
@@ -152,7 +156,7 @@
                     
                         <b>2.1.1.</b>
                     
-                    面向对象的三大特性？
+                    面向对象的三大特性
             
                 </a>
             
@@ -167,7 +171,7 @@
                     
                         <b>2.1.2.</b>
                     
-                    面向对象的四大特征？
+                    面向对象的四大特征
             
                 </a>
             
@@ -182,7 +186,7 @@
                     
                         <b>2.1.3.</b>
                     
-                    面向对象的五大原则？
+                    面向对象的六大原则
             
                 </a>
             
@@ -197,7 +201,7 @@
                     
                         <b>2.1.4.</b>
                     
-                    什么是低耦合高内聚？
+                    什么是低耦合高内聚
             
                 </a>
             
@@ -212,7 +216,7 @@
                     
                         <b>2.1.5.</b>
                     
-                    Java中的作用域的区别？
+                    Java中的作用域的区别
             
                 </a>
             
@@ -227,7 +231,22 @@
                     
                         <b>2.1.6.</b>
                     
-                    重载(Overload)与重写(Override)的区别？
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="p007.html">
+            
+                <a href="p007.html">
+            
+                    
+                        <b>2.1.7.</b>
+                    
+                    String、StringBuilder、StringBuffer的区别
             
                 </a>
             
@@ -941,7 +960,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >面向对象的四大特征？</a>
+        <a href="../.." >面向对象的四大特征</a>
     </h1>
 </div>
 
@@ -956,7 +975,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;&#xFF1F;">&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;&#xFF1F;</h4>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;&#xFF1F;"><b> </b>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;&#xFF1F;</a></li></ul></div><a href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;&#xFF1F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;&#xFF1F;"><a name="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;&#xFF1F;</h1>
 <ol>
 <li><strong>&#x62BD;&#x8C61;</strong>&#xFF1A;&#x62BD;&#x8C61;&#x5C31;&#x662F;&#x5FFD;&#x7565;&#x4E00;&#x4E2A;&#x4E3B;&#x9898;&#x4E2D;&#x4E0E;&#x5F53;&#x524D;&#x76EE;&#x6807;&#x65E0;&#x5173;&#x7684;&#x90A3;&#x4E9B;&#x65B9;&#x9762;&#xFF0C;&#x4EE5;&#x4FBF;&#x66F4;&#x5145;&#x5206;&#x5730;&#x6CE8;&#x610F;&#x4E0E;&#x5F53;&#x524D;&#x76EE;&#x6807;&#x6709;&#x5173;&#x7684;&#x65B9;&#x9762;&#x3002;&#x62BD;&#x8C61;&#x5E76;&#x4E0D;&#x6253;&#x7B97;&#x4E86;&#x89E3;&#x5168;&#x90E8;&#x95EE;&#x9898;&#xFF0C;&#x800C;&#x53EA;&#x662F;&#x9009;&#x62E9;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6682;&#x65F6;&#x4E0D;&#x7528;&#x90E8;&#x5206;&#x7EC6;&#x8282;&#x3002;&#x62BD;&#x8C61;&#x5305;&#x62EC;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#xFF0C;&#x4E00;&#x662F;&#x8FC7;&#x7A0B;&#x62BD;&#x8C61;,&#x4E8C;&#x662F;&#x6570;&#x636E;&#x62BD;&#x8C61;&#x3002;</li>
 <li><strong>&#x7EE7;&#x627F;</strong>&#xFF1A;&#x7EE7;&#x627F;&#x662F;&#x4E00;&#x79CD;&#x8054;&#x7ED3;&#x7C7B;&#x7684;&#x5C42;&#x6B21;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x5141;&#x8BB8;&#x548C;&#x9F13;&#x52B1;&#x7C7B;&#x7684;&#x91CD;&#x7528;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x660E;&#x786E;&#x8868;&#x8FF0;&#x5171;&#x6027;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x7C7B;&#x53EF;&#x4EE5;&#x4ECE;&#x73B0;&#x6709;&#x7684;&#x7C7B;&#x4E2D;&#x6D3E;&#x751F;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x79F0;&#x4E3A;&#x7C7B;&#x7EE7;&#x627F;&#x3002;&#x65B0;&#x7C7B;&#x7EE7;&#x627F;&#x4E86;&#x539F;&#x59CB;&#x7C7B;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x65B0;&#x7C7B;&#x79F0;&#x4E3A;&#x539F;&#x59CB;&#x7C7B;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;&#x5B50;&#x7C7B;&#xFF09;&#xFF0C;&#x800C;&#x539F;&#x59CB;&#x7C7B;&#x79F0;&#x4E3A;&#x65B0;&#x7C7B;&#x7684;&#x57FA;&#x7C7B;&#xFF08;&#x7236;&#x7C7B;&#xFF09;&#x3002;&#x6D3E;&#x751F;&#x7C7B;&#x53EF;&#x4EE5;&#x4ECE;&#x5B83;&#x7684;&#x57FA;&#x7C7B;&#x90A3;&#x91CC;&#x7EE7;&#x627F;&#x65B9;&#x6CD5;&#x548C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5E76;&#x4E14;&#x7C7B;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6216;&#x589E;&#x52A0;&#x65B0;&#x7684;&#x65B9;&#x6CD5;&#x4F7F;&#x4E4B;&#x66F4;&#x9002;&#x5408;&#x7279;&#x6B8A;&#x7684;&#x9700;&#x8981;&#x3002;</li>
@@ -990,12 +1009,12 @@
 
             
                 
-                <a href="p001.html" class="navigation navigation-prev " aria-label="Previous page: 面向对象的三大特性？">
+                <a href="p001.html" class="navigation navigation-prev " aria-label="Previous page: 面向对象的三大特性">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="p003.html" class="navigation navigation-next " aria-label="Next page: 面向对象的五大原则？">
+                <a href="p003.html" class="navigation navigation-next " aria-label="Next page: 面向对象的六大原则">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1006,7 +1025,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"面向对象的四大特征？","level":"2.1.2","depth":2,"next":{"title":"面向对象的五大原则？","level":"2.1.3","depth":2,"path":"core_java/grammar/p003.md","ref":"core_java/grammar/p003.md","articles":[]},"previous":{"title":"面向对象的三大特性？","level":"2.1.1","depth":2,"path":"core_java/grammar/p001.md","ref":"core_java/grammar/p001.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"prism-themes":{},"splitter":{},"search-plus":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p002.md","mtime":"2019-01-11T01:01:57.932Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-11T03:01:10.494Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"面向对象的四大特征","level":"2.1.2","depth":2,"next":{"title":"面向对象的六大原则","level":"2.1.3","depth":2,"path":"core_java/grammar/p003.md","ref":"core_java/grammar/p003.md","articles":[]},"previous":{"title":"面向对象的三大特性","level":"2.1.1","depth":2,"path":"core_java/grammar/p001.md","ref":"core_java/grammar/p001.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p002.md","mtime":"2019-01-11T05:54:29.449Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-11T08:13:26.152Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
