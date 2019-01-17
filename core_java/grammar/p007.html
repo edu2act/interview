@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-hans" >
     <head>
-        <title>String、StringBuilder、StringBuffer的区别 · Java面试题</title>
+        <title>String、StringBuffer、StringBuilder的区别 · Java面试题</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -60,6 +60,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="p008.html" />
     
     
     <link rel="prev" href="p006.html" />
@@ -244,7 +246,82 @@
                     
                         <b>2.1.7.</b>
                     
-                    String、StringBuilder、StringBuffer的区别
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="p008.html">
+            
+                <a href="p008.html">
+            
+                    
+                        <b>2.1.8.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="p009.html">
+            
+                <a href="p009.html">
+            
+                    
+                        <b>2.1.9.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="p010.html">
+            
+                <a href="p010.html">
+            
+                    
+                        <b>2.1.10.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="p011.html">
+            
+                <a href="p011.html">
+            
+                    
+                        <b>2.1.11.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="p012.html">
+            
+                <a href="p012.html">
+            
+                    
+                        <b>2.1.12.</b>
+                    
+                    反射使用实例详解
             
                 </a>
             
@@ -958,7 +1035,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >String、StringBuilder、StringBuffer的区别</a>
+        <a href="../.." >String、StringBuffer、StringBuilder的区别</a>
     </h1>
 </div>
 
@@ -973,7 +1050,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;"><b> </b>String&#x3001;StringBuffer&#x3001;StringBuilder&#x7684;&#x533A;&#x522B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x65B0;&#x8BA4;&#x8BC6;string&#x7C7B;"><b>1. </b>&#x91CD;&#x65B0;&#x8BA4;&#x8BC6;String&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#&#x6DF1;&#x5165;&#x7406;&#x89E3;string&#x3001;stringbuffer&#x3001;stringbuilder"><b>2. </b>&#x6DF1;&#x5165;&#x7406;&#x89E3;String&#x3001;StringBuffer&#x3001;StringBuilder</a></li><ul><li><span class="title-icon "></span><a href="#string-strhello-world&#x548C;string-strnew-stringhello-world&#x7684;&#x533A;&#x522B;"><b>2.1. </b>String str=&quot;hello world&quot;&#x548C;String str=new String(&quot;hello world&quot;)&#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#string&#x3001;stringbuffer&#x4EE5;&#x53CA;stringbuilder&#x7684;&#x533A;&#x522B;"><b>2.2. </b>String&#x3001;StringBuffer&#x4EE5;&#x53CA;StringBuilder&#x7684;&#x533A;&#x522B;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E0D;&#x540C;&#x573A;&#x666F;&#x4E0B;&#x4E09;&#x4E2A;&#x7C7B;&#x7684;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;"><b>3. </b>&#x4E0D;&#x540C;&#x573A;&#x666F;&#x4E0B;&#x4E09;&#x4E2A;&#x7C7B;&#x7684;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x7684;&#x5173;&#x4E8E;string&#x3001;stringbuffer&#x7684;&#x9762;&#x8BD5;&#x9898;"><b>4. </b>&#x5E38;&#x89C1;&#x7684;&#x5173;&#x4E8E;String&#x3001;StringBuffer&#x7684;&#x9762;&#x8BD5;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b>4.1. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;_1"><b>4.2. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;_2"><b>4.3. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;_3"><b>4.4. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;_4"><b>4.5. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#string-str--new-stringabc&#x521B;&#x5EFA;&#x4E86;&#x591A;&#x5C11;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1F;"><b>4.6. </b>String str = new String(&quot;abc&quot;)&#x521B;&#x5EFA;&#x4E86;&#x591A;&#x5C11;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#xFF09;&#x548C;2&#xFF09;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b>4.7. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#xFF09;&#x548C;2&#xFF09;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li></ul></ul></ul></div><a href="#string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;"><a name="string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a> String&#x3001;StringBuffer&#x3001;StringBuilder&#x7684;&#x533A;&#x522B;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;"><b> </b>String&#x3001;StringBuffer&#x3001;StringBuilder&#x7684;&#x533A;&#x522B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x65B0;&#x8BA4;&#x8BC6;string&#x7C7B;"><b>1. </b>&#x91CD;&#x65B0;&#x8BA4;&#x8BC6;String&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#&#x6DF1;&#x5165;&#x7406;&#x89E3;string&#x3001;stringbuffer&#x3001;stringbuilder"><b>2. </b>&#x6DF1;&#x5165;&#x7406;&#x89E3;String&#x3001;StringBuffer&#x3001;StringBuilder</a></li><ul><li><span class="title-icon "></span><a href="#string-strhello-world&#x548C;string-strnew-stringhello-world&#x7684;&#x533A;&#x522B;"><b>2.1. </b>String str=&quot;hello world&quot;&#x548C;String str=new String(&quot;hello world&quot;)&#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#string&#x3001;stringbuffer&#x4EE5;&#x53CA;stringbuilder&#x7684;&#x533A;&#x522B;"><b>2.2. </b>String&#x3001;StringBuffer&#x4EE5;&#x53CA;StringBuilder&#x7684;&#x533A;&#x522B;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E0D;&#x540C;&#x573A;&#x666F;&#x4E0B;&#x4E09;&#x4E2A;&#x7C7B;&#x7684;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;"><b>3. </b>&#x4E0D;&#x540C;&#x573A;&#x666F;&#x4E0B;&#x4E09;&#x4E2A;&#x7C7B;&#x7684;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x7684;&#x5173;&#x4E8E;string&#x3001;stringbuffer&#x7684;&#x9762;&#x8BD5;&#x9898;"><b>4. </b>&#x5E38;&#x89C1;&#x7684;&#x5173;&#x4E8E;String&#x3001;StringBuffer&#x7684;&#x9762;&#x8BD5;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b>4.1. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;_1"><b>4.2. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;_2"><b>4.3. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;_3"><b>4.4. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;_4"><b>4.5. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#string-str--new-stringabc&#x521B;&#x5EFA;&#x4E86;&#x591A;&#x5C11;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1F;"><b>4.6. </b>String str = new String(&quot;abc&quot;)&#x521B;&#x5EFA;&#x4E86;&#x591A;&#x5C11;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#x548C;2&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b>4.7. </b>&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;[1]&#x548C;[2]&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li></ul></ul></ul></div><a href="#string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;"><a name="string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#string&#x3001;stringbuffer&#x3001;stringbuilder&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a> String&#x3001;StringBuffer&#x3001;StringBuilder&#x7684;&#x533A;&#x522B;</h1>
 <ul>
 <li>&#x91CD;&#x65B0;&#x8BA4;&#x8BC6;String&#x7C7B;</li>
 <li>&#x6DF1;&#x5165;&#x7406;&#x89E3;String&#x3001;StringBuffer&#x3001;StringBuilder</li>
@@ -1331,7 +1408,7 @@ true
 <p>&#x800C;&#x8FD9;&#x9053;&#x9898;&#x76EE;&#x8BA9;&#x4EBA;&#x6DF7;&#x6DC6;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x8FD9;&#x91CC;&#xFF0C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x5728;&#x8FD0;&#x884C;&#x671F;&#x95F4;&#x786E;&#x5B9E;&#x53EA;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x5728;&#x5806;&#x4E0A;&#x521B;&#x5EFA;&#x4E86;&quot;abc&quot;&#x5BF9;&#x8C61;&#x3002;&#x800C;&#x4E3A;&#x4EC0;&#x4E48;&#x5927;&#x5BB6;&#x90FD;&#x5728;&#x8BF4;&#x662F;2&#x4E2A;&#x5BF9;&#x8C61;&#x5462;&#xFF0C;&#x8FD9;&#x91CC;&#x9762;&#x8981;&#x6F84;&#x6E05;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;  &#x8BE5;&#x6BB5;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x548C;&#x7C7B;&#x7684;&#x52A0;&#x8F7D;&#x8FC7;&#x7A0B;&#x662F;&#x6709;&#x533A;&#x522B;&#x7684;&#x3002;&#x5728;&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x786E;&#x5B9E;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&quot;abc&quot;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x5728;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x786E;&#x5B9E;&#x53EA;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;String&#x5BF9;&#x8C61;&#x3002;</p>
 <p>&#x56E0;&#x6B64;&#xFF0C;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5982;&#x679C;&#x6362;&#x6210; <code>String str = new String(&quot;abc&quot;)</code> &#x6D89;&#x53CA;&#x5230;&#x51E0;&#x4E2A;String&#x5BF9;&#x8C61;&#xFF1F;&#x5408;&#x7406;&#x7684;&#x89E3;&#x91CA;&#x662F;2&#x4E2A;&#x3002;</p>
 <p>&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x5728;&#x9762;&#x8BD5;&#x7684;&#x65F6;&#x5019;&#x5982;&#x679C;&#x9047;&#x5230;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x5411;&#x9762;&#x8BD5;&#x5B98;&#x8BE2;&#x95EE;&#x6E05;&#x695A;<code>&#x662F;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x521B;&#x5EFA;&#x4E86;&#x591A;&#x5C11;&#x4E2A;&#x5BF9;&#x8C61;&#x8FD8;&#x662F;&#x6D89;&#x53CA;&#x5230;&#x591A;&#x5C11;&#x4E2A;&#x5BF9;&#x8C61;</code>&#x518D;&#x6839;&#x636E;&#x5177;&#x4F53;&#x7684;&#x6765;&#x8FDB;&#x884C;&#x56DE;&#x7B54;&#x3002;</p>
-<h3 id="&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#xFF09;&#x548C;2&#xFF09;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#xFF09;&#x548C;2&#xFF09;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#xFF09;&#x548C;2&#xFF09;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>4.7. &#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#xFF09;&#x548C;2&#xFF09;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h3>
+<h3 id="&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#x548C;2&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#x548C;2&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;1&#x548C;2&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>4.7. &#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;[1]&#x548C;[2]&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h3>
 <pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         String str1 <span class="token operator">=</span> <span class="token string">&quot;I&quot;</span><span class="token punctuation">;</span>
@@ -1377,10 +1454,14 @@ true
 
             
                 
-                <a href="p006.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 重载(Overload)与重写(Override)的区别">
+                <a href="p006.html" class="navigation navigation-prev " aria-label="Previous page: 重载(Overload)与重写(Override)的区别">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="p008.html" class="navigation navigation-next " aria-label="Next page: 类加载与初始化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -1389,7 +1470,7 @@ true
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"String、StringBuilder、StringBuffer的区别","level":"2.1.7","depth":2,"next":{"title":"异常","level":"2.2","depth":1,"ref":"","articles":[]},"previous":{"title":"重载(Overload)与重写(Override)的区别","level":"2.1.6","depth":2,"path":"core_java/grammar/p006.md","ref":"core_java/grammar/p006.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p007.md","mtime":"2019-01-11T07:53:16.345Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-11T08:13:26.152Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"String、StringBuffer、StringBuilder的区别","level":"2.1.7","depth":2,"next":{"title":"类加载与初始化","level":"2.1.8","depth":2,"path":"core_java/grammar/p008.md","ref":"core_java/grammar/p008.md","articles":[]},"previous":{"title":"重载(Overload)与重写(Override)的区别","level":"2.1.6","depth":2,"path":"core_java/grammar/p006.md","ref":"core_java/grammar/p006.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p007.md","mtime":"2019-01-11T08:26:05.617Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-17T04:22:31.846Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

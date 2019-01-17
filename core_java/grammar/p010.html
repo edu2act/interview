@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-hans" >
     <head>
-        <title>面向对象的四大特征 · Java面试题</title>
+        <title>提高Java反射速度 · Java面试题</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="p003.html" />
+    <link rel="next" href="p011.html" />
     
     
-    <link rel="prev" href="p001.html" />
+    <link rel="prev" href="p009.html" />
     
 
     </head>
@@ -164,7 +164,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.2" data-path="p002.html">
+        <li class="chapter " data-level="2.1.2" data-path="p002.html">
             
                 <a href="p002.html">
             
@@ -284,7 +284,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.10" data-path="p010.html">
+        <li class="chapter active" data-level="2.1.10" data-path="p010.html">
             
                 <a href="p010.html">
             
@@ -1035,7 +1035,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >面向对象的四大特征</a>
+        <a href="../.." >提高Java反射速度</a>
     </h1>
 </div>
 
@@ -1050,15 +1050,65 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;"><b> </b>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;</a></li><ul><li><span class="title-icon "></span><a href="#&#x62BD;&#x8C61;"><b>1. </b>&#x62BD;&#x8C61;</a></li><li><span class="title-icon "></span><a href="#&#x7EE7;&#x627F;"><b>2. </b>&#x7EE7;&#x627F;</a></li><li><span class="title-icon "></span><a href="#&#x5C01;&#x88C5;"><b>3. </b>&#x5C01;&#x88C5;</a></li><li><span class="title-icon "></span><a href="#&#x591A;&#x6001;&#x6027;"><b>4. </b>&#x591A;&#x6001;&#x6027;</a></li></ul></ul></div><a href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;"><a name="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;" class="anchor-navigation-ex-anchor" href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x56DB;&#x5927;&#x7279;&#x5F81;</h1>
-<h2 id="&#x62BD;&#x8C61;"><a name="&#x62BD;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x62BD;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x62BD;&#x8C61;</h2>
-<p>&#x62BD;&#x8C61;&#x5C31;&#x662F;&#x5FFD;&#x7565;&#x4E00;&#x4E2A;&#x4E3B;&#x9898;&#x4E2D;&#x4E0E;&#x5F53;&#x524D;&#x76EE;&#x6807;&#x65E0;&#x5173;&#x7684;&#x90A3;&#x4E9B;&#x65B9;&#x9762;&#xFF0C;&#x4EE5;&#x4FBF;&#x66F4;&#x5145;&#x5206;&#x5730;&#x6CE8;&#x610F;&#x4E0E;&#x5F53;&#x524D;&#x76EE;&#x6807;&#x6709;&#x5173;&#x7684;&#x65B9;&#x9762;&#x3002;&#x62BD;&#x8C61;&#x5E76;&#x4E0D;&#x6253;&#x7B97;&#x4E86;&#x89E3;&#x5168;&#x90E8;&#x95EE;&#x9898;&#xFF0C;&#x800C;&#x53EA;&#x662F;&#x9009;&#x62E9;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x6682;&#x65F6;&#x4E0D;&#x7528;&#x90E8;&#x5206;&#x7EC6;&#x8282;&#x3002;&#x62BD;&#x8C61;&#x5305;&#x62EC;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#xFF0C;&#x4E00;&#x662F;&#x8FC7;&#x7A0B;&#x62BD;&#x8C61;,&#x4E8C;&#x662F;&#x6570;&#x636E;&#x62BD;&#x8C61;&#x3002;</p>
-<h2 id="&#x7EE7;&#x627F;"><a name="&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x7EE7;&#x627F;</h2>
-<p>&#x7EE7;&#x627F;&#x662F;&#x4E00;&#x79CD;&#x8054;&#x7ED3;&#x7C7B;&#x7684;&#x5C42;&#x6B21;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x5141;&#x8BB8;&#x548C;&#x9F13;&#x52B1;&#x7C7B;&#x7684;&#x91CD;&#x7528;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x660E;&#x786E;&#x8868;&#x8FF0;&#x5171;&#x6027;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x7C7B;&#x53EF;&#x4EE5;&#x4ECE;&#x73B0;&#x6709;&#x7684;&#x7C7B;&#x4E2D;&#x6D3E;&#x751F;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x79F0;&#x4E3A;&#x7C7B;&#x7EE7;&#x627F;&#x3002;&#x65B0;&#x7C7B;&#x7EE7;&#x627F;&#x4E86;&#x539F;&#x59CB;&#x7C7B;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x65B0;&#x7C7B;&#x79F0;&#x4E3A;&#x539F;&#x59CB;&#x7C7B;&#x7684;&#x6D3E;&#x751F;&#x7C7B;&#xFF08;&#x5B50;&#x7C7B;&#xFF09;&#xFF0C;&#x800C;&#x539F;&#x59CB;&#x7C7B;&#x79F0;&#x4E3A;&#x65B0;&#x7C7B;&#x7684;&#x57FA;&#x7C7B;&#xFF08;&#x7236;&#x7C7B;&#xFF09;&#x3002;&#x6D3E;&#x751F;&#x7C7B;&#x53EF;&#x4EE5;&#x4ECE;&#x5B83;&#x7684;&#x57FA;&#x7C7B;&#x90A3;&#x91CC;&#x7EE7;&#x627F;&#x65B9;&#x6CD5;&#x548C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x5E76;&#x4E14;&#x7C7B;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6216;&#x589E;&#x52A0;&#x65B0;&#x7684;&#x65B9;&#x6CD5;&#x4F7F;&#x4E4B;&#x66F4;&#x9002;&#x5408;&#x7279;&#x6B8A;&#x7684;&#x9700;&#x8981;&#x3002;</p>
-<h2 id="&#x5C01;&#x88C5;"><a name="&#x5C01;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x5C01;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x5C01;&#x88C5;</h2>
-<p>&#x5C01;&#x88C5;&#x662F;&#x628A;&#x8FC7;&#x7A0B;&#x548C;&#x6570;&#x636E;&#x5305;&#x56F4;&#x8D77;&#x6765;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x8BBF;&#x95EE;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x5DF2;&#x5B9A;&#x4E49;&#x7684;&#x754C;&#x9762;&#x3002;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BA1;&#x7B97;&#x59CB;&#x4E8E;&#x8FD9;&#x4E2A;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF0C;&#x5373;&#x73B0;&#x5B9E;&#x4E16;&#x754C;&#x53EF;&#x4EE5;&#x88AB;&#x63CF;&#x7ED8;&#x6210;&#x4E00;&#x7CFB;&#x5217;&#x5B8C;&#x5168;&#x81EA;&#x6CBB;&#x3001;&#x5C01;&#x88C5;&#x7684;&#x5BF9;&#x8C61;,&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x63A5;&#x53E3;&#x8BBF;&#x95EE;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x3002;</p>
-<h2 id="&#x591A;&#x6001;&#x6027;"><a name="&#x591A;&#x6001;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x6001;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x591A;&#x6001;&#x6027;</h2>
-<p>&#x591A;&#x6001;&#x6027;&#x662F;&#x6307;&#x5141;&#x8BB8;&#x4E0D;&#x540C;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x5BF9;&#x540C;&#x4E00;&#x6D88;&#x606F;&#x4F5C;&#x51FA;&#x54CD;&#x5E94;&#x3002;&#x591A;&#x6001;&#x6027;&#x5305;&#x62EC;&#x53C2;&#x6570;&#x5316;&#x591A;&#x6001;&#x6027;&#x548C;&#x5305;&#x542B;&#x591A;&#x6001;&#x6027;&#x3002;&#x591A;&#x6001;&#x6027;&#x8BED;&#x8A00;&#x5177;&#x6709;&#x7075;&#x6D3B;&#x3001;&#x62BD;&#x8C61;&#x3001;&#x884C;&#x4E3A;&#x5171;&#x4EAB;&#x3001;&#x4EE3;&#x7801;&#x5171;&#x4EAB;&#x7684;&#x4F18;&#x52BF;&#xFF0C;&#x5F88;&#x597D;&#x7684;&#x89E3;&#x51B3;&#x4E86;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x51FD;&#x6570;&#x540C;&#x540D;&#x95EE;&#x9898;&#x3002;</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x63D0;&#x9AD8;java&#x53CD;&#x5C04;&#x901F;&#x5EA6;"><b> </b>&#x63D0;&#x9AD8;Java&#x53CD;&#x5C04;&#x901F;&#x5EA6;</a></li></ul></div><a href="#&#x63D0;&#x9AD8;java&#x53CD;&#x5C04;&#x901F;&#x5EA6;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x63D0;&#x9AD8;java&#x53CD;&#x5C04;&#x901F;&#x5EA6;"><a name="&#x63D0;&#x9AD8;java&#x53CD;&#x5C04;&#x901F;&#x5EA6;" class="anchor-navigation-ex-anchor" href="#&#x63D0;&#x9AD8;java&#x53CD;&#x5C04;&#x901F;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x63D0;&#x9AD8;Java&#x53CD;&#x5C04;&#x901F;&#x5EA6;</h1>
+<blockquote>
+<p>&#x63D0;&#x9AD8;java&#x53CD;&#x5C04;&#x901F;&#x5EA6;&#x7684;&#x65B9;&#x6CD5;method.setAccessible(true)</p>
+</blockquote>
+<p>Java&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5E38;&#x5E38;&#x5C06;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x7F6E;&#x4E3A;private&#xFF0C;&#x5728;&#x7C7B;&#x7684;&#x5916;&#x9762;&#x83B7;&#x53D6;&#x6B64;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x7684;value&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;:</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AccessibleTest</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">private</span> <span class="token keyword">int</span> id<span class="token punctuation">;</span>  
+    <span class="token keyword">private</span> String name<span class="token punctuation">;</span>  
+
+    <span class="token keyword">public</span> <span class="token function">AccessibleTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>  
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">return</span> id<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setId</span><span class="token punctuation">(</span><span class="token keyword">int</span> id<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> id<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+
+    <span class="token keyword">public</span> String <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">return</span> name<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setName</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>  
+        Class <span class="token class-name">clazz</span> <span class="token operator">=</span> Class<span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">&quot;com.test.accessible.AccessibleTest&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        AccessibleTest at <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AccessibleTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        at<span class="token punctuation">.</span><span class="token function">setId</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        at<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">&quot;AT&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>Field f <span class="token operator">:</span> clazz<span class="token punctuation">.</span><span class="token function">getDeclaredFields</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+            <span class="token comment">// AccessibleTest&#x7C7B;&#x4E2D;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x4E3A;private,&#x6545;&#x5FC5;&#x987B;&#x8FDB;&#x884C;&#x6B64;&#x64CD;&#x4F5C;  </span>
+            f<span class="token punctuation">.</span><span class="token function">setAccessible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x4E2D;&#x5F53;&#x524D;Field&#x7684;value</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>f<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>at<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token punctuation">}</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5728;&#x83B7;&#x53D6;Field&#x4E4B;&#x524D;&#x8C03;&#x7528;setAccessible(true)&#x65B9;&#x6CD5;&#xFF0C;&#x5F02;&#x5E38;&#xFF1A;</p>
+<pre class="language-"><code>java.lang.IllegalAccessException:  
+Class com.test.accessible.Main   
+can not access   
+a member of class com.test.accessible.AccessibleTest  
+with modifiers &quot;private&quot;
+</code></pre><p>&#x5F53;&#x7136;&#x5728;AccessibleTest&#x7C7B;&#x7684;&#x5185;&#x90E8;(AccessibleTest&#x7684;&#x5185;&#x90E8;&#x7C7B;&#x9664;&#x5916;)&#xFF0C;&#x8FDB;&#x884C;&#x5982;&#x4E0A;&#x64CD;&#x4F5C;&#x5219;&#x4E0D;&#x9700;&#x8981;&#x8C03;&#x7528;setAccesible()&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x660E;&#x663E; Accessible&#x5E76;&#x4E0D;&#x662F;&#x6807;&#x8BC6;&#x65B9;&#x6CD5;&#x80FD;&#x5426;&#x8BBF;&#x95EE;&#x7684;&#x3002;public&#x7684;&#x65B9;&#x6CD5; Accessible&#x4ECD;&#x4E3A;false&#xFF0C;&#x4F7F;&#x7528;&#x4E86;method.setAccessible(true)&#x540E; &#x6027;&#x80FD;&#x6709;&#x4E86;20&#x500D;&#x7684;&#x63D0;&#x5347;&#xFF0C;Accessable&#x5C5E;&#x6027;&#x662F;&#x7EE7;&#x627F;&#x81EA;AccessibleObject &#x7C7B;&#x3002; &#x529F;&#x80FD;&#x662F;&#x542F;&#x7528;&#x6216;&#x7981;&#x7528;&#x5B89;&#x5168;&#x68C0;&#x67E5;</p>
+<p><strong>JDK API&#x4E2D;&#x7684;&#x89E3;&#x91CA;</strong></p>
+<p>AccessibleObject &#x7C7B;&#x662F; Field&#x3001;Method &#x548C; Constructor &#x5BF9;&#x8C61;&#x7684;&#x57FA;&#x7C7B;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x5C06;&#x53CD;&#x5C04;&#x7684;&#x5BF9;&#x8C61;&#x6807;&#x8BB0;&#x4E3A;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x53D6;&#x6D88;&#x9ED8;&#x8BA4; Java &#x8BED;&#x8A00;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x68C0;&#x67E5;&#x7684;&#x80FD;&#x529B;&#x3002;&#x5BF9;&#x4E8E;&#x516C;&#x5171;&#x6210;&#x5458;&#x3001;&#x9ED8;&#x8BA4;&#xFF08;&#x6253;&#x5305;&#xFF09;&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x3001;&#x53D7;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x548C;&#x79C1;&#x6709;&#x6210;&#x5458;&#xFF0C;&#x5728;&#x5206;&#x522B;&#x4F7F;&#x7528; Field&#x3001;Method &#x6216; Constructor &#x5BF9;&#x8C61;&#x6765;&#x8BBE;&#x7F6E;&#x6216;&#x83B7;&#x5F97;&#x5B57;&#x6BB5;&#x3001;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x6216;&#x8005;&#x521B;&#x5EFA;&#x548C;&#x521D;&#x59CB;&#x5316;&#x7C7B;&#x7684;&#x65B0;&#x5B9E;&#x4F8B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x6267;&#x884C;&#x8BBF;&#x95EE;&#x68C0;&#x67E5;&#x3002;</p>
+<p>&#x5728;&#x53CD;&#x5C04;&#x5BF9;&#x8C61;&#x4E2D;&#x8BBE;&#x7F6E; accessible &#x6807;&#x5FD7;&#x5141;&#x8BB8;&#x5177;&#x6709;&#x8DB3;&#x591F;&#x7279;&#x6743;&#x7684;&#x590D;&#x6742;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF08;&#x6BD4;&#x5982; Java Object Serialization &#x6216;&#x5176;&#x4ED6;&#x6301;&#x4E45;&#x6027;&#x673A;&#x5236;&#xFF09;&#x4EE5;&#x67D0;&#x79CD;&#x901A;&#x5E38;&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre class="language-"><code>setAccessible 
+public void setAccessible(boolean flag) 
+                   throws SecurityException
+</code></pre><p>&#x5C06;&#x6B64;&#x5BF9;&#x8C61;&#x7684; accessible &#x6807;&#x5FD7;&#x8BBE;&#x7F6E;&#x4E3A;&#x6307;&#x793A;&#x7684;&#x5E03;&#x5C14;&#x503C;&#x3002;&#x503C;&#x4E3A; true &#x5219;&#x6307;&#x793A;&#x53CD;&#x5C04;&#x7684;&#x5BF9;&#x8C61;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#x5E94;&#x8BE5;&#x53D6;&#x6D88; Java &#x8BED;&#x8A00;&#x8BBF;&#x95EE;&#x68C0;&#x67E5;&#x3002;&#x503C;&#x4E3A; false &#x5219;&#x6307;&#x793A;&#x53CD;&#x5C04;&#x7684;&#x5BF9;&#x8C61;&#x5E94;&#x8BE5;&#x5B9E;&#x65BD; Java &#x8BED;&#x8A00;&#x8BBF;&#x95EE;&#x68C0;&#x67E5;&#x3002;</p>
+<p>&#x5B9E;&#x9645;&#x4E0A;setAccessible&#x662F;&#x542F;&#x7528;&#x548C;&#x7981;&#x7528;&#x8BBF;&#x95EE;&#x5B89;&#x5168;&#x68C0;&#x67E5;&#x7684;&#x5F00;&#x5173;,&#x5E76;&#x4E0D;&#x662F;&#x4E3A;true&#x5C31;&#x80FD;&#x8BBF;&#x95EE;&#x4E3A;false&#x5C31;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x3002;</p>
 
                                 
                                 </section>
@@ -1086,12 +1136,12 @@
 
             
                 
-                <a href="p001.html" class="navigation navigation-prev " aria-label="Previous page: 面向对象的三大特性">
+                <a href="p009.html" class="navigation navigation-prev " aria-label="Previous page: RTTI和反射机制">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="p003.html" class="navigation navigation-next " aria-label="Next page: 面向对象的六大原则">
+                <a href="p011.html" class="navigation navigation-next " aria-label="Next page: 反射性能测试">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1102,7 +1152,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"面向对象的四大特征","level":"2.1.2","depth":2,"next":{"title":"面向对象的六大原则","level":"2.1.3","depth":2,"path":"core_java/grammar/p003.md","ref":"core_java/grammar/p003.md","articles":[]},"previous":{"title":"面向对象的三大特性","level":"2.1.1","depth":2,"path":"core_java/grammar/p001.md","ref":"core_java/grammar/p001.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p002.md","mtime":"2019-01-17T02:01:16.899Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-17T04:22:31.846Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"提高Java反射速度","level":"2.1.10","depth":2,"next":{"title":"反射性能测试","level":"2.1.11","depth":2,"path":"core_java/grammar/p011.md","ref":"core_java/grammar/p011.md","articles":[]},"previous":{"title":"RTTI和反射机制","level":"2.1.9","depth":2,"path":"core_java/grammar/p009.md","ref":"core_java/grammar/p009.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p010.md","mtime":"2019-01-17T02:48:25.772Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-17T04:22:31.846Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

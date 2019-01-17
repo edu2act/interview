@@ -246,7 +246,82 @@
                     
                         <b>2.1.7.</b>
                     
-                    String、StringBuilder、StringBuffer的区别
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="p008.html">
+            
+                <a href="p008.html">
+            
+                    
+                        <b>2.1.8.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="p009.html">
+            
+                <a href="p009.html">
+            
+                    
+                        <b>2.1.9.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="p010.html">
+            
+                <a href="p010.html">
+            
+                    
+                        <b>2.1.10.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="p011.html">
+            
+                <a href="p011.html">
+            
+                    
+                        <b>2.1.11.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="p012.html">
+            
+                <a href="p012.html">
+            
+                    
+                        <b>2.1.12.</b>
+                    
+                    反射使用实例详解
             
                 </a>
             
@@ -975,7 +1050,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;&#xFF1F;"><b> </b>&#x91CD;&#x5199;(Override)&#x4E0E;&#x91CD;&#x8F7D;(Overload)&#x7684;&#x533A;&#x522B;&#xFF1F;</a></li><ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x5199;override"><b>1. </b>&#x91CD;&#x5199;(Override)</a></li><ul><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#x89C4;&#x5219;"><b>1.1. </b>&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#x89C4;&#x5219;</a></li><li><span class="title-icon "></span><a href="#super&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F7F;&#x7528;"><b>1.2. </b>Super&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F7F;&#x7528;</a></li></ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x8F7D;overload"><b>2. </b>&#x91CD;&#x8F7D;(Overload)</a></li><li><span class="title-icon "></span><a href="#&#x91CD;&#x5199;&#x4E0E;&#x91CD;&#x8F7D;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;"><b>3. </b>&#x91CD;&#x5199;&#x4E0E;&#x91CD;&#x8F7D;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;</a></li></ul></ul></div><a href="#&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;&#xFF1F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;&#xFF1F;"><a name="&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x91CD;&#x5199;(Override)&#x4E0E;&#x91CD;&#x8F7D;(Overload)&#x7684;&#x533A;&#x522B;&#xFF1F;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;"><b> </b>&#x91CD;&#x5199;(Override)&#x4E0E;&#x91CD;&#x8F7D;(Overload)&#x7684;&#x533A;&#x522B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x5199;override"><b>1. </b>&#x91CD;&#x5199;(Override)</a></li><ul><li><span class="title-icon "></span><a href="#&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#x89C4;&#x5219;"><b>1.1. </b>&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#x89C4;&#x5219;</a></li><li><span class="title-icon "></span><a href="#super&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F7F;&#x7528;"><b>1.2. </b>Super&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F7F;&#x7528;</a></li></ul><li><span class="title-icon "></span><a href="#&#x91CD;&#x8F7D;overload"><b>2. </b>&#x91CD;&#x8F7D;(Overload)</a></li><li><span class="title-icon "></span><a href="#&#x91CD;&#x5199;&#x4E0E;&#x91CD;&#x8F7D;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;"><b>3. </b>&#x91CD;&#x5199;&#x4E0E;&#x91CD;&#x8F7D;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;</a></li></ul></ul></div><a href="#&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;"><a name="&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x5199;override&#x4E0E;&#x91CD;&#x8F7D;overload&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x91CD;&#x5199;(Override)&#x4E0E;&#x91CD;&#x8F7D;(Overload)&#x7684;&#x533A;&#x522B;</h1>
 <p>&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x5199;&#x548C;&#x91CD;&#x8F7D;&#x662F;Java &#x591A;&#x6001;&#x6027;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x73B0;&#x3002;</p>
 <p>&#x91CD;&#x5199;Overriding &#x662F;&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x4E4B;&#x95F4;&#x591A;&#x6001;&#x6027;&#x7684;&#x4E00;&#x79CD;&#x8868;&#x73B0;&#xFF0C;&#x91CD;&#x8F7D;Overloading &#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4E2D;&#x591A;&#x6001;&#x6027;&#x7684;&#x4E00;&#x79CD;&#x8868;&#x73B0;&#x3002;</p>
 <h2 id="&#x91CD;&#x5199;override"><a name="&#x91CD;&#x5199;override" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x5199;override"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x91CD;&#x5199;(Override)</h2>
@@ -1188,7 +1263,7 @@ location: class Animal
                 </a>
                 
                 
-                <a href="p007.html" class="navigation navigation-next " aria-label="Next page: String、StringBuilder、StringBuffer的区别">
+                <a href="p007.html" class="navigation navigation-next " aria-label="Next page: String、StringBuffer、StringBuilder的区别">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1199,7 +1274,7 @@ location: class Animal
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"重载(Overload)与重写(Override)的区别","level":"2.1.6","depth":2,"next":{"title":"String、StringBuilder、StringBuffer的区别","level":"2.1.7","depth":2,"path":"core_java/grammar/p007.md","ref":"core_java/grammar/p007.md","articles":[]},"previous":{"title":"Java中的作用域的区别","level":"2.1.5","depth":2,"path":"core_java/grammar/p005.md","ref":"core_java/grammar/p005.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p006.md","mtime":"2019-01-11T05:56:24.134Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-11T08:13:26.152Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"重载(Overload)与重写(Override)的区别","level":"2.1.6","depth":2,"next":{"title":"String、StringBuffer、StringBuilder的区别","level":"2.1.7","depth":2,"path":"core_java/grammar/p007.md","ref":"core_java/grammar/p007.md","articles":[]},"previous":{"title":"Java中的作用域的区别","level":"2.1.5","depth":2,"path":"core_java/grammar/p005.md","ref":"core_java/grammar/p005.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p006.md","mtime":"2019-01-17T01:59:26.993Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-17T04:22:31.846Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
