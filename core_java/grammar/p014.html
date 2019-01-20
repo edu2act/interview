@@ -37,6 +37,18 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -61,6 +73,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="p015.html" />
+    
     
     <link rel="prev" href="p013.html" />
     
@@ -84,16 +98,7 @@
 <ul class="summary">
     
     
-    
-        
-        <li>
-            <a href="http://github.com/edu2act" target="_blank" class="custom-link"><img src="./images/logo.png" height="35" /></a>
-        </li>
-    
-    
 
-    
-    <li class="divider"></li>
     
 
     
@@ -350,6 +355,21 @@
                         <b>2.1.14.</b>
                     
                     成为Java GC专家(1)：深入浅出Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="p015.html">
+            
+                <a href="p015.html">
+            
+                    
+                        <b>2.1.15.</b>
+                    
+                    成为Java GC专家(2)：如何监控Java垃圾回收机制
             
                 </a>
             
@@ -1095,7 +1115,9 @@
 <p><strong>&#x65B0;&#x751F;&#x4EE3;&#xFF08;Young generation&#xFF09;</strong>: &#x7EDD;&#x5927;&#x591A;&#x6570;&#x6700;&#x65B0;&#x88AB;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x4F1A;&#x88AB;&#x5206;&#x914D;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x7531;&#x4E8E;&#x5927;&#x90E8;&#x5206;&#x5BF9;&#x8C61;&#x5728;&#x521B;&#x5EFA;&#x540E;&#x4F1A;&#x5F88;&#x5FEB;&#x53D8;&#x5F97;&#x4E0D;&#x53EF;&#x5230;&#x8FBE;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x591A;&#x5BF9;&#x8C61;&#x88AB;&#x521B;&#x5EFA;&#x5728;&#x65B0;&#x751F;&#x4EE3;&#xFF0C;&#x7136;&#x540E;&#x6D88;&#x5931;&#x3002;&#x5BF9;&#x8C61;&#x4ECE;&#x8FD9;&#x4E2A;&#x533A;&#x57DF;&#x6D88;&#x5931;&#x7684;&#x8FC7;&#x7A0B;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x201D;minor GC&#x201C;&#x3002;</p>
 <p><strong>&#x8001;&#x5E74;&#x4EE3;&#xFF08;Old generation&#xFF09;</strong>: &#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x53D8;&#x5F97;&#x4E0D;&#x53EF;&#x8FBE;&#xFF0C;&#x5E76;&#x4E14;&#x4ECE;&#x65B0;&#x751F;&#x4EE3;&#x4E2D;&#x5B58;&#x6D3B;&#x4E0B;&#x6765;&#xFF0C;&#x4F1A;&#x88AB;&#x62F7;&#x8D1D;&#x5230;&#x8FD9;&#x91CC;&#x3002;&#x5176;&#x6240;&#x5360;&#x7528;&#x7684;&#x7A7A;&#x95F4;&#x8981;&#x6BD4;&#x65B0;&#x751F;&#x4EE3;&#x591A;&#x3002;&#x4E5F;&#x6B63;&#x7531;&#x4E8E;&#x5176;&#x76F8;&#x5BF9;&#x8F83;&#x5927;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x53D1;&#x751F;&#x5728;&#x8001;&#x5E74;&#x4EE3;&#x4E0A;&#x7684;GC&#x8981;&#x6BD4;&#x65B0;&#x751F;&#x4EE3;&#x5C11;&#x5F97;&#x591A;&#x3002;&#x5BF9;&#x8C61;&#x4ECE;&#x8001;&#x5E74;&#x4EE3;&#x4E2D;&#x6D88;&#x5931;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x201D;major GC&#x201C;&#xFF08;&#x6216;&#x8005;&#x201D;full GC&#x201C;&#xFF09;</p>
 <p>&#x8BF7;&#x770B;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x56FE;&#x8868;&#x3002;</p>
-<div align="center"><img src="images/p014_1.png" width="400"><br>&#x56FE;1 : GC &#x7A7A;&#x95F4; &amp; &#x6570;&#x636E;&#x6D41;</div>
+<div align="center">     <a href="images/p014_1.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/p014_1.png" alt="">
+     </a><br>&#x56FE;1 : GC &#x7A7A;&#x95F4; &amp; &#x6570;&#x636E;&#x6D41;</div>
 
 <p>&#x4E0A;&#x56FE;&#x4E2D;&#x7684;&#x6301;&#x4E45;&#x4EE3;&#xFF08; permanent generation &#xFF09;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;<strong>&#x65B9;&#x6CD5;&#x533A;&#xFF08;method area&#xFF09;</strong>&#x3002;&#x4ED6;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x7C7B;&#x5E38;&#x91CF;&#x4EE5;&#x53CA;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x8FD9;&#x4E2A;&#x533A;&#x57DF;&#x4E0D;&#x662F;&#x7528;&#x6765;&#x6C38;&#x4E45;&#x7684;&#x5B58;&#x50A8;&#x90A3;&#x4E9B;&#x4ECE;&#x8001;&#x5E74;&#x4EE3;&#x5B58;&#x6D3B;&#x4E0B;&#x6765;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E2A;&#x533A;&#x57DF;&#x4E5F;&#x53EF;&#x80FD;&#x53D1;&#x751F;GC&#x3002;&#x5E76;&#x4E14;&#x53D1;&#x751F;&#x5728;&#x8FD9;&#x4E2A;&#x533A;&#x57DF;&#x4E0A;&#x7684;GC&#x4E8B;&#x4EF6;&#x4E5F;&#x4F1A;&#x88AB;&#x7B97;&#x4E3A;major GC&#x3002;</p>
 <p>&#x6709;&#x4E9B;&#x4EBA;&#x53EF;&#x80FD;&#x4F1A;&#x95EE;&#xFF1A;</p>
@@ -1103,7 +1125,9 @@
 <p>&#x5982;&#x679C;&#x8001;&#x5E74;&#x4EE3;&#x7684;&#x5BF9;&#x8C61;&#x9700;&#x8981;&#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x65B0;&#x751F;&#x4EE3;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;</p>
 </blockquote>
 <p>&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x8001;&#x5E74;&#x4EE3;&#x4E2D;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x201D;<strong>card table</strong>&#x201C;&#xFF0C;&#x4ED6;&#x662F;&#x4E00;&#x4E2A;512 byte&#x5927;&#x5C0F;&#x7684;&#x5757;&#x3002;&#x6240;&#x6709;&#x8001;&#x5E74;&#x4EE3;&#x7684;&#x5BF9;&#x8C61;&#x6307;&#x5411;&#x65B0;&#x751F;&#x4EE3;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x90FD;&#x4F1A;&#x88AB;&#x8BB0;&#x5F55;&#x5728;&#x8FD9;&#x4E2A;&#x8868;&#x4E2D;&#x3002;&#x5F53;&#x9488;&#x5BF9;&#x65B0;&#x751F;&#x4EE3;&#x6267;&#x884C;GC&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x67E5;&#x8BE2;card table&#x6765;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x88AB;&#x6536;&#x96C6;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x67E5;&#x8BE2;&#x6574;&#x4E2A;&#x8001;&#x5E74;&#x4EE3;&#x3002;&#x8FD9;&#x4E2A;card table&#x7531;&#x4E00;&#x4E2A;<strong>write barrier</strong>&#x6765;&#x7BA1;&#x7406;&#x3002;write barrier&#x7ED9;GC&#x5E26;&#x6765;&#x4E86;&#x5F88;&#x5927;&#x7684;&#x6027;&#x80FD;&#x63D0;&#x5347;&#xFF0C;&#x867D;&#x7136;&#x7531;&#x6B64;&#x53EF;&#x80FD;&#x5E26;&#x6765;&#x4E00;&#x4E9B;&#x5F00;&#x9500;&#xFF0C;&#x4F46;GC&#x7684;&#x6574;&#x4F53;&#x65F6;&#x95F4;&#x88AB;&#x663E;&#x8457;&#x7684;&#x51CF;&#x5C11;&#x3002;</p>
-<div align="center"><img src="images/p014_2.png" width="400"><br>&#x56FE; 2: Card Table &#x7ED3;&#x6784;</div>
+<div align="center">     <a href="images/p014_2.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/p014_2.png" alt="">
+     </a><br>&#x56FE; 2: Card Table &#x7ED3;&#x6784;</div>
 
 <h2 id="&#x65B0;&#x751F;&#x4EE3;&#x7684;&#x6784;&#x6210;"><a name="&#x65B0;&#x751F;&#x4EE3;&#x7684;&#x6784;&#x6210;" class="anchor-navigation-ex-anchor" href="#&#x65B0;&#x751F;&#x4EE3;&#x7684;&#x6784;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x65B0;&#x751F;&#x4EE3;&#x7684;&#x6784;&#x6210;</h2>
 <p>&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x5730;&#x7406;&#x89E3;GC&#xFF0C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x6765;&#x5B66;&#x4E60;&#x65B0;&#x751F;&#x4EE3;&#xFF0C;&#x65B0;&#x751F;&#x4EE3;&#x662F;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x90A3;&#x4E9B;&#x7B2C;&#x4E00;&#x6B21;&#x88AB;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x88AB;&#x5206;&#x4E3A;&#x4E09;&#x4E2A;&#x7A7A;&#x95F4;&#x3002;</p>
@@ -1121,7 +1145,9 @@
 </ol>
 <p>&#x5982;&#x679C;&#x4F60;&#x4ED4;&#x7EC6;&#x89C2;&#x5BDF;&#x8FD9;&#x4E9B;&#x6B65;&#x9AA4;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5E78;&#x5B58;&#x8005;&#x7A7A;&#x95F4;&#x5FC5;&#x987B;&#x4FDD;&#x6301;&#x662F;&#x7A7A;&#x7684;&#x3002;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x5E78;&#x5B58;&#x8005;&#x7A7A;&#x95F4;&#x90FD;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x6216;&#x8005;&#x4E24;&#x4E2A;&#x7A7A;&#x95F4;&#x90FD;&#x662F;&#x7A7A;&#x7684;&#xFF0C;&#x90A3;&#x4E00;&#x5B9A;&#x6807;&#x5FD7;&#x7740;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x51FA;&#x73B0;&#x4E86;&#x67D0;&#x79CD;&#x9519;&#x8BEF;&#x3002;</p>
 <p>&#x901A;&#x8FC7;&#x9891;&#x7E41;&#x7684;minor GC&#x5C06;&#x6570;&#x636E;&#x79FB;&#x52A8;&#x5230;&#x8001;&#x5E74;&#x4EE3;&#x7684;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x56FE;&#x6765;&#x63CF;&#x8FF0;&#xFF1A;</p>
-<div align="center"><img src="images/p014_3.png" width="400"><br>&#x56FE; 3: GC&#x6267;&#x884C;&#x524D;&#x540E;&#x5BF9;&#x6BD4;</div>
+<div align="center">     <a href="images/p014_3.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/p014_3.png" alt="">
+     </a><br>&#x56FE; 3: GC&#x6267;&#x884C;&#x524D;&#x540E;&#x5BF9;&#x6BD4;</div>
 
 <p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;HotSpot&#x865A;&#x62DF;&#x673A;&#x4F7F;&#x7528;&#x4E86;&#x4E24;&#x79CD;&#x6280;&#x672F;&#x6765;&#x52A0;&#x5FEB;&#x5185;&#x5B58;&#x5206;&#x914D;&#x3002;&#x4ED6;&#x4EEC;&#x5206;&#x522B;&#x662F;&#x662F;&#x201D;<strong>bump-the-pointer</strong>&#x201C;&#x548C;&#x201C;<strong>TLABs&#xFF08;Thread-Local Allocation Buffers&#xFF09;</strong>&#x201D;&#x3002;</p>
 <p><strong>Bump-the-pointer</strong>&#x6280;&#x672F;&#x8DDF;&#x8E2A;&#x5728;&#x4F0A;&#x7538;&#x56ED;&#x7A7A;&#x95F4;&#x521B;&#x5EFA;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x4F1A;&#x88AB;&#x653E;&#x5728;&#x4F0A;&#x7538;&#x56ED;&#x7A7A;&#x95F4;&#x7684;&#x9876;&#x90E8;&#x3002;&#x5982;&#x679C;&#x4E4B;&#x540E;&#x518D;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x4F0A;&#x7538;&#x56ED;&#x7A7A;&#x95F4;&#x662F;&#x5426;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x3002;&#x5982;&#x679C;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x5BF9;&#x8C61;&#x5C31;&#x4F1A;&#x88AB;&#x521B;&#x5EFA;&#x5728;&#x4F0A;&#x7538;&#x56ED;&#x7A7A;&#x95F4;&#xFF0C;&#x5E76;&#x4E14;&#x88AB;&#x653E;&#x7F6E;&#x5728;&#x9876;&#x90E8;&#x3002;&#x8FD9;&#x6837;&#x4EE5;&#x6765;&#xFF0C;&#x6BCF;&#x6B21;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x6700;&#x540E;&#x88AB;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x5C06;&#x6781;&#x5927;&#x5730;&#x52A0;&#x5FEB;&#x5185;&#x5B58;&#x5206;&#x914D;&#x901F;&#x5EA6;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E8B;&#x60C5;&#x5C06;&#x622A;&#x7136;&#x4E0D;&#x540C;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x4EE5;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x65B9;&#x5F0F;&#x4EE5;&#x591A;&#x7EBF;&#x7A0B;&#x5728;&#x4F0A;&#x7538;&#x56ED;&#x7A7A;&#x95F4;&#x5B58;&#x50A8;&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x53EF;&#x907F;&#x514D;&#x7684;&#x9700;&#x8981;&#x52A0;&#x9501;&#xFF0C;&#x800C;&#x8FD9;&#x5C06;&#x6781;&#x5927;&#x5730;&#x7684;&#x5F71;&#x54CD;&#x6027;&#x80FD;&#x3002;<strong>TLABs</strong> &#x662F;HotSpot&#x865A;&#x62DF;&#x673A;&#x9488;&#x5BF9;&#x8FD9;&#x4E00;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x8BE5;&#x65B9;&#x6848;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;&#x4F0A;&#x7538;&#x56ED;&#x7A7A;&#x95F4;&#x5206;&#x914D;&#x4E00;&#x5757;&#x72EC;&#x4EAB;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x8FD9;&#x6837;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x53EA;&#x8BBF;&#x95EE;&#x4ED6;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;TLAB&#x7A7A;&#x95F4;&#xFF0C;&#x518D;&#x4E0E;bump-the-pointer&#x6280;&#x672F;&#x7ED3;&#x5408;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x52A0;&#x9501;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5206;&#x914D;&#x5185;&#x5B58;&#x3002;</p>
@@ -1146,13 +1172,17 @@ JDK7&#x4E00;&#x5171;&#x6709;5&#x79CD;GC&#x7C7B;&#x578B;&#xFF1A;</p>
 <li>&#x6700;&#x540E;&#x4E00;&#x6B65;&#xFF0C;&#x4ECE;&#x5934;&#x5F00;&#x59CB;&#xFF0C;&#x987A;&#x5E8F;&#x5730;&#x586B;&#x6EE1;&#x5806;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x5BF9;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x5206;&#x6210;&#x4E24;&#x90E8;&#x5206;&#xFF1A;&#x4E00;&#x4E2A;&#x4FDD;&#x5B58;&#x7740;&#x5BF9;&#x8C61;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x7A7A;&#x7740;&#xFF08;&#x538B;&#x7F29;&#xFF09;&#x3002;</li>
 </ol>
 <h3 id="parallel-gc--xxuseparallelgc"><a name="parallel-gc--xxuseparallelgc" class="anchor-navigation-ex-anchor" href="#parallel-gc--xxuseparallelgc"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. Parallel GC (-XX:+UseParallelGC)</h3>
-<div align="center"><img src="images/p014_4.png" width="500"><br>&#x56FE; 4: Serial GC &#x4E0E; Parallel GC&#x7684;&#x533A;&#x522B;</div>
+<div align="center">     <a href="images/p014_4.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/p014_4.png" alt="">
+     </a><br>&#x56FE; 4: Serial GC &#x4E0E; Parallel GC&#x7684;&#x533A;&#x522B;</div>
 
 <p>&#x4ECE;&#x4E0A;&#x56FE;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8F7B;&#x6613;&#x5730;&#x770B;&#x51FA;serial GC&#x548C;parallel GC&#x7684;&#x533A;&#x522B;&#xFF0C;serial GC&#x53EA;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6267;&#x884C;GC&#xFF0C;&#x800C;parallel GC&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x56E0;&#x6B64;parallel GC&#x66F4;&#x9AD8;&#x6548;&#x3002;&#x8FD9;&#x79CD;GC&#x5728;&#x5185;&#x5B58;&#x5145;&#x8DB3;&#x4EE5;&#x53CA;&#x591A;&#x6838;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x4E5F;&#x79F0;&#x4E4B;&#x4E3A;&#x201D;<strong>throughput GC</strong>&#x201C;&#x3002;</p>
 <h3 id="parallel-old-gc-xxuseparalleloldgc"><a name="parallel-old-gc-xxuseparalleloldgc" class="anchor-navigation-ex-anchor" href="#parallel-old-gc-xxuseparalleloldgc"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. Parallel Old GC(-XX:+UseParallelOldGC)</h3>
 <p>Parallel Old GC&#x5728;JDK5&#x4E4B;&#x540E;&#x51FA;&#x73B0;&#x3002;&#x4E0E;parallel GC&#x76F8;&#x6BD4;&#xFF0C;&#x552F;&#x4E00;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x9488;&#x5BF9;&#x8001;&#x5E74;&#x4EE3;&#x7684;GC&#x7B97;&#x6CD5;&#x3002;Parallel Old GC&#x5206;&#x4E3A;&#x4E09;&#x6B65;&#xFF1A;&#x6807;&#x8BB0;-&#x6C47;&#x603B;-&#x538B;&#x7F29;&#xFF08;mark &#x2013; summary &#x2013; compaction&#xFF09;&#x3002;&#x6C47;&#x603B;&#xFF08;summary&#xFF09;&#x6B65;&#x9AA4;&#x4E0E;&#x6E05;&#x7406;&#xFF08;sweep&#xFF09;&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x5176;&#x5C06;&#x4F9D;&#x7136;&#x5E78;&#x5B58;&#x7684;&#x5BF9;&#x8C61;&#x5206;&#x53D1;&#x5230;GC&#x9884;&#x5148;&#x5904;&#x7406;&#x597D;&#x7684;&#x4E0D;&#x540C;&#x533A;&#x57DF;&#xFF0C;&#x7B97;&#x6CD5;&#x76F8;&#x5BF9;&#x6E05;&#x7406;&#x6765;&#x8BF4;&#x7565;&#x5FAE;&#x590D;&#x6742;&#x4E00;&#x70B9;&#x3002;</p>
 <h3 id="cms-gc--xxuseconcmarksweepgc"><a name="cms-gc--xxuseconcmarksweepgc" class="anchor-navigation-ex-anchor" href="#cms-gc--xxuseconcmarksweepgc"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. CMS GC (-XX:+UseConcMarkSweepGC)</h3>
-<div align="center"><img src="images/p014_5.png" width="550"><br>&#x56FE; 5: Serial GC &amp; CMS GC</div>
+<div align="center">     <a href="images/p014_5.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/p014_5.png" alt="">
+     </a><br>&#x56FE; 5: Serial GC &amp; CMS GC</div>
 
 <p>&#x5C31;&#x50CF;&#x4F60;&#x4ECE;&#x4E0A;&#x56FE;&#x770B;&#x5230;&#x7684;&#x90A3;&#x6837;, CMS GC&#x6BD4;&#x6211;&#x4E4B;&#x524D;&#x89E3;&#x91CA;&#x7684;&#x5404;&#x79CD;&#x7B97;&#x6CD5;&#x90FD;&#x8981;&#x590D;&#x6742;&#x5F88;&#x591A;&#x3002;&#x7B2C;&#x4E00;&#x6B65;&#x521D;&#x59CB;&#x5316;&#x6807;&#x8BB0;&#xFF08;initial mark&#xFF09; &#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x3002;&#x8FD9;&#x4E00;&#x6B65;&#x9AA4;&#x53EA;&#x662F;&#x67E5;&#x627E;&#x90A3;&#x4E9B;&#x8DDD;&#x79BB;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x6700;&#x8FD1;&#x7684;&#x5E78;&#x5B58;&#x5BF9;&#x8C61;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x505C;&#x987F;&#x7684;&#x65F6;&#x95F4;&#x975E;&#x5E38;&#x77ED;&#x6682;&#x3002;&#x5728;&#x4E4B;&#x540E;&#x7684;&#x5E76;&#x884C;&#x6807;&#x8BB0;&#xFF08; concurrent mark &#xFF09;&#x6B65;&#x9AA4;&#xFF0C;&#x6240;&#x6709;&#x88AB;&#x5E78;&#x5B58;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x4F1A;&#x88AB;&#x786E;&#x8BA4;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x8FFD;&#x8E2A;&#x548C;&#x6821;&#x9A8C;&#x3002;&#x8FD9;&#x4E00;&#x6B65;&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x5728;&#x6807;&#x8BB0;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x7EBF;&#x7A0B;&#x4F9D;&#x7136;&#x5728;&#x6267;&#x884C;&#x3002;&#x5728;&#x91CD;&#x65B0;&#x6807;&#x8BB0;&#xFF08;remark&#xFF09;&#x6B65;&#x9AA4;&#xFF0C;&#x4F1A;&#x518D;&#x6B21;&#x68C0;&#x67E5;&#x90A3;&#x4E9B;&#x5728;&#x5E76;&#x884C;&#x6807;&#x8BB0;&#x6B65;&#x9AA4;&#x4E2D;&#x589E;&#x52A0;&#x6216;&#x8005;&#x5220;&#x9664;&#x7684;&#x4E0E;&#x5E78;&#x5B58;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x5728;&#x5E76;&#x884C;&#x4EA4;&#x6362;&#xFF08; concurrent sweep &#xFF09;&#x6B65;&#x9AA4;&#xFF0C;&#x8F6C;&#x4EA4;&#x5783;&#x573E;&#x56DE;&#x6536;&#x8FC7;&#x7A0B;&#x5904;&#x7406;&#x3002;&#x5783;&#x573E;&#x56DE;&#x6536;&#x5DE5;&#x4F5C;&#x4F1A;&#x5728;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x5C55;&#x5F00;&#x3002;&#x4E00;&#x65E6;&#x91C7;&#x53D6;&#x4E86;&#x8FD9;&#x79CD;GC&#x7C7B;&#x578B;&#xFF0C;&#x7531;GC&#x5BFC;&#x81F4;&#x7684;&#x6682;&#x505C;&#x65F6;&#x95F4;&#x4F1A;&#x6781;&#x5176;&#x77ED;&#x6682;&#x3002;CMS GC&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;&#x4F4E;&#x5EF6;&#x8FDF;GC&#x3002;&#x5B83;&#x7ECF;&#x5E38;&#x88AB;&#x7528;&#x5728;&#x90A3;&#x4E9B;&#x5BF9;&#x4E8E;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x8981;&#x6C42;&#x5341;&#x5206;&#x82DB;&#x523B;&#x7684;&#x5E94;&#x7528;&#x4E4B;&#x4E0A;&#x3002;</p>
 <p>&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x79CD;GC&#x7C7B;&#x578B;&#x5728;&#x62E5;&#x6709;stop-the-world&#x65F6;&#x95F4;&#x5F88;&#x77ED;&#x7684;&#x4F18;&#x70B9;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x6709;&#x5982;&#x4E0B;&#x7F3A;&#x70B9;&#xFF1A;</p>
@@ -1163,7 +1193,9 @@ JDK7&#x4E00;&#x5171;&#x6709;5&#x79CD;GC&#x7C7B;&#x578B;&#xFF1A;</p>
 <p>&#x5728;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;GC&#x7C7B;&#x578B;&#x4E4B;&#x524D;&#x4F60;&#x9700;&#x8981;&#x614E;&#x91CD;&#x8003;&#x8651;&#x3002;&#x5982;&#x679C;&#x56E0;&#x4E3A;&#x5185;&#x5B58;&#x788E;&#x7247;&#x8FC7;&#x591A;&#x800C;&#x5BFC;&#x81F4;&#x538B;&#x7F29;&#x4EFB;&#x52A1;&#x4E0D;&#x5F97;&#x4E0D;&#x6267;&#x884C;&#xFF0C;&#x90A3;&#x4E48;stop-the-world&#x7684;&#x65F6;&#x95F4;&#x8981;&#x6BD4;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;GC&#x7C7B;&#x578B;&#x90FD;&#x957F;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x8003;&#x8651;&#x538B;&#x7F29;&#x4EFB;&#x52A1;&#x7684;&#x53D1;&#x751F;&#x9891;&#x7387;&#x4EE5;&#x53CA;&#x6267;&#x884C;&#x65F6;&#x95F4;&#x3002;</p>
 <h3 id="g1-gc"><a name="g1-gc" class="anchor-navigation-ex-anchor" href="#g1-gc"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. G1 GC</h3>
 <p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x5B66;&#x4E60;&#x5783;&#x573E;&#x56DE;&#x6536;&#x4F18;&#x5148;&#xFF08;G1&#xFF09;GC&#x7C7B;&#x578B;&#x3002;</p>
-<div align="center"><img src="images/p014_6.png" width="200"><br>&#x56FE; 6:  G1 GC&#x7684;&#x7ED3;&#x6784;</div>
+<div align="center">     <a href="images/p014_6.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/p014_6.png" alt="">
+     </a><br>&#x56FE; 6:  G1 GC&#x7684;&#x7ED3;&#x6784;</div>
 
 <p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x7406;&#x89E3;G1&#xFF0C;&#x9996;&#x5148;&#x4F60;&#x8981;&#x5FD8;&#x8BB0;&#x4F60;&#x6240;&#x5B66;&#x8FC7;&#x7684;&#x65B0;&#x751F;&#x4EE3;&#x548C;&#x8001;&#x5E74;&#x4EE3;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x6B63;&#x5982;&#x4F60;&#x5728;&#x4E0A;&#x56FE;&#x6240;&#x770B;&#x5230;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x88AB;&#x5206;&#x914D;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x683C;&#x5B50;&#xFF0C;&#x968F;&#x540E;GC&#x6267;&#x884C;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x533A;&#x57DF;&#x88C5;&#x6EE1;&#x4E4B;&#x540E;&#xFF0C;&#x5BF9;&#x8C61;&#x88AB;&#x5206;&#x914D;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x533A;&#x57DF;&#xFF0C;&#x5E76;&#x6267;&#x884C;GC&#x3002;&#x8FD9;&#x4E2D;&#x95F4;&#x4E0D;&#x518D;&#x6709;&#x4ECE;&#x65B0;&#x751F;&#x4EE3;&#x79FB;&#x52A8;&#x5230;&#x8001;&#x5E74;&#x4EE3;&#x7684;&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;&#x3002;&#x8FD9;&#x4E2A;&#x7C7B;&#x578B;&#x662F;&#x4E3A;&#x4E86;&#x66FF;&#x4EE3;CMS GC&#x800C;&#x88AB;&#x521B;&#x5EFA;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;CMS GC&#x5728;&#x957F;&#x65F6;&#x95F4;&#x6301;&#x7EED;&#x8FD0;&#x4F5C;&#x65F6;&#x4F1A;&#x4EA7;&#x751F;&#x5F88;&#x591A;&#x95EE;&#x9898;&#x3002;</p>
 <p>G1&#x6700;&#x5927;&#x7684;&#x597D;&#x5904;&#x662F;&#x6027;&#x80FD;&#xFF0C;&#x4ED6;&#x6BD4;&#x6211;&#x4EEC;&#x5728;&#x4E0A;&#x9762;&#x8BA8;&#x8BBA;&#x8FC7;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x79CD;GC&#x90FD;&#x8981;&#x5FEB;&#x3002;&#x4F46;&#x662F;&#x5728;JDK 6&#x4E2D;&#xFF0C;&#x4ED6;&#x8FD8;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x65E9;&#x671F;&#x8BD5;&#x7528;&#x7248;&#x672C;&#x3002;&#x5728;JDK7&#x4E4B;&#x540E;&#x624D;&#x7531;&#x5B98;&#x65B9;&#x6B63;&#x5F0F;&#x53D1;&#x5E03;&#x3002;&#x5C31;&#x6211;&#x4E2A;&#x4EBA;&#x770B;&#x6765;&#xFF0C;NHN&#x5728;&#x5C06;JDK 7&#x6B63;&#x5F0F;&#x6295;&#x5165;&#x5546;&#x7528;&#x4E4B;&#x524D;&#x9700;&#x8981;&#x5F88;&#x957F;&#x7684;&#x4E00;&#x6BB5;&#x6D4B;&#x8BD5;&#x671F;&#xFF08;&#x81F3;&#x5C11;&#x4E00;&#x5E74;&#xFF09;&#x3002;&#x56E0;&#x6B64;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x518D;&#x7B49;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x3002;&#x5E76;&#x4E14;&#xFF0C;&#x6211;&#x4E5F;&#x542C;&#x8FC7;&#x51E0;&#x6B21;&#x4F7F;&#x7528;&#x4E86;JDK 6&#x4E2D;&#x7684;G1&#x800C;&#x5BFC;&#x81F4;Java&#x865A;&#x62DF;&#x673A;&#x5B95;&#x673A;&#x7684;&#x4E8B;&#x4EF6;&#x3002;&#x8BF7;&#x8010;&#x5FC3;&#x7684;&#x7B49;&#x5230;&#x5B83;&#x66F4;&#x7A33;&#x5B9A;&#x5427;&#x3002;</p>
@@ -1195,10 +1227,14 @@ JDK7&#x4E00;&#x5171;&#x6709;5&#x79CD;GC&#x7C7B;&#x578B;&#xFF1A;</p>
 
             
                 
-                <a href="p013.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 内存区域和GC机制">
+                <a href="p013.html" class="navigation navigation-prev " aria-label="Previous page: 内存区域和GC机制">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="p015.html" class="navigation navigation-next " aria-label="Next page: 成为Java GC专家(2)：如何监控Java垃圾回收机制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -1207,7 +1243,7 @@ JDK7&#x4E00;&#x5171;&#x6709;5&#x79CD;GC&#x7C7B;&#x578B;&#xFF1A;</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"成为Java GC专家(1)：深入浅出Java垃圾回收机制","level":"2.1.14","depth":2,"next":{"title":"异常","level":"2.2","depth":1,"ref":"","articles":[]},"previous":{"title":"内存区域和GC机制","level":"2.1.13","depth":2,"path":"core_java/grammar/p013.md","ref":"core_java/grammar/p013.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","links":{"sidebar":{"<img src=\"./images/logo.png\" height=\"35\" />":"http://github.com/edu2act"}},"gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p014.md","mtime":"2019-01-19T14:35:51.452Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-19T15:00:04.951Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"成为Java GC专家(1)：深入浅出Java垃圾回收机制","level":"2.1.14","depth":2,"next":{"title":"成为Java GC专家(2)：如何监控Java垃圾回收机制","level":"2.1.15","depth":2,"path":"core_java/grammar/p015.md","ref":"core_java/grammar/p015.md","articles":[]},"previous":{"title":"内存区域和GC机制","level":"2.1.13","depth":2,"path":"core_java/grammar/p013.md","ref":"core_java/grammar/p013.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","expandable-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex","fancybox","insert-logo-link-style"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"insert-logo-link-style":{"src":"images/logo.png","style":"background: none; width: 220px;","link":"http://github.com/edu2act"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/grammar/p014.md","mtime":"2019-01-19T14:35:51.452Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-20T14:48:15.727Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1234,6 +1270,30 @@ JDK7&#x4E00;&#x5171;&#x6709;5&#x79CD;GC&#x7C7B;&#x578B;&#xFF1A;</p>
     
         
         <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
         
     
         
