@@ -1,0 +1,2352 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>使用Socket读取服务器字符并本地显示 · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    
+        <link rel="shortcut icon" href='../../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="../../article/p001.html">
+            
+                <a href="../../article/p001.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    什么是低耦合高内聚
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../article/p002.html">
+            
+                <a href="../../article/p002.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    Java中的作用域的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../article/p003.html">
+            
+                <a href="../../article/p003.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../article/p004.html">
+            
+                <a href="../../article/p004.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../article/p005.html">
+            
+                <a href="../../article/p005.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../article/p006.html">
+            
+                <a href="../../article/p006.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../article/p007.html">
+            
+                <a href="../../article/p007.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../article/p008.html">
+            
+                <a href="../../article/p008.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../article/p009.html">
+            
+                <a href="../../article/p009.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    反射使用实例详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../article/p010.html">
+            
+                <a href="../../article/p010.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    内存区域和GC机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../../article/p011.html">
+            
+                <a href="../../article/p011.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    成为Java GC专家(1)：深入浅出Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../../article/p012.html">
+            
+                <a href="../../article/p012.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    成为Java GC专家(2)：如何监控Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../../article/p013.html">
+            
+                <a href="../../article/p013.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    成为Java GC专家(3)：如何优化Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../../article/p014.html">
+            
+                <a href="../../article/p014.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    成为Java GC专家(4)：Apache的MaxClients参数详解及其在Tomcat执行FullGC时的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="../../article/p015.html">
+            
+                <a href="../../article/p015.html">
+            
+                    
+                        <b>2.15.</b>
+                    
+                    面向对象的六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                        <b>3.1.</b>
+                    
+                    语法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../grammar/p001.html">
+            
+                <a href="../grammar/p001.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    面向对象的三大特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../grammar/p002.html">
+            
+                <a href="../grammar/p002.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    面向对象的四大特征
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../grammar/p003.html">
+            
+                <a href="../grammar/p003.html">
+            
+                    
+                        <b>3.1.3.</b>
+                    
+                    语句float f=3.4是否正确
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../grammar/p004.html">
+            
+                <a href="../grammar/p004.html">
+            
+                    
+                        <b>3.1.4.</b>
+                    
+                    语句short s1 = 1; s1 = s1 + 1;是否正确
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../grammar/p005.html">
+            
+                <a href="../grammar/p005.html">
+            
+                    
+                        <b>3.1.5.</b>
+                    
+                    Java有没有goto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../grammar/p006.html">
+            
+                <a href="../grammar/p006.html">
+            
+                    
+                        <b>3.1.6.</b>
+                    
+                    int 和Integer 有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../grammar/p007.html">
+            
+                <a href="../grammar/p007.html">
+            
+                    
+                        <b>3.1.7.</b>
+                    
+                    逻辑操作(&,|,^)与条件操作(&&,||)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../grammar/p008.html">
+            
+                <a href="../grammar/p008.html">
+            
+                    
+                        <b>3.1.8.</b>
+                    
+                    Math的floor、round、ceil函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../grammar/p009.html">
+            
+                <a href="../grammar/p009.html">
+            
+                    
+                        <b>3.1.9.</b>
+                    
+                    求2*8的最效率方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../grammar/p010.html">
+            
+                <a href="../grammar/p010.html">
+            
+                    
+                        <b>3.1.10.</b>
+                    
+                    有没有length()这个方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../grammar/p011.html">
+            
+                <a href="../grammar/p011.html">
+            
+                    
+                        <b>3.1.11.</b>
+                    
+                    swtich中表达式的类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../grammar/p012.html">
+            
+                <a href="../grammar/p012.html">
+            
+                    
+                        <b>3.1.12.</b>
+                    
+                    Java中如何跳出多重嵌套循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../grammar/p013.html">
+            
+                <a href="../grammar/p013.html">
+            
+                    
+                        <b>3.1.13.</b>
+                    
+                    构造器Constructor 是否可被override
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../grammar/p014.html">
+            
+                <a href="../grammar/p014.html">
+            
+                    
+                        <b>3.1.14.</b>
+                    
+                    x.equals(y) == true; hashcode是否相同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../grammar/p015.html">
+            
+                <a href="../grammar/p015.html">
+            
+                    
+                        <b>3.1.15.</b>
+                    
+                    是否可以继承String 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../grammar/p016.html">
+            
+                <a href="../grammar/p016.html">
+            
+                    
+                        <b>3.1.16.</b>
+                    
+                    equals()和equalsIgnoreCase()的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../grammar/p017.html">
+            
+                <a href="../grammar/p017.html">
+            
+                    
+                        <b>3.1.17.</b>
+                    
+                    值传递还是引用传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../grammar/p018.html">
+            
+                <a href="../grammar/p018.html">
+            
+                    
+                        <b>3.1.18.</b>
+                    
+                    char型变量中能否存储一个中文汉字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.19" data-path="../grammar/p019.html">
+            
+                <a href="../grammar/p019.html">
+            
+                    
+                        <b>3.1.19.</b>
+                    
+                    abstract class和interface有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="../grammar/p020.html">
+            
+                <a href="../grammar/p020.html">
+            
+                    
+                        <b>3.1.20.</b>
+                    
+                    Static Nested Class和Inner Class的不同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.21" data-path="../grammar/p021.html">
+            
+                <a href="../grammar/p021.html">
+            
+                    
+                        <b>3.1.21.</b>
+                    
+                    Java中是否存在内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.22" data-path="../grammar/p022.html">
+            
+                <a href="../grammar/p022.html">
+            
+                    
+                        <b>3.1.22.</b>
+                    
+                    静态变量和实例变量的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.23" data-path="../grammar/p023.html">
+            
+                <a href="../grammar/p023.html">
+            
+                    
+                        <b>3.1.23.</b>
+                    
+                    写clone()方法时通常都有一行代码，是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.24" data-path="../grammar/p024.html">
+            
+                <a href="../grammar/p024.html">
+            
+                    
+                        <b>3.1.24.</b>
+                    
+                    GC 是什么,为什么要有GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.25" data-path="../grammar/p025.html">
+            
+                <a href="../grammar/p025.html">
+            
+                    
+                        <b>3.1.25.</b>
+                    
+                    垃圾回收的优点和原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.26" data-path="../grammar/p026.html">
+            
+                <a href="../grammar/p026.html">
+            
+                    
+                        <b>3.1.26.</b>
+                    
+                    垃圾回收器的基本原理是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.27" data-path="../grammar/p027.html">
+            
+                <a href="../grammar/p027.html">
+            
+                    
+                        <b>3.1.27.</b>
+                    
+                    String s=new String(“xyz”);创建了几个String对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.28" data-path="../grammar/p028.html">
+            
+                <a href="../grammar/p028.html">
+            
+                    
+                        <b>3.1.28.</b>
+                    
+                    接口与抽象类的相互继承问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.29" data-path="../grammar/p029.html">
+            
+                <a href="../grammar/p029.html">
+            
+                    
+                        <b>3.1.29.</b>
+                    
+                    Java的接口和C++的虚类的相同和不同处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.30" data-path="../grammar/p030.html">
+            
+                <a href="../grammar/p030.html">
+            
+                    
+                        <b>3.1.30.</b>
+                    
+                    一个Java源文件中是否可以包含多个类（非内部类）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.31" data-path="../grammar/p031.html">
+            
+                <a href="../grammar/p031.html">
+            
+                    
+                        <b>3.1.31.</b>
+                    
+                    内部类是否可以引用外部类的成员
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.32" data-path="../grammar/p032.html">
+            
+                <a href="../grammar/p032.html">
+            
+                    
+                        <b>3.1.32.</b>
+                    
+                    Java中实现多态的机制是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.33" data-path="../grammar/p033.html">
+            
+                <a href="../grammar/p033.html">
+            
+                    
+                        <b>3.1.33.</b>
+                    
+                    数据类型之间的转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.34" data-path="../grammar/p034.html">
+            
+                <a href="../grammar/p034.html">
+            
+                    
+                        <b>3.1.34.</b>
+                    
+                    如何实现字符串的反转及替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.35" data-path="../grammar/p035.html">
+            
+                <a href="../grammar/p035.html">
+            
+                    
+                        <b>3.1.35.</b>
+                    
+                    日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.36" data-path="../grammar/p036.html">
+            
+                <a href="../grammar/p036.html">
+            
+                    
+                        <b>3.1.36.</b>
+                    
+                    Java和JavaSciprt的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.37" data-path="../grammar/p037.html">
+            
+                <a href="../grammar/p037.html">
+            
+                    
+                        <b>3.1.37.</b>
+                    
+                    什么时候用assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                        <b>3.2.</b>
+                    
+                    异常
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../exception/p001.html">
+            
+                <a href="../exception/p001.html">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    Java中的异常处理机制的简单原理和应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../exception/p002.html">
+            
+                <a href="../exception/p002.html">
+            
+                    
+                        <b>3.2.2.</b>
+                    
+                    error和exception有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../exception/p003.html">
+            
+                <a href="../exception/p003.html">
+            
+                    
+                        <b>3.2.3.</b>
+                    
+                    try里的return语句与finally代码的执行执行顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../exception/p004.html">
+            
+                <a href="../exception/p004.html">
+            
+                    
+                        <b>3.2.4.</b>
+                    
+                    Java如何进行异常处理及相应关键字含义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../exception/p005.html">
+            
+                <a href="../exception/p005.html">
+            
+                    
+                        <b>3.2.5.</b>
+                    
+                    运行时异常与一般异常有何异同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="../exception/p006.html">
+            
+                <a href="../exception/p006.html">
+            
+                    
+                        <b>3.2.6.</b>
+                    
+                    常见的runtime exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="../exception/p007.html">
+            
+                <a href="../exception/p007.html">
+            
+                    
+                        <b>3.2.7.</b>
+                    
+                    final、finally、finalize 的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                        <b>3.3.</b>
+                    
+                    集合
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../collection/p001.html">
+            
+                <a href="../collection/p001.html">
+            
+                    
+                        <b>3.3.1.</b>
+                    
+                    介绍Java中的Collection FrameWork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../collection/p002.html">
+            
+                <a href="../collection/p002.html">
+            
+                    
+                        <b>3.3.2.</b>
+                    
+                    List,Set,Map是否继承自Collection接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../collection/p003.html">
+            
+                <a href="../collection/p003.html">
+            
+                    
+                        <b>3.3.3.</b>
+                    
+                    你所知道的集合类都有哪些
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../collection/p004.html">
+            
+                <a href="../collection/p004.html">
+            
+                    
+                        <b>3.3.4.</b>
+                    
+                    ArrayList,Vector,LinkedList的存储性能和特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../collection/p005.html">
+            
+                <a href="../collection/p005.html">
+            
+                    
+                        <b>3.3.5.</b>
+                    
+                    Collection和Collections的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.6" data-path="../collection/p006.html">
+            
+                <a href="../collection/p006.html">
+            
+                    
+                        <b>3.3.6.</b>
+                    
+                    HashMap和Hashtable的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.7" data-path="../collection/p007.html">
+            
+                <a href="../collection/p007.html">
+            
+                    
+                        <b>3.3.7.</b>
+                    
+                    Arraylist与Vector区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.8" data-path="../collection/p008.html">
+            
+                <a href="../collection/p008.html">
+            
+                    
+                        <b>3.3.8.</b>
+                    
+                    List,Map,Set存取元素时各有什么特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.9" data-path="../collection/p009.html">
+            
+                <a href="../collection/p009.html">
+            
+                    
+                        <b>3.3.9.</b>
+                    
+                    Set里元素用什么方法来区分重复
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                        <b>3.4.</b>
+                    
+                    线程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../thread/p001.html">
+            
+                <a href="../thread/p001.html">
+            
+                    
+                        <b>3.4.1.</b>
+                    
+                    sleep()和wait()有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../thread/p002.html">
+            
+                <a href="../thread/p002.html">
+            
+                    
+                        <b>3.4.2.</b>
+                    
+                    请说出你所知道的线程同步的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../thread/p003.html">
+            
+                <a href="../thread/p003.html">
+            
+                    
+                        <b>3.4.3.</b>
+                    
+                    多线程和同步分别有几种实现方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="../thread/p004.html">
+            
+                <a href="../thread/p004.html">
+            
+                    
+                        <b>3.4.4.</b>
+                    
+                    同步和异步有何异同以及在何种情况下使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.5" data-path="../thread/p005.html">
+            
+                <a href="../thread/p005.html">
+            
+                    
+                        <b>3.4.5.</b>
+                    
+                    启动一个线程是用run()还是start()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.6" data-path="../thread/p006.html">
+            
+                <a href="../thread/p006.html">
+            
+                    
+                        <b>3.4.6.</b>
+                    
+                    线程的基本概念、线程的基本状态以及状态之间的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.7" data-path="../thread/p007.html">
+            
+                <a href="../thread/p007.html">
+            
+                    
+                        <b>3.4.7.</b>
+                    
+                    简述synchronized和java.util.concurrent.locks.Lock的异同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.8" data-path="../thread/p008.html">
+            
+                <a href="../thread/p008.html">
+            
+                    
+                        <b>3.4.8.</b>
+                    
+                    Java中有几种方法可以实现一个线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.9" data-path="../thread/p009.html">
+            
+                <a href="../thread/p009.html">
+            
+                    
+                        <b>3.4.9.</b>
+                    
+                    stop()和suspend()方法为何不推荐使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                        <b>3.5.</b>
+                    
+                    IO流
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../io/p001.html">
+            
+                <a href="../io/p001.html">
+            
+                    
+                        <b>3.5.1.</b>
+                    
+                    如何实现Java序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../io/p002.html">
+            
+                <a href="../io/p002.html">
+            
+                    
+                        <b>3.5.2.</b>
+                    
+                    Java中有几种类型的流，以及对应的抽象类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../io/p003.html">
+            
+                <a href="../io/p003.html">
+            
+                    
+                        <b>3.5.3.</b>
+                    
+                    文件和目录（IO）操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="../io/p004.html">
+            
+                <a href="../io/p004.html">
+            
+                    
+                        <b>3.5.4.</b>
+                    
+                    统计字符串在文件中出现的次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Socket
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.6.1" data-path="p001.html">
+            
+                <a href="p001.html">
+            
+                    
+                        <b>3.6.1.</b>
+                    
+                    使用Socket读取服务器字符并本地显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    JDBC
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    Jsp&Servlet
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    Hibernate
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+                <span>
+            
+                    
+                        <b>7.</b>
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="../../spring/p001.html">
+            
+                <a href="../../spring/p001.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    什么是 Spring 框架？Spring 框架有哪些主要模块？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../../spring/p002.html">
+            
+                <a href="../../spring/p002.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    使用 Spring 框架能带来哪些好处？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../../spring/p003.html">
+            
+                <a href="../../spring/p003.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    什么是控制反转(IOC)？什么是依赖注入？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../../spring/p004.html">
+            
+                <a href="../../spring/p004.html">
+            
+                    
+                        <b>8.4.</b>
+                    
+                    请解释下 Spring 框架中的 IOC？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="../../spring/p005.html">
+            
+                <a href="../../spring/p005.html">
+            
+                    
+                        <b>8.5.</b>
+                    
+                    BeanFactory 和 ApplicationContext 有什么区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="../../spring/p006.html">
+            
+                <a href="../../spring/p006.html">
+            
+                    
+                        <b>8.6.</b>
+                    
+                    Spring 提供几种配置方式来设置元数据？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="../../spring/p007.html">
+            
+                <a href="../../spring/p007.html">
+            
+                    
+                        <b>8.7.</b>
+                    
+                    如何使用 XML 配置的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="../../spring/p008.html">
+            
+                <a href="../../spring/p008.html">
+            
+                    
+                        <b>8.8.</b>
+                    
+                    如何用基于 Java 配置的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="../../spring/p009.html">
+            
+                <a href="../../spring/p009.html">
+            
+                    
+                        <b>8.9.</b>
+                    
+                    怎样用注解的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="../../spring/p010.html">
+            
+                <a href="../../spring/p010.html">
+            
+                    
+                        <b>8.10.</b>
+                    
+                    请解释 Spring Bean 的生命周期？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="../../spring/p011.html">
+            
+                <a href="../../spring/p011.html">
+            
+                    
+                        <b>8.11.</b>
+                    
+                    Spring Bean 作用域之间的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="../../spring/p012.html">
+            
+                <a href="../../spring/p012.html">
+            
+                    
+                        <b>8.12.</b>
+                    
+                    什么是 Spring inner beans？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="../../spring/p013.html">
+            
+                <a href="../../spring/p013.html">
+            
+                    
+                        <b>8.13.</b>
+                    
+                    Spring 框架中的单例 Beans 是线程安全的么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.14" data-path="../../spring/p014.html">
+            
+                <a href="../../spring/p014.html">
+            
+                    
+                        <b>8.14.</b>
+                    
+                    请举例说明如何在 Spring 中注入一个 Java 集合？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.15" data-path="../../spring/p015.html">
+            
+                <a href="../../spring/p015.html">
+            
+                    
+                        <b>8.15.</b>
+                    
+                    如何向 Spring Bean 中注入 java.util.Properties？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.16" data-path="../../spring/p016.html">
+            
+                <a href="../../spring/p016.html">
+            
+                    
+                        <b>8.16.</b>
+                    
+                    请解释 Spring Bean 的自动装配？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.17" data-path="../../spring/p017.html">
+            
+                <a href="../../spring/p017.html">
+            
+                    
+                        <b>8.17.</b>
+                    
+                    请解释各种自动装配模式的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.18" data-path="../../spring/p018.html">
+            
+                <a href="../../spring/p018.html">
+            
+                    
+                        <b>8.18.</b>
+                    
+                    如何开启基于注解的自动装配？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.19" data-path="../../spring/p019.html">
+            
+                <a href="../../spring/p019.html">
+            
+                    
+                        <b>8.19.</b>
+                    
+                    自动装配有哪些局限性？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.20" data-path="../../spring/p020.html">
+            
+                <a href="../../spring/p020.html">
+            
+                    
+                        <b>8.20.</b>
+                    
+                    在 Spring 中可以注入 null 或空字符串吗？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.21" data-path="../../spring/p021.html">
+            
+                <a href="../../spring/p021.html">
+            
+                    
+                        <b>8.21.</b>
+                    
+                    请举例解释@Required Annotation？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.22" data-path="../../spring/p022.html">
+            
+                <a href="../../spring/p022.html">
+            
+                    
+                        <b>8.22.</b>
+                    
+                    请举例解释@Autowired 注解？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.23" data-path="../../spring/p023.html">
+            
+                <a href="../../spring/p023.html">
+            
+                    
+                        <b>8.23.</b>
+                    
+                    请举例说明@Qualifier 注解？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.24" data-path="../../spring/p024.html">
+            
+                <a href="../../spring/p024.html">
+            
+                    
+                        <b>8.24.</b>
+                    
+                    构造方法注入和设值注入有什么区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.25" data-path="../../spring/p025.html">
+            
+                <a href="../../spring/p025.html">
+            
+                    
+                        <b>8.25.</b>
+                    
+                    Spring 框架中有哪些不同类型的事件？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.26" data-path="../../spring/p026.html">
+            
+                <a href="../../spring/p026.html">
+            
+                    
+                        <b>8.26.</b>
+                    
+                    FileSystemResource 和 ClassPathResource 有何区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.27" data-path="../../spring/p027.html">
+            
+                <a href="../../spring/p027.html">
+            
+                    
+                        <b>8.27.</b>
+                    
+                    Spring 框架中都用到了哪些设计模式？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.28" data-path="../../spring/p028.html">
+            
+                <a href="../../spring/p028.html">
+            
+                    
+                        <b>8.28.</b>
+                    
+                    在 Spring 框架中如何更有效的使用 JDBC？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.29" data-path="../../spring/p029.html">
+            
+                <a href="../../spring/p029.html">
+            
+                    
+                        <b>8.29.</b>
+                    
+                    Spring5 新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+                <span>
+            
+                    
+                        <b>9.</b>
+                    
+                    EJB
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10" >
+            
+                <span>
+            
+                    
+                        <b>10.</b>
+                    
+                    WebService
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+                <span>
+            
+                    
+                        <b>11.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12" >
+            
+                <span>
+            
+                    
+                        <b>12.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13" >
+            
+                <span>
+            
+                    
+                        <b>13.</b>
+                    
+                    其它
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >使用Socket读取服务器字符并本地显示</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;socket&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x5B57;&#x7B26;&#x5E76;&#x672C;&#x5730;&#x663E;&#x793A;"><b> </b>&#x4F7F;&#x7528;Socket&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x5B57;&#x7B26;&#x5E76;&#x672C;&#x5730;&#x663E;&#x793A;</a></li><ul><li><span class="title-icon "></span><a href="#server-&#x7AEF;&#x7A0B;&#x5E8F;"><b>1. </b>Server &#x7AEF;&#x7A0B;&#x5E8F;</a></li><li><span class="title-icon "></span><a href="#client-&#x7AEF;&#x7A0B;&#x5E8F;"><b>2. </b>Client &#x7AEF;&#x7A0B;&#x5E8F;</a></li></ul></ul></div><a href="#&#x4F7F;&#x7528;socket&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x5B57;&#x7B26;&#x5E76;&#x672C;&#x5730;&#x663E;&#x793A;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4F7F;&#x7528;socket&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x5B57;&#x7B26;&#x5E76;&#x672C;&#x5730;&#x663E;&#x793A;"><a name="&#x4F7F;&#x7528;socket&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x5B57;&#x7B26;&#x5E76;&#x672C;&#x5730;&#x663E;&#x793A;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;socket&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x5B57;&#x7B26;&#x5E76;&#x672C;&#x5730;&#x663E;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x4F7F;&#x7528;Socket&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x5668;&#x5B57;&#x7B26;&#x5E76;&#x672C;&#x5730;&#x663E;&#x793A;</h1>
+<h2 id="server-&#x7AEF;&#x7A0B;&#x5E8F;"><a name="server-&#x7AEF;&#x7A0B;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#server-&#x7AEF;&#x7A0B;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Server &#x7AEF;&#x7A0B;&#x5E8F;</h2>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> test<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Server</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span> ServerSocket ss<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> Socket socket<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> BufferedReader in<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> PrintWriter out<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            ss<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">ServerSocket</span><span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                socket <span class="token operator">=</span> ss<span class="token punctuation">.</span><span class="token function">accept</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                String RemoteIP <span class="token operator">=</span>
+                socket<span class="token punctuation">.</span><span class="token function">getInetAddress</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getHostAddress</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                String RemotePort <span class="token operator">=</span> <span class="token string">&quot;:&quot;</span><span class="token operator">+</span>socket<span class="token punctuation">.</span><span class="token function">getLocalPort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;A client come in!IP:&quot;</span> <span class="token operator">+</span> RemoteIP<span class="token operator">+</span>RemotePort<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                in <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedReader</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">InputStreamReader</span><span class="token punctuation">(</span>socket<span class="token punctuation">.</span><span class="token function">getInputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                String line <span class="token operator">=</span> in<span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Cleint send is :&quot;</span> <span class="token operator">+</span> line<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                out <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PrintWriter</span><span class="token punctuation">(</span>socket<span class="token punctuation">.</span><span class="token function">getOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Your Message Received!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                out<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                in<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                socket<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;wrong&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="client-&#x7AEF;&#x7A0B;&#x5E8F;"><a name="client-&#x7AEF;&#x7A0B;&#x5E8F;" class="anchor-navigation-ex-anchor" href="#client-&#x7AEF;&#x7A0B;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Client &#x7AEF;&#x7A0B;&#x5E8F;</h2>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> test<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Client</span> <span class="token punctuation">{</span>
+    Socket socket<span class="token punctuation">;</span>
+    BufferedReader in<span class="token punctuation">;</span>
+    PrintWriter out<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">Client</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Try to Connect to 127.0.0.1:10000&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            socket <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Socket</span><span class="token punctuation">(</span><span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">,</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;The Server Connected!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Please enter some Character:&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            BufferedReader line <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedReader</span><span class="token punctuation">(</span><span class="token keyword">new</span>
+            <span class="token class-name">InputStreamReader</span><span class="token punctuation">(</span>System<span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            out <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PrintWriter</span><span class="token punctuation">(</span>socket<span class="token punctuation">.</span><span class="token function">getOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>line<span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            in <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedReader</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">InputStreamReader</span><span class="token punctuation">(</span>socket<span class="token punctuation">.</span><span class="token function">getInputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>in<span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            out<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            in<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            socket<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>IOException e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Wrong&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Client</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"></p><p class="paragraph footer__quote--normal" style="color: #000 !important;">Everything you need to prepare for your technical interview.</p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">modified at</span>
+2019-01-23
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用Socket读取服务器字符并本地显示","level":"3.6.1","depth":2,"next":{"title":"JDBC","level":"4","depth":0,"ref":"","articles":[]},"previous":{"title":"Socket","level":"3.6","depth":1,"ref":"","articles":[{"title":"使用Socket读取服务器字符并本地显示","level":"3.6.1","depth":2,"path":"core_java/socket/p001.md","ref":"core_java/socket/p001.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["favicon","-sharing","folding-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex","fancybox","insert-logo-link-style","page-copyright"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"page-copyright":{"wisdom":"Everything you need to prepare for your technical interview.","noPowered":true,"copyright":"Copyright &#169; edu2act","styles (normal, symmetrical)":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd","signature":"edu2act","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"modified at"},"insert-logo-link-style":{"src":"images/logo.png","style":"background: none; width: 220px;","link":"http://github.com/edu2act"},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/apple-touch-icon.png","appleTouchMore":{"120x120":"images/apple-touch-icon-120x120.png","180x180":"images/apple-touch-icon-180x180.png"}},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"core_java/socket/p001.md","mtime":"2019-01-23T07:33:05.871Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-24T00:24:08.169Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
