@@ -1,0 +1,2894 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>如果Oracle的存储过程的入参出参中包含数据库对象，应该如何进行调用 · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="p039.html" />
+    
+    
+    <link rel="prev" href="p037.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="../article/p001.html">
+            
+                <a href="../article/p001.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    什么是低耦合高内聚
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../article/p002.html">
+            
+                <a href="../article/p002.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    Java中的作用域的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../article/p003.html">
+            
+                <a href="../article/p003.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../article/p004.html">
+            
+                <a href="../article/p004.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../article/p005.html">
+            
+                <a href="../article/p005.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../article/p006.html">
+            
+                <a href="../article/p006.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../article/p007.html">
+            
+                <a href="../article/p007.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../article/p008.html">
+            
+                <a href="../article/p008.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../article/p009.html">
+            
+                <a href="../article/p009.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    反射使用实例详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../article/p010.html">
+            
+                <a href="../article/p010.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    内存区域和GC机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../article/p011.html">
+            
+                <a href="../article/p011.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    成为Java GC专家(1)：深入浅出Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../article/p012.html">
+            
+                <a href="../article/p012.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    成为Java GC专家(2)：如何监控Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../article/p013.html">
+            
+                <a href="../article/p013.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    成为Java GC专家(3)：如何优化Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../article/p014.html">
+            
+                <a href="../article/p014.html">
+            
+                    
+                        <b>2.14.</b>
+                    
+                    成为Java GC专家(4)：Apache的MaxClients参数详解及其在Tomcat执行FullGC时的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="../article/p015.html">
+            
+                <a href="../article/p015.html">
+            
+                    
+                        <b>2.15.</b>
+                    
+                    面向对象的六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                        <b>3.1.</b>
+                    
+                    语法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../core_java/grammar/p001.html">
+            
+                <a href="../core_java/grammar/p001.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    面向对象的三大特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../core_java/grammar/p002.html">
+            
+                <a href="../core_java/grammar/p002.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    面向对象的四大特征
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../core_java/grammar/p003.html">
+            
+                <a href="../core_java/grammar/p003.html">
+            
+                    
+                        <b>3.1.3.</b>
+                    
+                    语句float f=3.4是否正确
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../core_java/grammar/p004.html">
+            
+                <a href="../core_java/grammar/p004.html">
+            
+                    
+                        <b>3.1.4.</b>
+                    
+                    语句short s1 = 1; s1 = s1 + 1;是否正确
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../core_java/grammar/p005.html">
+            
+                <a href="../core_java/grammar/p005.html">
+            
+                    
+                        <b>3.1.5.</b>
+                    
+                    Java有没有goto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../core_java/grammar/p006.html">
+            
+                <a href="../core_java/grammar/p006.html">
+            
+                    
+                        <b>3.1.6.</b>
+                    
+                    int 和Integer 有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../core_java/grammar/p007.html">
+            
+                <a href="../core_java/grammar/p007.html">
+            
+                    
+                        <b>3.1.7.</b>
+                    
+                    逻辑操作(&,|,^)与条件操作(&&,||)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../core_java/grammar/p008.html">
+            
+                <a href="../core_java/grammar/p008.html">
+            
+                    
+                        <b>3.1.8.</b>
+                    
+                    Math的floor、round、ceil函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../core_java/grammar/p009.html">
+            
+                <a href="../core_java/grammar/p009.html">
+            
+                    
+                        <b>3.1.9.</b>
+                    
+                    求2*8的最效率方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../core_java/grammar/p010.html">
+            
+                <a href="../core_java/grammar/p010.html">
+            
+                    
+                        <b>3.1.10.</b>
+                    
+                    有没有length()这个方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../core_java/grammar/p011.html">
+            
+                <a href="../core_java/grammar/p011.html">
+            
+                    
+                        <b>3.1.11.</b>
+                    
+                    swtich中表达式的类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../core_java/grammar/p012.html">
+            
+                <a href="../core_java/grammar/p012.html">
+            
+                    
+                        <b>3.1.12.</b>
+                    
+                    Java中如何跳出多重嵌套循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../core_java/grammar/p013.html">
+            
+                <a href="../core_java/grammar/p013.html">
+            
+                    
+                        <b>3.1.13.</b>
+                    
+                    构造器Constructor 是否可被override
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../core_java/grammar/p014.html">
+            
+                <a href="../core_java/grammar/p014.html">
+            
+                    
+                        <b>3.1.14.</b>
+                    
+                    x.equals(y) == true; hashcode是否相同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../core_java/grammar/p015.html">
+            
+                <a href="../core_java/grammar/p015.html">
+            
+                    
+                        <b>3.1.15.</b>
+                    
+                    是否可以继承String 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../core_java/grammar/p016.html">
+            
+                <a href="../core_java/grammar/p016.html">
+            
+                    
+                        <b>3.1.16.</b>
+                    
+                    equals()和equalsIgnoreCase()的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../core_java/grammar/p017.html">
+            
+                <a href="../core_java/grammar/p017.html">
+            
+                    
+                        <b>3.1.17.</b>
+                    
+                    值传递还是引用传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../core_java/grammar/p018.html">
+            
+                <a href="../core_java/grammar/p018.html">
+            
+                    
+                        <b>3.1.18.</b>
+                    
+                    char型变量中能否存储一个中文汉字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.19" data-path="../core_java/grammar/p019.html">
+            
+                <a href="../core_java/grammar/p019.html">
+            
+                    
+                        <b>3.1.19.</b>
+                    
+                    abstract class和interface有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="../core_java/grammar/p020.html">
+            
+                <a href="../core_java/grammar/p020.html">
+            
+                    
+                        <b>3.1.20.</b>
+                    
+                    Static Nested Class和Inner Class的不同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.21" data-path="../core_java/grammar/p021.html">
+            
+                <a href="../core_java/grammar/p021.html">
+            
+                    
+                        <b>3.1.21.</b>
+                    
+                    Java中是否存在内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.22" data-path="../core_java/grammar/p022.html">
+            
+                <a href="../core_java/grammar/p022.html">
+            
+                    
+                        <b>3.1.22.</b>
+                    
+                    静态变量和实例变量的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.23" data-path="../core_java/grammar/p023.html">
+            
+                <a href="../core_java/grammar/p023.html">
+            
+                    
+                        <b>3.1.23.</b>
+                    
+                    写clone()方法时通常都有一行代码，是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.24" data-path="../core_java/grammar/p024.html">
+            
+                <a href="../core_java/grammar/p024.html">
+            
+                    
+                        <b>3.1.24.</b>
+                    
+                    GC 是什么,为什么要有GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.25" data-path="../core_java/grammar/p025.html">
+            
+                <a href="../core_java/grammar/p025.html">
+            
+                    
+                        <b>3.1.25.</b>
+                    
+                    垃圾回收的优点和原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.26" data-path="../core_java/grammar/p026.html">
+            
+                <a href="../core_java/grammar/p026.html">
+            
+                    
+                        <b>3.1.26.</b>
+                    
+                    垃圾回收器的基本原理是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.27" data-path="../core_java/grammar/p027.html">
+            
+                <a href="../core_java/grammar/p027.html">
+            
+                    
+                        <b>3.1.27.</b>
+                    
+                    String s=new String(“xyz”);创建了几个String对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.28" data-path="../core_java/grammar/p028.html">
+            
+                <a href="../core_java/grammar/p028.html">
+            
+                    
+                        <b>3.1.28.</b>
+                    
+                    接口与抽象类的相互继承问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.29" data-path="../core_java/grammar/p029.html">
+            
+                <a href="../core_java/grammar/p029.html">
+            
+                    
+                        <b>3.1.29.</b>
+                    
+                    Java的接口和C++的虚类的相同和不同处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.30" data-path="../core_java/grammar/p030.html">
+            
+                <a href="../core_java/grammar/p030.html">
+            
+                    
+                        <b>3.1.30.</b>
+                    
+                    一个Java源文件中是否可以包含多个类（非内部类）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.31" data-path="../core_java/grammar/p031.html">
+            
+                <a href="../core_java/grammar/p031.html">
+            
+                    
+                        <b>3.1.31.</b>
+                    
+                    内部类是否可以引用外部类的成员
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.32" data-path="../core_java/grammar/p032.html">
+            
+                <a href="../core_java/grammar/p032.html">
+            
+                    
+                        <b>3.1.32.</b>
+                    
+                    Java中实现多态的机制是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.33" data-path="../core_java/grammar/p033.html">
+            
+                <a href="../core_java/grammar/p033.html">
+            
+                    
+                        <b>3.1.33.</b>
+                    
+                    数据类型之间的转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.34" data-path="../core_java/grammar/p034.html">
+            
+                <a href="../core_java/grammar/p034.html">
+            
+                    
+                        <b>3.1.34.</b>
+                    
+                    如何实现字符串的反转及替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.35" data-path="../core_java/grammar/p035.html">
+            
+                <a href="../core_java/grammar/p035.html">
+            
+                    
+                        <b>3.1.35.</b>
+                    
+                    日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.36" data-path="../core_java/grammar/p036.html">
+            
+                <a href="../core_java/grammar/p036.html">
+            
+                    
+                        <b>3.1.36.</b>
+                    
+                    Java和JavaSciprt的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.37" data-path="../core_java/grammar/p037.html">
+            
+                <a href="../core_java/grammar/p037.html">
+            
+                    
+                        <b>3.1.37.</b>
+                    
+                    什么时候用assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                        <b>3.2.</b>
+                    
+                    异常
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../core_java/exception/p001.html">
+            
+                <a href="../core_java/exception/p001.html">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    Java中的异常处理机制的简单原理和应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../core_java/exception/p002.html">
+            
+                <a href="../core_java/exception/p002.html">
+            
+                    
+                        <b>3.2.2.</b>
+                    
+                    error和exception有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../core_java/exception/p003.html">
+            
+                <a href="../core_java/exception/p003.html">
+            
+                    
+                        <b>3.2.3.</b>
+                    
+                    try里的return语句与finally代码的执行执行顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../core_java/exception/p004.html">
+            
+                <a href="../core_java/exception/p004.html">
+            
+                    
+                        <b>3.2.4.</b>
+                    
+                    Java如何进行异常处理及相应关键字含义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../core_java/exception/p005.html">
+            
+                <a href="../core_java/exception/p005.html">
+            
+                    
+                        <b>3.2.5.</b>
+                    
+                    运行时异常与一般异常有何异同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="../core_java/exception/p006.html">
+            
+                <a href="../core_java/exception/p006.html">
+            
+                    
+                        <b>3.2.6.</b>
+                    
+                    常见的runtime exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="../core_java/exception/p007.html">
+            
+                <a href="../core_java/exception/p007.html">
+            
+                    
+                        <b>3.2.7.</b>
+                    
+                    final、finally、finalize 的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                        <b>3.3.</b>
+                    
+                    集合
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../core_java/collection/p001.html">
+            
+                <a href="../core_java/collection/p001.html">
+            
+                    
+                        <b>3.3.1.</b>
+                    
+                    介绍Java中的Collection FrameWork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../core_java/collection/p002.html">
+            
+                <a href="../core_java/collection/p002.html">
+            
+                    
+                        <b>3.3.2.</b>
+                    
+                    List,Set,Map是否继承自Collection接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../core_java/collection/p003.html">
+            
+                <a href="../core_java/collection/p003.html">
+            
+                    
+                        <b>3.3.3.</b>
+                    
+                    你所知道的集合类都有哪些
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../core_java/collection/p004.html">
+            
+                <a href="../core_java/collection/p004.html">
+            
+                    
+                        <b>3.3.4.</b>
+                    
+                    ArrayList,Vector,LinkedList的存储性能和特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../core_java/collection/p005.html">
+            
+                <a href="../core_java/collection/p005.html">
+            
+                    
+                        <b>3.3.5.</b>
+                    
+                    Collection和Collections的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.6" data-path="../core_java/collection/p006.html">
+            
+                <a href="../core_java/collection/p006.html">
+            
+                    
+                        <b>3.3.6.</b>
+                    
+                    HashMap和Hashtable的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.7" data-path="../core_java/collection/p007.html">
+            
+                <a href="../core_java/collection/p007.html">
+            
+                    
+                        <b>3.3.7.</b>
+                    
+                    Arraylist与Vector区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.8" data-path="../core_java/collection/p008.html">
+            
+                <a href="../core_java/collection/p008.html">
+            
+                    
+                        <b>3.3.8.</b>
+                    
+                    List,Map,Set存取元素时各有什么特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.9" data-path="../core_java/collection/p009.html">
+            
+                <a href="../core_java/collection/p009.html">
+            
+                    
+                        <b>3.3.9.</b>
+                    
+                    Set里元素用什么方法来区分重复
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" >
+            
+                <span>
+            
+                    
+                        <b>3.4.</b>
+                    
+                    线程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../core_java/thread/p001.html">
+            
+                <a href="../core_java/thread/p001.html">
+            
+                    
+                        <b>3.4.1.</b>
+                    
+                    sleep()和wait()有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../core_java/thread/p002.html">
+            
+                <a href="../core_java/thread/p002.html">
+            
+                    
+                        <b>3.4.2.</b>
+                    
+                    请说出你所知道的线程同步的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../core_java/thread/p003.html">
+            
+                <a href="../core_java/thread/p003.html">
+            
+                    
+                        <b>3.4.3.</b>
+                    
+                    多线程和同步分别有几种实现方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="../core_java/thread/p004.html">
+            
+                <a href="../core_java/thread/p004.html">
+            
+                    
+                        <b>3.4.4.</b>
+                    
+                    同步和异步有何异同以及在何种情况下使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.5" data-path="../core_java/thread/p005.html">
+            
+                <a href="../core_java/thread/p005.html">
+            
+                    
+                        <b>3.4.5.</b>
+                    
+                    启动一个线程是用run()还是start()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.6" data-path="../core_java/thread/p006.html">
+            
+                <a href="../core_java/thread/p006.html">
+            
+                    
+                        <b>3.4.6.</b>
+                    
+                    线程的基本概念、线程的基本状态以及状态之间的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.7" data-path="../core_java/thread/p007.html">
+            
+                <a href="../core_java/thread/p007.html">
+            
+                    
+                        <b>3.4.7.</b>
+                    
+                    简述synchronized和java.util.concurrent.locks.Lock的异同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.8" data-path="../core_java/thread/p008.html">
+            
+                <a href="../core_java/thread/p008.html">
+            
+                    
+                        <b>3.4.8.</b>
+                    
+                    Java中有几种方法可以实现一个线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.9" data-path="../core_java/thread/p009.html">
+            
+                <a href="../core_java/thread/p009.html">
+            
+                    
+                        <b>3.4.9.</b>
+                    
+                    stop()和suspend()方法为何不推荐使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                        <b>3.5.</b>
+                    
+                    IO流
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../core_java/io/p001.html">
+            
+                <a href="../core_java/io/p001.html">
+            
+                    
+                        <b>3.5.1.</b>
+                    
+                    如何实现Java序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="../core_java/io/p002.html">
+            
+                <a href="../core_java/io/p002.html">
+            
+                    
+                        <b>3.5.2.</b>
+                    
+                    Java中有几种类型的流，以及对应的抽象类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="../core_java/io/p003.html">
+            
+                <a href="../core_java/io/p003.html">
+            
+                    
+                        <b>3.5.3.</b>
+                    
+                    文件和目录（IO）操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="../core_java/io/p004.html">
+            
+                <a href="../core_java/io/p004.html">
+            
+                    
+                        <b>3.5.4.</b>
+                    
+                    统计字符串在文件中出现的次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Socket
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../core_java/socket/p001.html">
+            
+                <a href="../core_java/socket/p001.html">
+            
+                    
+                        <b>3.6.1.</b>
+                    
+                    使用Socket读取服务器字符并本地显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    JDBC
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="p001.html">
+            
+                <a href="p001.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    什么是JDBC，在什么时候会用到它
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="p002.html">
+            
+                <a href="p002.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    有哪些不同类型的JDBC驱动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="p003.html">
+            
+                <a href="p003.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    JDBC是如何实现Java程序和JDBC驱动的松耦合的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="p004.html">
+            
+                <a href="p004.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    什么是JDBC连接，在Java中如何创建一个JDBC连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="p005.html">
+            
+                <a href="p005.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    JDBC的DriverManager是用来做什么的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="p006.html">
+            
+                <a href="p006.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    在Java程序中如何获取数据库服务器的相关信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="p007.html">
+            
+                <a href="p007.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    JDBC的Statement是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="p008.html">
+            
+                <a href="p008.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    execute，executeQuery，executeUpdate的区别是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="p009.html">
+            
+                <a href="p009.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    JDBC的PreparedStatement是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="p010.html">
+            
+                <a href="p010.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    PreparedStatement中如何注入NULL值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="p011.html">
+            
+                <a href="p011.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    Statement中的getGeneratedKeys方法有什么用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="p012.html">
+            
+                <a href="p012.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    相对于Statement，PreparedStatement的优点是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="p013.html">
+            
+                <a href="p013.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    PreparedStatement的缺点是什么，怎么解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="p014.html">
+            
+                <a href="p014.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    JDBC的ResultSet是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="p015.html">
+            
+                <a href="p015.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    有哪些不同的ResultSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="p016.html">
+            
+                <a href="p016.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    Statement中的setFetchSize和setMaxRows方法有什么用处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="p017.html">
+            
+                <a href="p017.html">
+            
+                    
+                        <b>4.17.</b>
+                    
+                    如何使用JDBC接口来调用存储过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="p018.html">
+            
+                <a href="p018.html">
+            
+                    
+                        <b>4.18.</b>
+                    
+                    JDBC的批处理是什么，有什么好处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="p019.html">
+            
+                <a href="p019.html">
+            
+                    
+                        <b>4.19.</b>
+                    
+                    JDBC的事务管理是什么，为什么需要它
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="p020.html">
+            
+                <a href="p020.html">
+            
+                    
+                        <b>4.20.</b>
+                    
+                    如何回滚事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="p021.html">
+            
+                <a href="p021.html">
+            
+                    
+                        <b>4.21.</b>
+                    
+                    JDBC的保存点(Savepoint)是什么，如何使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="p022.html">
+            
+                <a href="p022.html">
+            
+                    
+                        <b>4.22.</b>
+                    
+                    JDBC的DataSource是什么，有什么好处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.23" data-path="p023.html">
+            
+                <a href="p023.html">
+            
+                    
+                        <b>4.23.</b>
+                    
+                    如何通过JDBC的DataSource和Apache Tomcat的JNDI来创建连接池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.24" data-path="p024.html">
+            
+                <a href="p024.html">
+            
+                    
+                        <b>4.24.</b>
+                    
+                    Apache的DBCP是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.25" data-path="p025.html">
+            
+                <a href="p025.html">
+            
+                    
+                        <b>4.25.</b>
+                    
+                    什么是数据库的隔离级别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.26" data-path="p026.html">
+            
+                <a href="p026.html">
+            
+                    
+                        <b>4.26.</b>
+                    
+                    JDBC的RowSet是什么，有哪些不同的RowSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.27" data-path="p027.html">
+            
+                <a href="p027.html">
+            
+                    
+                        <b>4.27.</b>
+                    
+                    RowSet和ResultSet的区别是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.28" data-path="p028.html">
+            
+                <a href="p028.html">
+            
+                    
+                        <b>4.28.</b>
+                    
+                    常见的JDBC异常有哪些
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.29" data-path="p029.html">
+            
+                <a href="p029.html">
+            
+                    
+                        <b>4.29.</b>
+                    
+                    JDBC里的CLOB和BLOB数据类型分别代表什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.30" data-path="p030.html">
+            
+                <a href="p030.html">
+            
+                    
+                        <b>4.30.</b>
+                    
+                    JDBC的脏读是什么，哪种数据库隔离级别能防止脏读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.31" data-path="p031.html">
+            
+                <a href="p031.html">
+            
+                    
+                        <b>4.31.</b>
+                    
+                    什么是两阶段提交
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.32" data-path="p032.html">
+            
+                <a href="p032.html">
+            
+                    
+                        <b>4.32.</b>
+                    
+                    JDBC中存在哪些不同类型的锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.33" data-path="p033.html">
+            
+                <a href="p033.html">
+            
+                    
+                        <b>4.33.</b>
+                    
+                    DDL和DML语句分别代表什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.34" data-path="p034.html">
+            
+                <a href="p034.html">
+            
+                    
+                        <b>4.34.</b>
+                    
+                    java.util.Date和java.sql.Date有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.35" data-path="p035.html">
+            
+                <a href="p035.html">
+            
+                    
+                        <b>4.35.</b>
+                    
+                    如何把图片或者原始数据插入到数据库中
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.36" data-path="p036.html">
+            
+                <a href="p036.html">
+            
+                    
+                        <b>4.36.</b>
+                    
+                    什么是幻读，哪种隔离级别可以防止幻读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.37" data-path="p037.html">
+            
+                <a href="p037.html">
+            
+                    
+                        <b>4.37.</b>
+                    
+                    SQLWarning是什么，在程序中如何获取SQLWarning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.38" data-path="p038.html">
+            
+                <a href="p038.html">
+            
+                    
+                        <b>4.38.</b>
+                    
+                    如果Oracle的存储过程的入参出参中包含数据库对象，应该如何进行调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.39" data-path="p039.html">
+            
+                <a href="p039.html">
+            
+                    
+                        <b>4.39.</b>
+                    
+                    如果java.sql.SQLException: No suitable driver found该怎么办
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.40" data-path="p040.html">
+            
+                <a href="p040.html">
+            
+                    
+                        <b>4.40.</b>
+                    
+                    什么是JDBC的最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    Jsp&Servlet
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    Hibernate
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+                <span>
+            
+                    
+                        <b>7.</b>
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="../spring/p001.html">
+            
+                <a href="../spring/p001.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    什么是 Spring 框架？Spring 框架有哪些主要模块？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../spring/p002.html">
+            
+                <a href="../spring/p002.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    使用 Spring 框架能带来哪些好处？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../spring/p003.html">
+            
+                <a href="../spring/p003.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    什么是控制反转(IOC)？什么是依赖注入？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../spring/p004.html">
+            
+                <a href="../spring/p004.html">
+            
+                    
+                        <b>8.4.</b>
+                    
+                    请解释下 Spring 框架中的 IOC？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="../spring/p005.html">
+            
+                <a href="../spring/p005.html">
+            
+                    
+                        <b>8.5.</b>
+                    
+                    BeanFactory 和 ApplicationContext 有什么区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="../spring/p006.html">
+            
+                <a href="../spring/p006.html">
+            
+                    
+                        <b>8.6.</b>
+                    
+                    Spring 提供几种配置方式来设置元数据？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="../spring/p007.html">
+            
+                <a href="../spring/p007.html">
+            
+                    
+                        <b>8.7.</b>
+                    
+                    如何使用 XML 配置的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="../spring/p008.html">
+            
+                <a href="../spring/p008.html">
+            
+                    
+                        <b>8.8.</b>
+                    
+                    如何用基于 Java 配置的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="../spring/p009.html">
+            
+                <a href="../spring/p009.html">
+            
+                    
+                        <b>8.9.</b>
+                    
+                    怎样用注解的方式配置 Spring？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="../spring/p010.html">
+            
+                <a href="../spring/p010.html">
+            
+                    
+                        <b>8.10.</b>
+                    
+                    请解释 Spring Bean 的生命周期？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="../spring/p011.html">
+            
+                <a href="../spring/p011.html">
+            
+                    
+                        <b>8.11.</b>
+                    
+                    Spring Bean 作用域之间的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="../spring/p012.html">
+            
+                <a href="../spring/p012.html">
+            
+                    
+                        <b>8.12.</b>
+                    
+                    什么是 Spring inner beans？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="../spring/p013.html">
+            
+                <a href="../spring/p013.html">
+            
+                    
+                        <b>8.13.</b>
+                    
+                    Spring 框架中的单例 Beans 是线程安全的么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.14" data-path="../spring/p014.html">
+            
+                <a href="../spring/p014.html">
+            
+                    
+                        <b>8.14.</b>
+                    
+                    请举例说明如何在 Spring 中注入一个 Java 集合？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.15" data-path="../spring/p015.html">
+            
+                <a href="../spring/p015.html">
+            
+                    
+                        <b>8.15.</b>
+                    
+                    如何向 Spring Bean 中注入 java.util.Properties？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.16" data-path="../spring/p016.html">
+            
+                <a href="../spring/p016.html">
+            
+                    
+                        <b>8.16.</b>
+                    
+                    请解释 Spring Bean 的自动装配？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.17" data-path="../spring/p017.html">
+            
+                <a href="../spring/p017.html">
+            
+                    
+                        <b>8.17.</b>
+                    
+                    请解释各种自动装配模式的区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.18" data-path="../spring/p018.html">
+            
+                <a href="../spring/p018.html">
+            
+                    
+                        <b>8.18.</b>
+                    
+                    如何开启基于注解的自动装配？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.19" data-path="../spring/p019.html">
+            
+                <a href="../spring/p019.html">
+            
+                    
+                        <b>8.19.</b>
+                    
+                    自动装配有哪些局限性？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.20" data-path="../spring/p020.html">
+            
+                <a href="../spring/p020.html">
+            
+                    
+                        <b>8.20.</b>
+                    
+                    在 Spring 中可以注入 null 或空字符串吗？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.21" data-path="../spring/p021.html">
+            
+                <a href="../spring/p021.html">
+            
+                    
+                        <b>8.21.</b>
+                    
+                    请举例解释@Required Annotation？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.22" data-path="../spring/p022.html">
+            
+                <a href="../spring/p022.html">
+            
+                    
+                        <b>8.22.</b>
+                    
+                    请举例解释@Autowired 注解？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.23" data-path="../spring/p023.html">
+            
+                <a href="../spring/p023.html">
+            
+                    
+                        <b>8.23.</b>
+                    
+                    请举例说明@Qualifier 注解？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.24" data-path="../spring/p024.html">
+            
+                <a href="../spring/p024.html">
+            
+                    
+                        <b>8.24.</b>
+                    
+                    构造方法注入和设值注入有什么区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.25" data-path="../spring/p025.html">
+            
+                <a href="../spring/p025.html">
+            
+                    
+                        <b>8.25.</b>
+                    
+                    Spring 框架中有哪些不同类型的事件？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.26" data-path="../spring/p026.html">
+            
+                <a href="../spring/p026.html">
+            
+                    
+                        <b>8.26.</b>
+                    
+                    FileSystemResource 和 ClassPathResource 有何区别？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.27" data-path="../spring/p027.html">
+            
+                <a href="../spring/p027.html">
+            
+                    
+                        <b>8.27.</b>
+                    
+                    Spring 框架中都用到了哪些设计模式？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.28" data-path="../spring/p028.html">
+            
+                <a href="../spring/p028.html">
+            
+                    
+                        <b>8.28.</b>
+                    
+                    在 Spring 框架中如何更有效的使用 JDBC？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.29" data-path="../spring/p029.html">
+            
+                <a href="../spring/p029.html">
+            
+                    
+                        <b>8.29.</b>
+                    
+                    Spring5 新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" >
+            
+                <span>
+            
+                    
+                        <b>9.</b>
+                    
+                    EJB
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10" >
+            
+                <span>
+            
+                    
+                        <b>10.</b>
+                    
+                    WebService
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+                <span>
+            
+                    
+                        <b>11.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12" >
+            
+                <span>
+            
+                    
+                        <b>12.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13" >
+            
+                <span>
+            
+                    
+                        <b>13.</b>
+                    
+                    其它
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >如果Oracle的存储过程的入参出参中包含数据库对象，应该如何进行调用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5982;&#x679C;oracle&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x5165;&#x53C2;&#x51FA;&#x53C2;&#x4E2D;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#xFF0C;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x8C03;&#x7528;"><b> </b>&#x5982;&#x679C;Oracle&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x5165;&#x53C2;&#x51FA;&#x53C2;&#x4E2D;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#xFF0C;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x8C03;&#x7528;</a></li></ul></div><a href="#&#x5982;&#x679C;oracle&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x5165;&#x53C2;&#x51FA;&#x53C2;&#x4E2D;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#xFF0C;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x8C03;&#x7528;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5982;&#x679C;oracle&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x5165;&#x53C2;&#x51FA;&#x53C2;&#x4E2D;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#xFF0C;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x8C03;&#x7528;"><a name="&#x5982;&#x679C;oracle&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x5165;&#x53C2;&#x51FA;&#x53C2;&#x4E2D;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#xFF0C;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x8C03;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x679C;oracle&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x5165;&#x53C2;&#x51FA;&#x53C2;&#x4E2D;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#xFF0C;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x8C03;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x5982;&#x679C;Oracle&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x5165;&#x53C2;&#x51FA;&#x53C2;&#x4E2D;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#xFF0C;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x8C03;&#x7528;</h1>
+<p>&#x5982;&#x679C;Oracle&#x7684;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x7684;&#x5165;&#x53C2;&#x51FA;&#x53C2;&#x4E2D;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x7A0B;&#x5E8F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540C;&#x6837;&#x5927;&#x5C0F;&#x7684;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x5B83;&#x6765;&#x751F;&#x6210;Oracle&#x7684;STRUCT&#x5BF9;&#x8C61;&#x3002;&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#x7684;setSTRUCT&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x8FD9;&#x4E2A;struct&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#x3002; </p>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"></p><p class="paragraph footer__quote--normal" style="color: #000 !important;">Everything you need to prepare for your technical interview.</p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">modified at</span>
+2019-01-23
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="p037.html" class="navigation navigation-prev " aria-label="Previous page: SQLWarning是什么，在程序中如何获取SQLWarning">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="p039.html" class="navigation navigation-next " aria-label="Next page: 如果java.sql.SQLException: No suitable driver found该怎么办">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"如果Oracle的存储过程的入参出参中包含数据库对象，应该如何进行调用","level":"4.38","depth":1,"next":{"title":"如果java.sql.SQLException: No suitable driver found该怎么办","level":"4.39","depth":1,"path":"jdbc/p039.md","ref":"jdbc/p039.md","articles":[]},"previous":{"title":"SQLWarning是什么，在程序中如何获取SQLWarning","level":"4.37","depth":1,"path":"jdbc/p037.md","ref":"jdbc/p037.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","-sharing","folding-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex","fancybox","insert-logo-link-style","page-copyright"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"page-copyright":{"wisdom":"Everything you need to prepare for your technical interview.","noPowered":true,"copyright":"Copyright &#169; edu2act","styles (normal, symmetrical)":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd","signature":"edu2act","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"modified at"},"insert-logo-link-style":{"src":"images/logo.png","style":"background: none; width: 220px;","link":"http://github.com/edu2act"},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/apple-touch-icon.png","appleTouchMore":{"120x120":"images/apple-touch-icon-120x120.png","180x180":"images/apple-touch-icon-180x180.png"}},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"jdbc/p038.md","mtime":"2019-01-23T09:35:16.883Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-24T00:31:58.108Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
