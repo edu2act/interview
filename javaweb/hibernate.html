@@ -1,0 +1,2442 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>Hibernate · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="spring.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                        <b>2.1.</b>
+                    
+                    语法
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../core_java/grammar/p001.html">
+            
+                <a href="../core_java/grammar/p001.html">
+            
+                    
+                        <b>2.1.1.</b>
+                    
+                    面向对象的三大特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../core_java/grammar/p002.html">
+            
+                <a href="../core_java/grammar/p002.html">
+            
+                    
+                        <b>2.1.2.</b>
+                    
+                    面向对象的四大特征
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../core_java/grammar/p003.html">
+            
+                <a href="../core_java/grammar/p003.html">
+            
+                    
+                        <b>2.1.3.</b>
+                    
+                    语句float f=3.4是否正确
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../core_java/grammar/p004.html">
+            
+                <a href="../core_java/grammar/p004.html">
+            
+                    
+                        <b>2.1.4.</b>
+                    
+                    语句short s1 = 1; s1 = s1 + 1;是否正确
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../core_java/grammar/p005.html">
+            
+                <a href="../core_java/grammar/p005.html">
+            
+                    
+                        <b>2.1.5.</b>
+                    
+                    Java有没有goto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../core_java/grammar/p006.html">
+            
+                <a href="../core_java/grammar/p006.html">
+            
+                    
+                        <b>2.1.6.</b>
+                    
+                    int 和Integer 有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../core_java/grammar/p007.html">
+            
+                <a href="../core_java/grammar/p007.html">
+            
+                    
+                        <b>2.1.7.</b>
+                    
+                    逻辑操作(&,|,^)与条件操作(&&,||)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../core_java/grammar/p008.html">
+            
+                <a href="../core_java/grammar/p008.html">
+            
+                    
+                        <b>2.1.8.</b>
+                    
+                    Math的floor、round、ceil函数区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../core_java/grammar/p009.html">
+            
+                <a href="../core_java/grammar/p009.html">
+            
+                    
+                        <b>2.1.9.</b>
+                    
+                    求2*8的最效率方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../core_java/grammar/p010.html">
+            
+                <a href="../core_java/grammar/p010.html">
+            
+                    
+                        <b>2.1.10.</b>
+                    
+                    有没有length()这个方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../core_java/grammar/p011.html">
+            
+                <a href="../core_java/grammar/p011.html">
+            
+                    
+                        <b>2.1.11.</b>
+                    
+                    swtich中表达式的类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../core_java/grammar/p012.html">
+            
+                <a href="../core_java/grammar/p012.html">
+            
+                    
+                        <b>2.1.12.</b>
+                    
+                    Java中如何跳出多重嵌套循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../core_java/grammar/p013.html">
+            
+                <a href="../core_java/grammar/p013.html">
+            
+                    
+                        <b>2.1.13.</b>
+                    
+                    构造器Constructor 是否可被override
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../core_java/grammar/p014.html">
+            
+                <a href="../core_java/grammar/p014.html">
+            
+                    
+                        <b>2.1.14.</b>
+                    
+                    x.equals(y) == true; hashcode是否相同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../core_java/grammar/p015.html">
+            
+                <a href="../core_java/grammar/p015.html">
+            
+                    
+                        <b>2.1.15.</b>
+                    
+                    是否可以继承String 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../core_java/grammar/p016.html">
+            
+                <a href="../core_java/grammar/p016.html">
+            
+                    
+                        <b>2.1.16.</b>
+                    
+                    equals()和equalsIgnoreCase()的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../core_java/grammar/p017.html">
+            
+                <a href="../core_java/grammar/p017.html">
+            
+                    
+                        <b>2.1.17.</b>
+                    
+                    值传递还是引用传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../core_java/grammar/p018.html">
+            
+                <a href="../core_java/grammar/p018.html">
+            
+                    
+                        <b>2.1.18.</b>
+                    
+                    char型变量中能否存储一个中文汉字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" data-path="../core_java/grammar/p019.html">
+            
+                <a href="../core_java/grammar/p019.html">
+            
+                    
+                        <b>2.1.19.</b>
+                    
+                    abstract class和interface有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../core_java/grammar/p020.html">
+            
+                <a href="../core_java/grammar/p020.html">
+            
+                    
+                        <b>2.1.20.</b>
+                    
+                    Static Nested Class和Inner Class的不同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../core_java/grammar/p021.html">
+            
+                <a href="../core_java/grammar/p021.html">
+            
+                    
+                        <b>2.1.21.</b>
+                    
+                    Java中是否存在内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../core_java/grammar/p022.html">
+            
+                <a href="../core_java/grammar/p022.html">
+            
+                    
+                        <b>2.1.22.</b>
+                    
+                    静态变量和实例变量的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.23" data-path="../core_java/grammar/p023.html">
+            
+                <a href="../core_java/grammar/p023.html">
+            
+                    
+                        <b>2.1.23.</b>
+                    
+                    写clone()方法时通常都有一行代码，是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="../core_java/grammar/p024.html">
+            
+                <a href="../core_java/grammar/p024.html">
+            
+                    
+                        <b>2.1.24.</b>
+                    
+                    GC 是什么,为什么要有GC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.25" data-path="../core_java/grammar/p025.html">
+            
+                <a href="../core_java/grammar/p025.html">
+            
+                    
+                        <b>2.1.25.</b>
+                    
+                    垃圾回收的优点和原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.26" data-path="../core_java/grammar/p026.html">
+            
+                <a href="../core_java/grammar/p026.html">
+            
+                    
+                        <b>2.1.26.</b>
+                    
+                    垃圾回收器的基本原理是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.27" data-path="../core_java/grammar/p027.html">
+            
+                <a href="../core_java/grammar/p027.html">
+            
+                    
+                        <b>2.1.27.</b>
+                    
+                    String s=new String(“xyz”);创建了几个String对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.28" data-path="../core_java/grammar/p028.html">
+            
+                <a href="../core_java/grammar/p028.html">
+            
+                    
+                        <b>2.1.28.</b>
+                    
+                    接口与抽象类的相互继承问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.29" data-path="../core_java/grammar/p029.html">
+            
+                <a href="../core_java/grammar/p029.html">
+            
+                    
+                        <b>2.1.29.</b>
+                    
+                    Java的接口和C++的虚类的相同和不同处
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.30" data-path="../core_java/grammar/p030.html">
+            
+                <a href="../core_java/grammar/p030.html">
+            
+                    
+                        <b>2.1.30.</b>
+                    
+                    一个Java源文件中是否可以包含多个类（非内部类）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.31" data-path="../core_java/grammar/p031.html">
+            
+                <a href="../core_java/grammar/p031.html">
+            
+                    
+                        <b>2.1.31.</b>
+                    
+                    内部类是否可以引用外部类的成员
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.32" data-path="../core_java/grammar/p032.html">
+            
+                <a href="../core_java/grammar/p032.html">
+            
+                    
+                        <b>2.1.32.</b>
+                    
+                    Java中实现多态的机制是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.33" data-path="../core_java/grammar/p033.html">
+            
+                <a href="../core_java/grammar/p033.html">
+            
+                    
+                        <b>2.1.33.</b>
+                    
+                    数据类型之间的转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.34" data-path="../core_java/grammar/p034.html">
+            
+                <a href="../core_java/grammar/p034.html">
+            
+                    
+                        <b>2.1.34.</b>
+                    
+                    如何实现字符串的反转及替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.35" data-path="../core_java/grammar/p035.html">
+            
+                <a href="../core_java/grammar/p035.html">
+            
+                    
+                        <b>2.1.35.</b>
+                    
+                    日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.36" data-path="../core_java/grammar/p036.html">
+            
+                <a href="../core_java/grammar/p036.html">
+            
+                    
+                        <b>2.1.36.</b>
+                    
+                    Java和JavaSciprt的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.37" data-path="../core_java/grammar/p037.html">
+            
+                <a href="../core_java/grammar/p037.html">
+            
+                    
+                        <b>2.1.37.</b>
+                    
+                    什么时候用assert
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                        <b>2.2.</b>
+                    
+                    异常
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../core_java/exception/p001.html">
+            
+                <a href="../core_java/exception/p001.html">
+            
+                    
+                        <b>2.2.1.</b>
+                    
+                    Java中的异常处理机制的简单原理和应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../core_java/exception/p002.html">
+            
+                <a href="../core_java/exception/p002.html">
+            
+                    
+                        <b>2.2.2.</b>
+                    
+                    error和exception有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../core_java/exception/p003.html">
+            
+                <a href="../core_java/exception/p003.html">
+            
+                    
+                        <b>2.2.3.</b>
+                    
+                    try里的return语句与finally代码的执行执行顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../core_java/exception/p004.html">
+            
+                <a href="../core_java/exception/p004.html">
+            
+                    
+                        <b>2.2.4.</b>
+                    
+                    Java如何进行异常处理及相应关键字含义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../core_java/exception/p005.html">
+            
+                <a href="../core_java/exception/p005.html">
+            
+                    
+                        <b>2.2.5.</b>
+                    
+                    运行时异常与一般异常有何异同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../core_java/exception/p006.html">
+            
+                <a href="../core_java/exception/p006.html">
+            
+                    
+                        <b>2.2.6.</b>
+                    
+                    常见的runtime exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../core_java/exception/p007.html">
+            
+                <a href="../core_java/exception/p007.html">
+            
+                    
+                        <b>2.2.7.</b>
+                    
+                    final、finally、finalize 的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                        <b>2.3.</b>
+                    
+                    集合
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../core_java/collection/p001.html">
+            
+                <a href="../core_java/collection/p001.html">
+            
+                    
+                        <b>2.3.1.</b>
+                    
+                    介绍Java中的Collection FrameWork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../core_java/collection/p002.html">
+            
+                <a href="../core_java/collection/p002.html">
+            
+                    
+                        <b>2.3.2.</b>
+                    
+                    List,Set,Map是否继承自Collection接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../core_java/collection/p003.html">
+            
+                <a href="../core_java/collection/p003.html">
+            
+                    
+                        <b>2.3.3.</b>
+                    
+                    你所知道的集合类都有哪些
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../core_java/collection/p004.html">
+            
+                <a href="../core_java/collection/p004.html">
+            
+                    
+                        <b>2.3.4.</b>
+                    
+                    ArrayList,Vector,LinkedList的存储性能和特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../core_java/collection/p005.html">
+            
+                <a href="../core_java/collection/p005.html">
+            
+                    
+                        <b>2.3.5.</b>
+                    
+                    Collection和Collections的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../core_java/collection/p006.html">
+            
+                <a href="../core_java/collection/p006.html">
+            
+                    
+                        <b>2.3.6.</b>
+                    
+                    HashMap和Hashtable的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../core_java/collection/p007.html">
+            
+                <a href="../core_java/collection/p007.html">
+            
+                    
+                        <b>2.3.7.</b>
+                    
+                    Arraylist与Vector区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../core_java/collection/p008.html">
+            
+                <a href="../core_java/collection/p008.html">
+            
+                    
+                        <b>2.3.8.</b>
+                    
+                    List,Map,Set存取元素时各有什么特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../core_java/collection/p009.html">
+            
+                <a href="../core_java/collection/p009.html">
+            
+                    
+                        <b>2.3.9.</b>
+                    
+                    Set里元素用什么方法来区分重复
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                        <b>2.4.</b>
+                    
+                    线程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../core_java/thread/p001.html">
+            
+                <a href="../core_java/thread/p001.html">
+            
+                    
+                        <b>2.4.1.</b>
+                    
+                    sleep()和wait()有什么区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../core_java/thread/p002.html">
+            
+                <a href="../core_java/thread/p002.html">
+            
+                    
+                        <b>2.4.2.</b>
+                    
+                    请说出你所知道的线程同步的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../core_java/thread/p003.html">
+            
+                <a href="../core_java/thread/p003.html">
+            
+                    
+                        <b>2.4.3.</b>
+                    
+                    多线程和同步分别有几种实现方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../core_java/thread/p004.html">
+            
+                <a href="../core_java/thread/p004.html">
+            
+                    
+                        <b>2.4.4.</b>
+                    
+                    同步和异步有何异同以及在何种情况下使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../core_java/thread/p005.html">
+            
+                <a href="../core_java/thread/p005.html">
+            
+                    
+                        <b>2.4.5.</b>
+                    
+                    启动一个线程是用run()还是start()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../core_java/thread/p006.html">
+            
+                <a href="../core_java/thread/p006.html">
+            
+                    
+                        <b>2.4.6.</b>
+                    
+                    线程的基本概念、线程的基本状态以及状态之间的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../core_java/thread/p007.html">
+            
+                <a href="../core_java/thread/p007.html">
+            
+                    
+                        <b>2.4.7.</b>
+                    
+                    简述synchronized和java.util.concurrent.locks.Lock的异同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../core_java/thread/p008.html">
+            
+                <a href="../core_java/thread/p008.html">
+            
+                    
+                        <b>2.4.8.</b>
+                    
+                    Java中有几种方法可以实现一个线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../core_java/thread/p009.html">
+            
+                <a href="../core_java/thread/p009.html">
+            
+                    
+                        <b>2.4.9.</b>
+                    
+                    stop()和suspend()方法为何不推荐使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" >
+            
+                <span>
+            
+                    
+                        <b>2.5.</b>
+                    
+                    IO流
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../core_java/io/p001.html">
+            
+                <a href="../core_java/io/p001.html">
+            
+                    
+                        <b>2.5.1.</b>
+                    
+                    如何实现Java序列化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../core_java/io/p002.html">
+            
+                <a href="../core_java/io/p002.html">
+            
+                    
+                        <b>2.5.2.</b>
+                    
+                    Java中有几种类型的流，以及对应的抽象类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../core_java/io/p003.html">
+            
+                <a href="../core_java/io/p003.html">
+            
+                    
+                        <b>2.5.3.</b>
+                    
+                    文件和目录（IO）操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../core_java/io/p004.html">
+            
+                <a href="../core_java/io/p004.html">
+            
+                    
+                        <b>2.5.4.</b>
+                    
+                    统计字符串在文件中出现的次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+                <span>
+            
+                    
+                        <b>2.6.</b>
+                    
+                    Socket
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../core_java/socket/p001.html">
+            
+                <a href="../core_java/socket/p001.html">
+            
+                    
+                        <b>2.6.1.</b>
+                    
+                    使用Socket读取服务器字符并本地显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="jsp_servlet.html">
+            
+                <a href="jsp_servlet.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Jsp&Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="jdbc.html">
+            
+                <a href="jdbc.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="spring.html">
+            
+                <a href="spring.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="hibernate.html">
+            
+                <a href="hibernate.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+                <span>
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                        <b>3.6.</b>
+                    
+                    WebService
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="../android/basic.html">
+            
+                <a href="../android/basic.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    基本常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../android/activity.html">
+            
+                <a href="../android/activity.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../android/service.html">
+            
+                <a href="../android/service.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../android/broad_cast_receiver.html">
+            
+                <a href="../android/broad_cast_receiver.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    BroadCastReceiver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../android/content_provider.html">
+            
+                <a href="../android/content_provider.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    ContentProvider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../android/intent.html">
+            
+                <a href="../android/intent.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../android/layout.html">
+            
+                <a href="../android/layout.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../android/listview.html">
+            
+                <a href="../android/listview.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    ListView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../android/jni_ndk.html">
+            
+                <a href="../android/jni_ndk.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    JNI&NDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../android/fragment.html">
+            
+                <a href="../android/fragment.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../android/multi_threading.html">
+            
+                <a href="../android/multi_threading.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../android/network.html">
+            
+                <a href="../android/network.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    网络访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="../article/p001.html">
+            
+                <a href="../article/p001.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    什么是低耦合高内聚
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../article/p002.html">
+            
+                <a href="../article/p002.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    Java中的作用域的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../article/p003.html">
+            
+                <a href="../article/p003.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../article/p004.html">
+            
+                <a href="../article/p004.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../article/p005.html">
+            
+                <a href="../article/p005.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../article/p006.html">
+            
+                <a href="../article/p006.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../article/p007.html">
+            
+                <a href="../article/p007.html">
+            
+                    
+                        <b>5.7.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../article/p008.html">
+            
+                <a href="../article/p008.html">
+            
+                    
+                        <b>5.8.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../article/p009.html">
+            
+                <a href="../article/p009.html">
+            
+                    
+                        <b>5.9.</b>
+                    
+                    反射使用实例详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../article/p010.html">
+            
+                <a href="../article/p010.html">
+            
+                    
+                        <b>5.10.</b>
+                    
+                    内存区域和GC机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../article/p011.html">
+            
+                <a href="../article/p011.html">
+            
+                    
+                        <b>5.11.</b>
+                    
+                    成为Java GC专家(1)：深入浅出Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../article/p012.html">
+            
+                <a href="../article/p012.html">
+            
+                    
+                        <b>5.12.</b>
+                    
+                    成为Java GC专家(2)：如何监控Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="../article/p013.html">
+            
+                <a href="../article/p013.html">
+            
+                    
+                        <b>5.13.</b>
+                    
+                    成为Java GC专家(3)：如何优化Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="../article/p014.html">
+            
+                <a href="../article/p014.html">
+            
+                    
+                        <b>5.14.</b>
+                    
+                    成为Java GC专家(4)：Apache的MaxClients参数详解及其在Tomcat执行FullGC时的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="../article/p015.html">
+            
+                <a href="../article/p015.html">
+            
+                    
+                        <b>5.15.</b>
+                    
+                    面向对象的六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="../article/p016.html">
+            
+                <a href="../article/p016.html">
+            
+                    
+                        <b>5.16.</b>
+                    
+                    Java集合专题总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+                <span>
+            
+                    
+                        <b>7.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    其它
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Hibernate</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;hibernate"><b> </b>JavaWeb&#x9762;&#x8BD5;&#x9898;&#xFF1A;Hibernate</a></li><ul><li><span class="title-icon "></span><a href="#&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x65F6;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x5148;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x539F;&#x6570;&#x636E;"><b>1. </b>&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x65F6;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x5148;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x539F;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x89E3;&#x51B3;hibernate&#x61D2;&#x52A0;&#x8F7D;load&#x51FA;&#x73B0;no-session&#x7684;&#x9519;&#x8BEF;"><b>2. </b>&#x89E3;&#x51B3;Hibernate&#x61D2;&#x52A0;&#x8F7D;load&#x51FA;&#x73B0;no session&#x7684;&#x9519;&#x8BEF;</a></li><li><span class="title-icon "></span><a href="#&#x89E3;&#x51B3;hibernate&#x4E2D;&#x5E76;&#x53D1;&#x6240;&#x5F15;&#x8D77;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5185;&#x5BB9;&#x8BFB;&#x53D6;&#x95EE;&#x9898;"><b>3. </b>&#x89E3;&#x51B3;Hibernate&#x4E2D;&#x5E76;&#x53D1;&#x6240;&#x5F15;&#x8D77;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5185;&#x5BB9;&#x8BFB;&#x53D6;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;hibernate&#x7684;&#x5E76;&#x53D1;&#x673A;&#x5236;"><b>4. </b>&#x4EC0;&#x4E48;&#x662F;Hibernate&#x7684;&#x5E76;&#x53D1;&#x673A;&#x5236;</a></li><li><span class="title-icon "></span><a href="#update&#x548C;saveorupdate&#x7684;&#x533A;&#x522B;"><b>5. </b>update&#x548C;saveOrUpdate&#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#hibernate&#x7684;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x8F6C;&#x6362;"><b>6. </b>Hibernate&#x7684;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x8F6C;&#x6362;</a></li><li><span class="title-icon "></span><a href="#hibernate&#x7684;&#x4E09;&#x79CD;&#x68C0;&#x7D22;&#x7B56;&#x7565;&#x4F18;&#x7F3A;&#x70B9;"><b>7. </b>Hibernate&#x7684;&#x4E09;&#x79CD;&#x68C0;&#x7D22;&#x7B56;&#x7565;&#x4F18;&#x7F3A;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x67E5;&#x770B;hibernate&#x751F;&#x6210;&#x5E76;&#x6267;&#x884C;&#x7684;sql"><b>8. </b>&#x5982;&#x4F55;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x67E5;&#x770B;Hibernate&#x751F;&#x6210;&#x5E76;&#x6267;&#x884C;&#x7684;sql</a></li><li><span class="title-icon "></span><a href="#hibernate&#x90FD;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x7F13;&#x5B58;&#x7B56;&#x7565;"><b>9. </b>Hibernate&#x90FD;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x7F13;&#x5B58;&#x7B56;&#x7565;</a></li><li><span class="title-icon "></span><a href="#sorted-collection-&#x548C;ordered-collection&#x7684;&#x533A;&#x522B;"><b>10. </b>sorted collection &#x548C;ordered collection&#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#hibernate&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x53CA;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;"><b>11. </b>Hibernate&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x53CA;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#hibernate&#x662F;&#x5982;&#x4F55;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;"><b>12. </b>Hibernate&#x662F;&#x5982;&#x4F55;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#&#x8BF4;&#x4E0B;hibernate&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;"><b>13. </b>&#x8BF4;&#x4E0B;Hibernate&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;</a></li><li><span class="title-icon "></span><a href="#hibernate&#x7684;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;&#x6709;&#x51E0;&#x79CD;"><b>14. </b>Hibernate&#x7684;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;&#x6709;&#x51E0;&#x79CD;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x4F18;&#x5316;hibernate"><b>15. </b>&#x5982;&#x4F55;&#x4F18;&#x5316;Hibernate</a></li><li><span class="title-icon "></span><a href="#&#x8C08;&#x8C08;hibernate&#x4E2D;inverse&#x7684;&#x4F5C;&#x7528;"><b>16. </b>&#x8C08;&#x8C08;Hibernate&#x4E2D;inverse&#x7684;&#x4F5C;&#x7528;</a></li><li><span class="title-icon "></span><a href="#detached-object&#xFF08;&#x6E38;&#x79BB;&#x5BF9;&#x8C61;&#xFF09;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;"><b>17. </b>Detached Object&#xFF08;&#x6E38;&#x79BB;&#x5BF9;&#x8C61;&#xFF09;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;</a></li><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x901F;&#x5EA6;&#x5F88;&#x6162;&#x65F6;&#x5982;&#x4F55;&#x4F18;&#x5316;"><b>18. </b>&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x901F;&#x5EA6;&#x5F88;&#x6162;&#x65F6;&#x5982;&#x4F55;&#x4F18;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;sessionfactory&#xFF0C;&#x5B83;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x4E48;"><b>19. </b>&#x4EC0;&#x4E48;&#x662F;SessionFactory&#xFF0C;&#x5B83;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x4E48;</a></li><li><span class="title-icon "></span><a href="#hibernate&#x7684;&#x4E94;&#x4E2A;&#x6838;&#x5FC3;&#x63A5;&#x53E3;"><b>20. </b>Hibernate&#x7684;&#x4E94;&#x4E2A;&#x6838;&#x5FC3;&#x63A5;&#x53E3;</a></li><li><span class="title-icon "></span><a href="#get&#x548C;load&#x533A;&#x522B;"><b>21. </b>get&#x548C;load&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#merge&#x7684;&#x542B;&#x4E49;"><b>22. </b>merge&#x7684;&#x542B;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#persist&#x548C;save&#x7684;&#x533A;&#x522B;"><b>23. </b>persist&#x548C;save&#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#x6709;&#x54EA;&#x4E9B;"><b>24. </b>&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#x6709;&#x54EA;&#x4E9B;</a></li><li><span class="title-icon "></span><a href="#getcurrentsession&#x548C;opensession&#x7684;&#x533A;&#x522B;"><b>25. </b>getCurrentSession&#x548C;openSession&#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#hibernate&#x4E2D;&#x7684;&#x547D;&#x540D;sql&#x67E5;&#x8BE2;&#x6307;&#x7684;&#x662F;&#x4EC0;&#x4E48;"><b>26. </b>Hibernate&#x4E2D;&#x7684;&#x547D;&#x540D;SQL&#x67E5;&#x8BE2;&#x6307;&#x7684;&#x662F;&#x4EC0;&#x4E48;</a></li><li><span class="title-icon "></span><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x5728;hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x8981;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x65E0;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x5668;"><b>27. </b>&#x4E3A;&#x4EC0;&#x4E48;&#x5728;Hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x8981;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x65E0;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x53EF;&#x4E0D;&#x53EF;&#x4EE5;&#x5C06;hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x5B9A;&#x4E49;&#x4E3A;final&#x7C7B;"><b>28. </b>&#x53EF;&#x4E0D;&#x53EF;&#x4EE5;&#x5C06;Hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x5B9A;&#x4E49;&#x4E3A;final&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#hibernate&#x7684;opensessionview&#x95EE;&#x9898;"><b>29. </b>Hibernate&#x7684;OpenSessionView&#x95EE;&#x9898;</a></li></ul></ul></div><a href="#javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;hibernate" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;hibernate"><a name="javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;hibernate" class="anchor-navigation-ex-anchor" href="#javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;hibernate"><i class="fa fa-link" aria-hidden="true"></i></a> JavaWeb&#x9762;&#x8BD5;&#x9898;&#xFF1A;Hibernate</h1>
+<hr>
+<h2 id="&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x65F6;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x5148;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x539F;&#x6570;&#x636E;"><a name="&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x65F6;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x5148;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x539F;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x65F6;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x5148;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x539F;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x65F6;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x5148;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x539F;&#x6570;&#x636E;</h2>
+<p>&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x9700;&#x8981;&#x5148;&#x83B7;&#x53D6;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x539F;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x628A;&#x65B0;&#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x590D;&#x5236;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6267;&#x884C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x5462;&#xFF1F;&#x6BD4;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;(1)&#x800C;&#x4E0D;&#x662F;&#x76F4;&#x63A5;&#x4EE3;&#x7801;(2)&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#xFF08;1&#xFF09;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">// &#x5176;&#x4E2D;Persion&#x4E3A;&#x4E00;&#x4E2A;pojo&#x7C7B;</span>
+<span class="token comment">// &#x53C2;&#x6570;&#xFF1A;currentPerson&#x8868;&#x793A;&#x4ECE;controller&#x5C42;&#x83B7;&#x53D6;&#x5230;&#x4ECE;&#x9875;&#x9762;&#x4E2D;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;&#x5185;&#x5BB9;</span>
+<span class="token comment">// Service&#x5C42;&#x4E2D;&#xFF1A;</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">updatePerson</span><span class="token punctuation">(</span>Person currentPerson<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">//&#x83B7;&#x53D6;&#x5230;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x5185;&#x5BB9;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x539F;&#x59CB;&#x7684;&#x5185;&#x5BB9;&#x4FE1;&#x606F;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8C03;&#x7528;sesssion.load(id)&#x8FD9;hibernate&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;get&#x65B9;&#x6CD5;</span>
+      Person person <span class="token operator">=</span> personDao<span class="token punctuation">.</span>loadPerson&#xFF08;currentPerson<span class="token punctuation">.</span><span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//&#x5C06;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x590D;&#x5236;&#x5230;&#x83B7;&#x53D6;&#x7684;&#x5BF9;&#x8C61;&#x4E2D;</span>
+      BeanUtil<span class="token punctuation">.</span><span class="token function">copyProperties</span><span class="token punctuation">(</span>currentPerson <span class="token punctuation">,</span> person<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//&#x8FDB;&#x884C;hibernate&#x4E2D;&#x7684;session&#x66F4;&#x65B0;&#x64CD;&#x4F5C;</span>
+      personDao<span class="token punctuation">.</span><span class="token function">updatePerson</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4EE3;&#x7801;&#xFF08;2&#xFF09;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">// &#x5176;&#x4E2D;Persion&#x4E3A;&#x4E00;&#x4E2A;pojo&#x7C7B;</span>
+<span class="token comment">// &#x53C2;&#x6570;&#xFF1A;currentPerson&#x8868;&#x793A;&#x4ECE;controller&#x5C42;&#x83B7;&#x53D6;&#x5230;&#x4ECE;&#x9875;&#x9762;&#x4E2D;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;&#x5185;&#x5BB9;</span>
+<span class="token comment">// Service&#x5C42;&#x4E2D;&#xFF1A;</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">updatePerson</span><span class="token punctuation">(</span>Person currentPerson<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token comment">//&#x8FDB;&#x884C;hibernate&#x4E2D;&#x7684;session&#x66F4;&#x65B0;&#x64CD;&#x4F5C;</span>
+      personDao<span class="token punctuation">.</span>updatePersoncurrentPerson<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x89E3;&#x7B54;&#xFF1A;</strong></p>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;service&#x5C42;&#x7684;&#x8FD9;&#x4E2A;&#x66F4;&#x65B0;&#x7684;&#x65B9;&#x6CD5;&#x4E2D;&#xFF08;&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5728;controller&#x5C42;&#x6216;&#x8005;&#x662F;strus2&#x7684;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x53EA;&#x662F;&#x8C03;&#x7528;&#x7684;&#x5F62;&#x5F0F;&#x6709;&#x53D8;&#x5316;&#x800C;&#x5DF2;&#xFF09;&#xFF0C;&#x6CE8;&#x610F;&#x5230;&#x4E86;&#x662F;&#x5148;&#x83B7;&#x53D6;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x4E3B;&#x952E;id&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6839;&#x636E;&#x4FEE;&#x6539;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x7684;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x7684;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x5B9A;&#x4F1A;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x4E00;&#x79CD;&#x89C4;&#x8303;&#x5427;&#xFF0C;&#x5C31;&#x662F;&#x80FD;&#x591F;&#x66F4;&#x5B89;&#x5168;&#x3002;&#x539F;&#x56E0;&#x5C31;&#x5728;&#x4E8E;&#xFF0C;&#x5728;hibernate&#x7684;&#x5DE5;&#x4F5C;&#x673A;&#x5236;&#x4E2D;&#xFF0C;&#x5BF9;&#x5E94;&#x5728;&#x540C;&#x4E00;&#x533A;&#x57DF;&#xFF08;Hibernate&#x7F13;&#x5B58;&#x533A;&#xFF09;&#x548C;&#x65F6;&#x95F4;&#x662F;&#x4E0D;&#x80FD;&#x591F;&#x6709;&#x76F8;&#x540C;&#x4E3B;&#x952E;&#x5185;&#x5BB9;&#x7684;&#x6570;&#x636E;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x4E0D;&#x80FD;&#x6709;&#x4E24;&#x4E2A;&#x76F8;&#x540C;&#x4E3B;&#x952E;&#x7684;&#x6301;&#x4E45;&#x5316;&#x7C7B;&#x5B58;&#x5728;&#x3002;</p>
+<p>&#x66F4;&#x4E3A;&#x901A;&#x4FD7;&#x7684;&#x8BB2;&#x89E3;&#x5C31;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x7684;&#x5B9E;&#x4F53;&#xFF0C;&#x521A;&#x597D;&#x7684;&#x4E3B;&#x952E;id&#x5BF9;&#x5E94;&#x7740;Hibernate&#x7F13;&#x5B58;&#x533A;&#x4E2D;&#xFF0C;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x6837;&#x5C31;&#x4F1A;&#x62A5;&#x4E00;&#x4E2A;different object with the same identitifer&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x5F88;&#x660E;&#x663E;&#x5C31;&#x662F;&#x8BF4;&#x5B58;&#x5728;&#x4E86;&#x76F8;&#x540C;id&#x7684;&#x4E24;&#x4E2A;&#x6301;&#x4E45;&#x5316;&#x7C7B;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x901A;&#x8FC7;&#x5148;&#x62FF;&#x5230;&#x5F53;&#x524D;&#x4FEE;&#x6539;id&#x7684;&#x539F;&#x59CB;&#x5185;&#x5BB9;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x5C5E;&#x6027;&#x5185;&#x5BB9;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x628A;&#x6539;&#x5BF9;&#x8C61;&#x653E;&#x5165;&#x5230;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x4E2D;&#xFF0C;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x4ECE;hibernate&#x7F13;&#x5B58;&#x533A;&#x5148;&#x53D6;&#x51FA;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x7136;&#x540E;&#x4FEE;&#x6539;&#x4E86;&#xFF0C;&#x518D;&#x653E;&#x56DE;&#x53BB;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x80AF;&#x5B9A;&#x4FDD;&#x8BC1;&#x4E86;&#x53EA;&#x4F1A;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x9632;&#x6B62;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x4E0A;&#x8FF0;&#x7684;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4E86;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8FDB;&#x884C;&#x5148;&#x83B7;&#x53D6;&#xFF0C;&#x518D;&#x4FDD;&#x5B58;&#x4E5F;&#x53EF;&#x4EE5;&#xFF0C;&#x53EA;&#x662F;&#x8FD9;&#x6837;&#x589E;&#x52A0;&#x4E86;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x6240;&#x4EE5;&#x8BB0;&#x4F4F;&#xFF0C;&#x5982;&#x679C;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x64CD;&#x4F5C;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x9700;&#x8981;&#x8FD9;&#x6837;&#x7684;&#x6B65;&#x9AA4;&#x624D;&#x662F;&#x6700;&#x5B89;&#x5168;&#x7684;&#x3002;</p>
+<h2 id="&#x89E3;&#x51B3;hibernate&#x61D2;&#x52A0;&#x8F7D;load&#x51FA;&#x73B0;no-session&#x7684;&#x9519;&#x8BEF;"><a name="&#x89E3;&#x51B3;hibernate&#x61D2;&#x52A0;&#x8F7D;load&#x51FA;&#x73B0;no-session&#x7684;&#x9519;&#x8BEF;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;hibernate&#x61D2;&#x52A0;&#x8F7D;load&#x51FA;&#x73B0;no-session&#x7684;&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x89E3;&#x51B3;Hibernate&#x61D2;&#x52A0;&#x8F7D;load&#x51FA;&#x73B0;no session&#x7684;&#x9519;&#x8BEF;</h2>
+<p>&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5176;&#x5B9E;&#x662F;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x5F88;&#x7ECF;&#x8FC7;&#x4F1A;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x4E4B;&#x6240;&#x4EE5;&#x51FA;&#x73B0;&#x8FD9;&#x6837;&#x7684;&#x95EE;&#x9898;&#x662F;&#x5728;&#x4E8E;&#xFF0C;session&#x5BF9;&#x8C61;&#x5F53;&#x6267;&#x884C;&#x4E86;&#x76F8;&#x5E94;&#x7684;crud&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x7ED3;&#x675F;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E86;&#xFF0C;&#x800C;&#x5F53;session&#x63A5;&#x53D7;&#x4E4B;&#x540E;&#xFF0C;&#x7136;&#x540E;&#x53C8;&#x8BBF;&#x95EE;&#x521A;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x76F8;&#x5E94;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x90A3;&#x4E48;&#x56E0;&#x4E3A;&#x662F;load&#xFF08;&#xFF09;&#x65B9;&#x6CD5;&#x662F;&#x8FDB;&#x884C;&#x61D2;&#x52A0;&#x8F7D;&#xFF0C;&#x5F53;&#x771F;&#x6B63;&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x518D;&#x4F1A;&#x771F;&#x6B63;&#x7684;&#x53BB;&#x83B7;&#x53D6;&#xFF0C;&#x800C;&#x6B64;&#x65F6;session&#x5BF9;&#x8C61;&#x5DF2;&#x7ECF;&#x5173;&#x95ED;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x80AF;&#x5B9A;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x4E0A;&#x9762;&#x7684;&#x95EE;&#x9898;&#x4E86;&#x3002;&#x5C31;&#x4EE3;&#x7801;&#x89E3;&#x91CA;&#x5C31;&#x662F;&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">// &#x5176;&#x4E2D;Persion&#x4E3A;&#x4E00;&#x4E2A;pojo&#x7C7B;</span>
+<span class="token comment">// &#x53C2;&#x6570;&#xFF1A;id&#x8868;&#x793A;&#x4ECE;&#x8981;&#x8FDB;&#x884C;&#x83B7;&#x53D6;&#x5230;&#x4E3B;&#x952E;id</span>
+<span class="token comment">// Dao&#x5C42;&#x4E2D;&#xFF1A;</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">loadOpPerson</span><span class="token punctuation">(</span>Long id<span class="token punctuation">)</span><span class="token punctuation">{</span>
+     Person person <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>hibernateTemplate<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>Person<span class="token punctuation">.</span><span class="token keyword">class</span> <span class="token punctuation">,</span> id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    person<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//&#x6267;&#x884C;&#x5230;&#x8FD9;&#x5C31;&#x4F1A;&#x62A5;no session&#x7684;&#x9519;&#x8BEF;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x539F;&#x7406;&#x4E0A;&#x9762;&#xFF0C;&#x6211;&#x89E3;&#x91CA;&#x8FC7;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x6765;&#x8BF4;&#x4E00;&#x4E0B;&#x5982;&#x4F55;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5176;&#x5B9E;&#x5F88;&#x597D;&#x89E3;&#x51B3;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x6269;&#x5927;session&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C;&#x8FD9;&#x6837;&#x4E0D;&#x5C31;&#x53EF;&#x4EE5;&#x4E48;&#x5417;&#xFF1F;&#x6240;&#x4EE5;&#x5C31;&#x53EF;&#x4EE5;&#x91C7;&#x53D6;&#x5728;web.xml&#x4E2D;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;OpenSessionInViewFilter&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter-name</span><span class="token punctuation">&gt;</span></span>OpenSessionInViewFilter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>filter-name</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter-class</span><span class="token punctuation">&gt;</span></span>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>filter-class</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>filter</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter-mapping</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter-name</span><span class="token punctuation">&gt;</span></span>OpenSessionInViewFilter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>filter-name</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>url-pattern</span><span class="token punctuation">&gt;</span></span>*.action<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>url-pattern</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>filter-mapping</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E00;&#x5B9A;&#x8981;&#x914D;&#x7F6E;&#x5728;strus2&#x7684;&#x6838;&#x5FC3;&#x8FC7;&#x6EE4;&#x5668;&#x524D;&#x9762;&#xFF08;&#x5982;&#x679C;&#x91C7;&#x53D6;&#x7684;&#x662F;strus2&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x7684;springmvc&#x90A3;&#x4E48;&#x540C;&#x7406;&#xFF09;&#x3002;</p>
+<h2 id="&#x89E3;&#x51B3;hibernate&#x4E2D;&#x5E76;&#x53D1;&#x6240;&#x5F15;&#x8D77;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5185;&#x5BB9;&#x8BFB;&#x53D6;&#x95EE;&#x9898;"><a name="&#x89E3;&#x51B3;hibernate&#x4E2D;&#x5E76;&#x53D1;&#x6240;&#x5F15;&#x8D77;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5185;&#x5BB9;&#x8BFB;&#x53D6;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x51B3;hibernate&#x4E2D;&#x5E76;&#x53D1;&#x6240;&#x5F15;&#x8D77;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5185;&#x5BB9;&#x8BFB;&#x53D6;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x89E3;&#x51B3;Hibernate&#x4E2D;&#x5E76;&#x53D1;&#x6240;&#x5F15;&#x8D77;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5185;&#x5BB9;&#x8BFB;&#x53D6;&#x95EE;&#x9898;</h2>
+<p>&#x5BF9;&#x4E8E;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x662F;&#x975E;&#x5E38;&#x5E38;&#x89C1;&#x7684;&#xFF0C;&#x4F46;&#x662F;Hibernate&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x597D;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x9501;&#x673A;&#x5236;&#xFF0C;&#x8FD9;&#x5C31;&#x53EF;&#x4EE5;&#x91C7;&#x53D6;<strong>&#x60B2;&#x89C2;&#x9501;</strong>&#x4E0E;<strong>&#x4E50;&#x89C2;&#x9501;</strong>&#x7684;&#x673A;&#x5236;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<h4 id="&#x60B2;&#x89C2;&#x9501;-&#x2014;&#x2014;-&#x9501;&#x7684;&#x7C92;&#x5EA6;&#x4E3A;&#x6570;&#x636E;&#x5E93;"><a name="&#x60B2;&#x89C2;&#x9501;-&#x2014;&#x2014;-&#x9501;&#x7684;&#x7C92;&#x5EA6;&#x4E3A;&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x60B2;&#x89C2;&#x9501;-&#x2014;&#x2014;-&#x9501;&#x7684;&#x7C92;&#x5EA6;&#x4E3A;&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x60B2;&#x89C2;&#x9501; &#x2014;&#x2014; &#x9501;&#x7684;&#x7C92;&#x5EA6;&#x4E3A;&#x6570;&#x636E;&#x5E93;</h4>
+<p>&#x60B2;&#x89C2;&#x9501;&#xFF0C;&#x5B83;&#x662F;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x800C;&#x8A00;&#x7684;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x60B2;&#x89C2;&#x4E86;&#xFF0C;&#x4ED6;&#x611F;&#x89C9;&#x6BCF;&#x4E00;&#x4E2A;&#x5BF9;&#x4ED6;&#x64CD;&#x4F5C;&#x7684;&#x7A0B;&#x5E8F;&#x90FD;&#x6709;&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x5E76;&#x53D1;&#x3002;&#x5B83;&#x6307;&#x7684;&#x662F;&#x5BF9;&#x6570;&#x636E;&#x88AB;&#x5916;&#x754C;&#xFF08;&#x5305;&#x62EC;&#x672C;&#x7CFB;&#x7EDF;&#x5F53;&#x524D;&#x7684;&#x5176;&#x4ED6;&#x4E8B;&#x52A1;&#xFF0C;&#x4EE5;&#x53CA;&#x6765;&#x81EA;&#x5916;&#x90E8;&#x7CFB;&#x7EDF;&#x7684;&#x4E8B;&#x52A1;&#x5904;&#x7406;&#xFF09;&#x4FEE;&#x6539;&#x6301;&#x4FDD;&#x5B88;&#x6001;&#x5EA6;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x6574;&#x4E2A;&#x6570;&#x636E;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5C06;&#x6570;&#x636E;&#x5904;&#x4E8E;&#x9501;&#x5B9A;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x60B2;&#x89C2;&#x9501;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5F80;&#x5F80;&#x4F9D;&#x9760;&#x6570;&#x636E;&#x5E93;&#x63D0;&#x4F9B;&#x7684;&#x9501;&#x673A;&#x5236;&#xFF08;&#x4E5F;&#x53EA;&#x6709;&#x6570;&#x636E;&#x5E93;&#x5C42;&#x63D0;&#x4F9B;&#x7684;&#x9501;&#x673A;&#x5236;&#x624D;&#x80FD;&#x771F;&#x6B63;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x7684;&#x6392;&#x4ED6;&#x6027;&#xFF0C;&#x5426;&#x5219;&#xFF0C;&#x5373;&#x4F7F;&#x5728;&#x672C;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B9E;&#x73B0;&#x4E86;&#x52A0;&#x9501;&#x673A;&#x5236;&#xFF0C;&#x4E5F;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x5916;&#x90E8;&#x7CFB;&#x7EDF;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x6570;&#x636E;&#xFF09;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x8BF4;&#x4E00;&#x6761;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> name<span class="token operator">=</span><span class="token string">&quot;xiaoming&quot;</span> <span class="token keyword">for</span> <span class="token keyword">update</span>
+</code></pre>
+<p>&#x5176;&#x5B9E;&#x8FD9;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x4F9D;&#x8D56;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x60B2;&#x89C2;&#x9501;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x540C;&#x7406;&#xFF0C;Hibernate&#x4E4B;&#x6240;&#x4EE5;&#x4E5F;&#x80FD;&#x591F;&#x8FD9;&#x6837;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x9501;&#x673A;&#x5236;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java">String hqlStr <span class="token operator">=</span><span class="token string">&quot;from Student s where s.name=&apos;xiaoming&apos;&quot;</span><span class="token punctuation">;</span>  
+Query query <span class="token operator">=</span> session<span class="token punctuation">.</span><span class="token function">createQuery</span><span class="token punctuation">(</span>hqlStr<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+query<span class="token punctuation">.</span><span class="token function">setLockMode</span><span class="token punctuation">(</span><span class="token string">&quot;s&quot;</span><span class="token punctuation">,</span>LockMode<span class="token punctuation">.</span>UPGRADE<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x52A0;&#x9501;  </span>
+List userList <span class="token operator">=</span> query<span class="token punctuation">.</span><span class="token function">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// &#x6267;&#x884C;&#x67E5;&#x8BE2;&#xFF0C;&#x83B7;&#x53D6;&#x6570;&#x636E;</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;Hibernate&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x7684; for update&#x5B50;&#x53E5;&#x5B9E;&#x73B0;&#x4E86;&#x60B2;&#x89C2;&#x9501;&#x673A;&#x5236;&#x3002;</p>
+<p>Hibernate&#x7684;&#x52A0;&#x9501;&#x6A21;&#x5F0F;&#x6709;&#xFF1A;</p>
+<ul>
+<li>LockMode.NONE &#xFF1A;&#x65E0;&#x9501;&#x673A;&#x5236;&#x3002;</li>
+<li>LockMode.WRITE &#xFF1A;Hibernate&#x5728; Insert&#x548C; Update&#x8BB0;&#x5F55;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x3002;</li>
+<li>LockMode.READ &#xFF1A;Hibernate&#x5728;&#x8BFB;&#x53D6;&#x8BB0;&#x5F55;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x3002;</li>
+</ul>
+<p>&#x4EE5;&#x4E0A;&#x8FD9;&#x4E09;&#x79CD;&#x9501;&#x673A;&#x5236;&#x4E00;&#x822C;&#x7531; Hibernate&#x5185;&#x90E8;&#x4F7F;&#x7528;&#xFF0C;&#x5982;Hibernate&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1; Update&#x8FC7;&#x7A0B;&#x4E2D;&#x5BF9;&#x8C61;&#x4E0D;&#x4F1A;&#x88AB;&#x5916;&#x754C;&#x4FEE;&#x6539;&#xFF0C;&#x4F1A;&#x5728; save &#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x4E2D;&#x81EA;&#x52A8;&#x4E3A;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x52A0;&#x4E0A; WRITE&#x9501;&#x3002;</p>
+<ul>
+<li>LockMode.UPGRADE &#xFF1A;&#x5229;&#x7528;&#x6570;&#x636E;&#x5E93;&#x7684; for update &#x5B50;&#x53E5;&#x52A0;&#x9501;&#x3002;</li>
+<li>LockMode. UPGRADE_NOWAIT &#xFF1A; Oracle&#x7684;&#x7279;&#x5B9A;&#x5B9E;&#x73B0;&#xFF0C;&#x5229;&#x7528; Oracle&#x7684; for update nowait&#x5B50;&#x53E5;&#x5B9E;&#x73B0;&#x52A0;&#x9501;&#x3002;</li>
+</ul>
+<p>&#x4E0A;&#x9762;&#x8FD9;&#x4E24;&#x79CD;&#x9501;&#x673A;&#x5236;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x5E94;&#x7528;&#x5C42;&#x8F83;&#x4E3A;&#x5E38;&#x7528;&#x7684;&#xFF0C;&#x52A0;&#x9501;&#x4E00;&#x822C;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<ul>
+<li>Criteria.setLockMode</li>
+<li>Query.setLockMode</li>
+<li>Session.lock</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x67E5;&#x8BE2;&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#xFF08;&#x4E5F;&#x5C31;&#x662F; Hiberate&#x751F;&#x6210; SQL&#x4E4B;&#x524D;&#xFF09;&#x8BBE;&#x5B9A;&#x52A0;&#x9501;&#xFF0C;&#x624D;&#x4F1A;&#x771F;&#x6B63;&#x901A;&#x8FC7;&#x6570;&#x636E;&#x5E93;&#x7684;&#x9501;&#x673A;&#x5236;&#x8FDB;&#x884C;&#x52A0;&#x9501;&#x5904;&#x7406;&#xFF0C;&#x5426;&#x5219;&#xFF0C;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;&#x4E0D;&#x5305;&#x542B; for update&#x5B50;&#x53E5;&#x7684; Select SQL&#x52A0;&#x8F7D;&#x8FDB;&#x6765;&#xFF0C;&#x6240;&#x8C13;&#x6570;&#x636E;&#x5E93;&#x52A0;&#x9501;&#x4E5F;&#x5C31;&#x65E0;&#x4ECE;&#x8C08;&#x8D77;&#x3002;</p>
+<h4 id="&#x4E50;&#x89C2;&#x9501;-&#x2014;&#x2014;-&#x9501;&#x7684;&#x7C92;&#x5EA6;&#x4E3A;&#x8868;&#xFF0C;&#x800C;&#x4E14;&#x5F53;&#x51FA;&#x73B0;&#x4E86;&#x95EE;&#x9898;&#x4E4B;&#x540E;&#xFF0C;&#x624D;&#x91C7;&#x53D6;&#x63AA;&#x65BD;"><a name="&#x4E50;&#x89C2;&#x9501;-&#x2014;&#x2014;-&#x9501;&#x7684;&#x7C92;&#x5EA6;&#x4E3A;&#x8868;&#xFF0C;&#x800C;&#x4E14;&#x5F53;&#x51FA;&#x73B0;&#x4E86;&#x95EE;&#x9898;&#x4E4B;&#x540E;&#xFF0C;&#x624D;&#x91C7;&#x53D6;&#x63AA;&#x65BD;" class="anchor-navigation-ex-anchor" href="#&#x4E50;&#x89C2;&#x9501;-&#x2014;&#x2014;-&#x9501;&#x7684;&#x7C92;&#x5EA6;&#x4E3A;&#x8868;&#xFF0C;&#x800C;&#x4E14;&#x5F53;&#x51FA;&#x73B0;&#x4E86;&#x95EE;&#x9898;&#x4E4B;&#x540E;&#xFF0C;&#x624D;&#x91C7;&#x53D6;&#x63AA;&#x65BD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E50;&#x89C2;&#x9501; &#x2014;&#x2014; &#x9501;&#x7684;&#x7C92;&#x5EA6;&#x4E3A;&#x8868;&#xFF0C;&#x800C;&#x4E14;&#x5F53;&#x51FA;&#x73B0;&#x4E86;&#x95EE;&#x9898;&#x4E4B;&#x540E;&#xFF0C;&#x624D;&#x91C7;&#x53D6;&#x63AA;&#x65BD;</h4>
+<p>&#x4E50;&#x89C2;&#x9501;&#xFF0C;&#x4ECE;&#x540D;&#x5B57;&#x6765;&#x770B;&#xFF0C;&#x5C31;&#x80AF;&#x5B9A;&#x6BD4;&#x60B2;&#x89C2;&#x9501;&#x6709;&#x7740;&#x66F4;&#x4E3A;&#x4E50;&#x89C2;&#x7684;&#x6001;&#x5EA6;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x8BF4;&#x60B2;&#x89C2;&#x9501;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x4F9D;&#x9760;&#x6570;&#x636E;&#x5E93;&#x7684;&#x9501;&#x673A;&#x5236;&#x5B9E;&#x73B0;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;&#x64CD;&#x4F5C;&#x6700;&#x5927;&#x7A0B;&#x5EA6;&#x7684;&#x72EC;&#x5360;&#x6027;&#x3002;&#x4F46;&#x968F;&#x4E4B;&#x800C;&#x6765;&#x7684;&#x5C31;&#x662F;&#x6570;&#x636E;&#x5E93;&#x6027;&#x80FD;&#x7684;&#x5927;&#x91CF;&#x5F00;&#x9500;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5BF9;&#x957F;&#x4E8B;&#x52A1;&#x800C;&#x8A00;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x5F00;&#x9500;&#x5F80;&#x5F80;&#x65E0;&#x6CD5;&#x627F;&#x53D7;&#x3002;&#x4E50;&#x89C2;&#x9501;&#x673A;&#x5236;&#x5728;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x4E0A;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x4E50;&#x89C2;&#x9501;&#xFF0C;&#x5927;&#x591A;&#x662F;&#x57FA;&#x4E8E;&#x6570;&#x636E;&#x7248;&#x672C;&#xFF08;Version&#xFF09;&#x8BB0;&#x5F55;&#x673A;&#x5236;&#x5B9E;&#x73B0;&#x3002;&#x4F55;&#x8C13;&#x6570;&#x636E;&#x7248;&#x672C;&#xFF1F;&#x5373;&#x4E3A;&#x6570;&#x636E;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x6807;&#x8BC6;&#xFF0C;&#x5728;&#x57FA;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x8868;&#x7684;&#x7248;&#x672C;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E2D;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x901A;&#x8FC7;&#x4E3A;&#x6570;&#x636E;&#x5E93;&#x8868;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&quot;version&quot;&#x5B57;&#x6BB5;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x4E50;&#x89C2;&#x9501;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#xFF1A;&#x8BFB;&#x53D6;&#x51FA;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5C06;&#x6B64;&#x7248;&#x672C;&#x53F7;&#x4E00;&#x540C;&#x8BFB;&#x51FA;&#xFF0C;&#x4E4B;&#x540E;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x5BF9;&#x6B64;&#x7248;&#x672C;&#x53F7;&#x52A0;&#x4E00;&#x3002;&#x6B64;&#x65F6;&#xFF0C;&#x5C06;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x7684;&#x7248;&#x672C;&#x6570;&#x636E;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x8868;&#x5BF9;&#x5E94;&#x8BB0;&#x5F55;&#x7684;&#x5F53;&#x524D;&#x7248;&#x672C;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x6BD4;&#x5BF9;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x4EA4;&#x7684;&#x6570;&#x636E;&#x7248;&#x672C;&#x53F7;&#x5927;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x8868;&#x5F53;&#x524D;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x5219;&#x4E88;&#x4EE5;&#x66F4;&#x65B0;&#xFF0C;&#x5426;&#x5219;&#x8BA4;&#x4E3A;&#x662F;&#x8FC7;&#x671F;&#x6570;&#x636E;&#x3002;</p>
+<p>Hibernate&#x4E3A;&#x4E50;&#x89C2;&#x9501;&#x63D0;&#x4F9B;&#x4E86;&#x4E09; &#x79CD;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<ol>
+<li>&#x57FA;&#x4E8E;version &#x2014;&#x2014; &#x6700;&#x5E38;&#x7528;</li>
+<li>&#x57FA;&#x4E8E;timestamp &#x2014;&#x2014; &#x8F83;&#x5E38;&#x7528;</li>
+<li>&#x4E3A;&#x9057;&#x7559;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x4E50;&#x89C2;&#x9501; &#x2014;&#x2014; &#x4E0D;&#x5E38;&#x7528;</li>
+</ol>
+<p><strong>&#x57FA;&#x4E8E;version&#x7684;&#x4F7F;&#x7528;</strong></p>
+<p>&#xFF08;1&#xFF09;&#x5BF9;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x9501;&#x63A7;&#x5236;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8868;&#x4E2D;&#xFF0C;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x540D;&#x5B57;&#x968F;&#x4FBF;&#xFF0C;&#x4E00;&#x822C;&#x5C31;&#x53EB;version&#xFF0C;&#x7C7B;&#x578B;&#x53EA;&#x6709;&#x4E3A;long,integer,short,timestamp,calendar&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x53EA;&#x80FD;&#x4E3A;&#x6570;&#x5B57;&#x6216;timestamp&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;&#x5982;&#x679C;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x7684;hibernate&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x5728;&#x5BF9;&#x5E94;&#x7684;&#x5B9E;&#x4F53;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-xml">&lt;versionname=&quot;version&quot;  column=&quot;VERSION&quot; type=&quot;integer&quot; /&gt;
+</code></pre>
+<p>&#x5982;&#x679C;&#x662F;&#x901A;&#x8FC7;&#x6CE8;&#x89E3;&#x7684;&#x5F62;&#x5F0F;&#x8FDB;&#x884C;&#x7684;hibernate&#x5B9E;&#x4F53;&#x914D;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x5BF9;&#x5E94;&#x7684;version&#x5B57;&#x6BB5;&#x7528;&#x6CE8;&#x89E3;@version&#xFF0C;&#x5373;&#x53EF;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x5F88;&#x591A;&#x5462;&#xFF1F;</p>
+<p>&#xFF08;3&#xFF09;&#x5728;POJO&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#xFF0C;&#x5B9E;&#x73B0;&#x5BF9;&#x4E8E;version&#x5B57;&#x6BB5;&#x7684;set&#xFF08;&#xFF09;&#x548C;get&#xFF08;&#xFF09;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x548C;&#x666E;&#x901A;&#x7684;&#x5C5E;&#x6027;&#x4E00;&#x6837;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><strong>&#x57FA;&#x4E8E;timestamp</strong></p>
+<p>&#x8FD9;&#x4E2A;&#x4F7F;&#x7528;&#x4E00;&#x6837;&#xFF0C;&#x53EA;&#x662F;&#x9700;&#x8981;&#x628A;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6807;&#x7B7E;&#x6539;&#x4E00;&#x4E0B;&#x5373;&#x53EF;&#xFF0C;</p>
+<pre class="language-"><code class="lang-xml"><span class="token comment">&lt;!--timestamp&#x6807;&#x7B7E;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x8868;&#x793A;&#x7248;&#x672C;&#x53F7;&#x7684;&#x5B57;&#x6BB5;&#x4FE1;&#x606F;--&gt;</span>  
+&lt;timestamp name=&quot;version&quot;column=&quot;version&quot;&gt;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>timestamp</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x4E0B;&#x9762;&#x5C31;&#x7528;&#x4E00;&#x4E2A;test&#x4F8B;&#x5B50;&#x6765;&#x9A8C;&#x8BC1;&#x4E00;&#x4E0B;&#x662F;&#x5426;&#x6709;&#x9501;&#x63A7;&#x5236;&#x673A;&#x5236;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x5F00;&#x542F;&#x4E24;&#x4E2A;session</span>
+Sessionsession1<span class="token operator">=</span>sessionFactory<span class="token punctuation">.</span><span class="token function">openSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+Session session2<span class="token operator">=</span>sessionFactory<span class="token punctuation">.</span><span class="token function">openSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+Student stu1<span class="token operator">=</span><span class="token punctuation">(</span>Student<span class="token punctuation">)</span>session1<span class="token punctuation">.</span><span class="token function">createQuery</span><span class="token punctuation">(</span><span class="token string">&quot;from Student s wheres.name=&apos;xiaoming&apos;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">uniqueResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+Student stu2<span class="token operator">=</span><span class="token punctuation">(</span>Student<span class="token punctuation">)</span>session2<span class="token punctuation">.</span><span class="token function">createQuery</span><span class="token punctuation">(</span><span class="token string">&quot;from Student s wheres.name=&apos;xiaoming&apos;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">uniqueResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token comment">//&#x9996;&#x5148;&#x770B;&#x4E00;&#x4E0B;&#xFF0C;&#x62FF;&#x51FA;&#x6765;&#x7684;&#x6570;&#x636E;&#x7684;version&#x7248;&#x672C;&#x662F;&#x5426;&#x4E00;&#x81F4;&#xFF0C;&#x7ED3;&#x679C;&#x662F;&#x662F;&#x4E00;&#x81F4;&#xFF0C;&#x90FD;&#x662F;&#x6570;&#x636E;&#x5E93;&#x5F53;&#x524D;&#x7684;&#x7248;&#x672C;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;v1=&quot;</span><span class="token operator">+</span>stu1<span class="token punctuation">.</span><span class="token function">getVersion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">&quot;--v2=&quot;</span><span class="token operator">+</span>stu2<span class="token punctuation">.</span><span class="token function">getVersion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token comment">//&#x5F00;&#x59CB;&#x7B2C;&#x4E00;&#x4E2A;&#x4E8B;&#x52A1;</span>
+Transactiontx1<span class="token operator">=</span>session1<span class="token punctuation">.</span><span class="token function">beginTransaction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token comment">//&#x4FEE;&#x6539;&#x5185;&#x5BB9;</span>
+stu1<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">&quot;xiaohong&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token comment">//&#x4E8B;&#x52A1;&#x63D0;&#x4EA4; </span>
+tx1<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token comment">//&#x5F53;&#x8FDB;&#x884C;&#x4E86;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x4E4B;&#x540E;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6570;&#x636E;&#x7684;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#xFF0C;&#x518D;&#x770B;&#x770B;&#x6B64;&#x65F6;&#x4E24;&#x4E2A;version&#x662F;&#x5426;&#x4E00;&#x81F4;&#xFF0C;&#x7ED3;&#x679C;&#x663E;&#x793A;version&#x4E0D;&#x4E00;&#x6837;&#x4E86;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;v1=&quot;</span><span class="token operator">+</span>stu1<span class="token punctuation">.</span><span class="token function">getVersion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">&quot;--v2=&quot;</span><span class="token operator">+</span>stu2<span class="token punctuation">.</span><span class="token function">getVersion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token comment">//&#x540C;&#x7406;&#xFF0C;&#x518D;&#x5C06;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E8B;&#x52A1;&#x8FDB;&#x884C;&#x63D0;&#x4EA4;</span>
+Transactiontx2<span class="token operator">=</span>session2<span class="token punctuation">.</span><span class="token function">beginTransaction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+stu2<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">&quot;xiaobai&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token comment">//&#x63D0;&#x4EA4;</span>
+tx2<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>OK,&#x7F16;&#x8BD1;&#x7684;&#x65F6;&#x5019;&#x662F;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x8FD0;&#x884C;&#x5C31;&#x53D1;&#x73B0;&#x62A5;&#x4E86;&#x4E00;&#x4E2A;&#x9519;&#xFF0C;&#x5E76;&#x4E14;&#x9519;&#x8BEF;&#x663E;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code>Exception in thread &quot;main&quot; org.hibernate.StaleObjectStateException:Row was updated or deleted by another transaction (or unsaved-value mapping wasincorrect):
+</code></pre><p>&#x5176;&#x5B9E;&#xFF0C;&#x539F;&#x56E0;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x56E0;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x5BF9;&#x6570;&#x636E;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x6761;&#x6570;&#x636E;&#x7684;&#x5185;&#x5BB9;&#x88AB;&#x66F4;&#x65B0;&#xFF0C;&#x7136;&#x540E;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#x5B57;&#x6BB5;version&#x76F8;&#x6BD4;&#x539F;&#x6765;&#x7684;&#x7248;&#x672C;+1&#xFF0C;&#x800C;&#x5F53;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E8B;&#x52A1;&#x518D;&#x63D0;&#x4EA4;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x56E0;&#x4E3A;&#x5F53;&#x524D;&#x7684;&#x6570;&#x636E;&#x7684;&#x7248;&#x672C;&#x662F;&#x539F;&#x6765;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x800C;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x7248;&#x672C;&#x6BD4;&#x5B83;&#x9AD8;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x8BA4;&#x4E3A;&#x8FD9;&#x6761;&#x6570;&#x636E;&#x662F;&#x6761;&#x65E0;&#x6548;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;&#x7ED3;&#x679C;&#x5F88;&#x660E;&#x663E;&#x5C31;&#x662F;&#x4F1A;&#x53D1;&#x73B0;&#x521A;&#x624D;&#x7684;&#x9519;&#x8BEF;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5BF9;&#x4E8E;&#x5E76;&#x53D1;&#x64CD;&#x4F5C;&#x7684;&#x95EE;&#x9898;&#x5C31;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x5462;&#xFF1F;</p>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;hibernate&#x7684;&#x5E76;&#x53D1;&#x673A;&#x5236;"><a name="&#x4EC0;&#x4E48;&#x662F;hibernate&#x7684;&#x5E76;&#x53D1;&#x673A;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;hibernate&#x7684;&#x5E76;&#x53D1;&#x673A;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x4EC0;&#x4E48;&#x662F;Hibernate&#x7684;&#x5E76;&#x53D1;&#x673A;&#x5236;</h2>
+<p>Hibernate&#x5E76;&#x53D1;&#x673A;&#x5236;&#xFF1A;</p>
+<ul>
+<li>Hibernate&#x7684;Session&#x5BF9;&#x8C61;&#x662F;&#x975E;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;,&#x5BF9;&#x4E8E;&#x5355;&#x4E2A;&#x8BF7;&#x6C42;,&#x5355;&#x4E2A;&#x4F1A;&#x8BDD;,&#x5355;&#x4E2A;&#x7684;&#x5DE5;&#x4F5C;&#x5355;&#x5143;(&#x5373;&#x5355;&#x4E2A;&#x4E8B;&#x52A1;,&#x5355;&#x4E2A;&#x7EBF;&#x7A0B;),&#x5B83;&#x901A;&#x5E38;&#x53EA;&#x4F7F;&#x7528;&#x4E00;&#x6B21;, &#x7136;&#x540E;&#x5C31;&#x4E22;&#x5F03;&#x3002;</li>
+</ul>
+<blockquote>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;Session &#x5B9E;&#x4F8B;&#x5141;&#x8BB8;&#x5171;&#x4EAB;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E9B;&#x652F;&#x6301;&#x5E76;&#x53D1;&#x8FD0;&#x884C;&#x7684;,&#x4F8B;&#x5982;Http request,session beans&#x5C06;&#x4F1A;&#x5BFC;&#x81F4;&#x51FA;&#x73B0;&#x8D44;&#x6E90;&#x4E89;&#x7528;&#x3002; 
+&#x5982;&#x679C;&#x5728;Http Session&#x4E2D;&#x6709;hibernate&#x7684;Session&#x7684;&#x8BDD;,&#x5C31;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x540C;&#x6B65;&#x8BBF;&#x95EE;Http Session&#x3002;&#x53EA;&#x8981;&#x7528;&#x6237;&#x8DB3;&#x591F;&#x5FEB;&#x7684;&#x70B9;&#x51FB;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x201C;&#x5237;&#x65B0;&#x201D;,  &#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x4E24;&#x4E2A;&#x5E76;&#x53D1;&#x8FD0;&#x884C;&#x7684;&#x7EBF;&#x7A0B;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;Session&#x3002;  </p>
+</blockquote>
+<ul>
+<li>&#x591A;&#x4E2A;&#x4E8B;&#x52A1;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x540C;&#x4E00;&#x5757;&#x8D44;&#x6E90;,&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x53D1;&#x7B2C;&#x4E00;&#x7C7B;&#x4E22;&#x5931;&#x66F4;&#x65B0;&#xFF0C;&#x810F;&#x8BFB;&#xFF0C;&#x5E7B;&#x8BFB;&#xFF0C;&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#x8BFB;&#xFF0C;&#x7B2C;&#x4E8C;&#x7C7B;&#x4E22;&#x5931;&#x66F4;&#x65B0;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
+</ul>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x8BBE;&#x7F6E;&#x4E8B;&#x52A1;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x3002; </p>
+<ul>
+<li>Serializable&#xFF1A;&#x4E32;&#x884C;&#x5316;&#x3002;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x6700;&#x9AD8; </li>
+<li>Repeatable Read&#xFF1A;&#x53EF;&#x91CD;&#x590D;&#x8BFB; </li>
+<li>Read Committed&#xFF1A;&#x5DF2;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x8BFB; </li>
+<li>Read Uncommitted&#xFF1A;&#x672A;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x8BFB;&#x3002;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x6700;&#x5DEE; </li>
+</ul>
+<p>&#x8BBE;&#x7F6E;&#x9501;&#xFF1A;&#x4E50;&#x89C2;&#x9501;&#x548C;&#x60B2;&#x89C2;&#x9501;&#x3002; </p>
+<p>&#x4E50;&#x89C2;&#x9501;&#xFF1A;&#x4F7F;&#x7528;&#x7248;&#x672C;&#x53F7;&#x6216;&#x65F6;&#x95F4;&#x6233;&#x6765;&#x68C0;&#x6D4B;&#x66F4;&#x65B0;&#x4E22;&#x5931;,&#x5728;&#x7684;&#x6620;&#x5C04;&#x4E2D;&#x8BBE;&#x7F6E; optimistic-lock=&#x201D;all&#x201D;&#x53EF;&#x4EE5;&#x5728;&#x6CA1;&#x6709;&#x7248;&#x672C;&#x6216;&#x8005;&#x65F6;&#x95F4;&#x6233;&#x5C5E;&#x6027;&#x6620;&#x5C04;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5B9E;&#x73B0; &#x7248;&#x672C;&#x68C0;&#x67E5;&#xFF0C;&#x6B64;&#x65F6;Hibernate&#x5C06;&#x6BD4;&#x8F83;&#x4E00;&#x884C;&#x8BB0;&#x5F55;&#x7684;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x72B6;&#x6001; </p>
+<p>&#x884C;&#x7EA7;&#x60B2;&#x89C2;&#x9501;&#xFF1A;Hibernate&#x603B;&#x662F;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x7684;&#x9501;&#x5B9A;&#x673A;&#x5236;&#xFF0C;&#x4ECE;&#x4E0D;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x9501;&#x5B9A;&#x5BF9;&#x8C61;&#xFF01;&#x53EA;&#x8981;&#x4E3A;JDBC&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x4E00;&#x4E0B;&#x9694; &#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x7136;&#x540E;&#x8BA9;&#x6570;&#x636E;&#x5E93;&#x53BB;&#x641E;&#x5B9A;&#x4E00;&#x5207;&#x5C31;&#x591F;&#x4E86;&#x3002;&#x7C7B;LockMode &#x5B9A;&#x4E49;&#x4E86;Hibernate&#x6240;&#x9700;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x9501;&#x5B9A;&#x7EA7;&#x522B;&#xFF1A;LockMode.UPGRADE,LockMode.UPGRADE_NOWAIT,LockMode.READ;</p>
+<h2 id="update&#x548C;saveorupdate&#x7684;&#x533A;&#x522B;"><a name="update&#x548C;saveorupdate&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#update&#x548C;saveorupdate&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>5. update&#x548C;saveOrUpdate&#x7684;&#x533A;&#x522B;</h2>
+<p>update()&#x548C;saveOrUpdate()&#x662F;&#x7528;&#x6765;&#x5BF9;&#x8DE8;Session&#x7684;PO&#x8FDB;&#x884C;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x7684;&#x3002; </p>
+<p>update()&#x65B9;&#x6CD5;&#x64CD;&#x4F5C;&#x7684;&#x5BF9;&#x8C61;&#x5FC5;&#x987B;&#x662F;&#x6301;&#x4E45;&#x5316;&#x4E86;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x6B64;&#x5BF9;&#x8C61;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;update()&#x65B9;&#x6CD5;&#x3002; </p>
+<p>saveOrUpdate()&#x65B9;&#x6CD5;&#x64CD;&#x4F5C;&#x7684;&#x5BF9;&#x8C61;&#x65E2;&#x53EF;&#x4EE5;&#x4F7F;&#x6301;&#x4E45;&#x5316;&#x4E86;&#x7684;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x6CA1;&#x6709;&#x6301;&#x4E45;&#x5316;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;&#x662F;&#x6301;&#x4E45;&#x5316;&#x4E86;&#x7684;&#x5BF9;&#x8C61;&#x8C03;&#x7528;saveOrUpdate()&#x5219;&#x4F1A; &#x66F4;&#x65B0;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#xFF1B;&#x5982;&#x679C;&#x662F;&#x672A;&#x6301;&#x4E45;&#x5316;&#x7684;&#x5BF9;&#x8C61;&#x4F7F;&#x7528;&#x6B64;&#x65B9;&#x6CD5;,&#x5219;save&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;</p>
+<h2 id="hibernate&#x7684;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x8F6C;&#x6362;"><a name="hibernate&#x7684;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#hibernate&#x7684;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>6. Hibernate&#x7684;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x8F6C;&#x6362;</h2>
+<p>&#x5728;hibernate&#x4E2D; &#x4E0D;&#x540C;&#x7684;&#x6301;&#x4E45;&#x5316;&#x64CD;&#x4F5C;&#x4F1A;&#x5BFC;&#x81F4;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x7684;&#x6539;&#x53D8; &#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<div style="width:450px; margin:0 auto;">     <a href="images/hibernate_p001.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/hibernate_p001.png" alt="">
+     </a></div>
+
+<ol>
+<li>&#x77AC;&#x65F6;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x4E3A;&#x6301;&#x4E45;&#x72B6;&#x6001;<ul>
+<li>&#x4F7F;&#x7528;session&#x5BF9;&#x8C61;&#x7684;save()&#x6216;saveOrUpdate()&#x65B9;&#x6CD5;&#x4FDD;&#x5B58;&#x5BF9;&#x8C61;&#x540E;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x7531;&#x77AC;&#x65F6;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x4E3A;&#x6301;&#x4E45;&#x72B6;&#x6001;&#x3002;</li>
+<li>&#x4F7F;&#x7528;session&#x5BF9;&#x8C61;&#x7684;get()&#x6216;load()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x540E;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x662F;&#x6301;&#x4E45;&#x72B6;&#x6001;&#x3002;</li>
+</ul>
+</li>
+<li>&#x6301;&#x4E45;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x4E3A;&#x77AC;&#x65F6;&#x72B6;&#x6001;<ul>
+<li>&#x6267;&#x884C;session&#x5BF9;&#x8C61;&#x7684;delete()&#x65B9;&#x6CD5;&#x540E;&#xFF0C;&#x5BF9;&#x8C61;&#x7531;&#x539F;&#x6765;&#x7684;&#x6301;&#x4E45;&#x72B6;&#x6001;&#x53D8;&#x4E3A;&#x77AC;&#x65F6;&#x72B6;&#x6001;&#xFF0C;&#x56E0;&#x6B64;&#x8BE5;&#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x4E0E;&#x4EFB;&#x4F55;&#x7684;&#x6570;&#x636E;&#x5E93;&#x6570;&#x636E;&#x6709;&#x5173;&#x8054;&#x3002;</li>
+</ul>
+</li>
+<li>&#x6301;&#x4E45;&#x72B6;&#x6001;&#x53D8;&#x4E3A;&#x6E38;&#x79BB;&#x72B6;&#x6001;<ul>
+<li>&#x6267;&#x884C;&#x4E86;session&#x5BF9;&#x8C61;&#x7684;evict()&#x3001;clear()&#x3001; close() &#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x8C61;&#x7531;&#x539F;&#x6765;&#x7684;&#x6301;&#x4E45;&#x72B6;&#x6001;&#x53D8;&#x4E3A;&#x6E38;&#x79BB;&#x6001;&#x3002;</li>
+</ul>
+</li>
+<li>&#x6E38;&#x79BB;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x4E3A;&#x6301;&#x4E45;&#x72B6;&#x6001;<ul>
+<li>&#x91CD;&#x65B0;&#x83B7;&#x53D6;session&#x5BF9;&#x8C61;&#xFF0C;&#x6267;&#x884C;session&#x5BF9;&#x8C61;&#x7684;update()&#x6216; saveOrUpdate()&#x65B9;&#x6CD5;&#xFF0C;&#x7531;&#x6E38;&#x79BB;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x4E3A;&#x6301;&#x4E45;&#x72B6;&#x6001;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x518D;&#x6B21;&#x4E0E;session&#x5173;&#x8054;&#x3002;</li>
+</ul>
+</li>
+<li>&#x6E38;&#x79BB;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x4E3A;&#x77AC;&#x65F6;&#x72B6;&#x6001;<ul>
+<li>&#x6267;&#x884C;session&#x7684;delete()&#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x8C61;&#x6709;&#x6E38;&#x79BB;&#x72B6;&#x6001;&#x53D8;&#x4E3A;&#x77AC;&#x65F6;&#x72B6;&#x6001;&#x3002;</li>
+<li>&#x5BF9;&#x77AC;&#x65F6;&#x72B6;&#x6001;&#x6216;&#x6E38;&#x79BB;&#x72B6;&#x6001; &#x7684;&#x5BF9;&#x8C61;&#x4E0D;&#x518D;&#x88AB;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x65F6;&#xFF0C;&#x4F1A;&#x88AB;Java&#x865A;&#x62DF;&#x673A;&#x6309;&#x7167;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;&#x5904;&#x7406;&#x3002;</li>
+</ul>
+</li>
+</ol>
+<h2 id="hibernate&#x7684;&#x4E09;&#x79CD;&#x68C0;&#x7D22;&#x7B56;&#x7565;&#x4F18;&#x7F3A;&#x70B9;"><a name="hibernate&#x7684;&#x4E09;&#x79CD;&#x68C0;&#x7D22;&#x7B56;&#x7565;&#x4F18;&#x7F3A;&#x70B9;" class="anchor-navigation-ex-anchor" href="#hibernate&#x7684;&#x4E09;&#x79CD;&#x68C0;&#x7D22;&#x7B56;&#x7565;&#x4F18;&#x7F3A;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>7. Hibernate&#x7684;&#x4E09;&#x79CD;&#x68C0;&#x7D22;&#x7B56;&#x7565;&#x4F18;&#x7F3A;&#x70B9;</h2>
+<p><strong>&#x7ACB;&#x5373;&#x68C0;&#x7D22;&#xFF1A;</strong></p>
+<ul>
+<li>&#x4F18;&#x70B9;&#xFF1A; &#x5BF9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5B8C;&#x5168;&#x900F;&#x660E;&#xFF0C;&#x4E0D;&#x7BA1;&#x5BF9;&#x8C61;&#x5904;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x72B6;&#x6001;&#xFF0C;&#x8FD8;&#x662F;&#x6E38;&#x79BB;&#x72B6;&#x6001;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x90FD;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x4ECE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5BFC;&#x822A;&#x5230;&#x4E0E;&#x5B83;&#x5173;&#x8054;&#x7684;&#x5BF9;&#x8C61;&#xFF1B;</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A; 1.select&#x8BED;&#x53E5;&#x592A;&#x591A;&#xFF1B;2.&#x53EF;&#x80FD;&#x4F1A;&#x52A0;&#x8F7D;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0D;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x7684;&#x5BF9;&#x8C61;&#x767D;&#x767D;&#x6D6A;&#x8D39;&#x8BB8;&#x591A;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF1B;</li>
+<li>&#x7ACB;&#x5373;&#x68C0;&#x7D22;:<code>lazy=false</code>&#xFF1B;</li>
+</ul>
+<p><strong>&#x5EF6;&#x8FDF;&#x68C0;&#x7D22;&#xFF1A;</strong></p>
+<ul>
+<li>&#x4F18;&#x70B9;&#xFF1A; &#x7531;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x51B3;&#x5B9A;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x54EA;&#x4E9B;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x53EF;&#x6267;&#x884C;&#x591A;&#x4F59;&#x7684;select&#x8BED;&#x53E5;&#xFF0C;&#x4EE5;&#x53CA;&#x907F;&#x514D;&#x52A0;&#x8F7D;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0D;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x56E0;&#x6B64;&#x80FD;&#x63D0;&#x9AD8;&#x68C0;&#x7D22;&#x6027;&#x80FD;&#xFF0C;&#x5E76;&#x4E14;&#x80FD;&#x8282;&#x7701;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF1B;</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A; &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x8BBF;&#x95EE;&#x6E38;&#x79BB;&#x72B6;&#x6001;&#x4EE3;&#x7406;&#x7C7B;&#x5B9E;&#x4F8B;&#xFF0C;&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x4ED6;&#x5728;&#x6301;&#x4E45;&#x5316;&#x72B6;&#x6001;&#x65F6;&#x5DF2;&#x7ECF;&#x88AB;&#x521D;&#x59CB;&#x5316;&#xFF1B;</li>
+<li>&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF1A;<code>lazy=true</code>&#xFF1B;</li>
+</ul>
+<p><strong>&#x8FEB;&#x5207;&#x5DE6;&#x5916;&#x8FDE;&#x63A5;&#x68C0;&#x7D22;&#xFF1A;</strong></p>
+<ul>
+<li>&#x4F18;&#x70B9;&#xFF1A; 1&#x5BF9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5B8C;&#x5168;&#x900F;&#x660E;&#xFF0C;&#x4E0D;&#x7BA1;&#x5BF9;&#x8C61;&#x5904;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x72B6;&#x6001;&#xFF0C;&#x8FD8;&#x662F;&#x6E38;&#x79BB;&#x72B6;&#x6001;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x90FD;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x51B2;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5BFC;&#x822A;&#x5230;&#x4E0E;&#x5B83;&#x5173;&#x8054;&#x7684;&#x5BF9;&#x8C61;&#x3002;2&#x4F7F;&#x7528;&#x4E86;&#x5916;&#x8FDE;&#x63A5;&#xFF0C;select&#x8BED;&#x53E5;&#x6570;&#x76EE;&#x5C11;&#xFF1B;</li>
+<li>&#x7F3A;&#x70B9;&#xFF1A; 1 &#x53EF;&#x80FD;&#x4F1A;&#x52A0;&#x8F7D;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0D;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x767D;&#x767D;&#x6D6A;&#x8D39;&#x8BB8;&#x591A;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF1B;2&#x590D;&#x6742;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8868;&#x8FDE;&#x63A5;&#x4E5F;&#x4F1A;&#x5F71;&#x54CD;&#x68C0;&#x7D22;&#x6027;&#x80FD;&#xFF1B;</li>
+<li>&#x9884;&#x5148;&#x6293;&#x53D6;&#xFF1A; <code>fetch=&#x201C;join&#x201D;</code>&#xFF1B;</li>
+</ul>
+<h2 id="&#x5982;&#x4F55;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x67E5;&#x770B;hibernate&#x751F;&#x6210;&#x5E76;&#x6267;&#x884C;&#x7684;sql"><a name="&#x5982;&#x4F55;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x67E5;&#x770B;hibernate&#x751F;&#x6210;&#x5E76;&#x6267;&#x884C;&#x7684;sql" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x67E5;&#x770B;hibernate&#x751F;&#x6210;&#x5E76;&#x6267;&#x884C;&#x7684;sql"><i class="fa fa-link" aria-hidden="true"></i></a>8. &#x5982;&#x4F55;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x67E5;&#x770B;Hibernate&#x751F;&#x6210;&#x5E76;&#x6267;&#x884C;&#x7684;sql</h2>
+<p>&#x5728;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5E93;&#x548C;&#x6570;&#x636E;&#x5E93;&#x5C5E;&#x6027;&#x7684;&#x6587;&#x4EF6;applicationConfig.xml&#x91CC;&#x9762;&#xFF0C;&#x628A;hibernate.show_sql &#x8BBE;&#x7F6E;&#x4E3A;true 
+&#x8FD9;&#x6837;&#x751F;&#x6210;&#x7684;SQL&#x5C31;&#x4F1A;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x51FA;&#x73B0;&#x4E86;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x6837;&#x505A;&#x4F1A;&#x52A0;&#x91CD;&#x7CFB;&#x7EDF;&#x7684;&#x8D1F;&#x62C5;&#xFF0C;&#x4E0D;&#x5229;&#x4E8E;&#x6027;&#x80FD;&#x8C03;&#x4F18;&#x3002;</p>
+<h2 id="hibernate&#x90FD;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x7F13;&#x5B58;&#x7B56;&#x7565;"><a name="hibernate&#x90FD;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x7F13;&#x5B58;&#x7B56;&#x7565;" class="anchor-navigation-ex-anchor" href="#hibernate&#x90FD;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x7F13;&#x5B58;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>9. Hibernate&#x90FD;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x7F13;&#x5B58;&#x7B56;&#x7565;</h2>
+<ul>
+<li><strong>Read-only</strong>: &#x8FD9;&#x79CD;&#x7B56;&#x7565;&#x9002;&#x7528;&#x4E8E;&#x90A3;&#x4E9B;&#x9891;&#x7E41;&#x8BFB;&#x53D6;&#x5374;&#x4E0D;&#x4F1A;&#x66F4;&#x65B0;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x662F;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x6700;&#x7B80;&#x5355;&#x548C;&#x6700;&#x6709;&#x6548;&#x7684;&#x7F13;&#x5B58;&#x7B56;&#x7565; </li>
+<li><strong>Read/write</strong>:&#x8FD9;&#x79CD;&#x7B56;&#x7565;&#x9002;&#x7528;&#x4E8E;&#x9700;&#x8981;&#x88AB;&#x66F4;&#x65B0;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6BD4;read-only&#x66F4;&#x8017;&#x8D39;&#x8D44;&#x6E90;&#xFF0C;&#x5728;&#x975E;JTA&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x6BCF;&#x4E2A;&#x4E8B;&#x52A1;&#x9700;&#x8981;&#x5728;session.close&#x548C;session.disconnect()&#x88AB;&#x8C03;&#x7528; </li>
+<li><strong>Nonstrict read/write</strong>: &#x8FD9;&#x79CD;&#x7B56;&#x7565;&#x4E0D;&#x4FDD;&#x969C;&#x4E24;&#x4E2A;&#x540C;&#x65F6;&#x8FDB;&#x884C;&#x7684;&#x4E8B;&#x52A1;&#x4F1A;&#x4FEE;&#x6539;&#x540C;&#x4E00;&#x5757;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x79CD;&#x7B56;&#x7565;&#x9002;&#x7528;&#x4E8E;&#x90A3;&#x4E9B;&#x7ECF;&#x5E38;&#x8BFB;&#x53D6;&#x4F46;&#x662F;&#x6781;&#x5C11;&#x66F4;&#x65B0;&#x7684;&#x6570;&#x636E; </li>
+<li><strong>Transactional</strong>: &#x8FD9;&#x79CD;&#x7B56;&#x7565;&#x662F;&#x5B8C;&#x5168;&#x4E8B;&#x52A1;&#x5316;&#x5F97;&#x7F13;&#x5B58;&#x7B56;&#x7565;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5728;JTA&#x73AF;&#x5883;&#x4E0B;</li>
+</ul>
+<h2 id="sorted-collection-&#x548C;ordered-collection&#x7684;&#x533A;&#x522B;"><a name="sorted-collection-&#x548C;ordered-collection&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#sorted-collection-&#x548C;ordered-collection&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>10. sorted collection &#x548C;ordered collection&#x7684;&#x533A;&#x522B;</h2>
+<p>sorted collection</p>
+<ul>
+<li>&#x662F;&#x5728;<strong>&#x5185;&#x5B58;&#x4E2D;&#x901A;&#x8FC7;Java&#x6BD4;&#x8F83;&#x5668;</strong>&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x7684;</li>
+</ul>
+<p>ordered collection</p>
+<ul>
+<li>&#x662F;&#x5728;<strong>&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x901A;&#x8FC7;order by</strong>&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x7684;</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;<strong>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5BF9;&#x5B83;&#x4EEC;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x800C;&#x51FA;&#x73B0; Java&#x4E2D;&#x7684;OutOfMemoryError&#xFF0C;&#x6700;&#x597D;&#x4F7F;&#x7528;ordered collection&#x3002;</strong></p>
+<h2 id="hibernate&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x53CA;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;"><a name="hibernate&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x53CA;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#hibernate&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x53CA;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>11. Hibernate&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x53CA;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;</h2>
+<p>&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#xFF1A;</p>
+<ol>
+<li>&#x8BFB;&#x53D6;&#x5E76;&#x89E3;&#x6790;&#x914D;&#x7F6E;&#x6587;&#x4EF6; </li>
+<li>&#x8BFB;&#x53D6;&#x5E76;&#x89E3;&#x6790;&#x6620;&#x5C04;&#x4FE1;&#x606F;&#xFF0C;&#x521B;&#x5EFA;SessionFactory </li>
+<li>&#x6253;&#x5F00;Sesssion </li>
+<li>&#x521B;&#x5EFA;&#x4E8B;&#x52A1;Transation </li>
+<li>&#x6301;&#x4E45;&#x5316;&#x64CD;&#x4F5C; </li>
+<li>&#x63D0;&#x4EA4;&#x4E8B;&#x52A1; </li>
+<li>&#x5173;&#x95ED;Session </li>
+<li>&#x5173;&#x95ED;SesstionFactory</li>
+</ol>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4F7F;&#x7528;&#xFF1A; </p>
+<ol>
+<li>&#x5BF9;JDBC&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4EE3;&#x7801;&#x505A;&#x4E86;&#x5C01;&#x88C5;&#xFF0C;&#x5927;&#x5927;&#x7B80;&#x5316;&#x4E86;&#x6570;&#x636E;&#x8BBF;&#x95EE;&#x5C42;&#x7E41;&#x7410;&#x7684;&#x91CD;&#x590D;&#x6027;&#x4EE3;&#x7801;&#x3002;</li>
+<li>Hibernate&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;JDBC&#x7684;&#x4E3B;&#x6D41;&#x6301;&#x4E45;&#x5316;&#x6846;&#x67B6;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x4F18;&#x79C0;&#x7684;ORM&#x5B9E;&#x73B0;&#x3002;&#x4ED6;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x7684;&#x7B80;&#x5316;DAO&#x5C42;&#x7684;&#x7F16;&#x7801;&#x5DE5;&#x4F5C;&#x3002;</li>
+<li>Hibernate&#x4F7F;&#x7528;Java&#x53CD;&#x5C04;&#x673A;&#x5236;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5B57;&#x8282;&#x7801;&#x589E;&#x5F3A;&#x7A0B;&#x5E8F;&#x6765;&#x5B9E;&#x73B0;&#x900F;&#x660E;&#x6027;&#x3002;</li>
+<li>Hibernate&#x7684;&#x6027;&#x80FD;&#x975E;&#x5E38;&#x597D;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x6846;&#x67B6;&#x3002;&#x6620;&#x5C04;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x5F88;&#x51FA;&#x8272;&#x3002;&#x5B83;&#x652F;&#x6301;&#x5404;&#x79CD;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4ECE;&#x4E00;&#x5BF9;&#x4E00;&#x5230;&#x591A;&#x5BF9;&#x591A;&#x7684;&#x5404;&#x79CD;&#x590D;&#x6742;&#x5173;&#x7CFB;&#x3002;</li>
+</ol>
+<h2 id="hibernate&#x662F;&#x5982;&#x4F55;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;"><a name="hibernate&#x662F;&#x5982;&#x4F55;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#hibernate&#x662F;&#x5982;&#x4F55;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>12. Hibernate&#x662F;&#x5982;&#x4F55;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;</h2>
+<p>&#x5F53;Hibernate&#x5728;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6570;&#x636E;&#x5E76;&#x6CA1;&#x6709;&#x5B58;&#x5728;&#x4E0E;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5F53;&#x7A0B;&#x5E8F;&#x771F;&#x6B63;&#x5BF9;&#x6570;&#x636E;&#x7684;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x5BF9;&#x8C61;&#x624D;&#x5B58;&#x5728;&#x4E0E;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF0C;&#x4ED6;&#x8282;&#x7701;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5185;&#x5B58;&#x5F00;&#x9500;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6027;&#x80FD;&#x3002;</p>
+<h2 id="&#x8BF4;&#x4E0B;hibernate&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;"><a name="&#x8BF4;&#x4E0B;hibernate&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x8BF4;&#x4E0B;hibernate&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>13. &#x8BF4;&#x4E0B;Hibernate&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;</h2>
+<p><strong>&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#xFF1A;</strong></p>
+<ul>
+<li>Hibenate&#x4E2D;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C;&#x4E5F;&#x53EB;&#x505A;session&#x7684;&#x7F13;&#x5B58;&#xFF0C;<strong>&#x5B83;&#x53EF;&#x4EE5;&#x5728;session&#x8303;&#x56F4;&#x5185;&#x51CF;&#x5C11;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8BBF;&#x95EE;&#x6B21;&#x6570;&#xFF01; &#x53EA;&#x5728;session&#x8303;&#x56F4;&#x6709;&#x6548;&#xFF01; Session&#x5173;&#x95ED;&#xFF0C;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x5931;&#x6548;&#xFF01;</strong></li>
+<li><strong>&#x53EA;&#x8981;&#x662F;&#x6301;&#x4E45;&#x5316;&#x5BF9;&#x8C61;&#x72B6;&#x6001;&#x7684;&#xFF0C;&#x90FD;&#x53D7;Session&#x7BA1;&#x7406;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x90FD;&#x4F1A;&#x5728;Session&#x7F13;&#x5B58;&#x4E2D;&#xFF01;</strong></li>
+<li>Session&#x7684;&#x7F13;&#x5B58;&#x7531;hibernate&#x7EF4;&#x62A4;&#xFF0C;<strong>&#x7528;&#x6237;&#x4E0D;&#x80FD;&#x64CD;&#x4F5C;&#x7F13;&#x5B58;&#x5185;&#x5BB9;&#xFF1B; &#x5982;&#x679C;&#x60F3;&#x64CD;&#x4F5C;&#x7F13;&#x5B58;&#x5185;&#x5BB9;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7;hibernate&#x63D0;&#x4F9B;&#x7684;evit/clear&#x65B9;&#x6CD5;&#x64CD;&#x4F5C;</strong>&#x3002;</li>
+</ul>
+<p><strong>&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF1A;</strong></p>
+<ul>
+<li><strong>&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x662F;&#x57FA;&#x4E8E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x7F13;&#x5B58;&#xFF0C;&#x6240;&#x6709;&#x7684;Session&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;</strong>&#x3002;</li>
+<li>Hibernate&#x63D0;&#x4F9B;&#x7684;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x6709;&#x9ED8;&#x8BA4;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x4E14;&#x662F;&#x4E00;&#x79CD;<strong>&#x53EF;&#x63D2;&#x914D;&#x7684;&#x7F13;&#x5B58;&#x6846;&#x67B6;</strong>&#xFF01;&#x5982;&#x679C;&#x7528;&#x6237;&#x60F3;&#x7528;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C;<strong>&#x53EA;&#x9700;&#x8981;&#x5728;hibernate.cfg.xml&#x4E2D;&#x914D;&#x7F6E;&#x5373;&#x53EF;</strong>&#xFF1B; &#x4E0D;&#x60F3;&#x7528;&#xFF0C;&#x76F4;&#x63A5;&#x79FB;&#x9664;&#xFF0C;&#x4E0D;&#x5F71;&#x54CD;&#x4EE3;&#x7801;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x7528;&#x6237;&#x89C9;&#x5F97;hibernate&#x63D0;&#x4F9B;&#x7684;&#x6846;&#x67B6;&#x6846;&#x67B6;&#x4E0D;&#x597D;&#x7528;&#xFF0C;<strong>&#x81EA;&#x5DF1;&#x53EF;&#x4EE5;&#x6362;&#x5176;&#x4ED6;&#x7684;&#x7F13;&#x5B58;&#x6846;&#x67B6;&#x6216;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x7F13;&#x5B58;&#x6846;&#x67B6;&#x90FD;&#x53EF;&#x4EE5;</strong>&#x3002;</li>
+<li>Hibernate&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF1A;<strong>&#x5B58;&#x50A8;&#x7684;&#x662F;&#x5E38;&#x7528;&#x7684;&#x7C7B;</strong>&#x3002;</li>
+</ul>
+<h2 id="hibernate&#x7684;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;&#x6709;&#x51E0;&#x79CD;"><a name="hibernate&#x7684;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;&#x6709;&#x51E0;&#x79CD;" class="anchor-navigation-ex-anchor" href="#hibernate&#x7684;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;&#x6709;&#x51E0;&#x79CD;"><i class="fa fa-link" aria-hidden="true"></i></a>14. Hibernate&#x7684;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;&#x6709;&#x51E0;&#x79CD;</h2>
+<ul>
+<li>&#x5BF9;&#x8C61;&#x5BFC;&#x822A;&#x67E5;&#x8BE2;(objectcomposition)</li>
+<li>HQL&#x67E5;&#x8BE2;<ul>
+<li>1&#x3001; &#x5C5E;&#x6027;&#x67E5;&#x8BE2;</li>
+<li>2&#x3001; &#x53C2;&#x6570;&#x67E5;&#x8BE2;&#x3001;&#x547D;&#x540D;&#x53C2;&#x6570;&#x67E5;&#x8BE2;</li>
+<li>3&#x3001; &#x5173;&#x8054;&#x67E5;&#x8BE2;</li>
+<li>4&#x3001; &#x5206;&#x9875;&#x67E5;&#x8BE2;</li>
+<li>5&#x3001; &#x7EDF;&#x8BA1;&#x51FD;&#x6570;</li>
+</ul>
+</li>
+<li>Criteria &#x67E5;&#x8BE2;</li>
+<li>SQLQuery&#x672C;&#x5730;SQL&#x67E5;&#x8BE2;</li>
+</ul>
+<h2 id="&#x5982;&#x4F55;&#x4F18;&#x5316;hibernate"><a name="&#x5982;&#x4F55;&#x4F18;&#x5316;hibernate" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x4F18;&#x5316;hibernate"><i class="fa fa-link" aria-hidden="true"></i></a>15. &#x5982;&#x4F55;&#x4F18;&#x5316;Hibernate</h2>
+<ul>
+<li>&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;&#x8C03;&#x6574;</li>
+<li>HQL&#x4F18;&#x5316;</li>
+<li>API&#x7684;&#x6B63;&#x786E;&#x4F7F;&#x7528;(&#x5982;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x4E1A;&#x52A1;&#x7C7B;&#x578B;&#x9009;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x96C6;&#x5408;&#x53CA;&#x67E5;&#x8BE2;API)</li>
+<li>&#x4E3B;&#x914D;&#x7F6E;&#x53C2;&#x6570;(&#x65E5;&#x5FD7;&#xFF0C;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;&#xFF0C;fetch_size, batch_size&#x7B49;)</li>
+<li>&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4F18;&#x5316;(ID&#x751F;&#x6210;&#x7B56;&#x7565;&#xFF0C;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF0C;&#x5173;&#x8054;&#x4F18;&#x5316;)</li>
+<li>&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x7684;&#x7BA1;&#x7406;</li>
+<li>&#x9488;&#x5BF9;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C;&#x8FD8;&#x6709;&#x8BB8;&#x591A;&#x7279;&#x6709;&#x7684;&#x7B56;&#x7565;</li>
+</ul>
+<h2 id="&#x8C08;&#x8C08;hibernate&#x4E2D;inverse&#x7684;&#x4F5C;&#x7528;"><a name="&#x8C08;&#x8C08;hibernate&#x4E2D;inverse&#x7684;&#x4F5C;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x8C08;&#x8C08;hibernate&#x4E2D;inverse&#x7684;&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>16. &#x8C08;&#x8C08;Hibernate&#x4E2D;inverse&#x7684;&#x4F5C;&#x7528;</h2>
+<p><strong>inverse&#x5C5E;&#x6027;&#x9ED8;&#x8BA4;&#x662F;false</strong>,&#x5C31;&#x662F;&#x8BF4;&#x5173;&#x7CFB;&#x7684;&#x4E24;&#x7AEF;&#x90FD;&#x6765;&#x7EF4;&#x62A4;&#x5173;&#x7CFB;&#x3002;</p>
+<ul>
+<li>&#x6BD4;&#x5982;Student&#x548C;Teacher&#x662F;&#x591A;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#xFF0C;&#x7528;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x8868;TeacherStudent&#x7EF4;&#x62A4;&#x3002;Gp)</li>
+<li>&#x5982;&#x679C;Student&#x8FD9;&#x8FB9;inverse=&#x201D;true&#x201D;, &#x90A3;&#x4E48;&#x5173;&#x7CFB;&#x7531;&#x53E6;&#x4E00;&#x7AEF;Teacher&#x7EF4;&#x62A4;&#xFF0C;&#x5C31;&#x662F;&#x8BF4;&#x5F53;&#x63D2;&#x5165;Student&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x64CD;&#x4F5C;TeacherStudent&#x8868;&#xFF08;&#x4E2D;&#x95F4;&#x8868;&#xFF09;&#x3002;&#x53EA;&#x6709;Teacher&#x63D2;&#x5165;&#x6216;&#x5220;&#x9664;&#x65F6;&#x624D;&#x4F1A;&#x89E6;&#x53D1;&#x5BF9;&#x4E2D;&#x95F4;&#x8868;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x6240;&#x4EE5;&#x4E24;&#x8FB9;&#x90FD;inverse=&#x201D;true&#x201D;&#x662F;&#x4E0D;&#x5BF9;&#x7684;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x90FD;&#x4E0D;&#x89E6;&#x53D1;&#x5BF9;&#x4E2D;&#x95F4;&#x8868;&#x7684;&#x5F71;&#x54CD;&#xFF1B;&#x5F53;&#x4E24;&#x8FB9;&#x90FD;inverse=&#x201D;false&#x201D;&#x6216;&#x9ED8;&#x8BA4;&#x65F6;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x5728;&#x4E2D;&#x95F4;&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x4E24;&#x6B21;&#x5173;&#x7CFB;&#x3002;</li>
+</ul>
+<p><strong>&#x5982;&#x679C;&#x8868;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x662F;&#x201C;&#x4E00;&#x5BF9;&#x591A;&#x201D;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;inverse&#x53EA;&#x80FD;&#x5728;&#x201C;&#x4E00;&#x201D;&#x7684;&#x4E00;&#x65B9;&#x6765;&#x914D;&#x7F6E;&#xFF01;</strong></p>
+<h2 id="detached-object&#xFF08;&#x6E38;&#x79BB;&#x5BF9;&#x8C61;&#xFF09;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;"><a name="detached-object&#xFF08;&#x6E38;&#x79BB;&#x5BF9;&#x8C61;&#xFF09;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;" class="anchor-navigation-ex-anchor" href="#detached-object&#xFF08;&#x6E38;&#x79BB;&#x5BF9;&#x8C61;&#xFF09;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;"><i class="fa fa-link" aria-hidden="true"></i></a>17. Detached Object&#xFF08;&#x6E38;&#x79BB;&#x5BF9;&#x8C61;&#xFF09;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;</h2>
+<p>Detached Object&#xFF08;&#x6E38;&#x79BB;&#x5BF9;&#x8C61;&#xFF09;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x5230;&#x4EFB;&#x4F55;&#x5C42;&#x76F4;&#x5230;&#x8868;&#x73B0;&#x5C42;&#x800C;&#x4E0D;&#x662F;&#x7528;&#x4EFB;&#x4F55;DTO(DataTransfer Objects)&#x3002; &#x7136;&#x540E;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x628A;&#x6E38;&#x79BB;&#x5BF9;&#x8C61;&#x8D4B;&#x7ED9;&#x53E6;&#x5916;&#x4E00;&#x4E2A;Session&#x3002;</p>
+<h2 id="&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x901F;&#x5EA6;&#x5F88;&#x6162;&#x65F6;&#x5982;&#x4F55;&#x4F18;&#x5316;"><a name="&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x901F;&#x5EA6;&#x5F88;&#x6162;&#x65F6;&#x5982;&#x4F55;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x901F;&#x5EA6;&#x5F88;&#x6162;&#x65F6;&#x5982;&#x4F55;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>18. &#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x901F;&#x5EA6;&#x5F88;&#x6162;&#x65F6;&#x5982;&#x4F55;&#x4F18;&#x5316;</h2>
+<ul>
+<li>&#x5EFA;&#x7D22;&#x5F15;</li>
+<li>&#x51CF;&#x5C11;&#x8868;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x8054;</li>
+<li>&#x4F18;&#x5316;sql&#xFF0C;&#x5C3D;&#x91CF;&#x8BA9;sql&#x5F88;&#x5FEB;&#x5B9A;&#x4F4D;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x8981;&#x8BA9;sql&#x505A;&#x5168;&#x8868;&#x67E5;&#x8BE2;&#xFF0C;&#x5E94;&#x8BE5;&#x8D70;&#x7D22;&#x5F15;&#xFF0C;&#x628A;&#x6570;&#x636E;&#x91CF;&#x5927;&#x7684;&#x8868;&#x6392;&#x5728;&#x524D;&#x9762;</li>
+<li>&#x7B80;&#x5316;&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#xFF0C;&#x6CA1;&#x7528;&#x7684;&#x5B57;&#x6BB5;&#x4E0D;&#x8981;&#xFF0C;&#x5DF2;&#x7ECF;&#x5BF9;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x7684;&#x63A7;&#x5236;&#xFF0C;&#x5C3D;&#x91CF;&#x8FD4;&#x56DE;&#x5C11;&#x91CF;&#x6570;&#x636E;</li>
+</ul>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;sessionfactory&#xFF0C;&#x5B83;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x4E48;"><a name="&#x4EC0;&#x4E48;&#x662F;sessionfactory&#xFF0C;&#x5B83;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x4E48;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;sessionfactory&#xFF0C;&#x5B83;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x4E48;"><i class="fa fa-link" aria-hidden="true"></i></a>19. &#x4EC0;&#x4E48;&#x662F;SessionFactory&#xFF0C;&#x5B83;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x4E48;</h2>
+<p>SessionFactory &#x662F;Hibrenate&#x5355;&#x4F8B;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x548C;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x53EF;&#x4EE5;&#x591A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;SessionFactory &#x5728;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x80FD;&#x5EFA;&#x7ACB;&#x4E00;&#x6B21;&#x3002;SessionFactory&#x5E94;&#x8BE5;&#x5305;&#x88C5;&#x5404;&#x79CD;&#x5355;&#x4F8B;&#x4EE5;&#x81F3;&#x4E8E;&#x5B83;&#x80FD;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x5728;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x4EE3;&#x7801;&#x4E2D;&#x50A8;&#x5B58;&#x3002;</p>
+<h2 id="hibernate&#x7684;&#x4E94;&#x4E2A;&#x6838;&#x5FC3;&#x63A5;&#x53E3;"><a name="hibernate&#x7684;&#x4E94;&#x4E2A;&#x6838;&#x5FC3;&#x63A5;&#x53E3;" class="anchor-navigation-ex-anchor" href="#hibernate&#x7684;&#x4E94;&#x4E2A;&#x6838;&#x5FC3;&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>20. Hibernate&#x7684;&#x4E94;&#x4E2A;&#x6838;&#x5FC3;&#x63A5;&#x53E3;</h2>
+<ul>
+<li><strong>Configuration &#x63A5;&#x53E3;</strong>&#xFF1A;&#x914D;&#x7F6E;Hibernate&#xFF0C;&#x6839;&#x636E;&#x5176;&#x542F;&#x52A8;hibernate&#xFF0C;&#x521B;&#x5EFA; SessionFactory &#x5BF9;&#x8C61;&#xFF1B; </li>
+<li><strong>SessionFactory &#x63A5;&#x53E3;</strong>&#xFF1A;&#x521D;&#x59CB;&#x5316;Hibernate&#xFF0C;&#x5145;&#x5F53;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x6E90;&#x7684;&#x4EE3;&#x7406;&#xFF0C;&#x521B;&#x5EFA;session &#x5BF9;&#x8C61;&#xFF0C;sessionFactory &#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5B83;&#x7684;&#x540C;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x88AB;&#x5E94;&#x7528;&#x7684;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#xFF0C;&#x662F;&#x91CD;&#x91CF;&#x7EA7;&#x3001;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF1B; </li>
+<li><strong>Session &#x63A5;&#x53E3;</strong>&#xFF1A;&#x8D1F;&#x8D23;&#x4FDD;&#x5B58;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x5220;&#x9664;&#x3001;&#x52A0;&#x8F7D;&#x548C;&#x67E5;&#x8BE2;&#x5BF9;&#x8C61;&#xFF0C;&#x662F;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#xFF0C; &#x907F;&#x514D;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4E2A;session&#xFF0C;&#x662F;&#x8F7B;&#x91CF;&#x7EA7;&#x3001;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#xFF1B; </li>
+<li><strong>Transaction &#x63A5;&#x53E3;</strong>&#xFF1A;&#x7BA1;&#x7406;&#x4E8B;&#x52A1;&#xFF1B; </li>
+<li><strong>Query &#x548C;Criteria &#x63A5;&#x53E3;</strong>&#xFF1A;&#x6267;&#x884C;&#x6570;&#x636E;&#x5E93;&#x7684;&#x67E5;&#x8BE2;&#x3002;</li>
+</ul>
+<h2 id="get&#x548C;load&#x533A;&#x522B;"><a name="get&#x548C;load&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#get&#x548C;load&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>21. get&#x548C;load&#x533A;&#x522B;</h2>
+<p>get()&#xFF1A;&#x7ACB;&#x5373;&#x67E5;&#x8BE2;</p>
+<p>load()&#xFF1A;&#x61D2;&#x52A0;&#x8F7D;</p>
+<p>get&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x4F1A;&#x8FD4;&#x56DE;null&#xFF0C; load&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
+<p>get&#x4F1A;&#x5148;&#x67E5;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C; &#x518D;&#x67E5;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C;&#x7136;&#x540E;&#x67E5;&#x6570;&#x636E;&#x5E93;&#xFF1B;load&#x4F1A;&#x5148;&#x67E5;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF0C;&#x5C31;&#x521B;&#x5EFA;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#xFF0C; &#x7B49;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;&#x53BB;&#x67E5;&#x8BE2;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x548C;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<h2 id="merge&#x7684;&#x542B;&#x4E49;"><a name="merge&#x7684;&#x542B;&#x4E49;" class="anchor-navigation-ex-anchor" href="#merge&#x7684;&#x542B;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>22. merge&#x7684;&#x542B;&#x4E49;</h2>
+<ul>
+<li>&#x5982;&#x679C;session&#x4E2D;&#x5B58;&#x5728;&#x76F8;&#x540C;&#x6301;&#x4E45;&#x5316;&#x6807;&#x8BC6;(identifier)&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x7528;&#x7528;&#x6237;&#x7ED9;&#x51FA;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x8986;&#x76D6;&#x65E7;&#x6709;&#x7684;&#x6301;&#x4E45;&#x5B9E;&#x4F8B;</li>
+<li>&#x5982;&#x679C;session&#x6CA1;&#x6709;&#x76F8;&#x5E94;&#x7684;&#x6301;&#x4E45;&#x5B9E;&#x4F8B;&#xFF0C;&#x5219;&#x5C1D;&#x8BD5;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x52A0;&#x8F7D;&#xFF0C;&#x6216;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x6301;&#x4E45;&#x5316;&#x5B9E;&#x4F8B;,&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x8BE5;&#x6301;&#x4E45;&#x5B9E;&#x4F8B;</li>
+<li>&#x7528;&#x6237;&#x7ED9;&#x51FA;&#x7684;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x88AB;&#x5173;&#x8054;&#x5230;session&#x4E0A;&#xFF0C;&#x5B83;&#x4F9D;&#x65E7;&#x662F;&#x8131;&#x7BA1;&#x7684;</li>
+</ul>
+<h2 id="persist&#x548C;save&#x7684;&#x533A;&#x522B;"><a name="persist&#x548C;save&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#persist&#x548C;save&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>23. persist&#x548C;save&#x7684;&#x533A;&#x522B;</h2>
+<ul>
+<li>persist&#x4E0D;&#x4FDD;&#x8BC1;&#x7ACB;&#x5373;&#x6267;&#x884C;&#xFF0C;&#x53EF;&#x80FD;&#x8981;&#x7B49;&#x5230;flush&#xFF1B;</li>
+<li>persist&#x4E0D;&#x66F4;&#x65B0;&#x7F13;&#x5B58;&#xFF1B;</li>
+<li>save, &#x628A;&#x4E00;&#x4E2A;&#x77AC;&#x6001;&#x7684;&#x5B9E;&#x4F8B;&#x6301;&#x4E45;&#x5316;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x53CA;&#x65F6;&#x7684;&#x4EA7;&#x751F;,&#x5B83;&#x8981;&#x8FD4;&#x56DE;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4F1A;&#x7ACB;&#x5373;&#x6267;&#x884C;Sql insert</li>
+<li>&#x4F7F;&#x7528; save() &#x65B9;&#x6CD5;&#x4FDD;&#x5B58;&#x6301;&#x4E45;&#x5316;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x8BE5;&#x6301;&#x4E45;&#x5316;&#x5BF9;&#x8C61;&#x7684;&#x6807;&#x8BC6;&#x5C5E;&#x6027;&#x503C;(&#x5373;&#x5BF9;&#x5E94;&#x8BB0;&#x5F55;&#x7684;&#x4E3B;&#x952E;&#x503C;)&#xFF1B;</li>
+<li>&#x4F7F;&#x7528; persist() &#x65B9;&#x6CD5;&#x6765;&#x4FDD;&#x5B58;&#x6301;&#x4E45;&#x5316;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8FD4;&#x56DE;&#x503C;&#x3002;</li>
+</ul>
+<h2 id="&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#x6709;&#x54EA;&#x4E9B;"><a name="&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#x6709;&#x54EA;&#x4E9B;" class="anchor-navigation-ex-anchor" href="#&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#x6709;&#x54EA;&#x4E9B;"><i class="fa fa-link" aria-hidden="true"></i></a>24. &#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#x6709;&#x54EA;&#x4E9B;</h2>
+<h4 id="&#x4E3B;&#x952E;&#x7C7B;&#x578B;"><a name="&#x4E3B;&#x952E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x4E3B;&#x952E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x952E;&#x7C7B;&#x578B;</h4>
+<h5 id="&#x81EA;&#x7136;&#x4E3B;&#x952E;&#xFF08;&#x4E3B;&#x952E;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x5B9E;&#x4F53;&#x4E2D;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#xFF09;"><a name="&#x81EA;&#x7136;&#x4E3B;&#x952E;&#xFF08;&#x4E3B;&#x952E;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x5B9E;&#x4F53;&#x4E2D;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x7136;&#x4E3B;&#x952E;&#xFF08;&#x4E3B;&#x952E;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x5B9E;&#x4F53;&#x4E2D;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x7136;&#x4E3B;&#x952E;&#xFF08;&#x4E3B;&#x952E;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x5B9E;&#x4F53;&#x4E2D;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#xFF09;</h5>
+<p>&#x8868;&#x4E2D;&#x5DF2;&#x7ECF;&#x5177;&#x6709;&#x67D0;&#x5B57;&#x6BB5;&#xFF0C;&#x5E76;&#x4E14;&#x8BE5;&#x5B57;&#x6BB5;&#x5177;&#x6709;&#x4E1A;&#x52A1;&#x542B;&#x4E49;&#x4F5C;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A;&#x81EA;&#x7136;&#x4E3B;&#x952E;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;&#x5728;person&#x8868;&#x4E2D;&#x7684;&#x8EAB;&#x4EFD;&#x8BC1;&#x53F7;&#xFF0C;&#x65E2;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x53C8;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;person&#x3002;</p>
+<p>&#x53C8;&#x5982;&#xFF1A;&#x5728;customer&#x8868;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x628A;name&#x4F5C;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x5176;&#x524D;&#x63D0;&#x6761;&#x4EF6;&#x5FC5;&#x987B;&#x662F;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7684;&#x59D3;&#x540D;&#x4E0D;&#x5141;&#x8BB8;&#x4E3A;null&#xFF0C;&#x4E0D;&#x5141;&#x8BB8;&#x5BA2;&#x6237;&#x91CD;&#x540D;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x5141;&#x8BB8;&#x4FEE;&#x6539;&#x5BA2;&#x6237;&#x59D3;&#x540D;&#x3002;&#x5C3D;&#x7BA1;&#x8FD9;&#x4E5F;&#x662F;&#x53EF;&#x884C;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x4E0D;&#x65AD;&#x53D8;&#x5316;&#x7684;&#x4E1A;&#x52A1;&#x9700;&#x6C42;&#xFF0C;&#x4E00;&#x65E6;&#x51FA;&#x73B0;&#x4E86;&#x5141;&#x8BB8;&#x5BA2;&#x6237;&#x91CD;&#x540D;&#x7684;&#x4E1A;&#x52A1;&#x9700;&#x6C42;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x6A21;&#x578B;&#xFF0C;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x8868;&#x7684;&#x4E3B;&#x952E;&#xFF0C;&#x8FD9;&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x7684;&#x7EF4;&#x62A4;&#x589E;&#x52A0;&#x4E86;&#x96BE;&#x5EA6;&#x3002;</p>
+<h5 id="&#x4EE3;&#x7406;&#x4E3B;&#x952E;&#xFF08;&#x4E3B;&#x952E;&#x4E0D;&#x662F;&#x5B9E;&#x4F53;&#x4E2D;&#x67D0;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x5B57;&#x6BB5;&#xFF09;"><a name="&#x4EE3;&#x7406;&#x4E3B;&#x952E;&#xFF08;&#x4E3B;&#x952E;&#x4E0D;&#x662F;&#x5B9E;&#x4F53;&#x4E2D;&#x67D0;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x5B57;&#x6BB5;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7406;&#x4E3B;&#x952E;&#xFF08;&#x4E3B;&#x952E;&#x4E0D;&#x662F;&#x5B9E;&#x4F53;&#x4E2D;&#x67D0;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x5B57;&#x6BB5;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7406;&#x4E3B;&#x952E;&#xFF08;&#x4E3B;&#x952E;&#x4E0D;&#x662F;&#x5B9E;&#x4F53;&#x4E2D;&#x67D0;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x5B57;&#x6BB5;&#xFF09;</h5>
+<p>&#x8868;&#x4E2D;&#x539F;&#x672C;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x4E14;&#x4E0D;&#x5177;&#x5907;&#x4E1A;&#x52A1;&#x542B;&#x4E49;&#x7684;&#x5B57;&#x6BB5;&#x4F5C;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A;&#x4EE3;&#x7406;&#x4E3B;&#x952E;&#x3002;&#x66F4;&#x5408;&#x7406;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x4E3B;&#x952E;&#x3002;</p>
+<h4 id="&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;"><a name="&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;" class="anchor-navigation-ex-anchor" href="#&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;</h4>
+<p>&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#xFF0C;&#x5C31;&#x662F;&#x6BCF;&#x6761;&#x8BB0;&#x5F55;&#x5F55;&#x5165;&#x65F6;&#xFF0C;&#x4E3B;&#x952E;&#x7684;&#x751F;&#x6210;&#x89C4;&#x5219;&#x3002;Hibernate&#x4E2D;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x51E0;&#x4E2A;&#x5185;&#x7F6E;&#x7684;&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#xFF0C;&#x5176;&#x5E38;&#x7528;&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#x7684;&#x540D;&#x79F0;&#x548C;&#x63CF;&#x8FF0;&#x5982;&#x4E0B;</p>
+<h5 id="&#x4EE3;&#x7406;&#x4E3B;&#x952E;"><a name="&#x4EE3;&#x7406;&#x4E3B;&#x952E;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7406;&#x4E3B;&#x952E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7406;&#x4E3B;&#x952E;</h5>
+<p><strong>identity&#xFF08;&#x4E3B;&#x952E;&#x81EA;&#x589E;&#xFF09;</strong></p>
+<p>&#x9002;&#x7528;&#x4E8E;long&#x3001;short&#x6216;int&#x7C7B;&#x578B;&#x4E3B;&#x952E;&#xFF0C;&#x91C7;&#x7528;&#x5E95;&#x5C42;&#x6570;&#x636E;&#x5E93;&#x672C;&#x8EAB;&#x63D0;&#x4F9B;&#x7684;&#x4E3B;&#x952E;&#x751F;&#x6210;&#x6807;&#x8BC6;&#x7B26;&#x3002;&#x5728;DB2&#x3001;MySQL&#x3001;MS SQL Server&#x3001;Sybase&#x548C;HypersonicSQL&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x8BE5;&#x751F;&#x6210;&#x5668;&#x8981;&#x6C42;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x628A;&#x4E3B;&#x952E;&#x5B9A;&#x4E49;&#x6210;&#x4E3A;&#x81EA;&#x589E;&#x7C7B;&#x578B;&#x3002;Oracle&#x6CA1;&#x6709;&#x81EA;&#x52A8;&#x589E;&#x957F;</p>
+<p><strong>sequence&#xFF08;&#x5E8F;&#x5217;&#xFF09;</strong></p>
+<p>&#x9002;&#x7528;&#x4E8E;long&#x3001;short&#x6216;int&#x7C7B;&#x578B;&#x4E3B;&#x952E;&#xFF0C;Hibernate&#x6839;&#x636E;&#x5E95;&#x5C42;&#x6570;&#x636E;&#x5E93;&#x5E8F;&#x5217;&#x751F;&#x6210;&#x6807;&#x8BC6;&#x7B26;&#x3002;&#x6761;&#x4EF6;&#x662F;&#x6570;&#x636E;&#x5E93;&#x652F;&#x6301;&#x5E8F;&#x5217;&#x3002;&#x5982;oralce&#x3001;DB&#x3001;SAP DB&#x3001;PostgerSQL&#x3001;McKoi&#x4E2D;&#x7684;sequence&#xFF0C;MySQL&#x8FD9;&#x79CD;&#x4E0D;&#x652F;&#x6301;sequence</p>
+<p><strong>increment&#xFF08;&#x4E3B;&#x952E;&#x81EA;&#x589E;&#xFF0C;&#x5355;&#x7EBF;&#x7A0B;&#xFF0C;maxID+1&#xFF09;</strong></p>
+<p>&#x9002;&#x7528;&#x4E8E;long&#x3001;short&#x6216;int&#x7C7B;&#x578B;&#x4E3B;&#x952E;&#xFF0C;&#x7531;Hibernate&#x63D0;&#x4F9B;&#x81EA;&#x52A8;&#x9012;&#x589E;&#x7684;&#x65B9;&#x5F0F;&#x751F;&#x6210;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x6BCF;&#x6B21;&#x589E;&#x91CF;&#x4E3A;1&#x3002;&#x53EA;&#x6709;&#x5F53;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x8FDB;&#x7A0B;&#x5411;&#x540C;&#x4E00;&#x5F20;&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x6570;&#x636E;&#x65F6;&#x624D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x80FD;&#x518D;&#x591A;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;&#x4E0B;&#x4F7F;&#x7528;</p>
+<p><strong>hilo&#xFF08;&#x4E3B;&#x952E;&#x81EA;&#x589E;&#xFF0C;&#x9AD8;&#x4F4E;&#x4F4D;&#x7B97;&#x6CD5;&#xFF09;</strong></p>
+<p>hilo&#xFF08;&#x9AD8;&#x4F4E;&#x4F4D;&#x65B9;&#x5F0F;high low&#xFF09;&#x662F;hibernate&#x4E2D;&#x6700;&#x5E38;&#x7528;&#x7684;&#x4E00;&#x79CD;&#x751F;&#x6210;&#x65B9;&#x5F0F;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x5F20;&#x989D;&#x5916;&#x7684;&#x8868;&#x4FDD;&#x5B58;hi&#x7684;&#x503C;&#x3002;&#x4FDD;&#x5B58;hi&#x503C;&#x7684;&#x8868;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#xFF08;&#x53EA;&#x4E0E;&#x7B2C;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x6709;&#x5173;&#xFF09;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x3002;&#x8DE8;&#x6570;&#x636E;&#x5E93;&#xFF0C;hilo&#x7B97;&#x6CD5;&#x751F;&#x6210;&#x7684;&#x6807;&#x5FD7;&#x53EA;&#x80FD;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4FDD;&#x8BC1;&#x552F;&#x4E00;</p>
+<p><strong>native&#xFF08;hilo+identity+sequence&#x4E09;&#x9009;&#x4E00;&#xFF09;</strong></p>
+<p>&#x6839;&#x636E;&#x5E95;&#x5C42;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x6807;&#x8BC6;&#x7B26;&#x7684;&#x80FD;&#x529B;&#x6765;&#x9009;&#x62E9;i dentity&#x3001;sequence&#x3001;hilo&#x4E09;&#x79CD;&#x751F;&#x6210;&#x5668;&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#xFF0C;&#x9002;&#x5408;&#x8DE8;&#x6570;&#x636E;&#x5E93;&#x5E73;&#x53F0;&#x5F00;&#x53D1;</p>
+<p><strong>uuid&#xFF08;&#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3B;&#x952E;&#xFF09;</strong></p>
+<p>Hibernate&#x91C7;&#x7528;128&#x4F4D;&#x7684;UUID&#x7B97;&#x6CD5;&#x6765;&#x751F;&#x6210;&#x6807;&#x8BC6;&#x7B26;&#x3002;&#x8BE5;&#x7B97;&#x6CD5;&#x80FD;&#x591F;&#x5728;&#x7F51;&#x7EDC;&#x73AF;&#x5883;&#x4E2D;&#x751F;&#x6210;&#x552F;&#x4E00;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x5176;UUID&#x88AB;&#x7F16;&#x7801;&#x4E3A;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;32&#x4F4D;&#x7684;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x6309;&#x7167;&#x5F00;&#x653E;&#x8F6F;&#x4EF6;&#x57FA;&#x91D1;&#x4F1A;(OSF)&#x5236;&#x5B9A;&#x7684;&#x6807;&#x51C6;&#x8BA1;&#x7B97;&#xFF0C;&#x7528;&#x5230;&#x4E86;&#x4EE5;&#x592A;&#x7F51;&#x5361;&#x5730;&#x5740;&#x3001;&#x7EB3;&#x79D2;&#x7EA7;&#x65F6;&#x95F4;&#x3001;&#x82AF;&#x7247;ID&#x7801;&#x548C;&#x8BB8;&#x591A;&#x53EF;&#x80FD;&#x7684;&#x6570;&#x5B57;</p>
+<p>uuid&#x957F;&#x5EA6;&#x5927;&#xFF0C;&#x5360;&#x7528;&#x7A7A;&#x95F4;&#x5927;&#xFF0C;&#x8DE8;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4E0D;&#x7528;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x5C31;&#x751F;&#x6210;&#x4E3B;&#x952E;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x6548;&#x7387;&#x9AD8;&#x4E14;&#x80FD;&#x4FDD;&#x8BC1;&#x552F;&#x4E00;&#x6027;&#xFF0C;&#x79FB;&#x690D;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x3002;</p>
+<p><strong>guid&#xFF08;&#x5168;&#x7403;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#xFF09;</strong></p>
+<p>&#x5168;&#x7403;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x4E5F;&#x79F0;&#x4F5C; UUID&#xFF0C;&#x662F;&#x4E00;&#x4E2A;128&#x4F4D;&#x957F;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x7528;16&#x8FDB;&#x5236;&#x8868;&#x793A;&#x3002;&#x7B97;&#x6CD5;&#x7684;&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x662F;&#x7ED3;&#x5408;&#x673A;&#x5668;&#x7684;&#x7F51;&#x5361;&#x3001;&#x5F53;&#x5730;&#x65F6;&#x95F4;&#x3001;&#x4E00;&#x4E2A;&#x968F;&#x5373;&#x6570;&#x6765;&#x751F;&#x6210;GUID&#x3002;</p>
+<p>Hibernate&#x5728;&#x7EF4;&#x62A4;&#x4E3B;&#x952E;&#x65F6;&#xFF0C;&#x5148;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;uuid&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x5C31;&#x662F;&#x4E3B;&#x952E;&#x503C;&#xFF0C;&#x8BE5;&#x503C;&#x552F;&#x4E00;&#xFF0C;&#x7F3A;&#x70B9;&#x957F;&#x5EA6;&#x8F83;&#x5927;&#xFF0C;&#x652F;&#x6301;&#x6570;&#x636E;&#x5E93;&#x6709;&#x9650;&#xFF0C;&#x4F18;&#x70B9;&#x540C;uuid&#xFF0C;&#x8DE8;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4F46;&#x662F;&#x4ECD;&#x7136;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x957F;&#x5EA6;&#x56E0;&#x6570;&#x636E;&#x5E93;&#x4E0D;&#x540C;&#x800C;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x9700;&#x8981;&#x6570;&#x636E;&#x5E93;&#x652F;&#x6301;&#x67E5;&#x8BE2;uuid&#xFF0C;&#x751F;&#x6210;&#x65F6;&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x6548;&#x7387;&#x6CA1;&#x6709;uuid&#x9AD8;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;uuid&#x3002;</p>
+<h2 id="getcurrentsession&#x548C;opensession&#x7684;&#x533A;&#x522B;"><a name="getcurrentsession&#x548C;opensession&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#getcurrentsession&#x548C;opensession&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>25. getCurrentSession&#x548C;openSession&#x7684;&#x533A;&#x522B;</h2>
+<ol>
+<li>getCurrentSession&#x4F1A;&#x7ED1;&#x5B9A;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x800C;openSession&#x4E0D;&#x4F1A;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x628A;hibernate&#x4EA4;&#x7ED9;&#x6211;&#x4EEC;&#x7684;spring&#x6765;&#x7BA1;&#x7406;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x662F;&#x6709;&#x4E8B;&#x52A1;&#x914D;&#x7F6E;&#xFF0C;&#x8FD9;&#x4E2A;&#x6709;&#x4E8B;&#x52A1;&#x7684;&#x7EBF;&#x7A0B;&#x5C31;&#x4F1A;&#x7ED1;&#x5B9A;&#x5F53;&#x524D;&#x7684;&#x5DE5;&#x5382;&#x91CC;&#x9762;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;session&#xFF0C;&#x800C;openSession&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;session&#x3002;</li>
+<li>getCurrentSession&#x4E8B;&#x52A1;&#x662F;&#x6709;spring&#x6765;&#x63A7;&#x5236;&#x7684;&#xFF0C;&#x800C;openSession&#x9700;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x5F00;&#x542F;&#x548C;&#x624B;&#x52A8;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;&#x3002;</li>
+<li>getCurrentSession&#x662F;&#x4E0D;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x5173;&#x95ED;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5DE5;&#x5382;&#x4F1A;&#x81EA;&#x5DF1;&#x7BA1;&#x7406;&#xFF0C;&#x800C;openSession&#x9700;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x5173;&#x95ED;&#x3002;</li>
+<li>&#x800C;getCurrentSession&#x9700;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;&#x7ED1;&#x5B9A;&#x4E8B;&#x52A1;&#x7684;&#x673A;&#x5236;&#xFF0C;&#x6709;&#x4E09;&#x79CD;&#x8BBE;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;jdbc&#x672C;&#x5730;&#x7684;Thread&#x3001;JTA&#x3001;&#x7B2C;&#x4E09;&#x79CD;&#x662F;spring&#x63D0;&#x4F9B;&#x7684;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;&#x673A;&#x5236;org.springframework.orm.hibernate4.SpringSessionContext&#xFF0C;&#x800C;&#x4E14;srping&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x8BE5;&#x79CD;&#x4E8B;&#x52A1;&#x7BA1;&#x7406;&#x673A;&#x5236;&#x3002;</li>
+</ol>
+<h2 id="hibernate&#x4E2D;&#x7684;&#x547D;&#x540D;sql&#x67E5;&#x8BE2;&#x6307;&#x7684;&#x662F;&#x4EC0;&#x4E48;"><a name="hibernate&#x4E2D;&#x7684;&#x547D;&#x540D;sql&#x67E5;&#x8BE2;&#x6307;&#x7684;&#x662F;&#x4EC0;&#x4E48;" class="anchor-navigation-ex-anchor" href="#hibernate&#x4E2D;&#x7684;&#x547D;&#x540D;sql&#x67E5;&#x8BE2;&#x6307;&#x7684;&#x662F;&#x4EC0;&#x4E48;"><i class="fa fa-link" aria-hidden="true"></i></a>26. Hibernate&#x4E2D;&#x7684;&#x547D;&#x540D;SQL&#x67E5;&#x8BE2;&#x6307;&#x7684;&#x662F;&#x4EC0;&#x4E48;</h2>
+<ul>
+<li>&#x547D;&#x540D;&#x67E5;&#x8BE2;&#x6307;&#x7684;&#x662F;&#x7528;&lt;sql-query&gt;&#x6807;&#x7B7E;&#x5728;&#x5F71;&#x5C04;&#x6587;&#x6863;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;SQL&#x67E5;&#x8BE2;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;Session.getNamedQuery()&#x65B9;&#x6CD5;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#x3002;&#x547D;&#x540D;&#x67E5;&#x8BE2;&#x4F7F;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4F60;&#x6240;&#x6307;&#x5B9A;&#x7684;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#x62FF;&#x5230;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x67E5;&#x8BE2;&#x3002;</li>
+<li>Hibernate&#x4E2D;&#x7684;&#x547D;&#x540D;&#x67E5;&#x8BE2;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6CE8;&#x89E3;&#x6765;&#x5B9A;&#x4E49;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6211;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;xml&#x5F71;&#x5C04;&#x95EE;&#x53E5;&#x6765;&#x5B9A;&#x4E49;&#x3002;&#x5728;Hibernate&#x4E2D;&#xFF0C;@NameQuery&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x5355;&#x4E2A;&#x7684;&#x547D;&#x540D;&#x67E5;&#x8BE2;&#xFF0C;@NameQueries&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x591A;&#x4E2A;&#x547D;&#x540D;&#x67E5;&#x8BE2;&#x3002;</li>
+</ul>
+<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x5728;hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x8981;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x65E0;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x5668;"><a name="&#x4E3A;&#x4EC0;&#x4E48;&#x5728;hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x8981;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x65E0;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x4EC0;&#x4E48;&#x5728;hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x8981;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x65E0;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>27. &#x4E3A;&#x4EC0;&#x4E48;&#x5728;Hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x8981;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x65E0;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x5668;</h2>
+<p>&#x6BCF;&#x4E2A;Hibernate&#x5B9E;&#x4F53;&#x7C7B;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x4E00;&#x4E2A; &#x65E0;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x5668;, &#x8FD9;&#x662F;&#x56E0;&#x4E3A;Hibernate&#x6846;&#x67B6;&#x8981;&#x4F7F;&#x7528;Reflection API&#xFF0C;&#x901A;&#x8FC7;&#x8C03;&#x7528;Class.newInstance()&#x6765;&#x521B;&#x5EFA;&#x8FD9;&#x4E9B;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x5728;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x627E;&#x4E0D;&#x5230;&#x65E0;&#x53C2;&#x6570;&#x7684;&#x6784;&#x9020;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C31;&#x4F1A;&#x629B;&#x51FA;&#x4E00;&#x4E2A;InstantiationException&#x5F02;&#x5E38;&#x3002;</p>
+<h2 id="&#x53EF;&#x4E0D;&#x53EF;&#x4EE5;&#x5C06;hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x5B9A;&#x4E49;&#x4E3A;final&#x7C7B;"><a name="&#x53EF;&#x4E0D;&#x53EF;&#x4EE5;&#x5C06;hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x5B9A;&#x4E49;&#x4E3A;final&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x4E0D;&#x53EF;&#x4EE5;&#x5C06;hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x5B9A;&#x4E49;&#x4E3A;final&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>28. &#x53EF;&#x4E0D;&#x53EF;&#x4EE5;&#x5C06;Hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x5B9A;&#x4E49;&#x4E3A;final&#x7C7B;</h2>
+<p>&#x53EF;&#x4EE5;&#x5C06;Hibernate&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x5B9A;&#x4E49;&#x4E3A;final&#x7C7B;&#xFF0C;&#x4F46;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x5E76;&#x4E0D;&#x597D;&#x3002;&#x56E0;&#x4E3A;Hibernate&#x4F1A;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x6A21;&#x5F0F;&#x5728;&#x5EF6;&#x8FDF;&#x5173;&#x8054;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x628A;&#x5B9E;&#x4F53;&#x7C7B;&#x5B9A;&#x4E49;&#x6210;final&#x7C7B;&#x4E4B;&#x540E;&#xFF0C;&#x56E0;&#x4E3A; Java&#x4E0D;&#x5141;&#x8BB8;&#x5BF9;final&#x7C7B;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#xFF0C;&#x6240;&#x4EE5;Hibernate&#x5C31;&#x65E0;&#x6CD5;&#x518D;&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x4E86;&#xFF0C; &#x5982;&#x6B64;&#x4E00;&#x6765;&#x5C31;&#x9650;&#x5236;&#x4E86;&#x4F7F;&#x7528;&#x53EF;&#x4EE5;&#x63D0;&#x5347;&#x6027;&#x80FD;&#x7684;&#x624B;&#x6BB5;&#x3002;</p>
+<h2 id="hibernate&#x7684;opensessionview&#x95EE;&#x9898;"><a name="hibernate&#x7684;opensessionview&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#hibernate&#x7684;opensessionview&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>29. Hibernate&#x7684;OpenSessionView&#x95EE;&#x9898;</h2>
+<p>&#x7528;&#x4E8E;&#x89E3;&#x51B3;&#x61D2;&#x52A0;&#x8F7D;&#x5F02;&#x5E38;, &#x4E3B;&#x8981;&#x529F;&#x80FD;&#x5C31;&#x662F;&#x628A; Hibernate Session &#x548C;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x7684;&#x7EBF;&#x7A0B;&#x7ED1;&#x5B9A;&#x5728;&#x4E00;&#x8D77;, &#x76F4;&#x5230;&#x9875;&#x9762;&#x5B8C;&#x6574;&#x8F93;&#x51FA;, &#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x9875;&#x9762;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019; Session &#x4E00;&#x76F4;&#x662F;&#x5F00;&#x542F;&#x7684;&#x72B6;&#x6001;, &#x5982;&#x679C;&#x53BB;&#x83B7;&#x53D6;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x5BF9;&#x8C61;&#x4E5F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<p>&#x95EE;&#x9898;: &#x5982;&#x679C;&#x5728;&#x4E1A;&#x52A1;&#x5904;&#x7406;&#x9636;&#x6BB5;&#x5927;&#x6279;&#x91CF;&#x5904;&#x7406;&#x6570;&#x636E;, &#x6709;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x91CC;&#x7684;&#x5BF9;&#x8C61;&#x5360;&#x7528;&#x5185;&#x5B58;&#x8FC7;&#x591A;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x6EA2;&#x51FA;, &#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x662F;&#x8FDE;&#x63A5;&#x95EE;&#x9898;: Session &#x548C;&#x6570;&#x636E;&#x5E93; Connection &#x662F;&#x7ED1;&#x5B9A;&#x5728;&#x4E00;&#x8D77;&#x7684;, &#x5982;&#x679C;&#x4E1A;&#x52A1;&#x5904;&#x7406;&#x7F13;&#x6162;&#x4E5F;&#x4F1A;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x5F97;&#x4E0D;&#x5230;&#x53CA;&#x65F6;&#x7684;&#x91CA;&#x653E;, &#x9020;&#x6210;&#x8FDE;&#x63A5;&#x6C60;&#x8FDE;&#x63A5;&#x4E0D;&#x591F;. &#x6240;&#x4EE5;&#x5728;&#x5E76;&#x53D1;&#x91CF;&#x8F83;&#x5927;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x6B64;&#x79CD;&#x65B9;&#x5F0F;, &#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x8FEB;&#x5207;&#x5DE6;&#x5916;&#x8FDE;&#x63A5; (LEFT OUTER JOIN FETCH) &#x6216;&#x624B;&#x5DE5;&#x5BF9;&#x5173;&#x8054;&#x7684;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p>&#x914D;&#x7F6E; Filter &#x7684;&#x65F6;&#x5019;&#x8981;&#x653E;&#x5728; Struts2 &#x8FC7;&#x6EE4;&#x5668;&#x7684;&#x524D;&#x9762;, &#x56E0;&#x4E3A;&#x5B83;&#x8981;&#x9875;&#x9762;&#x5B8C;&#x5168;&#x663E;&#x793A;&#x5B8C;&#x540E;&#x518D;&#x9000;&#x51FA;&#x3002;</p>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"></p><p class="paragraph footer__quote--normal" style="color: #000 !important;">Everything you need to prepare for your technical interview.</p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">modified at</span>
+2019-01-28
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="spring.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Spring">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Hibernate","level":"3.4","depth":1,"next":{"title":"Mybatis","level":"3.5","depth":1,"ref":"","articles":[]},"previous":{"title":"Spring","level":"3.3","depth":1,"path":"javaweb/spring.md","ref":"javaweb/spring.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","-sharing","folding-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex","fancybox","insert-logo-link-style","page-copyright"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"page-copyright":{"wisdom":"Everything you need to prepare for your technical interview.","noPowered":true,"copyright":"Copyright &#169; edu2act","styles (normal, symmetrical)":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd","signature":"edu2act","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"modified at"},"insert-logo-link-style":{"src":"images/logo.png","style":"background: none; width: 220px;","link":"http://github.com/edu2act"},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/apple-touch-icon.png","appleTouchMore":{"120x120":"images/apple-touch-icon-120x120.png","180x180":"images/apple-touch-icon-180x180.png"}},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"javaweb/hibernate.md","mtime":"2019-01-28T02:17:19.719Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-01-28T04:46:52.895Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
