@@ -7,7 +7,7 @@
 - 在线查看：[https://edu2act.github.io/interview/](https://edu2act.github.io/interview/)
 - 题目数量：332
 
-<table> 
+<table  width="100%"> 
   <thead> 
     <tr> 
       <th colspan="2" style="text-align:center">知识点类型</th> 
