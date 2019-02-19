@@ -1,0 +1,1044 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>什么是低耦合高内聚 · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="p002.html" />
+    
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="../java_core/grammar.html">
+            
+                <a href="../java_core/grammar.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../java_core/exception.html">
+            
+                <a href="../java_core/exception.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../java_core/collection.html">
+            
+                <a href="../java_core/collection.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../java_core/thread.html">
+            
+                <a href="../java_core/thread.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../java_core/io.html">
+            
+                <a href="../java_core/io.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../java_core/socket.html">
+            
+                <a href="../java_core/socket.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="../java_web/jsp_servlet.html">
+            
+                <a href="../java_web/jsp_servlet.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Jsp&Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../java_web/jdbc.html">
+            
+                <a href="../java_web/jdbc.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../java_web/spring.html">
+            
+                <a href="../java_web/spring.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../java_web/hibernate.html">
+            
+                <a href="../java_web/hibernate.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../java_web/mybatis.html">
+            
+                <a href="../java_web/mybatis.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                        <b>3.6.</b>
+                    
+                    WebService
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="../android/basic.html">
+            
+                <a href="../android/basic.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    基本常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../android/activity.html">
+            
+                <a href="../android/activity.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../android/service.html">
+            
+                <a href="../android/service.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../android/broad_cast_receiver.html">
+            
+                <a href="../android/broad_cast_receiver.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    BroadCastReceiver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../android/content_provider.html">
+            
+                <a href="../android/content_provider.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    ContentProvider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../android/intent.html">
+            
+                <a href="../android/intent.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../android/layout.html">
+            
+                <a href="../android/layout.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../android/listview.html">
+            
+                <a href="../android/listview.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    ListView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../android/jni_ndk.html">
+            
+                <a href="../android/jni_ndk.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    JNI&NDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../android/fragment.html">
+            
+                <a href="../android/fragment.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../android/multi_threading.html">
+            
+                <a href="../android/multi_threading.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../android/network.html">
+            
+                <a href="../android/network.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    网络访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="../hr/hr.html">
+            
+                <a href="../hr/hr.html">
+            
+                    
+                        <b>7.</b>
+                    
+                    人事面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="8.1" data-path="p001.html">
+            
+                <a href="p001.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    什么是低耦合高内聚
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="p002.html">
+            
+                <a href="p002.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    Java中的作用域的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="p003.html">
+            
+                <a href="p003.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="p004.html">
+            
+                <a href="p004.html">
+            
+                    
+                        <b>8.4.</b>
+                    
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="p005.html">
+            
+                <a href="p005.html">
+            
+                    
+                        <b>8.5.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="p006.html">
+            
+                <a href="p006.html">
+            
+                    
+                        <b>8.6.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="p007.html">
+            
+                <a href="p007.html">
+            
+                    
+                        <b>8.7.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="p008.html">
+            
+                <a href="p008.html">
+            
+                    
+                        <b>8.8.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="p009.html">
+            
+                <a href="p009.html">
+            
+                    
+                        <b>8.9.</b>
+                    
+                    反射使用实例详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="p010.html">
+            
+                <a href="p010.html">
+            
+                    
+                        <b>8.10.</b>
+                    
+                    内存区域和GC机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="p011.html">
+            
+                <a href="p011.html">
+            
+                    
+                        <b>8.11.</b>
+                    
+                    成为Java GC专家(1)：深入浅出Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="p012.html">
+            
+                <a href="p012.html">
+            
+                    
+                        <b>8.12.</b>
+                    
+                    成为Java GC专家(2)：如何监控Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="p013.html">
+            
+                <a href="p013.html">
+            
+                    
+                        <b>8.13.</b>
+                    
+                    成为Java GC专家(3)：如何优化Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.14" data-path="p014.html">
+            
+                <a href="p014.html">
+            
+                    
+                        <b>8.14.</b>
+                    
+                    成为Java GC专家(4)：Apache的MaxClients参数详解及其在Tomcat执行FullGC时的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.15" data-path="p015.html">
+            
+                <a href="p015.html">
+            
+                    
+                        <b>8.15.</b>
+                    
+                    面向对象的六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.16" data-path="p016.html">
+            
+                <a href="p016.html">
+            
+                    
+                        <b>8.16.</b>
+                    
+                    Java集合专题总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >什么是低耦合高内聚</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;"><b> </b>&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8026;&#x5408;"><b>1. </b>&#x8026;&#x5408;</a></li><li><span class="title-icon "></span><a href="#&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;"><b>2. </b>&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;</a></li></ul></ul></div><a href="#&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;"><a name="&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x4EC0;&#x4E48;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x9AD8;&#x5185;&#x805A;</h1>
+<h2 id="&#x8026;&#x5408;"><a name="&#x8026;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x8026;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x8026;&#x5408;</h2>
+<p>&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x4E2D;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x5EA6;&#x5C31;&#x662F;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x6027;&#x3002;&#x6307;&#x5BFC;&#x4F7F;&#x7528;&#x548C;&#x7EF4;&#x62A4;&#x5BF9;&#x8C61;&#x7684;&#x4E3B;&#x8981;&#x95EE;&#x9898;&#x662F;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x591A;&#x91CD;&#x4F9D;&#x8D56;&#x6027;&#x3002;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x8D8A;&#x9AD8;&#xFF0C;&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x8D8A;&#x9AD8;&#x3002;&#x56E0;&#x6B64;&#x5BF9;&#x8C61;&#x7684;&#x8BBE;&#x8BA1;&#x5E94;&#x4F7F;&#x7C7B;&#x548C;&#x6784;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x6700;&#x5C0F;&#x3002;</p>
+<p>&#x6709;&#x8F6F;&#x786C;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#xFF0C;&#x8FD8;&#x6709;&#x8F6F;&#x4EF6;&#x5404;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x3002;
+&#x8026;&#x5408;&#x6027;&#x662F;&#x7A0B;&#x5E8F;&#x7ED3;&#x6784;&#x4E2D;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x5173;&#x8054;&#x7684;&#x5EA6;&#x91CF;&#x3002;&#x5B83;&#x53D6;&#x51B3;&#x4E8E;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x63A5;&#x53E3;&#x7684;&#x590D;&#x6742;&#x7A0B;&#x5EA6;&#x3001;&#x8C03;&#x7528;&#x6A21;&#x5757;&#x7684;&#x65B9;&#x5F0F;&#x4EE5;&#x53CA;&#x54EA;&#x4E9B;&#x4FE1;&#x606F;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x3002;</p>
+<p>&#x8026;&#x5408;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF0C;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x5EA6;&#x7531;&#x9AD8;&#x5230;&#x4F4E;&#x6392;&#x5217;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><strong>&#x5185;&#x5BB9;&#x8026;&#x5408;</strong>&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x6216;&#x64CD;&#x4F5C;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x6216;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x4E0D;&#x901A;&#x8FC7;&#x6B63;&#x5E38;&#x5165;&#x53E3;&#x800C;&#x8F6C;&#x5165;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x8026;&#x5408;&#x88AB;&#x79F0;&#x4E3A;&#x5185;&#x5BB9;&#x8026;&#x5408;&#x3002;&#x5185;&#x5BB9;&#x8026;&#x5408;&#x662F;&#x6700;&#x9AD8;&#x7A0B;&#x5EA6;&#x7684;&#x8026;&#x5408;&#xFF0C;&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x4E4B;&#x3002;</li>
+<li><strong>&#x516C;&#x5171;&#x8026;&#x5408;</strong>&#x3002;&#x4E24;&#x4E2A;&#x6216;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x6A21;&#x5757;&#x5171;&#x540C;&#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x6570;&#x636E;&#x9879;&#xFF0C;&#x8FD9;&#x79CD;&#x8026;&#x5408;&#x88AB;&#x79F0;&#x4E3A;&#x516C;&#x5171;&#x8026;&#x5408;&#x3002;&#x5728;&#x5177;&#x6709;&#x5927;&#x91CF;&#x516C;&#x5171;&#x8026;&#x5408;&#x7684;&#x7ED3;&#x6784;&#x4E2D;&#xFF0C;&#x786E;&#x5B9A;&#x7A76;&#x7ADF;&#x662F;&#x54EA;&#x4E2A;&#x6A21;&#x5757;&#x7ED9;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x8D4B;&#x4E86;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x503C;&#x662F;&#x5341;&#x5206;&#x56F0;&#x96BE;&#x7684;&#x3002;</li>
+<li><strong>&#x5916;&#x90E8;&#x8026;</strong> &#x3002;&#x4E00;&#x7EC4;&#x6A21;&#x5757;&#x90FD;&#x8BBF;&#x95EE;&#x540C;&#x4E00;&#x5168;&#x5C40;&#x7B80;&#x5355;&#x53D8;&#x91CF;&#x800C;&#x4E0D;&#x662F;&#x540C;&#x4E00;&#x5168;&#x5C40;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x662F;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x8868;&#x4F20;&#x9012;&#x8BE5;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5219;&#x79F0;&#x4E4B;&#x4E3A;&#x5916;&#x90E8;&#x8026;&#x5408;&#x3002;</li>
+<li><strong>&#x63A7;&#x5236;&#x8026;&#x5408;</strong> &#x3002;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x4FE1;&#x53F7;&#xFF0C;&#x63A5;&#x53D7;&#x4FE1;&#x53F7;&#x7684;&#x6A21;&#x5757;&#x6839;&#x636E;&#x4FE1;&#x53F7;&#x503C;&#x800C;&#x8FDB;&#x884C;&#x9002;&#x5F53;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x8FD9;&#x79CD;&#x8026;&#x5408;&#x88AB;&#x79F0;&#x4E3A;&#x63A7;&#x5236;&#x8026;&#x5408;&#x3002;</li>
+<li><strong>&#x6807;&#x8BB0;&#x8026;&#x5408;</strong> &#x3002;&#x82E5;&#x4E00;&#x4E2A;&#x6A21;&#x5757;A&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x5411;&#x4E24;&#x4E2A;&#x6A21;&#x5757;B&#x548C;C&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x516C;&#x5171;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x79F0;&#x6A21;&#x5757;B&#x548C;C&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x6807;&#x8BB0;&#x8026;&#x5408;&#x3002;</li>
+<li><strong>&#x6570;&#x636E;&#x8026;&#x5408;</strong>&#x3002;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x6765;&#x4F20;&#x9012;&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;&#x88AB;&#x79F0;&#x4E3A;&#x6570;&#x636E;&#x8026;&#x5408;&#x3002;&#x6570;&#x636E;&#x8026;&#x5408;&#x662F;&#x6700;&#x4F4E;&#x7684;&#x4E00;&#x79CD;&#x8026;&#x5408;&#x5F62;&#x5F0F;&#xFF0C;&#x7CFB;&#x7EDF;&#x4E2D;&#x4E00;&#x822C;&#x90FD;&#x5B58;&#x5728;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8026;&#x5408;&#xFF0C;&#x56E0;&#x4E3A;&#x4E3A;&#x4E86;&#x5B8C;&#x6210;&#x4E00;&#x4E9B;&#x6709;&#x610F;&#x4E49;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x5C06;&#x67D0;&#x4E9B;&#x6A21;&#x5757;&#x7684;&#x8F93;&#x51FA;&#x6570;&#x636E;&#x4F5C;&#x4E3A;&#x53E6;&#x4E00;&#x4E9B;&#x6A21;&#x5757;&#x7684;&#x8F93;&#x5165;&#x6570;&#x636E;&#x3002;</li>
+<li><strong>&#x975E;&#x76F4;&#x63A5;&#x8026;&#x5408;</strong> &#x3002;&#x4E24;&#x4E2A;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x5173;&#x7CFB;&#xFF0C;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#x5B8C;&#x5168;&#x662F;&#x901A;&#x8FC7;&#x4E3B;&#x6A21;&#x5757;&#x7684;&#x63A7;&#x5236;&#x548C;&#x8C03;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;</li>
+</ul>
+<p>&#x8026;&#x5408;&#x662F;&#x5F71;&#x54CD;&#x8F6F;&#x4EF6;&#x590D;&#x6742;&#x7A0B;&#x5EA6;&#x548C;&#x8BBE;&#x8BA1;&#x8D28;&#x91CF;&#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x56E0;&#x7D20;&#xFF0C;&#x5728;&#x8BBE;&#x8BA1;&#x4E0A;&#x6211;&#x4EEC;&#x5E94;&#x91C7;&#x7528;&#x4EE5;&#x4E0B;&#x539F;&#x5219;&#xFF1A;&#x5982;&#x679C;&#x6A21;&#x5757;&#x95F4;&#x5FC5;&#x987B;&#x5B58;&#x5728;&#x8026;&#x5408;&#xFF0C;&#x5C31;&#x5C3D;&#x91CF;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x8026;&#x5408;&#xFF0C;&#x5C11;&#x7528;&#x63A7;&#x5236;&#x8026;&#x5408;&#xFF0C;&#x9650;&#x5236;&#x516C;&#x5171;&#x8026;&#x5408;&#x7684;&#x8303;&#x56F4;&#xFF0C;&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5185;&#x5BB9;&#x8026;&#x5408;&#x3002;</p>
+<h2 id="&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;"><a name="&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5185;&#x805A;&#x4E0E;&#x8026;&#x5408;</h2>
+<div align="center">     <a href="images/p001.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/p001.png" alt="">
+     </a></div>
+
+<p>&#x5185;&#x805A;&#x6807;&#x5FD7;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5185;&#x5404;&#x4E2A;&#x5143;&#x7D20;&#x5F7C;&#x6B64;&#x7ED3;&#x5408;&#x7684;&#x7D27;&#x5BC6;&#x7A0B;&#x5EA6;&#xFF0C;&#x5B83;&#x662F;&#x4FE1;&#x606F;&#x9690;&#x853D;&#x548C;&#x5C40;&#x90E8;&#x5316;&#x6982;&#x5FF5;&#x7684;&#x81EA;&#x7136;&#x6269;&#x5C55;&#x3002;&#x5185;&#x805A;&#x662F;&#x4ECE;&#x529F;&#x80FD;&#x89D2;&#x5EA6;&#x6765;&#x5EA6;&#x91CF;&#x6A21;&#x5757;&#x5185;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x5185;&#x805A;&#x6A21;&#x5757;&#x5E94;&#x5F53;&#x6070;&#x597D;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#x3002;&#x5B83;&#x63CF;&#x8FF0;&#x7684;&#x662F;&#x6A21;&#x5757;&#x5185;&#x7684;&#x529F;&#x80FD;&#x8054;&#x7CFB;&#x3002;</p>
+<p>&#x8026;&#x5408;&#x662F;&#x8F6F;&#x4EF6;&#x7ED3;&#x6784;&#x4E2D;&#x5404;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x8FDE;&#x63A5;&#x7684;&#x4E00;&#x79CD;&#x5EA6;&#x91CF;&#xFF0C;&#x8026;&#x5408;&#x5F3A;&#x5F31;&#x53D6;&#x51B3;&#x4E8E;&#x6A21;&#x5757;&#x95F4;&#x63A5;&#x53E3;&#x7684;&#x590D;&#x6742;&#x7A0B;&#x5EA6;&#x3001;&#x8FDB;&#x5165;&#x6216;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x70B9;&#x4EE5;&#x53CA;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x7684;&#x6570;&#x636E;&#x3002; &#x7A0B;&#x5E8F;&#x8BB2;&#x7A76;&#x7684;&#x662F;&#x4F4E;&#x8026;&#x5408;&#xFF0C;&#x9AD8;&#x5185;&#x805A;&#x3002;&#x5C31;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5185;&#x7684;&#x5404;&#x4E2A;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x8981;&#x9AD8;&#x5EA6;&#x7D27;&#x5BC6;&#xFF0C;&#x4F46;&#x662F;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x7684;&#x76F8;&#x4E92;&#x4F9D;&#x5B58;&#x5EA6;&#x5374;&#x8981;&#x4E0D;&#x90A3;&#x4E48;&#x7D27;&#x5BC6;&#x3002;</p>
+<p>&#x5185;&#x805A;&#x548C;&#x8026;&#x5408;&#x662F;&#x5BC6;&#x5207;&#x76F8;&#x5173;&#x7684;&#xFF0C;&#x540C;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x5B58;&#x5728;&#x9AD8;&#x8026;&#x5408;&#x7684;&#x6A21;&#x5757;&#x610F;&#x5473;&#x7740;&#x4F4E;&#x5185;&#x805A;&#xFF0C;&#x800C;&#x9AD8;&#x5185;&#x805A;&#x7684;&#x6A21;&#x5757;&#x610F;&#x5473;&#x7740;&#x8BE5;&#x6A21;&#x5757;&#x540C;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x662F;&#x4F4E;&#x8026;&#x5408;&#x3002;&#x5728;&#x8FDB;&#x884C;&#x8F6F;&#x4EF6;&#x8BBE;&#x8BA1;&#x65F6;&#xFF0C;&#x5E94;&#x529B;&#x4E89;&#x505A;&#x5230;&#x9AD8;&#x5185;&#x805A;&#xFF0C;&#x4F4E;&#x8026;&#x5408;&#x3002; </p>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"></p><p class="paragraph footer__quote--normal" style="color: #000 !important;">Everything you need to prepare for your technical interview.</p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">modified at</span>
+2019-01-21
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="p002.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Java中的作用域的区别">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"什么是低耦合高内聚","level":"8.1","depth":1,"next":{"title":"Java中的作用域的区别","level":"8.2","depth":1,"path":"article/p002.md","ref":"article/p002.md","articles":[]},"previous":{"title":"相关文章","level":"8","depth":0,"ref":"","articles":[{"title":"什么是低耦合高内聚","level":"8.1","depth":1,"path":"article/p001.md","ref":"article/p001.md","articles":[]},{"title":"Java中的作用域的区别","level":"8.2","depth":1,"path":"article/p002.md","ref":"article/p002.md","articles":[]},{"title":"重载(Overload)与重写(Override)的区别","level":"8.3","depth":1,"path":"article/p003.md","ref":"article/p003.md","articles":[]},{"title":"String、StringBuffer、StringBuilder的区别","level":"8.4","depth":1,"path":"article/p004.md","ref":"article/p004.md","articles":[]},{"title":"类加载与初始化","level":"8.5","depth":1,"path":"article/p005.md","ref":"article/p005.md","articles":[]},{"title":"RTTI和反射机制","level":"8.6","depth":1,"path":"article/p006.md","ref":"article/p006.md","articles":[]},{"title":"提高Java反射速度","level":"8.7","depth":1,"path":"article/p007.md","ref":"article/p007.md","articles":[]},{"title":"反射性能测试","level":"8.8","depth":1,"path":"article/p008.md","ref":"article/p008.md","articles":[]},{"title":"反射使用实例详解","level":"8.9","depth":1,"path":"article/p009.md","ref":"article/p009.md","articles":[]},{"title":"内存区域和GC机制","level":"8.10","depth":1,"path":"article/p010.md","ref":"article/p010.md","articles":[]},{"title":"成为Java GC专家(1)：深入浅出Java垃圾回收机制","level":"8.11","depth":1,"path":"article/p011.md","ref":"article/p011.md","articles":[]},{"title":"成为Java GC专家(2)：如何监控Java垃圾回收机制","level":"8.12","depth":1,"path":"article/p012.md","ref":"article/p012.md","articles":[]},{"title":"成为Java GC专家(3)：如何优化Java垃圾回收机制","level":"8.13","depth":1,"path":"article/p013.md","ref":"article/p013.md","articles":[]},{"title":"成为Java GC专家(4)：Apache的MaxClients参数详解及其在Tomcat执行FullGC时的影响","level":"8.14","depth":1,"path":"article/p014.md","ref":"article/p014.md","articles":[]},{"title":"面向对象的六大原则","level":"8.15","depth":1,"path":"article/p015.md","ref":"article/p015.md","articles":[]},{"title":"Java集合专题总结","level":"8.16","depth":1,"path":"article/p016.md","ref":"article/p016.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["favicon","-sharing","folding-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex","fancybox","insert-logo-link-style","page-copyright"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"page-copyright":{"wisdom":"Everything you need to prepare for your technical interview.","noPowered":true,"copyright":"Copyright &#169; edu2act","styles (normal, symmetrical)":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd","signature":"edu2act","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"modified at"},"insert-logo-link-style":{"src":"images/logo.png","style":"background: none; width: 220px;","link":"http://github.com/edu2act"},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/apple-touch-icon.png","appleTouchMore":{"120x120":"images/apple-touch-icon-120x120.png","180x180":"images/apple-touch-icon-180x180.png"}},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"article/p001.md","mtime":"2019-01-21T02:47:16.423Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-02-19T00:51:51.119Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1355 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>Mybatis · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="hibernate.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="../java_core/grammar.html">
+            
+                <a href="../java_core/grammar.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../java_core/exception.html">
+            
+                <a href="../java_core/exception.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../java_core/collection.html">
+            
+                <a href="../java_core/collection.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../java_core/thread.html">
+            
+                <a href="../java_core/thread.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../java_core/io.html">
+            
+                <a href="../java_core/io.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../java_core/socket.html">
+            
+                <a href="../java_core/socket.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="jsp_servlet.html">
+            
+                <a href="jsp_servlet.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Jsp&Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="jdbc.html">
+            
+                <a href="jdbc.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="spring.html">
+            
+                <a href="spring.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="hibernate.html">
+            
+                <a href="hibernate.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                        <b>3.6.</b>
+                    
+                    WebService
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="../android/basic.html">
+            
+                <a href="../android/basic.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    基本常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../android/activity.html">
+            
+                <a href="../android/activity.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../android/service.html">
+            
+                <a href="../android/service.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../android/broad_cast_receiver.html">
+            
+                <a href="../android/broad_cast_receiver.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    BroadCastReceiver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../android/content_provider.html">
+            
+                <a href="../android/content_provider.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    ContentProvider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../android/intent.html">
+            
+                <a href="../android/intent.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../android/layout.html">
+            
+                <a href="../android/layout.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../android/listview.html">
+            
+                <a href="../android/listview.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    ListView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../android/jni_ndk.html">
+            
+                <a href="../android/jni_ndk.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    JNI&NDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../android/fragment.html">
+            
+                <a href="../android/fragment.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../android/multi_threading.html">
+            
+                <a href="../android/multi_threading.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../android/network.html">
+            
+                <a href="../android/network.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    网络访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="../hr/hr.html">
+            
+                <a href="../hr/hr.html">
+            
+                    
+                        <b>7.</b>
+                    
+                    人事面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="../article/p001.html">
+            
+                <a href="../article/p001.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    什么是低耦合高内聚
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../article/p002.html">
+            
+                <a href="../article/p002.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    Java中的作用域的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../article/p003.html">
+            
+                <a href="../article/p003.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../article/p004.html">
+            
+                <a href="../article/p004.html">
+            
+                    
+                        <b>8.4.</b>
+                    
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="../article/p005.html">
+            
+                <a href="../article/p005.html">
+            
+                    
+                        <b>8.5.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="../article/p006.html">
+            
+                <a href="../article/p006.html">
+            
+                    
+                        <b>8.6.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="../article/p007.html">
+            
+                <a href="../article/p007.html">
+            
+                    
+                        <b>8.7.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="../article/p008.html">
+            
+                <a href="../article/p008.html">
+            
+                    
+                        <b>8.8.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="../article/p009.html">
+            
+                <a href="../article/p009.html">
+            
+                    
+                        <b>8.9.</b>
+                    
+                    反射使用实例详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="../article/p010.html">
+            
+                <a href="../article/p010.html">
+            
+                    
+                        <b>8.10.</b>
+                    
+                    内存区域和GC机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="../article/p011.html">
+            
+                <a href="../article/p011.html">
+            
+                    
+                        <b>8.11.</b>
+                    
+                    成为Java GC专家(1)：深入浅出Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="../article/p012.html">
+            
+                <a href="../article/p012.html">
+            
+                    
+                        <b>8.12.</b>
+                    
+                    成为Java GC专家(2)：如何监控Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="../article/p013.html">
+            
+                <a href="../article/p013.html">
+            
+                    
+                        <b>8.13.</b>
+                    
+                    成为Java GC专家(3)：如何优化Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.14" data-path="../article/p014.html">
+            
+                <a href="../article/p014.html">
+            
+                    
+                        <b>8.14.</b>
+                    
+                    成为Java GC专家(4)：Apache的MaxClients参数详解及其在Tomcat执行FullGC时的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.15" data-path="../article/p015.html">
+            
+                <a href="../article/p015.html">
+            
+                    
+                        <b>8.15.</b>
+                    
+                    面向对象的六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.16" data-path="../article/p016.html">
+            
+                <a href="../article/p016.html">
+            
+                    
+                        <b>8.16.</b>
+                    
+                    Java集合专题总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Mybatis</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;mybatis"><b> </b>JavaWeb&#x9762;&#x8BD5;&#x9898;&#xFF1A;Mybatis</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;mybatis&#xFF1F;"><b>1. </b>&#x4EC0;&#x4E48;&#x662F;mybatis&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#mybait&#x7684;&#x4F18;&#x70B9;"><b>2. </b>Mybait&#x7684;&#x4F18;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x6846;&#x67B6;&#x7684;&#x7F3A;&#x70B9;"><b>3. </b>MyBatis&#x6846;&#x67B6;&#x7684;&#x7F3A;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x6846;&#x67B6;&#x9002;&#x7528;&#x573A;&#x5408;"><b>4. </b>MyBatis&#x6846;&#x67B6;&#x9002;&#x7528;&#x573A;&#x5408;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x4E0E;hibernate&#x6709;&#x54EA;&#x4E9B;&#x4E0D;&#x540C;&#xFF1F;"><b>5. </b>MyBatis&#x4E0E;Hibernate&#x6709;&#x54EA;&#x4E9B;&#x4E0D;&#x540C;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x548C;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;"><b>6. </b>#{}&#x548C;${}&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;</a></li><li><span class="title-icon "></span><a href="#&#x5F53;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x548C;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x4E0D;&#x4E00;&#x6837;-&#xFF0C;&#x600E;&#x4E48;&#x529E;-&#xFF1F;"><b>7. </b>&#x5F53;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x548C;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x4E0D;&#x4E00;&#x6837; &#xFF0C;&#x600E;&#x4E48;&#x529E; &#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;like&#x8BED;&#x53E5;&#x8BE5;&#x600E;&#x4E48;&#x5199;"><b>8. </b>&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;like&#x8BED;&#x53E5;&#x8BE5;&#x600E;&#x4E48;&#x5199;?</a></li><li><span class="title-icon "></span><a href="#&#x901A;&#x5E38;&#x4E00;&#x4E2A;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;&#x90FD;&#x4F1A;&#x5199;&#x4E00;&#x4E2A;dao&#x63A5;&#x53E3;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#xFF0C;&#x8BF7;&#x95EE;&#xFF0C;&#x8FD9;&#x4E2A;dao&#x63A5;&#x53E3;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;dao&#x63A5;&#x53E3;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x65B9;&#x6CD5;&#x80FD;&#x91CD;&#x8F7D;&#x5417;&#xFF1F;"><b>9. </b>&#x901A;&#x5E38;&#x4E00;&#x4E2A;Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;&#x90FD;&#x4F1A;&#x5199;&#x4E00;&#x4E2A;Dao&#x63A5;&#x53E3;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#xFF0C;&#x8BF7;&#x95EE;&#xFF0C;&#x8FD9;&#x4E2A;Dao&#x63A5;&#x53E3;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;Dao&#x63A5;&#x53E3;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x65B9;&#x6CD5;&#x80FD;&#x91CD;&#x8F7D;&#x5417;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x662F;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x7684;&#xFF1F;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b>10. </b>Mybatis&#x662F;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x7684;&#xFF1F;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x662F;&#x5982;&#x4F55;&#x5C06;sql&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5C01;&#x88C5;&#x4E3A;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x6620;&#x5C04;&#x5F62;&#x5F0F;&#xFF1F;"><b>11. </b>Mybatis&#x662F;&#x5982;&#x4F55;&#x5C06;sql&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5C01;&#x88C5;&#x4E3A;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x6620;&#x5C04;&#x5F62;&#x5F0F;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x6267;&#x884C;&#x6279;&#x91CF;&#x63D2;&#x5165;"><b>12. </b>&#x5982;&#x4F55;&#x6267;&#x884C;&#x6279;&#x91CF;&#x63D2;&#x5165;?</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x503C;"><b>13. </b>&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;(&#x4E3B;)&#x952E;&#x503C;?</a></li><li><span class="title-icon "></span><a href="#&#x5728;mapper&#x4E2D;&#x5982;&#x4F55;&#x4F20;&#x9012;&#x591A;&#x4E2A;&#x53C2;&#x6570;"><b>14. </b>&#x5728;mapper&#x4E2D;&#x5982;&#x4F55;&#x4F20;&#x9012;&#x591A;&#x4E2A;&#x53C2;&#x6570;?</a></li><li><span class="title-icon "></span><a href="#mybatis&#x52A8;&#x6001;sql&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x52A8;&#x6001;sql&#xFF1F;&#x80FD;&#x7B80;&#x8FF0;&#x4E00;&#x4E0B;&#x52A8;&#x6001;sql&#x7684;&#x6267;&#x884C;&#x539F;&#x7406;&#x4E0D;&#xFF1F;"><b>15. </b>Mybatis&#x52A8;&#x6001;sql&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x52A8;&#x6001;sql&#xFF1F;&#x80FD;&#x7B80;&#x8FF0;&#x4E00;&#x4E0B;&#x52A8;&#x6001;sql&#x7684;&#x6267;&#x884C;&#x539F;&#x7406;&#x4E0D;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x5E38;&#x89C1;&#x7684;selectinsertupdaedelete&#x6807;&#x7B7E;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x6807;&#x7B7E;&#xFF1F;"><b>16. </b>Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x5E38;&#x89C1;&#x7684;select|insert|updae|delete&#x6807;&#x7B7E;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x6807;&#x7B7E;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x7684;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E0D;&#x540C;&#x7684;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;id&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#xFF1F;"><b>17. </b>Mybatis&#x7684;Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E0D;&#x540C;&#x7684;Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;id&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;mybatis&#x662F;&#x534A;&#x81EA;&#x52A8;orm&#x6620;&#x5C04;&#x5DE5;&#x5177;&#xFF1F;&#x5B83;&#x4E0E;&#x5168;&#x81EA;&#x52A8;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;&#xFF1F;"><b>18. </b>&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;Mybatis&#x662F;&#x534A;&#x81EA;&#x52A8;ORM&#x6620;&#x5C04;&#x5DE5;&#x5177;&#xFF1F;&#x5B83;&#x4E0E;&#x5168;&#x81EA;&#x52A8;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x5BF9;&#x4E00;&#x3001;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x5173;&#x8054;&#x67E5;&#x8BE2;-&#xFF1F;"><b>19. </b>&#x4E00;&#x5BF9;&#x4E00;&#x3001;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x5173;&#x8054;&#x67E5;&#x8BE2; &#xFF1F;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x4E00;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;&#x5177;&#x4F53;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;"><b>20. </b>MyBatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x4E00;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;&#x5177;&#x4F53;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x591A;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;"><b>21. </b>MyBatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x591A;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x7B80;&#x8FF0;mybatis&#x7684;&#x63D2;&#x4EF6;&#x8FD0;&#x884C;&#x539F;&#x7406;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x3002;"><b>22. </b>&#x7B80;&#x8FF0;Mybatis&#x7684;&#x63D2;&#x4EF6;&#x8FD0;&#x884C;&#x539F;&#x7406;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x3002;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x662F;&#x5426;&#x652F;&#x6301;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF1F;&#x5982;&#x679C;&#x652F;&#x6301;&#xFF0C;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b>23. </b>Mybatis&#x662F;&#x5426;&#x652F;&#x6301;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF1F;&#x5982;&#x679C;&#x652F;&#x6301;&#xFF0C;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x7684;&#x4E00;&#x7EA7;&#x3001;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;"><b>24. </b>Mybatis&#x7684;&#x4E00;&#x7EA7;&#x3001;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;</a></li><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;mybatis&#x7684;&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;"><b>25. </b>&#x4EC0;&#x4E48;&#x662F;MyBatis&#x7684;&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;,&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x51E0;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x5206;&#x522B;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;"><b>26. </b>&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x51E0;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;,&#x5206;&#x522B;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;?</a></li><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x6CE8;&#x89E3;&#x7ED1;&#x5B9A;&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;xml&#x7ED1;&#x5B9A;-&#xFF1F;"><b>27. </b>&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x6CE8;&#x89E3;&#x7ED1;&#x5B9A;,&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;xml&#x7ED1;&#x5B9A; &#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;mybatis&#x7684;mapper&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x65F6;&#x6709;&#x54EA;&#x4E9B;&#x8981;&#x6C42;&#xFF1F;"><b>28. </b>&#x4F7F;&#x7528;MyBatis&#x7684;mapper&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x65F6;&#x6709;&#x54EA;&#x4E9B;&#x8981;&#x6C42;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#mapper&#x7F16;&#x5199;&#x6709;&#x54EA;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;"><b>29. </b>Mapper&#x7F16;&#x5199;&#x6709;&#x54EA;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#mybatis&#x6BD4;ibatis&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x51E0;&#x4E2A;&#x6539;&#x8FDB;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b>30. </b>Mybatis&#x6BD4;IBatis&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x51E0;&#x4E2A;&#x6539;&#x8FDB;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#ibatis&#x548C;mybatis&#x5728;&#x6838;&#x5FC3;&#x5904;&#x7406;&#x7C7B;&#x5206;&#x522B;&#x53EB;&#x4EC0;&#x4E48;&#xFF1F;"><b>31. </b>IBatis&#x548C;MyBatis&#x5728;&#x6838;&#x5FC3;&#x5904;&#x7406;&#x7C7B;&#x5206;&#x522B;&#x53EB;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#ibatis&#x548C;mybatis&#x5728;&#x7EC6;&#x8282;&#x4E0A;&#x7684;&#x4E0D;&#x540C;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;"><b>32. </b>IBatis&#x548C;MyBatis&#x5728;&#x7EC6;&#x8282;&#x4E0A;&#x7684;&#x4E0D;&#x540C;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;</a></li></ul></ul></div><a href="#javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;mybatis" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;mybatis"><a name="javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;mybatis" class="anchor-navigation-ex-anchor" href="#javaweb&#x9762;&#x8BD5;&#x9898;&#xFF1A;mybatis"><i class="fa fa-link" aria-hidden="true"></i></a> JavaWeb&#x9762;&#x8BD5;&#x9898;&#xFF1A;Mybatis</h1>
+<hr>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;mybatis&#xFF1F;"><a name="&#x4EC0;&#x4E48;&#x662F;mybatis&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;mybatis&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x4EC0;&#x4E48;&#x662F;mybatis&#xFF1F;</h2>
+<ol>
+<li>mybatis&#x662F;&#x4E00;&#x4E2A;&#x4F18;&#x79C0;&#x7684;&#x57FA;&#x4E8E;java&#x7684;&#x6301;&#x4E45;&#x5C42;&#x6846;&#x67B6;&#xFF0C;&#x5B83;&#x5185;&#x90E8;&#x5C01;&#x88C5;&#x4E86;jdbc&#xFF0C;&#x4F7F;&#x5F00;&#x53D1;&#x8005;&#x53EA;&#x9700;&#x8981;&#x5173;&#x6CE8;sql&#x8BED;&#x53E5;&#x672C;&#x8EAB;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x82B1;&#x8D39;&#x7CBE;&#x529B;&#x53BB;&#x5904;&#x7406;&#x52A0;&#x8F7D;&#x9A71;&#x52A8;&#x3001;&#x521B;&#x5EFA;&#x8FDE;&#x63A5;&#x3001;&#x521B;&#x5EFA;statement&#x7B49;&#x7E41;&#x6742;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</li>
+<li>mybatis&#x901A;&#x8FC7;xml&#x6216;&#x6CE8;&#x89E3;&#x7684;&#x65B9;&#x5F0F;&#x5C06;&#x8981;&#x6267;&#x884C;&#x7684;&#x5404;&#x79CD;statement&#x914D;&#x7F6E;&#x8D77;&#x6765;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;java&#x5BF9;&#x8C61;&#x548C;statement&#x4E2D;sql&#x7684;&#x52A8;&#x6001;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x6620;&#x5C04;&#x751F;&#x6210;&#x6700;&#x7EC8;&#x6267;&#x884C;&#x7684;sql&#x8BED;&#x53E5;&#xFF0C;&#x6700;&#x540E;&#x7531;mybatis&#x6846;&#x67B6;&#x6267;&#x884C;sql&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x6620;&#x5C04;&#x4E3A;java&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>MyBatis &#x652F;&#x6301;&#x5B9A;&#x5236;&#x5316; SQL&#x3001;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x4EE5;&#x53CA;&#x9AD8;&#x7EA7;&#x6620;&#x5C04;&#x3002;MyBatis &#x907F;&#x514D;&#x4E86;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684; JDBC &#x4EE3;&#x7801;&#x548C;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#x4EE5;&#x53CA;&#x83B7;&#x53D6;&#x7ED3;&#x679C;&#x96C6;&#x3002;MyBatis &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7B80;&#x5355;&#x7684; XML &#x6216;&#x6CE8;&#x89E3;&#x6765;&#x914D;&#x7F6E;&#x548C;&#x6620;&#x5C04;&#x539F;&#x751F;&#x4FE1;&#x606F;&#xFF0C;&#x5C06;&#x63A5;&#x53E3;&#x548C; Java &#x7684; POJO&#x6620;&#x5C04;&#x6210;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#x3002;</li>
+</ol>
+<h2 id="mybait&#x7684;&#x4F18;&#x70B9;"><a name="mybait&#x7684;&#x4F18;&#x70B9;" class="anchor-navigation-ex-anchor" href="#mybait&#x7684;&#x4F18;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Mybait&#x7684;&#x4F18;&#x70B9;</h2>
+<ol>
+<li>&#x7B80;&#x5355;&#x6613;&#x5B66;&#xFF0C;&#x5BB9;&#x6613;&#x4E0A;&#x624B;&#xFF08;&#x76F8;&#x6BD4;&#x4E8E;Hibernate&#xFF09; &#x2014;- &#x57FA;&#x4E8E;SQL&#x7F16;&#x7A0B;&#xFF1B;</li>
+<li>JDBC&#x76F8;&#x6BD4;&#xFF0C;&#x51CF;&#x5C11;&#x4E86;50%&#x4EE5;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x91CF;&#xFF0C;&#x6D88;&#x9664;&#x4E86;JDBC&#x5927;&#x91CF;&#x5197;&#x4F59;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x5F00;&#x5173;&#x8FDE;&#x63A5;&#xFF1B;</li>
+<li>&#x5F88;&#x597D;&#x7684;&#x4E0E;&#x5404;&#x79CD;&#x6570;&#x636E;&#x5E93;&#x517C;&#x5BB9;&#xFF08;&#x56E0;&#x4E3A;MyBatis&#x4F7F;&#x7528;JDBC&#x6765;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x8981;JDBC&#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x5E93;MyBatis&#x90FD;&#x652F;&#x6301;&#xFF0C;&#x800C;JDBC&#x63D0;&#x4F9B;&#x4E86;&#x53EF;&#x6269;&#x5C55;&#x6027;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x8981;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x6709;&#x9488;&#x5BF9;Java&#x7684;jar&#x5305;&#x5C31;&#x53EF;&#x4EE5;&#x5C31;&#x53EF;&#x4EE5;&#x4E0E;MyBatis&#x517C;&#x5BB9;&#xFF09;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E0D;&#x9700;&#x8981;&#x8003;&#x8651;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5DEE;&#x5F02;&#x6027;&#x3002;</li>
+<li>&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x7B2C;&#x4E09;&#x65B9;&#x63D2;&#x4EF6;&#xFF08;&#x5206;&#x9875;&#x63D2;&#x4EF6; / &#x9006;&#x5411;&#x5DE5;&#x7A0B;&#xFF09;&#xFF1B;</li>
+<li>&#x80FD;&#x591F;&#x4E0E;Spring&#x5F88;&#x597D;&#x7684;&#x96C6;&#x6210;&#xFF1B;</li>
+<li>MyBatis&#x76F8;&#x5F53;&#x7075;&#x6D3B;&#xFF0C;&#x4E0D;&#x4F1A;&#x5BF9;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6216;&#x8005;&#x6570;&#x636E;&#x5E93;&#x7684;&#x73B0;&#x6709;&#x8BBE;&#x8BA1;&#x5F3A;&#x52A0;&#x4EFB;&#x4F55;&#x5F71;&#x54CD;&#xFF0C;SQL&#x5199;&#x5728;XML&#x91CC;&#xFF0C;&#x4ECE;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x4E2D;&#x5F7B;&#x5E95;&#x5206;&#x79BB;&#xFF0C;&#x89E3;&#x9664;sql&#x4E0E;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x7684;&#x8026;&#x5408;&#xFF0C;&#x4FBF;&#x4E8E;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#x548C;&#x4F18;&#x5316;&#xFF0C;&#x5E76;&#x53EF;&#x91CD;&#x7528;&#x3002;</li>
+<li>&#x63D0;&#x4F9B;XML&#x6807;&#x7B7E;&#xFF0C;&#x652F;&#x6301;&#x7F16;&#x5199;&#x52A8;&#x6001;SQL&#x8BED;&#x53E5;&#x3002;</li>
+<li>&#x63D0;&#x4F9B;&#x6620;&#x5C04;&#x6807;&#x7B7E;&#xFF0C;&#x652F;&#x6301;&#x5BF9;&#x8C61;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x7684;ORM&#x5B57;&#x6BB5;&#x5173;&#x7CFB;&#x6620;&#x5C04;&#x3002;</li>
+<li>&#x63D0;&#x4F9B;&#x5BF9;&#x8C61;&#x5173;&#x7CFB;&#x6620;&#x5C04;&#x6807;&#x7B7E;&#xFF0C;&#x652F;&#x6301;&#x5BF9;&#x8C61;&#x5173;&#x7CFB;&#x7EC4;&#x5EFA;&#x7EF4;&#x62A4;&#x3002;</li>
+</ol>
+<h2 id="mybatis&#x6846;&#x67B6;&#x7684;&#x7F3A;&#x70B9;"><a name="mybatis&#x6846;&#x67B6;&#x7684;&#x7F3A;&#x70B9;" class="anchor-navigation-ex-anchor" href="#mybatis&#x6846;&#x67B6;&#x7684;&#x7F3A;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>3. MyBatis&#x6846;&#x67B6;&#x7684;&#x7F3A;&#x70B9;</h2>
+<ol>
+<li>SQL&#x8BED;&#x53E5;&#x7684;&#x7F16;&#x5199;&#x5DE5;&#x4F5C;&#x91CF;&#x8F83;&#x5927;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5B57;&#x6BB5;&#x591A;&#x3001;&#x5173;&#x8054;&#x8868;&#x591A;&#x65F6;&#xFF0C;&#x66F4;&#x662F;&#x5982;&#x6B64;&#xFF0C;&#x5BF9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7F16;&#x5199;SQL&#x8BED;&#x53E5;&#x7684;&#x529F;&#x5E95;&#x6709;&#x4E00;&#x5B9A;&#x8981;&#x6C42;&#x3002;</li>
+<li>SQL&#x8BED;&#x53E5;&#x4F9D;&#x8D56;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x5E93;&#x79FB;&#x690D;&#x6027;&#x5DEE;&#xFF0C;&#x4E0D;&#x80FD;&#x968F;&#x610F;&#x66F4;&#x6362;&#x6570;&#x636E;&#x5E93;&#x3002;</li>
+</ol>
+<h2 id="mybatis&#x6846;&#x67B6;&#x9002;&#x7528;&#x573A;&#x5408;"><a name="mybatis&#x6846;&#x67B6;&#x9002;&#x7528;&#x573A;&#x5408;" class="anchor-navigation-ex-anchor" href="#mybatis&#x6846;&#x67B6;&#x9002;&#x7528;&#x573A;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>4. MyBatis&#x6846;&#x67B6;&#x9002;&#x7528;&#x573A;&#x5408;</h2>
+<ol>
+<li>MyBatis&#x4E13;&#x6CE8;&#x4E8E;SQL&#x672C;&#x8EAB;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x8DB3;&#x591F;&#x7075;&#x6D3B;&#x7684;DAO&#x5C42;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</li>
+<li>&#x5BF9;&#x6027;&#x80FD;&#x7684;&#x8981;&#x6C42;&#x5F88;&#x9AD8;&#xFF0C;&#x6216;&#x8005;&#x9700;&#x6C42;&#x53D8;&#x5316;&#x8F83;&#x591A;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x5982;&#x4E92;&#x8054;&#x7F51;&#x9879;&#x76EE;&#xFF0C;MyBatis&#x5C06;&#x662F;&#x4E0D;&#x9519;&#x7684;&#x9009;&#x62E9;&#x3002;</li>
+</ol>
+<h2 id="mybatis&#x4E0E;hibernate&#x6709;&#x54EA;&#x4E9B;&#x4E0D;&#x540C;&#xFF1F;"><a name="mybatis&#x4E0E;hibernate&#x6709;&#x54EA;&#x4E9B;&#x4E0D;&#x540C;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mybatis&#x4E0E;hibernate&#x6709;&#x54EA;&#x4E9B;&#x4E0D;&#x540C;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>5. MyBatis&#x4E0E;Hibernate&#x6709;&#x54EA;&#x4E9B;&#x4E0D;&#x540C;&#xFF1F;</h2>
+<ol>
+<li>Mybatis&#x548C;hibernate&#x4E0D;&#x540C;&#xFF0C;&#x5B83;&#x4E0D;&#x5B8C;&#x5168;&#x662F;&#x4E00;&#x4E2A;ORM&#x6846;&#x67B6;&#xFF0C;&#x56E0;&#x4E3A;MyBatis&#x9700;&#x8981;&#x7A0B;&#x5E8F;&#x5458;&#x81EA;&#x5DF1;&#x7F16;&#x5199;Sql&#x8BED;&#x53E5;&#xFF0C;&#x4E0D;&#x8FC7;mybatis&#x53EF;&#x4EE5;&#x901A;&#x8FC7;XML&#x6216;&#x6CE8;&#x89E3;&#x65B9;&#x5F0F;&#x7075;&#x6D3B;&#x914D;&#x7F6E;&#x8981;&#x8FD0;&#x884C;&#x7684;sql&#x8BED;&#x53E5;&#xFF0C;&#x5E76;&#x5C06;java&#x5BF9;&#x8C61;&#x548C;sql&#x8BED;&#x53E5;&#x6620;&#x5C04;&#x751F;&#x6210;&#x6700;&#x7EC8;&#x6267;&#x884C;&#x7684;sql&#xFF0C;&#x6700;&#x540E;&#x5C06;sql&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#x518D;&#x6620;&#x5C04;&#x751F;&#x6210;java&#x5BF9;&#x8C61;&#x3002; </li>
+<li>Mybatis&#x5B66;&#x4E60;&#x95E8;&#x69DB;&#x4F4E;&#xFF0C;&#x7B80;&#x5355;&#x6613;&#x5B66;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x76F4;&#x63A5;&#x7F16;&#x5199;&#x539F;&#x751F;&#x6001;sql&#xFF0C;&#x53EF;&#x4E25;&#x683C;&#x63A7;&#x5236;sql&#x6267;&#x884C;&#x6027;&#x80FD;&#xFF0C;&#x7075;&#x6D3B;&#x5EA6;&#x9AD8;&#xFF0C;&#x975E;&#x5E38;&#x9002;&#x5408;&#x5BF9;&#x5173;&#x7CFB;&#x6570;&#x636E;&#x6A21;&#x578B;&#x8981;&#x6C42;&#x4E0D;&#x9AD8;&#x7684;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#xFF0C;&#x4F8B;&#x5982;&#x4E92;&#x8054;&#x7F51;&#x8F6F;&#x4EF6;&#x3001;&#x4F01;&#x4E1A;&#x8FD0;&#x8425;&#x7C7B;&#x8F6F;&#x4EF6;&#x7B49;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x7C7B;&#x8F6F;&#x4EF6;&#x9700;&#x6C42;&#x53D8;&#x5316;&#x9891;&#x7E41;&#xFF0C;&#x4E00;&#x4F46;&#x9700;&#x6C42;&#x53D8;&#x5316;&#x8981;&#x6C42;&#x6210;&#x679C;&#x8F93;&#x51FA;&#x8FC5;&#x901F;&#x3002;&#x4F46;&#x662F;&#x7075;&#x6D3B;&#x7684;&#x524D;&#x63D0;&#x662F;mybatis&#x65E0;&#x6CD5;&#x505A;&#x5230;&#x6570;&#x636E;&#x5E93;&#x65E0;&#x5173;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x652F;&#x6301;&#x591A;&#x79CD;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8F6F;&#x4EF6;&#x5219;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x591A;&#x5957;sql&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;&#x5DE5;&#x4F5C;&#x91CF;&#x5927;&#x3002; </li>
+<li>Hibernate&#x5BF9;&#x8C61;/&#x5173;&#x7CFB;&#x6620;&#x5C04;&#x80FD;&#x529B;&#x5F3A;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x65E0;&#x5173;&#x6027;&#x597D;&#xFF0C;&#x5BF9;&#x4E8E;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x8981;&#x6C42;&#x9AD8;&#x7684;&#x8F6F;&#x4EF6;&#xFF08;&#x4F8B;&#x5982;&#x9700;&#x6C42;&#x56FA;&#x5B9A;&#x7684;&#x5B9A;&#x5236;&#x5316;&#x8F6F;&#x4EF6;&#xFF09;&#x5982;&#x679C;&#x7528;hibernate&#x5F00;&#x53D1;&#x53EF;&#x4EE5;&#x8282;&#x7701;&#x5F88;&#x591A;&#x4EE3;&#x7801;&#xFF0C;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#x3002;&#x4F46;&#x662F;Hibernate&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x5B66;&#x4E60;&#x95E8;&#x69DB;&#x9AD8;&#xFF0C;&#x8981;&#x7CBE;&#x901A;&#x95E8;&#x69DB;&#x66F4;&#x9AD8;&#xFF0C;&#x800C;&#x4E14;&#x600E;&#x4E48;&#x8BBE;&#x8BA1;O/R&#x6620;&#x5C04;&#xFF0C;&#x5728;&#x6027;&#x80FD;&#x548C;&#x5BF9;&#x8C61;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x5982;&#x4F55;&#x6743;&#x8861;&#xFF0C;&#x4EE5;&#x53CA;&#x600E;&#x6837;&#x7528;&#x597D;Hibernate&#x9700;&#x8981;&#x5177;&#x6709;&#x5F88;&#x5F3A;&#x7684;&#x7ECF;&#x9A8C;&#x548C;&#x80FD;&#x529B;&#x624D;&#x884C;&#x3002; </li>
+</ol>
+<h2 id="&#x548C;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;"><a name="&#x548C;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;" class="anchor-navigation-ex-anchor" href="#&#x548C;&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;"><i class="fa fa-link" aria-hidden="true"></i></a>6. #{}&#x548C;${}&#x7684;&#x533A;&#x522B;&#x662F;&#x4EC0;&#x4E48;</h2>
+<p>#{}&#x662F;&#x9884;&#x7F16;&#x8BD1;&#x5904;&#x7406;&#xFF0C;${}&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;&#x3002;</p>
+<p>Mybatis&#x5728;&#x5904;&#x7406;#{}&#x65F6;&#xFF0C;&#x4F1A;&#x5C06;sql&#x4E2D;&#x7684;#{}&#x66FF;&#x6362;&#x4E3A;?&#x53F7;&#xFF0C;&#x8C03;&#x7528;PreparedStatement&#x7684;set&#x65B9;&#x6CD5;&#x6765;&#x8D4B;&#x503C;&#xFF1B;</p>
+<p>Mybatis&#x5728;&#x5904;&#x7406;${}&#x65F6;&#xFF0C;&#x5C31;&#x662F;&#x628A;${}&#x66FF;&#x6362;&#x6210;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x4F7F;&#x7528;#{}&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x7684;&#x9632;&#x6B62;SQL&#x6CE8;&#x5165;&#xFF0C;&#x63D0;&#x9AD8;&#x7CFB;&#x7EDF;&#x5B89;&#x5168;&#x6027;&#x3002;</p>
+<h2 id="&#x5F53;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x548C;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x4E0D;&#x4E00;&#x6837;-&#xFF0C;&#x600E;&#x4E48;&#x529E;-&#xFF1F;"><a name="&#x5F53;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x548C;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x4E0D;&#x4E00;&#x6837;-&#xFF0C;&#x600E;&#x4E48;&#x529E;-&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x5F53;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x548C;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x4E0D;&#x4E00;&#x6837;-&#xFF0C;&#x600E;&#x4E48;&#x529E;-&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>7. &#x5F53;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x548C;&#x8868;&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x4E0D;&#x4E00;&#x6837; &#xFF0C;&#x600E;&#x4E48;&#x529E; &#xFF1F;</h2>
+<p>&#x7B2C;1&#x79CD;&#xFF1A; &#x901A;&#x8FC7;&#x5728;&#x67E5;&#x8BE2;&#x7684;sql&#x8BED;&#x53E5;&#x4E2D;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;&#x540D;&#x7684;&#x522B;&#x540D;&#xFF0C;&#x8BA9;&#x5B57;&#x6BB5;&#x540D;&#x7684;&#x522B;&#x540D;&#x548C;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x4E00;&#x81F4;&#x3002;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>selectorder<span class="token punctuation">&quot;</span></span> <span class="token attr-name">parametertype</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>int<span class="token punctuation">&quot;</span></span> <span class="token attr-name">resultetype</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>me.gacl.domain.order<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    select order_id id, order_no orderno ,order_price price form orders where order_id=#{id};
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x7B2C;2&#x79CD;&#xFF1A; &#x901A;&#x8FC7;<resultmap>&#x6765;&#x6620;&#x5C04;&#x5B57;&#x6BB5;&#x540D;&#x548C;&#x5B9E;&#x4F53;&#x7C7B;&#x5C5E;&#x6027;&#x540D;&#x7684;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#x5173;&#x7CFB;</resultmap></p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>getOrder<span class="token punctuation">&quot;</span></span> <span class="token attr-name">parameterType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>int<span class="token punctuation">&quot;</span></span> <span class="token attr-name">resultMap</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>orderresultmap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    select * from orders where order_id=#{id}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resultMap</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>me.gacl.domain.order<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>orderresultmap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- &#x7528;id&#x5C5E;&#x6027;&#x6765;&#x6620;&#x5C04;&#x4E3B;&#x952E;&#x5B57;&#x6BB5; --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>order_id<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+    <span class="token comment">&lt;!-- &#x7528;result&#x5C5E;&#x6027;&#x6765;&#x6620;&#x5C04;&#x975E;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#xFF0C;property&#x4E3A;&#x5B9E;&#x4F53;&#x7C7B;&#x5C5E;&#x6027;&#x540D;&#xFF0C;column&#x4E3A;&#x6570;&#x636E;&#x8868;&#x4E2D;&#x7684;&#x5C5E;&#x6027; --&gt;</span>
+    &lt;result property = &#x201C;orderno&#x201D; column =&#x201D;order_no&#x201D;/&gt;
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span>&#x201D;price&#x201D;</span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span>&#x201D;order_price&#x201D;</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>reslutMap</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;like&#x8BED;&#x53E5;&#x8BE5;&#x600E;&#x4E48;&#x5199;"><a name="&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;like&#x8BED;&#x53E5;&#x8BE5;&#x600E;&#x4E48;&#x5199;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;like&#x8BED;&#x53E5;&#x8BE5;&#x600E;&#x4E48;&#x5199;"><i class="fa fa-link" aria-hidden="true"></i></a>8. &#x6A21;&#x7CCA;&#x67E5;&#x8BE2;like&#x8BED;&#x53E5;&#x8BE5;&#x600E;&#x4E48;&#x5199;?</h2>
+<p>&#x7B2C;1&#x79CD;&#xFF1A;&#x5728;Java&#x4EE3;&#x7801;&#x4E2D;&#x6DFB;&#x52A0;sql&#x901A;&#x914D;&#x7B26;&#x3002;</p>
+<pre class="language-"><code class="lang-java">String wildcardname <span class="token operator">=</span> <span class="token string">&quot;%smi%&quot;</span><span class="token punctuation">;</span>
+List<span class="token generics function"><span class="token punctuation">&lt;</span>name<span class="token punctuation">&gt;</span></span> names <span class="token operator">=</span> mapper<span class="token punctuation">.</span><span class="token function">selectlike</span><span class="token punctuation">(</span>wildcardname<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span>&#x201D;selectlike&#x201D;</span><span class="token punctuation">&gt;</span></span>
+    select * from foo where bar like #{value}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x7B2C;2&#x79CD;&#xFF1A;&#x5728;sql&#x8BED;&#x53E5;&#x4E2D;&#x62FC;&#x63A5;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x4F1A;&#x5F15;&#x8D77;sql&#x6CE8;&#x5165;&#x3002;</p>
+<pre class="language-"><code class="lang-java">String wildcardname <span class="token operator">=</span> <span class="token string">&quot;smi&quot;</span><span class="token punctuation">;</span>
+List<span class="token generics function"><span class="token punctuation">&lt;</span>name<span class="token punctuation">&gt;</span></span> names <span class="token operator">=</span> mapper<span class="token punctuation">.</span><span class="token function">selectlike</span><span class="token punctuation">(</span>wildcardname<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span>&#x201D;selectlike&#x201D;</span><span class="token punctuation">&gt;</span></span>
+    select * from foo where bar like &quot;%&quot;#{value}&quot;%&quot;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="&#x901A;&#x5E38;&#x4E00;&#x4E2A;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;&#x90FD;&#x4F1A;&#x5199;&#x4E00;&#x4E2A;dao&#x63A5;&#x53E3;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#xFF0C;&#x8BF7;&#x95EE;&#xFF0C;&#x8FD9;&#x4E2A;dao&#x63A5;&#x53E3;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;dao&#x63A5;&#x53E3;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x65B9;&#x6CD5;&#x80FD;&#x91CD;&#x8F7D;&#x5417;&#xFF1F;"><a name="&#x901A;&#x5E38;&#x4E00;&#x4E2A;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;&#x90FD;&#x4F1A;&#x5199;&#x4E00;&#x4E2A;dao&#x63A5;&#x53E3;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#xFF0C;&#x8BF7;&#x95EE;&#xFF0C;&#x8FD9;&#x4E2A;dao&#x63A5;&#x53E3;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;dao&#x63A5;&#x53E3;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x65B9;&#x6CD5;&#x80FD;&#x91CD;&#x8F7D;&#x5417;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x5E38;&#x4E00;&#x4E2A;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;&#x90FD;&#x4F1A;&#x5199;&#x4E00;&#x4E2A;dao&#x63A5;&#x53E3;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#xFF0C;&#x8BF7;&#x95EE;&#xFF0C;&#x8FD9;&#x4E2A;dao&#x63A5;&#x53E3;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;dao&#x63A5;&#x53E3;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x65B9;&#x6CD5;&#x80FD;&#x91CD;&#x8F7D;&#x5417;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>9. &#x901A;&#x5E38;&#x4E00;&#x4E2A;Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;&#x90FD;&#x4F1A;&#x5199;&#x4E00;&#x4E2A;Dao&#x63A5;&#x53E3;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#xFF0C;&#x8BF7;&#x95EE;&#xFF0C;&#x8FD9;&#x4E2A;Dao&#x63A5;&#x53E3;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;Dao&#x63A5;&#x53E3;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x65B9;&#x6CD5;&#x80FD;&#x91CD;&#x8F7D;&#x5417;&#xFF1F;</h2>
+<p> Dao&#x63A5;&#x53E3;&#xFF0C;&#x5C31;&#x662F;&#x4EBA;&#x4EEC;&#x5E38;&#x8BF4;&#x7684;Mapper&#x63A5;&#x53E3;&#xFF0C;&#x63A5;&#x53E3;&#x7684;&#x5168;&#x9650;&#x540D;&#xFF0C;&#x5C31;&#x662F;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#x7684;namespace&#x7684;&#x503C;&#xFF0C;&#x63A5;&#x53E3;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#xFF0C;&#x5C31;&#x662F;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;MappedStatement&#x7684;id&#x503C;&#xFF0C;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x5185;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x4F20;&#x9012;&#x7ED9;sql&#x7684;&#x53C2;&#x6570;&#x3002;Mapper&#x63A5;&#x53E3;&#x662F;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x7C7B;&#x7684;&#xFF0C;&#x5F53;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x63A5;&#x53E3;&#x5168;&#x9650;&#x540D;+&#x65B9;&#x6CD5;&#x540D;&#x62FC;&#x63A5;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;key&#x503C;&#xFF0C;&#x53EF;&#x552F;&#x4E00;&#x5B9A;&#x4F4D;&#x4E00;&#x4E2A;MappedStatement&#xFF0C;&#x4E3E;&#x4F8B;&#xFF1A;</p>
+<p>com.mybatis3.mappers.StudentDao.findStudentById&#xFF0C;&#x53EF;&#x4EE5;&#x552F;&#x4E00;&#x627E;&#x5230;namespace&#x4E3A;com.mybatis3.mappers.StudentDao&#x4E0B;&#x9762;id = findStudentById&#x7684;MappedStatement&#x3002;&#x5728;Mybatis&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&lt;select&gt;&#x3001;&lt;insert&gt;&#x3001;&lt;update&gt;&#x3001;&lt;delete&gt;&#x6807;&#x7B7E;&#xFF0C;&#x90FD;&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#x4E3A;&#x4E00;&#x4E2A;MappedStatement&#x5BF9;&#x8C61;&#x3002;</p>
+<p>Dao&#x63A5;&#x53E3;&#x91CC;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x662F;&#x4E0D;&#x80FD;&#x91CD;&#x8F7D;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x662F;&#x5168;&#x9650;&#x540D;+&#x65B9;&#x6CD5;&#x540D;&#x7684;&#x4FDD;&#x5B58;&#x548C;&#x5BFB;&#x627E;&#x7B56;&#x7565;&#x3002;</p>
+<p>Dao&#x63A5;&#x53E3;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;JDK&#x52A8;&#x6001;&#x4EE3;&#x7406;&#xFF0C;Mybatis&#x8FD0;&#x884C;&#x65F6;&#x4F1A;&#x4F7F;&#x7528;JDK&#x52A8;&#x6001;&#x4EE3;&#x7406;&#x4E3A;Dao&#x63A5;&#x53E3;&#x751F;&#x6210;&#x4EE3;&#x7406;proxy&#x5BF9;&#x8C61;&#xFF0C;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;proxy&#x4F1A;&#x62E6;&#x622A;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#xFF0C;&#x8F6C;&#x800C;&#x6267;&#x884C;MappedStatement&#x6240;&#x4EE3;&#x8868;&#x7684;sql&#xFF0C;&#x7136;&#x540E;&#x5C06;sql&#x6267;&#x884C;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x3002;</p>
+<h2 id="mybatis&#x662F;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x7684;&#xFF1F;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="mybatis&#x662F;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x7684;&#xFF1F;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mybatis&#x662F;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x7684;&#xFF1F;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>10. Mybatis&#x662F;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x7684;&#xFF1F;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#x7684;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<p>Mybatis&#x4F7F;&#x7528;RowBounds&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x5206;&#x9875;&#xFF0C;&#x5B83;&#x662F;&#x9488;&#x5BF9;ResultSet&#x7ED3;&#x679C;&#x96C6;&#x6267;&#x884C;&#x7684;&#x5185;&#x5B58;&#x5206;&#x9875;&#xFF0C;&#x800C;&#x975E;&#x7269;&#x7406;&#x5206;&#x9875;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;sql&#x5185;&#x76F4;&#x63A5;&#x4E66;&#x5199;&#x5E26;&#x6709;&#x7269;&#x7406;&#x5206;&#x9875;&#x7684;&#x53C2;&#x6570;&#x6765;&#x5B8C;&#x6210;&#x7269;&#x7406;&#x5206;&#x9875;&#x529F;&#x80FD;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#x6765;&#x5B8C;&#x6210;&#x7269;&#x7406;&#x5206;&#x9875;&#x3002;</p>
+<p>&#x5206;&#x9875;&#x63D2;&#x4EF6;&#x7684;&#x57FA;&#x672C;&#x539F;&#x7406;&#x662F;&#x4F7F;&#x7528;Mybatis&#x63D0;&#x4F9B;&#x7684;&#x63D2;&#x4EF6;&#x63A5;&#x53E3;&#xFF0C;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x63D2;&#x4EF6;&#xFF0C;&#x5728;&#x63D2;&#x4EF6;&#x7684;&#x62E6;&#x622A;&#x65B9;&#x6CD5;&#x5185;&#x62E6;&#x622A;&#x5F85;&#x6267;&#x884C;&#x7684;sql&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x5199;sql&#xFF0C;&#x6839;&#x636E;dialect&#x65B9;&#x8A00;&#xFF0C;&#x6DFB;&#x52A0;&#x5BF9;&#x5E94;&#x7684;&#x7269;&#x7406;&#x5206;&#x9875;&#x8BED;&#x53E5;&#x548C;&#x7269;&#x7406;&#x5206;&#x9875;&#x53C2;&#x6570;&#x3002;</p>
+<h2 id="mybatis&#x662F;&#x5982;&#x4F55;&#x5C06;sql&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5C01;&#x88C5;&#x4E3A;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x6620;&#x5C04;&#x5F62;&#x5F0F;&#xFF1F;"><a name="mybatis&#x662F;&#x5982;&#x4F55;&#x5C06;sql&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5C01;&#x88C5;&#x4E3A;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x6620;&#x5C04;&#x5F62;&#x5F0F;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mybatis&#x662F;&#x5982;&#x4F55;&#x5C06;sql&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5C01;&#x88C5;&#x4E3A;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x6620;&#x5C04;&#x5F62;&#x5F0F;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>11. Mybatis&#x662F;&#x5982;&#x4F55;&#x5C06;sql&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5C01;&#x88C5;&#x4E3A;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x6620;&#x5C04;&#x5F62;&#x5F0F;&#xFF1F;</h2>
+<p>&#x7B2C;&#x4E00;&#x79CD;&#x662F;&#x4F7F;&#x7528;&lt;resultMap&gt;&#x6807;&#x7B7E;&#xFF0C;&#x9010;&#x4E00;&#x5B9A;&#x4E49;&#x5217;&#x540D;&#x548C;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x540D;&#x4E4B;&#x95F4;&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x3002;&#x7B2C;&#x4E8C;&#x79CD;&#x662F;&#x4F7F;&#x7528;sql&#x5217;&#x7684;&#x522B;&#x540D;&#x529F;&#x80FD;&#xFF0C;&#x5C06;&#x5217;&#x522B;&#x540D;&#x4E66;&#x5199;&#x4E3A;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x540D;&#xFF0C;&#x6BD4;&#x5982;T_NAME AS NAME&#xFF0C;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x540D;&#x4E00;&#x822C;&#x662F;name&#xFF0C;&#x5C0F;&#x5199;&#xFF0C;&#x4F46;&#x662F;&#x5217;&#x540D;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#xFF0C;Mybatis&#x4F1A;&#x5FFD;&#x7565;&#x5217;&#x540D;&#x5927;&#x5C0F;&#x5199;&#xFF0C;&#x667A;&#x80FD;&#x627E;&#x5230;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x540D;&#xFF0C;&#x4F60;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x5199;&#x6210;T_NAME AS NaMe&#xFF0C;Mybatis&#x4E00;&#x6837;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x6709;&#x4E86;&#x5217;&#x540D;&#x4E0E;&#x5C5E;&#x6027;&#x540D;&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x540E;&#xFF0C;Mybatis&#x901A;&#x8FC7;&#x53CD;&#x5C04;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x7ED9;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x9010;&#x4E00;&#x8D4B;&#x503C;&#x5E76;&#x8FD4;&#x56DE;&#xFF0C;&#x90A3;&#x4E9B;&#x627E;&#x4E0D;&#x5230;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x662F;&#x65E0;&#x6CD5;&#x5B8C;&#x6210;&#x8D4B;&#x503C;&#x7684;&#x3002;</p>
+<h2 id="&#x5982;&#x4F55;&#x6267;&#x884C;&#x6279;&#x91CF;&#x63D2;&#x5165;"><a name="&#x5982;&#x4F55;&#x6267;&#x884C;&#x6279;&#x91CF;&#x63D2;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x6267;&#x884C;&#x6279;&#x91CF;&#x63D2;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>12. &#x5982;&#x4F55;&#x6267;&#x884C;&#x6279;&#x91CF;&#x63D2;&#x5165;?</h2>
+<p>&#x9996;&#x5148;,&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;insert&#x8BED;&#x53E5;:</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>insert</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>insertname<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+     insert into names (name) values (#{value})
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>insert</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;java&#x4EE3;&#x7801;&#x4E2D;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x6267;&#x884C;&#x6279;&#x5904;&#x7406;&#x63D2;&#x5165;:</p>
+<pre class="language-"><code class="lang-java">List<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span> names <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">arraylist</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+names<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;fred&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+names<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;barney&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+names<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;betty&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+names<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;wilma&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x6CE8;&#x610F;&#x8FD9;&#x91CC; executortype.batch</span>
+sqlsession sqlsession <span class="token operator">=</span> sqlsessionfactory<span class="token punctuation">.</span><span class="token function">opensession</span><span class="token punctuation">(</span>executortype<span class="token punctuation">.</span>batch<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+    namemapper mapper <span class="token operator">=</span> sqlsession<span class="token punctuation">.</span><span class="token function">getmapper</span><span class="token punctuation">(</span>namemapper<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>string name <span class="token operator">:</span> names<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        mapper<span class="token punctuation">.</span><span class="token function">insertname</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    sqlsession<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>Exception e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    sqlSession<span class="token punctuation">.</span><span class="token function">rollback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">throw</span> e<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+    sqlsession<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x503C;"><a name="&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4E3B;&#x952E;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>13. &#x5982;&#x4F55;&#x83B7;&#x53D6;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;(&#x4E3B;)&#x952E;&#x503C;?</h2>
+<p>insert &#x65B9;&#x6CD5;&#x603B;&#x662F;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;int&#x503C; - &#x8FD9;&#x4E2A;&#x503C;&#x4EE3;&#x8868;&#x7684;&#x662F;&#x63D2;&#x5165;&#x7684;&#x884C;&#x6570;&#x3002;</p>
+<p>&#x800C;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x952E;&#x503C;&#x5728; insert &#x65B9;&#x6CD5;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x53EF;&#x4EE5;&#x88AB;&#x8BBE;&#x7F6E;&#x5230;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x5BF9;&#x8C61;&#x4E2D;&#x3002;</p>
+<p>&#x793A;&#x4F8B;:</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>insert</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span>&#x201D;insertname&#x201D;</span> <span class="token attr-name">usegeneratedkeys</span><span class="token attr-value"><span class="token punctuation">=</span>&#x201D;true&#x201D;</span> <span class="token attr-name">keyproperty</span><span class="token attr-value"><span class="token punctuation">=</span>&#x201D;id&#x201D;</span><span class="token punctuation">&gt;</span></span>
+     insert into names (name) values (#{name})
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>insert</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-java">Name name <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+name<span class="token punctuation">.</span><span class="token function">setname</span><span class="token punctuation">(</span><span class="token string">&quot;fred&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> rows <span class="token operator">=</span> mapper<span class="token punctuation">.</span><span class="token function">insertname</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x5B8C;&#x6210;&#x540E;,id&#x5DF2;&#x7ECF;&#x88AB;&#x8BBE;&#x7F6E;&#x5230;&#x5BF9;&#x8C61;&#x4E2D;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;rows inserted = &quot;</span> <span class="token operator">+</span> rows<span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;generated key value = &quot;</span> <span class="token operator">+</span> name<span class="token punctuation">.</span><span class="token function">getid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x5728;mapper&#x4E2D;&#x5982;&#x4F55;&#x4F20;&#x9012;&#x591A;&#x4E2A;&#x53C2;&#x6570;"><a name="&#x5728;mapper&#x4E2D;&#x5982;&#x4F55;&#x4F20;&#x9012;&#x591A;&#x4E2A;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x5728;mapper&#x4E2D;&#x5982;&#x4F55;&#x4F20;&#x9012;&#x591A;&#x4E2A;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>14. &#x5728;mapper&#x4E2D;&#x5982;&#x4F55;&#x4F20;&#x9012;&#x591A;&#x4E2A;&#x53C2;&#x6570;?</h2>
+<ul>
+<li>&#x7B2C;1&#x79CD;</li>
+</ul>
+<pre class="language-"><code class="lang-java"><span class="token comment">// DAO&#x5C42;&#x7684;&#x51FD;&#x6570;</span>
+<span class="token keyword">public</span> <span class="token function">UserselectUser</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span> String area<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-"><code class="lang-xml"><span class="token comment">&lt;!-- &#x5BF9;&#x5E94;&#x7684;xml,#{0}&#x4EE3;&#x8868;&#x63A5;&#x6536;&#x7684;&#x662F;dao&#x5C42;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;#{1}&#x4EE3;&#x8868;dao&#x5C42;&#x4E2D;&#x7B2C;&#x4E8C;&#x53C2;&#x6570;&#xFF0C;&#x66F4;&#x591A;&#x53C2;&#x6570;&#x4E00;&#x81F4;&#x5F80;&#x540E;&#x52A0;&#x5373;&#x53EF;&#x3002;--&gt;</span>
+&lt;select id=&quot;selectUser&quot;resultMap=&quot;BaseResultMap&quot;&gt;  
+    select *  fromuser_user_t   whereuser_name = #{0} anduser_area=#{1}  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<ul>
+<li>&#x7B2C;2&#x79CD;&#xFF1A; &#x4F7F;&#x7528; @param &#x6CE8;&#x89E3;:</li>
+</ul>
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>ibatis<span class="token punctuation">.</span>annotations<span class="token punctuation">.</span>param<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Usermapper</span> <span class="token punctuation">{</span>
+    user <span class="token function">selectuser</span><span class="token punctuation">(</span><span class="token annotation punctuation">@param</span><span class="token punctuation">(</span><span class="token string">&quot;username&quot;</span><span class="token punctuation">)</span> String username<span class="token punctuation">,</span>
+    <span class="token annotation punctuation">@param</span><span class="token punctuation">(</span><span class="token string">&quot;hashedpassword&quot;</span><span class="token punctuation">)</span> String hashedpassword<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7136;&#x540E;,&#x5C31;&#x53EF;&#x4EE5;&#x5728;xml&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x4F7F;&#x7528;(&#x63A8;&#x8350;&#x5C01;&#x88C5;&#x4E3A;&#x4E00;&#x4E2A;map,&#x4F5C;&#x4E3A;&#x5355;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;mapper):</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>selectuser<span class="token punctuation">&quot;</span></span> <span class="token attr-name">resulttype</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    select id, username, hashedpassword
+    from some_table
+    where username = #{username}
+    and hashedpassword = #{hashedpassword}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<ul>
+<li>&#x7B2C;3&#x79CD;&#xFF1A;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x5C01;&#x88C5;&#x6210;map</li>
+</ul>
+<pre class="language-"><code class="lang-java"><span class="token keyword">try</span><span class="token punctuation">{</span>
+<span class="token comment">// &#x6620;&#x5C04;&#x6587;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;.SQL&#x7247;&#x6BB5;&#x7684;ID&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#x7684;SQL</span>
+<span class="token comment">/**
+ * &#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x53C2;&#x6570;&#x8D85;&#x8FC7;&#x4E86;&#x4E24;&#x4E2A;&#xFF0C;&#x800C;&#x65B9;&#x6CD5;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;Object&#x53C2;&#x6570;&#x6536;&#x96C6;
+ * &#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x4F7F;&#x7528;Map&#x96C6;&#x5408;&#x6765;&#x88C5;&#x8F7D;&#x6211;&#x4EEC;&#x7684;&#x53C2;&#x6570;
+ */</span>
+
+Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">&gt;</span></span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;start&quot;</span><span class="token punctuation">,</span> start<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;end&quot;</span><span class="token punctuation">,</span> end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> sqlSession<span class="token punctuation">.</span><span class="token function">selectList</span><span class="token punctuation">(</span><span class="token string">&quot;StudentID.pagination&quot;</span><span class="token punctuation">,</span> map<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>Exception e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    sqlSession<span class="token punctuation">.</span><span class="token function">rollback</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">throw</span> e<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+    MybatisUtil<span class="token punctuation">.</span><span class="token function">closeSqlSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="mybatis&#x52A8;&#x6001;sql&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x52A8;&#x6001;sql&#xFF1F;&#x80FD;&#x7B80;&#x8FF0;&#x4E00;&#x4E0B;&#x52A8;&#x6001;sql&#x7684;&#x6267;&#x884C;&#x539F;&#x7406;&#x4E0D;&#xFF1F;"><a name="mybatis&#x52A8;&#x6001;sql&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x52A8;&#x6001;sql&#xFF1F;&#x80FD;&#x7B80;&#x8FF0;&#x4E00;&#x4E0B;&#x52A8;&#x6001;sql&#x7684;&#x6267;&#x884C;&#x539F;&#x7406;&#x4E0D;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mybatis&#x52A8;&#x6001;sql&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x52A8;&#x6001;sql&#xFF1F;&#x80FD;&#x7B80;&#x8FF0;&#x4E00;&#x4E0B;&#x52A8;&#x6001;sql&#x7684;&#x6267;&#x884C;&#x539F;&#x7406;&#x4E0D;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>15. Mybatis&#x52A8;&#x6001;sql&#x662F;&#x505A;&#x4EC0;&#x4E48;&#x7684;&#xFF1F;&#x90FD;&#x6709;&#x54EA;&#x4E9B;&#x52A8;&#x6001;sql&#xFF1F;&#x80FD;&#x7B80;&#x8FF0;&#x4E00;&#x4E0B;&#x52A8;&#x6001;sql&#x7684;&#x6267;&#x884C;&#x539F;&#x7406;&#x4E0D;&#xFF1F;</h2>
+<p>Mybatis&#x52A8;&#x6001;sql&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5728;Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x5185;&#xFF0C;&#x4EE5;&#x6807;&#x7B7E;&#x7684;&#x5F62;&#x5F0F;&#x7F16;&#x5199;&#x52A8;&#x6001;sql&#xFF0C;&#x5B8C;&#x6210;&#x903B;&#x8F91;&#x5224;&#x65AD;&#x548C;&#x52A8;&#x6001;&#x62FC;&#x63A5;sql&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>Mybatis&#x63D0;&#x4F9B;&#x4E86;9&#x79CD;&#x52A8;&#x6001;sql&#x6807;&#x7B7E;&#xFF1A;trim|where|set|foreach|if|choose|when|otherwise|bind&#x3002;</p>
+<p>&#x5176;&#x6267;&#x884C;&#x539F;&#x7406;&#x4E3A;&#xFF0C;&#x4F7F;&#x7528;OGNL&#x4ECE;sql&#x53C2;&#x6570;&#x5BF9;&#x8C61;&#x4E2D;&#x8BA1;&#x7B97;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#xFF0C;&#x6839;&#x636E;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x52A8;&#x6001;&#x62FC;&#x63A5;sql&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x5B8C;&#x6210;&#x52A8;&#x6001;sql&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<h2 id="xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x5E38;&#x89C1;&#x7684;selectinsertupdaedelete&#x6807;&#x7B7E;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x6807;&#x7B7E;&#xFF1F;"><a name="xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x5E38;&#x89C1;&#x7684;selectinsertupdaedelete&#x6807;&#x7B7E;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x6807;&#x7B7E;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x5E38;&#x89C1;&#x7684;selectinsertupdaedelete&#x6807;&#x7B7E;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x6807;&#x7B7E;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>16. Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x5E38;&#x89C1;&#x7684;select|insert|updae|delete&#x6807;&#x7B7E;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x6807;&#x7B7E;&#xFF1F;</h2>
+<p>&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x7684;&#x6807;&#x7B7E;&#xFF0C;&lt;resultMap&gt;&#x3001;&lt;parameterMap&gt;&#x3001;&lt;sql&gt;&#x3001;&lt;include&gt;&#x3001;&lt;selectKey&gt;&#xFF0C;&#x52A0;&#x4E0A;&#x52A8;&#x6001;sql&#x7684;9&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;trim|where|set|foreach|if|choose|when|otherwise|bind&#x7B49;&#xFF0C;&#x5176;&#x4E2D;&lt;sql&gt;&#x4E3A;sql&#x7247;&#x6BB5;&#x6807;&#x7B7E;&#xFF0C;&#x901A;&#x8FC7;&lt;include&gt;&#x6807;&#x7B7E;&#x5F15;&#x5165;sql&#x7247;&#x6BB5;&#xFF0C;&lt;selectKey&gt;&#x4E3A;&#x4E0D;&#x652F;&#x6301;&#x81EA;&#x589E;&#x7684;&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;&#x6807;&#x7B7E;&#x3002;</p>
+<h2 id="mybatis&#x7684;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E0D;&#x540C;&#x7684;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;id&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#xFF1F;"><a name="mybatis&#x7684;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E0D;&#x540C;&#x7684;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;id&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mybatis&#x7684;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E0D;&#x540C;&#x7684;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;id&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>17. Mybatis&#x7684;Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E0D;&#x540C;&#x7684;Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;id&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#xFF1F;</h2>
+<p>&#x4E0D;&#x540C;&#x7684;Xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x914D;&#x7F6E;&#x4E86;namespace&#xFF0C;&#x90A3;&#x4E48;id&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#xFF1B;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x914D;&#x7F6E;namespace&#xFF0C;&#x90A3;&#x4E48;id&#x4E0D;&#x80FD;&#x91CD;&#x590D;&#xFF1B;&#x6BD5;&#x7ADF;namespace&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x53EA;&#x662F;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x800C;&#x5DF2;&#x3002;</p>
+<p>&#x539F;&#x56E0;&#x5C31;&#x662F;namespace+id&#x662F;&#x4F5C;&#x4E3A;Map&lt;String, MappedStatement&gt;&#x7684;key&#x4F7F;&#x7528;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;namespace&#xFF0C;&#x5C31;&#x5269;&#x4E0B;id&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;id&#x91CD;&#x590D;&#x4F1A;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x4E92;&#x76F8;&#x8986;&#x76D6;&#x3002;&#x6709;&#x4E86;namespace&#xFF0C;&#x81EA;&#x7136;id&#x5C31;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#xFF0C;namespace&#x4E0D;&#x540C;&#xFF0C;namespace+id&#x81EA;&#x7136;&#x4E5F;&#x5C31;&#x4E0D;&#x540C;&#x3002;</p>
+<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;mybatis&#x662F;&#x534A;&#x81EA;&#x52A8;orm&#x6620;&#x5C04;&#x5DE5;&#x5177;&#xFF1F;&#x5B83;&#x4E0E;&#x5168;&#x81EA;&#x52A8;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;&#xFF1F;"><a name="&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;mybatis&#x662F;&#x534A;&#x81EA;&#x52A8;orm&#x6620;&#x5C04;&#x5DE5;&#x5177;&#xFF1F;&#x5B83;&#x4E0E;&#x5168;&#x81EA;&#x52A8;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;mybatis&#x662F;&#x534A;&#x81EA;&#x52A8;orm&#x6620;&#x5C04;&#x5DE5;&#x5177;&#xFF1F;&#x5B83;&#x4E0E;&#x5168;&#x81EA;&#x52A8;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>18. &#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;Mybatis&#x662F;&#x534A;&#x81EA;&#x52A8;ORM&#x6620;&#x5C04;&#x5DE5;&#x5177;&#xFF1F;&#x5B83;&#x4E0E;&#x5168;&#x81EA;&#x52A8;&#x7684;&#x533A;&#x522B;&#x5728;&#x54EA;&#x91CC;&#xFF1F;</h2>
+<p>Hibernate&#x5C5E;&#x4E8E;&#x5168;&#x81EA;&#x52A8;ORM&#x6620;&#x5C04;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x7528;Hibernate&#x67E5;&#x8BE2;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x6216;&#x8005;&#x5173;&#x8054;&#x96C6;&#x5408;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5BF9;&#x8C61;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x76F4;&#x63A5;&#x83B7;&#x53D6;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x662F;&#x5168;&#x81EA;&#x52A8;&#x7684;&#x3002;&#x800C;Mybatis&#x5728;&#x67E5;&#x8BE2;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x6216;&#x5173;&#x8054;&#x96C6;&#x5408;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x624B;&#x52A8;&#x7F16;&#x5199;sql&#x6765;&#x5B8C;&#x6210;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A;&#x534A;&#x81EA;&#x52A8;ORM&#x6620;&#x5C04;&#x5DE5;&#x5177;&#x3002;</p>
+<h2 id="&#x4E00;&#x5BF9;&#x4E00;&#x3001;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x5173;&#x8054;&#x67E5;&#x8BE2;-&#xFF1F;"><a name="&#x4E00;&#x5BF9;&#x4E00;&#x3001;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x5173;&#x8054;&#x67E5;&#x8BE2;-&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x5BF9;&#x4E00;&#x3001;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x5173;&#x8054;&#x67E5;&#x8BE2;-&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>19. &#x4E00;&#x5BF9;&#x4E00;&#x3001;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x5173;&#x8054;&#x67E5;&#x8BE2; &#xFF1F;</h2>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">namespace</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.lcb.mapping.userMapper<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>  
+    <span class="token comment">&lt;!--association  &#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x8054;&#x67E5;&#x8BE2; --&gt;</span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>getClass<span class="token punctuation">&quot;</span></span> <span class="token attr-name">parameterType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>int<span class="token punctuation">&quot;</span></span> <span class="token attr-name">resultMap</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ClassesResultMap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>  
+        select * from class c,teacher t where c.teacher_id=t.t_id and c.c_id=#{id}  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>  
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resultMap</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.lcb.user.Classes<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ClassesResultMap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>  
+        <span class="token comment">&lt;!-- &#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x548C;&#x6570;&#x636E;&#x8868;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#x6620;&#x5C04; --&gt;</span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>c_id<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>c_name<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>association</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>teacher<span class="token punctuation">&quot;</span></span> <span class="token attr-name">javaType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.lcb.user.Teacher<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>  
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>t_id<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>t_name<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>association</span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>resultMap</span><span class="token punctuation">&gt;</span></span>  
+
+
+    <span class="token comment">&lt;!-- collection  &#x4E00;&#x5BF9;&#x591A;&#x5173;&#x8054;&#x67E5;&#x8BE2; --&gt;</span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>getClass2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">parameterType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>int<span class="token punctuation">&quot;</span></span> <span class="token attr-name">resultMap</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ClassesResultMap2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>  
+        select * from class c,teacher t,student s where c.teacher_id=t.t_id and c.c_id=s.class_id and c.c_id=#{id}  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>  
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resultMap</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.lcb.user.Classes<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ClassesResultMap2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>c_id<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>c_name<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>association</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>teacher<span class="token punctuation">&quot;</span></span> <span class="token attr-name">javaType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.lcb.user.Teacher<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>  
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>t_id<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>t_name<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>association</span><span class="token punctuation">&gt;</span></span>  
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>collection</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>student<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ofType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>com.lcb.user.Student<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>  
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>id<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>s_id<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>result</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">column</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>s_name<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>collection</span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>resultMap</span><span class="token punctuation">&gt;</span></span>  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mapper</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="mybatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x4E00;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;&#x5177;&#x4F53;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;"><a name="mybatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x4E00;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;&#x5177;&#x4F53;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mybatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x4E00;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;&#x5177;&#x4F53;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>20. MyBatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x4E00;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;&#x5177;&#x4F53;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;</h2>
+<p>&#x6709;&#x8054;&#x5408;&#x67E5;&#x8BE2;&#x548C;&#x5D4C;&#x5957;&#x67E5;&#x8BE2;&#xFF0C;&#x8054;&#x5408;&#x67E5;&#x8BE2;&#x662F;&#x51E0;&#x4E2A;&#x8868;&#x8054;&#x5408;&#x67E5;&#x8BE2;&#xFF0C;&#x53EA;&#x67E5;&#x8BE2;&#x4E00;&#x6B21;, &#x901A;&#x8FC7;&#x5728;resultMap&#x91CC;&#x9762;&#x914D;&#x7F6E;association&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x4E00;&#x5BF9;&#x4E00;&#x7684;&#x7C7B;&#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;; &#x5D4C;&#x5957;&#x67E5;&#x8BE2;&#x662F;&#x5148;&#x67E5;&#x4E00;&#x4E2A;&#x8868;&#xFF0C;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x8868;&#x91CC;&#x9762; &#x7684;&#x7ED3;&#x679C;&#x7684;&#x5916;&#x952E;id,&#x53BB;&#x518D;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x8868;&#x91CC;&#x9762;&#x67E5;&#x8BE2;&#x6570;&#x636E;,&#x4E5F;&#x662F;&#x901A;&#x8FC7;association&#x914D;&#x7F6E;,&#x4F46;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x8868;&#x7684;&#x67E5;&#x8BE2;&#x901A;&#x8FC7;select&#x5C5E;&#x6027;&#x914D;&#x7F6E;&#x3002;</p>
+<h2 id="mybatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x591A;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;"><a name="mybatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x591A;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mybatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x591A;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>21. MyBatis&#x5B9E;&#x73B0;&#x4E00;&#x5BF9;&#x591A;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x600E;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#xFF1F;</h2>
+<p>&#x6709;&#x8054;&#x5408;&#x67E5;&#x8BE2;&#x548C;&#x5D4C;&#x5957;&#x67E5;&#x8BE2;,&#x8054;&#x5408;&#x67E5;&#x8BE2;&#x662F;&#x51E0;&#x4E2A;&#x8868;&#x8054;&#x5408;&#x67E5;&#x8BE2;&#xFF0C;&#x53EA;&#x67E5;&#x8BE2;&#x4E00;&#x6B21;&#xFF0C;&#x901A;&#x8FC7;&#x5728;resultMap&#x91CC;&#x9762;&#x914D; &#x7F6E;collection&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x7C7B;&#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#xFF1B;&#x5D4C;&#x5957;&#x67E5;&#x8BE2;&#x662F;&#x5148;&#x67E5;&#x4E00;&#x4E2A;&#x8868;,&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x8868;&#x91CC;&#x9762;&#x7684;&#x7ED3;&#x679C;&#x7684;&#x5916;&#x952E;id&#xFF0C;&#x53BB;&#x518D;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x8868;&#x91CC;&#x9762;&#x67E5;&#x8BE2;&#x6570;&#x636E;,&#x4E5F;&#x662F;&#x901A;&#x8FC7;&#x914D;&#x7F6E;collection&#xFF0C;&#x4F46;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x8868;&#x7684;&#x67E5;&#x8BE2;&#x901A;&#x8FC7;select&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x3002;</p>
+<h2 id="&#x7B80;&#x8FF0;mybatis&#x7684;&#x63D2;&#x4EF6;&#x8FD0;&#x884C;&#x539F;&#x7406;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x3002;"><a name="&#x7B80;&#x8FF0;mybatis&#x7684;&#x63D2;&#x4EF6;&#x8FD0;&#x884C;&#x539F;&#x7406;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x3002;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x8FF0;mybatis&#x7684;&#x63D2;&#x4EF6;&#x8FD0;&#x884C;&#x539F;&#x7406;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>22. &#x7B80;&#x8FF0;Mybatis&#x7684;&#x63D2;&#x4EF6;&#x8FD0;&#x884C;&#x539F;&#x7406;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x3002;</h2>
+<p>Mybatis&#x4EC5;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x9488;&#x5BF9;ParameterHandler&#x3001;ResultSetHandler&#x3001;StatementHandler&#x3001;Executor&#x8FD9;4&#x79CD;&#x63A5;&#x53E3;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;Mybatis&#x4F7F;&#x7528;JDK&#x7684;&#x52A8;&#x6001;&#x4EE3;&#x7406;&#xFF0C;&#x4E3A;&#x9700;&#x8981;&#x62E6;&#x622A;&#x7684;&#x63A5;&#x53E3;&#x751F;&#x6210;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#x4EE5;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x62E6;&#x622A;&#x529F;&#x80FD;&#xFF0C;&#x6BCF;&#x5F53;&#x6267;&#x884C;&#x8FD9;4&#x79CD;&#x63A5;&#x53E3;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x8FDB;&#x5165;&#x62E6;&#x622A;&#x65B9;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x5C31;&#x662F;InvocationHandler&#x7684;invoke()&#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x53EA;&#x4F1A;&#x62E6;&#x622A;&#x90A3;&#x4E9B;&#x4F60;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x62E6;&#x622A;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x7F16;&#x5199;&#x63D2;&#x4EF6;&#xFF1A;&#x5B9E;&#x73B0;Mybatis&#x7684;Interceptor&#x63A5;&#x53E3;&#x5E76;&#x590D;&#x5199;intercept()&#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x7ED9;&#x63D2;&#x4EF6;&#x7F16;&#x5199;&#x6CE8;&#x89E3;&#xFF0C;&#x6307;&#x5B9A;&#x8981;&#x62E6;&#x622A;&#x54EA;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#x5373;&#x53EF;&#xFF0C;&#x8BB0;&#x4F4F;&#xFF0C;&#x522B;&#x5FD8;&#x4E86;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x914D;&#x7F6E;&#x4F60;&#x7F16;&#x5199;&#x7684;&#x63D2;&#x4EF6;&#x3002;</p>
+<h2 id="mybatis&#x662F;&#x5426;&#x652F;&#x6301;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF1F;&#x5982;&#x679C;&#x652F;&#x6301;&#xFF0C;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="mybatis&#x662F;&#x5426;&#x652F;&#x6301;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF1F;&#x5982;&#x679C;&#x652F;&#x6301;&#xFF0C;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mybatis&#x662F;&#x5426;&#x652F;&#x6301;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF1F;&#x5982;&#x679C;&#x652F;&#x6301;&#xFF0C;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>23. Mybatis&#x662F;&#x5426;&#x652F;&#x6301;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF1F;&#x5982;&#x679C;&#x652F;&#x6301;&#xFF0C;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<p>Mybatis&#x4EC5;&#x652F;&#x6301;association&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x548C;collection&#x5173;&#x8054;&#x96C6;&#x5408;&#x5BF9;&#x8C61;&#x7684;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#xFF0C;association&#x6307;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x5BF9;&#x4E00;&#xFF0C;collection&#x6307;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x5BF9;&#x591A;&#x67E5;&#x8BE2;&#x3002;&#x5728;Mybatis&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x662F;&#x5426;&#x542F;&#x7528;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;lazyLoadingEnabled=true|false&#x3002;</p>
+<p>&#x5B83;&#x7684;&#x539F;&#x7406;&#x662F;&#xFF0C;&#x4F7F;&#x7528;CGLIB&#x521B;&#x5EFA;&#x76EE;&#x6807;&#x5BF9;&#x8C61;&#x7684;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#xFF0C;&#x5F53;&#x8C03;&#x7528;&#x76EE;&#x6807;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8FDB;&#x5165;&#x62E6;&#x622A;&#x5668;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x8C03;&#x7528;a.getB().getName()&#xFF0C;&#x62E6;&#x622A;&#x5668;invoke()&#x65B9;&#x6CD5;&#x53D1;&#x73B0;a.getB()&#x662F;null&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x5355;&#x72EC;&#x53D1;&#x9001;&#x4E8B;&#x5148;&#x4FDD;&#x5B58;&#x597D;&#x7684;&#x67E5;&#x8BE2;&#x5173;&#x8054;B&#x5BF9;&#x8C61;&#x7684;sql&#xFF0C;&#x628A;B&#x67E5;&#x8BE2;&#x4E0A;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;a.setB(b)&#xFF0C;&#x4E8E;&#x662F;a&#x7684;&#x5BF9;&#x8C61;b&#x5C5E;&#x6027;&#x5C31;&#x6709;&#x503C;&#x4E86;&#xFF0C;&#x63A5;&#x7740;&#x5B8C;&#x6210;a.getB().getName()&#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x7684;&#x57FA;&#x672C;&#x539F;&#x7406;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x4E0D;&#x5149;&#x662F;Mybatis&#xFF0C;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x5305;&#x62EC;Hibernate&#xFF0C;&#x652F;&#x6301;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x7684;&#x539F;&#x7406;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<h2 id="mybatis&#x7684;&#x4E00;&#x7EA7;&#x3001;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;"><a name="mybatis&#x7684;&#x4E00;&#x7EA7;&#x3001;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#mybatis&#x7684;&#x4E00;&#x7EA7;&#x3001;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>24. Mybatis&#x7684;&#x4E00;&#x7EA7;&#x3001;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;</h2>
+<ul>
+<li><p>&#x4E00;&#x7EA7;&#x7F13;&#x5B58;: &#x57FA;&#x4E8E; PerpetualCache &#x7684; HashMap &#x672C;&#x5730;&#x7F13;&#x5B58;&#xFF0C;&#x5176;&#x5B58;&#x50A8;&#x4F5C;&#x7528;&#x57DF;&#x4E3A; Session&#xFF0C;&#x5F53; Session flush &#x6216; close &#x4E4B;&#x540E;&#xFF0C;&#x8BE5; Session &#x4E2D;&#x7684;&#x6240;&#x6709; Cache &#x5C31;&#x5C06;&#x6E05;&#x7A7A;&#xFF0C;&#x9ED8;&#x8BA4;&#x6253;&#x5F00;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x3002;</p>
+</li>
+<li><p>&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x4E0E;&#x4E00;&#x7EA7;&#x7F13;&#x5B58;&#x5176;&#x673A;&#x5236;&#x76F8;&#x540C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E5F;&#x662F;&#x91C7;&#x7528; PerpetualCache&#xFF0C;HashMap &#x5B58;&#x50A8;&#xFF0C;&#x4E0D;&#x540C;&#x5728;&#x4E8E;&#x5176;&#x5B58;&#x50A8;&#x4F5C;&#x7528;&#x57DF;&#x4E3A; Mapper(Namespace)&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x81EA;&#x5B9A;&#x4E49;&#x5B58;&#x50A8;&#x6E90;&#xFF0C;&#x5982; Ehcache&#x3002;&#x9ED8;&#x8BA4;&#x4E0D;&#x6253;&#x5F00;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C;&#x8981;&#x5F00;&#x542F;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#xFF0C;&#x4F7F;&#x7528;&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;&#x5C5E;&#x6027;&#x7C7B;&#x9700;&#x8981;&#x5B9E;&#x73B0;Serializable&#x5E8F;&#x5217;&#x5316;&#x63A5;&#x53E3;(&#x53EF;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;),&#x53EF;&#x5728;&#x5B83;&#x7684;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x4E2D;&#x914D;&#x7F6E;&lt;cache/&gt; &#xFF1B;</p>
+</li>
+<li><p>&#x5BF9;&#x4E8E;&#x7F13;&#x5B58;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x673A;&#x5236;&#xFF0C;&#x5F53;&#x67D0;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;(&#x4E00;&#x7EA7;&#x7F13;&#x5B58; Session/&#x4E8C;&#x7EA7;&#x7F13;&#x5B58;Namespaces)&#x7684;&#x8FDB;&#x884C;&#x4E86;C/U/D &#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x9ED8;&#x8BA4;&#x8BE5;&#x4F5C;&#x7528;&#x57DF;&#x4E0B;&#x6240;&#x6709; select &#x4E2D;&#x7684;&#x7F13;&#x5B58;&#x5C06;&#x88AB; clear&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;mybatis&#x7684;&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;"><a name="&#x4EC0;&#x4E48;&#x662F;mybatis&#x7684;&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;mybatis&#x7684;&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>25. &#x4EC0;&#x4E48;&#x662F;MyBatis&#x7684;&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;,&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x5904;&#xFF1F;</h2>
+<p>&#x63A5;&#x53E3;&#x6620;&#x5C04;&#x5C31;&#x662F;&#x5728;MyBatis&#x4E2D;&#x4EFB;&#x610F;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;,&#x7136;&#x540E;&#x628A;&#x63A5;&#x53E3;&#x91CC;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x548C;SQL&#x8BED;&#x53E5;&#x7ED1;&#x5B9A;, &#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x5C31;&#x53EF;&#x4EE5;,&#x8FD9;&#x6837;&#x6BD4;&#x8D77;&#x539F;&#x6765;&#x4E86;SqlSession&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6709;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#x7684;&#x9009;&#x62E9;&#x548C;&#x8BBE;&#x7F6E;.</p>
+<h2 id="&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x51E0;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x5206;&#x522B;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;"><a name="&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x51E0;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x5206;&#x522B;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x51E0;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x5206;&#x522B;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;"><i class="fa fa-link" aria-hidden="true"></i></a>26. &#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x51E0;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;,&#x5206;&#x522B;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;?</h2>
+<p>&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;&#x6709;&#x4E24;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;,&#x4E00;&#x79CD;&#x662F;&#x901A;&#x8FC7;&#x6CE8;&#x89E3;&#x7ED1;&#x5B9A;,&#x5C31;&#x662F;&#x5728;&#x63A5;&#x53E3;&#x7684;&#x65B9;&#x6CD5;&#x4E0A;&#x9762;&#x52A0;&#x4E0A; @Select&#x3001;@Update&#x7B49;&#x6CE8;&#x89E3;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B;Sql&#x8BED;&#x53E5;&#x6765;&#x7ED1;&#x5B9A;&#xFF1B;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x5C31;&#x662F;&#x901A;&#x8FC7;xml&#x91CC;&#x9762;&#x5199;SQL&#x6765;&#x7ED1;&#x5B9A;, &#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;,&#x8981;&#x6307;&#x5B9A;xml&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x7684;namespace&#x5FC5;&#x987B;&#x4E3A;&#x63A5;&#x53E3;&#x7684;&#x5168;&#x8DEF;&#x5F84;&#x540D;&#x3002;</p>
+<h2 id="&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x6CE8;&#x89E3;&#x7ED1;&#x5B9A;&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;xml&#x7ED1;&#x5B9A;-&#xFF1F;"><a name="&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x6CE8;&#x89E3;&#x7ED1;&#x5B9A;&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;xml&#x7ED1;&#x5B9A;-&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x6CE8;&#x89E3;&#x7ED1;&#x5B9A;&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;xml&#x7ED1;&#x5B9A;-&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>27. &#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x6CE8;&#x89E3;&#x7ED1;&#x5B9A;,&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x7528;xml&#x7ED1;&#x5B9A; &#xFF1F;</h2>
+<p>&#x5F53;Sql&#x8BED;&#x53E5;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x65F6;&#x5019;,&#x7528;&#x6CE8;&#x89E3;&#x7ED1;&#x5B9A;, &#x5F53;SQL&#x8BED;&#x53E5;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#x65F6;&#x5019;,&#x7528;xml&#x7ED1;&#x5B9A;,&#x4E00;&#x822C;&#x7528;xml&#x7ED1;&#x5B9A;&#x7684;&#x6BD4;&#x8F83;&#x591A;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;mybatis&#x7684;mapper&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x65F6;&#x6709;&#x54EA;&#x4E9B;&#x8981;&#x6C42;&#xFF1F;"><a name="&#x4F7F;&#x7528;mybatis&#x7684;mapper&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x65F6;&#x6709;&#x54EA;&#x4E9B;&#x8981;&#x6C42;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;mybatis&#x7684;mapper&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x65F6;&#x6709;&#x54EA;&#x4E9B;&#x8981;&#x6C42;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>28. &#x4F7F;&#x7528;MyBatis&#x7684;mapper&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x65F6;&#x6709;&#x54EA;&#x4E9B;&#x8981;&#x6C42;&#xFF1F;</h2>
+<ol>
+<li>Mapper&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x540D;&#x548C;mapper.xml&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6BCF;&#x4E2A;sql&#x7684;id&#x76F8;&#x540C; &#xFF1B;</li>
+<li>Mapper&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x7684;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x548C;mapper.xml&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6BCF;&#x4E2A;sql &#x7684;parameterType&#x7684;&#x7C7B;&#x578B;&#x76F8;&#x540C; &#xFF1B;</li>
+<li>Mapper&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x7684;&#x8F93;&#x51FA;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x548C;mapper.xml&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6BCF;&#x4E2A;sql&#x7684;resultType&#x7684;&#x7C7B;&#x578B;&#x76F8;&#x540C; &#xFF1B;</li>
+<li>Mapper.xml&#x6587;&#x4EF6;&#x4E2D;&#x7684;namespace&#x5373;&#x662F;mapper&#x63A5;&#x53E3;&#x7684;&#x7C7B;&#x8DEF;&#x5F84;&#x3002;</li>
+</ol>
+<h2 id="mapper&#x7F16;&#x5199;&#x6709;&#x54EA;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;"><a name="mapper&#x7F16;&#x5199;&#x6709;&#x54EA;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mapper&#x7F16;&#x5199;&#x6709;&#x54EA;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>29. Mapper&#x7F16;&#x5199;&#x6709;&#x54EA;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;</h2>
+<p><strong>&#x7B2C;&#x4E00;&#x79CD;</strong> &#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x7C7B;&#x7EE7;&#x627F;SqlSessionDaoSupport&#xFF1A;</p>
+<p>&#x4F7F;&#x7528;&#x6B64;&#x79CD;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x7F16;&#x5199;mapper&#x63A5;&#x53E3;&#xFF0C;mapper&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x7C7B;&#x3001;mapper.xml&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;&#x5728;sqlMapConfig.xml&#x4E2D;&#x914D;&#x7F6E;mapper.xml&#x7684;&#x4F4D;&#x7F6E;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mappers</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">resource</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mapper.xml&#x6587;&#x4EF6;&#x7684;&#x5730;&#x5740;<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">resource</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mapper.xml&#x6587;&#x4EF6;&#x7684;&#x5730;&#x5740;<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mappers</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#xFF08;2&#xFF09;&#x5B9A;&#x4E49;mapper&#x63A5;&#x53E3;</p>
+<p>&#xFF08;3&#xFF09;&#x5B9E;&#x73B0;&#x7C7B;&#x96C6;&#x6210;SqlSessionDaoSupport</p>
+<p>mapper&#x65B9;&#x6CD5;&#x4E2D;&#x53EF;&#x4EE5;this.getSqlSession()&#x8FDB;&#x884C;&#x6570;&#x636E;&#x589E;&#x5220;&#x6539;&#x67E5;&#x3002;</p>
+<p>&#xFF08;4&#xFF09;spring &#x914D;&#x7F6E;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span> <span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mapper&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sqlSessionFactory<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sqlSessionFactory<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bean</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><strong>&#x7B2C;&#x4E8C;&#x79CD;</strong> &#x4F7F;&#x7528;org.mybatis.spring.mapper.MapperFactoryBean&#xFF1A;</p>
+<p>&#xFF08;1&#xFF09;&#x5728;sqlMapConfig.xml&#x4E2D;&#x914D;&#x7F6E;mapper.xml&#x7684;&#x4F4D;&#x7F6E;
+&#x5982;&#x679C;mapper.xml&#x548C;mappre&#x63A5;&#x53E3;&#x7684;&#x540D;&#x79F0;&#x76F8;&#x540C;&#x4E14;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x914D;&#x7F6E;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mappers</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">resource</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mapper.xml&#x6587;&#x4EF6;&#x7684;&#x5730;&#x5740;<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mapper</span> <span class="token attr-name">resource</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mapper.xml&#x6587;&#x4EF6;&#x7684;&#x5730;&#x5740;<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mappers</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#xFF08;2&#xFF09;&#x5B9A;&#x4E49;mapper&#x63A5;&#x53E3;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ol>
+<li>mapper.xml&#x4E2D;&#x7684;namespace&#x4E3A;mapper&#x63A5;&#x53E3;&#x7684;&#x5730;&#x5740;</li>
+<li>mapper&#x63A5;&#x53E3;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#x548C;mapper.xml&#x4E2D;&#x7684;&#x5B9A;&#x4E49;&#x7684;statement&#x7684;id&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
+<li>Spring&#x4E2D;&#x5B9A;&#x4E49;</li>
+</ol>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>org.mybatis.spring.mapper.MapperFactoryBean<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mapperInterface<span class="token punctuation">&quot;</span></span>   <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mapper&#x63A5;&#x53E3;&#x5730;&#x5740;<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sqlSessionFactory<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sqlSessionFactory<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bean</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><strong>&#x7B2C;&#x4E09;&#x79CD;</strong> &#x4F7F;&#x7528;mapper&#x626B;&#x63CF;&#x5668;&#xFF1A;</p>
+<p>&#xFF08;1&#xFF09;mapper.xml&#x6587;&#x4EF6;&#x7F16;&#x5199;&#xFF1A;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li>mapper.xml&#x4E2D;&#x7684;namespace&#x4E3A;mapper&#x63A5;&#x53E3;&#x7684;&#x5730;&#x5740;</li>
+<li>mapper&#x63A5;&#x53E3;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#x548C;mapper.xml&#x4E2D;&#x7684;&#x5B9A;&#x4E49;&#x7684;statement&#x7684;id&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
+<li>&#x5982;&#x679C;&#x5C06;mapper.xml&#x548C;mapper&#x63A5;&#x53E3;&#x7684;&#x540D;&#x79F0;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x5219;&#x4E0D;&#x7528;&#x5728;sqlMapConfig.xml&#x4E2D;&#x8FDB;&#x884C;&#x914D;&#x7F6E; </li>
+</ul>
+<p>&#xFF08;2&#xFF09;&#x5B9A;&#x4E49;mapper&#x63A5;&#x53E3;</p>
+<p>&#x6CE8;&#x610F;mapper.xml&#x7684;&#x6587;&#x4EF6;&#x540D;&#x548C;mapper&#x7684;&#x63A5;&#x53E3;&#x540D;&#x79F0;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x4E14;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;</p>
+<p>&#xFF08;3&#xFF09;&#x914D;&#x7F6E;mapper&#x626B;&#x63CF;&#x5668;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>bean</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>org.mybatis.spring.mapper.MapperScannerConfigurer<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>basePackage<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mapper&#x63A5;&#x53E3;&#x5305;&#x5730;&#x5740;<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sqlSessionFactoryBeanName<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sqlSessionFactory<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>bean</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#xFF08;4&#xFF09;&#x4F7F;&#x7528;&#x626B;&#x63CF;&#x5668;&#x540E;&#x4ECE;spring&#x5BB9;&#x5668;&#x4E2D;&#x83B7;&#x53D6;mapper&#x7684;&#x5B9E;&#x73B0;&#x5BF9;&#x8C61;</p>
+<h2 id="mybatis&#x6BD4;ibatis&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x51E0;&#x4E2A;&#x6539;&#x8FDB;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="mybatis&#x6BD4;ibatis&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x51E0;&#x4E2A;&#x6539;&#x8FDB;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#mybatis&#x6BD4;ibatis&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x51E0;&#x4E2A;&#x6539;&#x8FDB;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>30. Mybatis&#x6BD4;IBatis&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x51E0;&#x4E2A;&#x6539;&#x8FDB;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<ol>
+<li>&#x6709;&#x63A5;&#x53E3;&#x7ED1;&#x5B9A;,&#x5305;&#x62EC;&#x6CE8;&#x89E3;&#x7ED1;&#x5B9A;sql&#x548C;xml&#x7ED1;&#x5B9A;Sql&#x3002;</li>
+<li>&#x52A8;&#x6001;sql&#x7531;&#x539F;&#x6765;&#x7684;&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x53D8;&#x6210;OGNL&#x8868;&#x8FBE;&#x5F0F;&#x3002;</li>
+<li>&#x5728;&#x4E00;&#x5BF9;&#x4E00;&#xFF0C;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x65F6;&#x5019;&#x5F15;&#x8FDB;&#x4E86;association&#xFF0C;&#x5728;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x65F6;&#x5019;&#x5F15;&#x5165;&#x4E86;collection &#x8282;&#x70B9;&#xFF0C;&#x4E0D;&#x8FC7;&#x90FD;&#x662F;&#x5728;resultMap&#x91CC;&#x9762;&#x914D;&#x7F6E;&#x3002;</li>
+</ol>
+<h2 id="ibatis&#x548C;mybatis&#x5728;&#x6838;&#x5FC3;&#x5904;&#x7406;&#x7C7B;&#x5206;&#x522B;&#x53EB;&#x4EC0;&#x4E48;&#xFF1F;"><a name="ibatis&#x548C;mybatis&#x5728;&#x6838;&#x5FC3;&#x5904;&#x7406;&#x7C7B;&#x5206;&#x522B;&#x53EB;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#ibatis&#x548C;mybatis&#x5728;&#x6838;&#x5FC3;&#x5904;&#x7406;&#x7C7B;&#x5206;&#x522B;&#x53EB;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>31. IBatis&#x548C;MyBatis&#x5728;&#x6838;&#x5FC3;&#x5904;&#x7406;&#x7C7B;&#x5206;&#x522B;&#x53EB;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<p>IBatis&#x91CC;&#x9762;&#x7684;&#x6838;&#x5FC3;&#x5904;&#x7406;&#x7C7B;&#x4EA4;SqlMapClient, MyBatis&#x91CC;&#x9762;&#x7684;&#x6838;&#x5FC3;&#x5904;&#x7406;&#x7C7B;&#x53EB;&#x505A;SqlSession</p>
+<h2 id="ibatis&#x548C;mybatis&#x5728;&#x7EC6;&#x8282;&#x4E0A;&#x7684;&#x4E0D;&#x540C;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;"><a name="ibatis&#x548C;mybatis&#x5728;&#x7EC6;&#x8282;&#x4E0A;&#x7684;&#x4E0D;&#x540C;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#ibatis&#x548C;mybatis&#x5728;&#x7EC6;&#x8282;&#x4E0A;&#x7684;&#x4E0D;&#x540C;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>32. IBatis&#x548C;MyBatis&#x5728;&#x7EC6;&#x8282;&#x4E0A;&#x7684;&#x4E0D;&#x540C;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;</h2>
+<ol>
+<li>&#x5728;sql&#x91CC;&#x9762;&#x53D8;&#x91CF;&#x547D;&#x540D;&#x6709;&#x539F;&#x6765;&#x7684;#&#x53D8;&#x91CF;# &#x53D8;&#x6210;&#x4E86;#{&#x53D8;&#x91CF;} &#x539F;&#x6765;&#x7684;$&#x53D8;&#x91CF;$&#x53D8;&#x6210;&#x4E86;${&#x53D8;&#x91CF;},&#xFF1B;</li>
+<li>&#x539F;&#x6765;&#x5728;sql&#x8282;&#x70B9;&#x91CC;&#x9762;&#x7684;class&#x90FD;&#x6362;&#x540D;&#x5B57;&#x4EA4;type&#xFF1B;</li>
+<li>&#x539F;&#x6765;&#x7684;queryForObject&#x3001;queryForList &#x53D8;&#x6210;&#x4E86;selectOne&#x3001;selectList&#xFF1B;</li>
+<li>&#x539F;&#x6765;&#x7684;&#x522B;&#x540D;&#x8BBE;&#x7F6E;&#x5728;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x653E;&#x5728;&#x4E86;&#x6838;&#x5FC3;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;</li>
+</ol>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"></p><p class="paragraph footer__quote--normal" style="color: #000 !important;">Everything you need to prepare for your technical interview.</p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">modified at</span>
+2019-02-18
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hibernate.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Hibernate">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Mybatis","level":"3.5","depth":1,"next":{"title":"WebService","level":"3.6","depth":1,"ref":"","articles":[]},"previous":{"title":"Hibernate","level":"3.4","depth":1,"path":"java_web/hibernate.md","ref":"java_web/hibernate.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","-sharing","folding-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex","fancybox","insert-logo-link-style","page-copyright"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"page-copyright":{"wisdom":"Everything you need to prepare for your technical interview.","noPowered":true,"copyright":"Copyright &#169; edu2act","styles (normal, symmetrical)":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd","signature":"edu2act","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"modified at"},"insert-logo-link-style":{"src":"images/logo.png","style":"background: none; width: 220px;","link":"http://github.com/edu2act"},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/apple-touch-icon.png","appleTouchMore":{"120x120":"images/apple-touch-icon-120x120.png","180x180":"images/apple-touch-icon-180x180.png"}},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"java_web/mybatis.md","mtime":"2019-02-18T08:27:56.295Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-02-19T00:51:51.119Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

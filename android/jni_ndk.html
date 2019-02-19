@@ -1,0 +1,1040 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>JNI&NDK · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="fragment.html" />
+    
+    
+    <link rel="prev" href="listview.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="../java_core/grammar.html">
+            
+                <a href="../java_core/grammar.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../java_core/exception.html">
+            
+                <a href="../java_core/exception.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../java_core/collection.html">
+            
+                <a href="../java_core/collection.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../java_core/thread.html">
+            
+                <a href="../java_core/thread.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../java_core/io.html">
+            
+                <a href="../java_core/io.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../java_core/socket.html">
+            
+                <a href="../java_core/socket.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="../java_web/jsp_servlet.html">
+            
+                <a href="../java_web/jsp_servlet.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Jsp&Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../java_web/jdbc.html">
+            
+                <a href="../java_web/jdbc.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../java_web/spring.html">
+            
+                <a href="../java_web/spring.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../java_web/hibernate.html">
+            
+                <a href="../java_web/hibernate.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../java_web/mybatis.html">
+            
+                <a href="../java_web/mybatis.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+                <span>
+            
+                    
+                        <b>3.6.</b>
+                    
+                    WebService
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    基本常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="activity.html">
+            
+                <a href="activity.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="service.html">
+            
+                <a href="service.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="broad_cast_receiver.html">
+            
+                <a href="broad_cast_receiver.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    BroadCastReceiver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="content_provider.html">
+            
+                <a href="content_provider.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    ContentProvider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="intent.html">
+            
+                <a href="intent.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="layout.html">
+            
+                <a href="layout.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="listview.html">
+            
+                <a href="listview.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    ListView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.9" data-path="jni_ndk.html">
+            
+                <a href="jni_ndk.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    JNI&NDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="fragment.html">
+            
+                <a href="fragment.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="multi_threading.html">
+            
+                <a href="multi_threading.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    网络访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="../hr/hr.html">
+            
+                <a href="../hr/hr.html">
+            
+                    
+                        <b>7.</b>
+                    
+                    人事面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="../article/p001.html">
+            
+                <a href="../article/p001.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    什么是低耦合高内聚
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../article/p002.html">
+            
+                <a href="../article/p002.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    Java中的作用域的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../article/p003.html">
+            
+                <a href="../article/p003.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../article/p004.html">
+            
+                <a href="../article/p004.html">
+            
+                    
+                        <b>8.4.</b>
+                    
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="../article/p005.html">
+            
+                <a href="../article/p005.html">
+            
+                    
+                        <b>8.5.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="../article/p006.html">
+            
+                <a href="../article/p006.html">
+            
+                    
+                        <b>8.6.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="../article/p007.html">
+            
+                <a href="../article/p007.html">
+            
+                    
+                        <b>8.7.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="../article/p008.html">
+            
+                <a href="../article/p008.html">
+            
+                    
+                        <b>8.8.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="../article/p009.html">
+            
+                <a href="../article/p009.html">
+            
+                    
+                        <b>8.9.</b>
+                    
+                    反射使用实例详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="../article/p010.html">
+            
+                <a href="../article/p010.html">
+            
+                    
+                        <b>8.10.</b>
+                    
+                    内存区域和GC机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="../article/p011.html">
+            
+                <a href="../article/p011.html">
+            
+                    
+                        <b>8.11.</b>
+                    
+                    成为Java GC专家(1)：深入浅出Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="../article/p012.html">
+            
+                <a href="../article/p012.html">
+            
+                    
+                        <b>8.12.</b>
+                    
+                    成为Java GC专家(2)：如何监控Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="../article/p013.html">
+            
+                <a href="../article/p013.html">
+            
+                    
+                        <b>8.13.</b>
+                    
+                    成为Java GC专家(3)：如何优化Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.14" data-path="../article/p014.html">
+            
+                <a href="../article/p014.html">
+            
+                    
+                        <b>8.14.</b>
+                    
+                    成为Java GC专家(4)：Apache的MaxClients参数详解及其在Tomcat执行FullGC时的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.15" data-path="../article/p015.html">
+            
+                <a href="../article/p015.html">
+            
+                    
+                        <b>8.15.</b>
+                    
+                    面向对象的六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.16" data-path="../article/p016.html">
+            
+                <a href="../article/p016.html">
+            
+                    
+                        <b>8.16.</b>
+                    
+                    Java集合专题总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JNI&NDK</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#android&#x9762;&#x8BD5;&#x9898;&#xFF1A;jnindk"><b> </b>Android&#x9762;&#x8BD5;&#x9898;&#xFF1A;JNI&amp;NDK</a></li><ul><li><span class="title-icon "></span><a href="#&#x5728;android&#x4E2D;&#x5982;&#x4F55;&#x8C03;&#x7528;c&#x8BED;&#x8A00;"><b>1. </b>&#x5728;Android&#x4E2D;&#x5982;&#x4F55;&#x8C03;&#x7528;C&#x8BED;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#&#x8BF7;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;ndk"><b>2. </b>&#x8BF7;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;NDK</a></li><li><span class="title-icon "></span><a href="#jni&#x8C03;&#x7528;&#x5E38;&#x7528;&#x7684;&#x4E24;&#x4E2A;&#x53C2;&#x6570;"><b>3. </b>JNI&#x8C03;&#x7528;&#x5E38;&#x7528;&#x7684;&#x4E24;&#x4E2A;&#x53C2;&#x6570;</a></li></ul></ul></div><a href="#android&#x9762;&#x8BD5;&#x9898;&#xFF1A;jnindk" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="android&#x9762;&#x8BD5;&#x9898;&#xFF1A;jnindk"><a name="android&#x9762;&#x8BD5;&#x9898;&#xFF1A;jnindk" class="anchor-navigation-ex-anchor" href="#android&#x9762;&#x8BD5;&#x9898;&#xFF1A;jnindk"><i class="fa fa-link" aria-hidden="true"></i></a> Android&#x9762;&#x8BD5;&#x9898;&#xFF1A;JNI&amp;NDK</h1>
+<hr>
+<h2 id="&#x5728;android&#x4E2D;&#x5982;&#x4F55;&#x8C03;&#x7528;c&#x8BED;&#x8A00;"><a name="&#x5728;android&#x4E2D;&#x5982;&#x4F55;&#x8C03;&#x7528;c&#x8BED;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x5728;android&#x4E2D;&#x5982;&#x4F55;&#x8C03;&#x7528;c&#x8BED;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5728;Android&#x4E2D;&#x5982;&#x4F55;&#x8C03;&#x7528;C&#x8BED;&#x8A00;</h2>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x7684;Java&#x9700;&#x8981;&#x8C03;&#x7528;C&#x8BED;&#x8A00;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;JNI&#x7684;&#x65B9;&#x5F0F;&#xFF0C;Java Native Interface&#x3002;Android&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;JNI&#x7684;&#x652F;&#x6301;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5728;Android&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;JNI&#x8C03;&#x7528;C&#x8BED;&#x8A00;&#x3002;&#x5728;Android&#x5F00;&#x53D1;&#x76EE;&#x5F55;&#x7684;libs&#x76EE;&#x5F55;&#x4E0B;&#x6DFB;&#x52A0;xxx.so&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x8FC7;xxx.so&#x6587;&#x4EF6;&#x9700;&#x8981;&#x653E;&#x5728;&#x5BF9;&#x5E94;&#x7684;CPU&#x67B6;&#x6784;&#x540D;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x6BD4;&#x5982;armeabi&#xFF0C;x86&#x7B49;&#x3002;</p>
+<p>&#x5728;Java&#x4EE3;&#x7801;&#x9700;&#x8981;&#x901A;&#x8FC7; System.<em>loadLibrary</em>(libName); &#x52A0;&#x8F7D;so&#x6587;&#x4EF6;&#x3002;&#x540C;&#x65F6;C&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x5728;java&#x4E2D;&#x5FC5;&#x987B;&#x4EE5;native&#x5173;&#x952E;&#x5B57;&#x6765;&#x58F0;&#x660E;&#x3002;&#x666E;&#x901A;Java&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;native&#x65B9;&#x6CD5;&#x63A5;&#x53E3;&#xFF0C;&#x865A;&#x62DF;&#x673A;&#x5185;&#x90E8;&#x81EA;&#x52A8;&#x8C03;&#x7528;so&#x6587;&#x4EF6;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="&#x8BF7;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;ndk"><a name="&#x8BF7;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;ndk" class="anchor-navigation-ex-anchor" href="#&#x8BF7;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;ndk"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x8BF7;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;NDK</h2>
+<h4 id="ndk-&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x5DE5;&#x5177;&#x7684;&#x96C6;&#x5408;"><a name="ndk-&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x5DE5;&#x5177;&#x7684;&#x96C6;&#x5408;" class="anchor-navigation-ex-anchor" href="#ndk-&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x5DE5;&#x5177;&#x7684;&#x96C6;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>NDK &#x662F;&#x4E00;&#x7CFB;&#x5217;&#x5DE5;&#x5177;&#x7684;&#x96C6;&#x5408;</h4>
+<p>NDK &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x8005;&#x5FEB;&#x901F;&#x5F00;&#x53D1;C&#xFF08;&#x6216;C++&#xFF09;&#x7684;&#x52A8;&#x6001;&#x5E93;&#xFF0C;&#x5E76;&#x80FD;&#x81EA;&#x52A8;&#x5C06;so &#x548C;java &#x5E94;&#x7528;&#x4E00;&#x8D77;&#x6253;&#x5305;&#x6210;apk&#x3002;NDK &#x96C6;&#x6210;&#x4E86;&#x4EA4;&#x53C9;&#x7F16;&#x8BD1;&#x5668;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;&#x76F8;&#x5E94;&#x7684;mk &#x6587;&#x4EF6;&#x9694;&#x79BB;CPU&#x3001;&#x5E73;&#x53F0;&#x3001;ABI &#x7B49;&#x5DEE;&#x5F02;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EA;&#x9700;&#x8981;&#x7B80;&#x5355;&#x4FEE;&#x6539;mk &#x6587;&#x4EF6;&#xFF08;&#x6307;&#x51FA;&#x201C;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x201D;&#x3001;&#x201C;&#x7F16;&#x8BD1;&#x7279;&#x6027;&#x8981;&#x6C42;&#x201D;&#x7B49;&#xFF09;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x51FA;so&#x3002;</p>
+<h4 id="ndk&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4EFD;&#x7A33;&#x5B9A;&#x3001;&#x529F;&#x80FD;&#x6709;&#x9650;&#x7684;api&#x5934;&#x6587;&#x4EF6;&#x58F0;&#x660E;"><a name="ndk&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4EFD;&#x7A33;&#x5B9A;&#x3001;&#x529F;&#x80FD;&#x6709;&#x9650;&#x7684;api&#x5934;&#x6587;&#x4EF6;&#x58F0;&#x660E;" class="anchor-navigation-ex-anchor" href="#ndk&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4EFD;&#x7A33;&#x5B9A;&#x3001;&#x529F;&#x80FD;&#x6709;&#x9650;&#x7684;api&#x5934;&#x6587;&#x4EF6;&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>NDK&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4EFD;&#x7A33;&#x5B9A;&#x3001;&#x529F;&#x80FD;&#x6709;&#x9650;&#x7684;API&#x5934;&#x6587;&#x4EF6;&#x58F0;&#x660E;</h4>
+<p>Google &#x660E;&#x786E;&#x58F0;&#x660E;&#x8BE5;API &#x662F;&#x7A33;&#x5B9A;&#x7684;&#xFF0C;&#x5728;&#x540E;&#x7EED;&#x6240;&#x6709;&#x7248;&#x672C;&#x4E2D;&#x90FD;&#x7A33;&#x5B9A;&#x652F;&#x6301;&#x5F53;&#x524D;&#x53D1;&#x5E03;&#x7684;API&#x3002;&#x4ECE;&#x8BE5;&#x7248;&#x672C;&#x7684;NDK &#x4E2D;&#x770B;&#x51FA;&#xFF0C;&#x8FD9;&#x4E9B;API&#x652F;&#x6301;&#x7684;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x6709;&#x9650;&#xFF0C;&#x5305;&#x542B;&#x6709;&#xFF1A;C &#x6807;&#x51C6;&#x5E93;&#xFF08;libc&#xFF09;&#x3001;&#x6807;&#x51C6;&#x6570;&#x5B66;&#x5E93;&#xFF08;libm&#xFF09;&#x3001;&#x538B;&#x7F29;&#x5E93;&#xFF08;libz&#xFF09;&#x3001;Log &#x5E93;&#xFF08;liblog&#xFF09;&#x3002;</p>
+<h2 id="jni&#x8C03;&#x7528;&#x5E38;&#x7528;&#x7684;&#x4E24;&#x4E2A;&#x53C2;&#x6570;"><a name="jni&#x8C03;&#x7528;&#x5E38;&#x7528;&#x7684;&#x4E24;&#x4E2A;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#jni&#x8C03;&#x7528;&#x5E38;&#x7528;&#x7684;&#x4E24;&#x4E2A;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>3. JNI&#x8C03;&#x7528;&#x5E38;&#x7528;&#x7684;&#x4E24;&#x4E2A;&#x53C2;&#x6570;</h2>
+<p>JNIEnv*env,  jobject obj </p>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x6307;&#x5411;&#x865A;&#x62DF;&#x673A;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x4E8C;&#x7EA7;&#x6307;&#x9488;&#x3002;&#x91CC;&#x9762;&#x5C01;&#x88C5;&#x4E86;&#x5F88;&#x591A;&#x65B9;&#x6CD5;&#x548C;&#x4E2D;&#x95F4;&#x53D8;&#x91CF;&#x4F9B;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x4E2A;&#x4EE3;&#x8868;&#x7740;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;Java&#x5BF9;&#x8C61;&#x7684;C&#x8BED;&#x8A00;&#x8868;&#x793A;&#x3002; </p>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"></p><p class="paragraph footer__quote--normal" style="color: #000 !important;">Everything you need to prepare for your technical interview.</p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">modified at</span>
+2019-01-27
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="listview.html" class="navigation navigation-prev " aria-label="Previous page: ListView">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="fragment.html" class="navigation navigation-next " aria-label="Next page: Fragment">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JNI&NDK","level":"4.9","depth":1,"next":{"title":"Fragment","level":"4.10","depth":1,"path":"android/fragment.md","ref":"android/fragment.md","articles":[]},"previous":{"title":"ListView","level":"4.8","depth":1,"path":"android/listview.md","ref":"android/listview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","-sharing","folding-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex","fancybox","insert-logo-link-style","page-copyright"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/edu2act"},"splitter":{},"page-copyright":{"wisdom":"Everything you need to prepare for your technical interview.","noPowered":true,"copyright":"Copyright &#169; edu2act","styles (normal, symmetrical)":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd","signature":"edu2act","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"modified at"},"insert-logo-link-style":{"src":"images/logo.png","style":"background: none; width: 220px;","link":"http://github.com/edu2act"},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/apple-touch-icon.png","appleTouchMore":{"120x120":"images/apple-touch-icon-120x120.png","180x180":"images/apple-touch-icon-180x180.png"}},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"android/jni_ndk.md","mtime":"2019-01-27T06:39:45.814Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-02-19T00:51:51.119Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
