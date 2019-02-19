@@ -2,7 +2,7 @@
 
 ### 面试题目仓库
 
-> 本仓库正在整理上传Java相关面试题目，题目正在逐步添加中。如发现题目问题或面试题目及相关文章推荐请[留言](https://github.com/edu2act/interview/issues)。
+>  本仓库正在整理上传Java相关面试题目，题目正在逐步添加中。如发现题目问题或面试题目及相关文章推荐请[留言](https://github.com/edu2act/interview/issues)。
 
 - 在线查看：[https://edu2act.github.io/interview/](https://edu2act.github.io/interview/)
 - 题目数量：384
@@ -16,7 +16,7 @@
   </thead> 
   <tbody>
     <tr> 
-      <td rowspan="6" style="text-align:center">JavaWeb</td>
+      <td rowspan="6" style="text-align:center">Java基础</td>
       <td style="text-align:center">语法</td> 
       <td style="text-align:center">37</td> 
     </tr> 
@@ -41,7 +41,7 @@
       <td style="text-align:center">1</td> 
     </tr> 
     <tr> 
-      <td rowspan="6" style="text-align:center">JavaWeb</td>
+      <td rowspan="5" style="text-align:center">JavaWeb</td>
       <td style="text-align:center">Jsp&amp;Servlet</td> 
       <td style="text-align:center">19</td> 
     </tr> 
@@ -60,10 +60,6 @@
     <tr> 
       <td style="text-align:center">Spring</td> 
       <td style="text-align:center">29</td> 
-    </tr> 
-    <tr> 
-      <td style="text-align:center">WebService</td> 
-      <td style="text-align:center">0</td> 
     </tr> 
     <tr> 
       <td rowspan="12" style="text-align:center">Android</td>
