@@ -1,4 +1,4 @@
-<div align="center" style="width:350px;"><img src="./images/logo.png" /></div>
+<div style="width:250px; margin:0 auto;"><img src="./images/logo.png" /></div>
 
 ### 面试题目仓库
 
