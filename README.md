@@ -1,4 +1,4 @@
-<img src="./images/logo.png" height="150" />
+<img src="./images/logo.png" height="50" />
 
 ### 面试题目仓库
 
