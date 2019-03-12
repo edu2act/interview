@@ -1,0 +1,1403 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>树与图 · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="other.html" />
+    
+    
+    <link rel="prev" href="string.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="../java_core/grammar.html">
+            
+                <a href="../java_core/grammar.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../java_core/exception.html">
+            
+                <a href="../java_core/exception.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../java_core/collection.html">
+            
+                <a href="../java_core/collection.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../java_core/thread.html">
+            
+                <a href="../java_core/thread.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../java_core/io.html">
+            
+                <a href="../java_core/io.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../java_core/socket.html">
+            
+                <a href="../java_core/socket.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="../java_web/jsp_servlet.html">
+            
+                <a href="../java_web/jsp_servlet.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Jsp&Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../java_web/jdbc.html">
+            
+                <a href="../java_web/jdbc.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../java_web/spring.html">
+            
+                <a href="../java_web/spring.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../java_web/hibernate.html">
+            
+                <a href="../java_web/hibernate.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../java_web/mybatis.html">
+            
+                <a href="../java_web/mybatis.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="../android/basic.html">
+            
+                <a href="../android/basic.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    基本常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../android/activity.html">
+            
+                <a href="../android/activity.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../android/service.html">
+            
+                <a href="../android/service.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../android/broad_cast_receiver.html">
+            
+                <a href="../android/broad_cast_receiver.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    BroadCastReceiver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../android/content_provider.html">
+            
+                <a href="../android/content_provider.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    ContentProvider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../android/intent.html">
+            
+                <a href="../android/intent.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../android/layout.html">
+            
+                <a href="../android/layout.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../android/listview.html">
+            
+                <a href="../android/listview.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    ListView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../android/jni_ndk.html">
+            
+                <a href="../android/jni_ndk.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    JNI&NDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../android/fragment.html">
+            
+                <a href="../android/fragment.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../android/multi_threading.html">
+            
+                <a href="../android/multi_threading.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../android/network.html">
+            
+                <a href="../android/network.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    网络访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="linked_list.html">
+            
+                <a href="linked_list.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.4" data-path="tree_bragh.html">
+            
+                <a href="tree_bragh.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="other.html">
+            
+                <a href="other.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="../hr/hr.html">
+            
+                <a href="../hr/hr.html">
+            
+                    
+                        <b>7.</b>
+                    
+                    人事面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="../article/p001.html">
+            
+                <a href="../article/p001.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    什么是低耦合高内聚
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../article/p002.html">
+            
+                <a href="../article/p002.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    Java中的作用域的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../article/p003.html">
+            
+                <a href="../article/p003.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../article/p004.html">
+            
+                <a href="../article/p004.html">
+            
+                    
+                        <b>8.4.</b>
+                    
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="../article/p005.html">
+            
+                <a href="../article/p005.html">
+            
+                    
+                        <b>8.5.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="../article/p006.html">
+            
+                <a href="../article/p006.html">
+            
+                    
+                        <b>8.6.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="../article/p007.html">
+            
+                <a href="../article/p007.html">
+            
+                    
+                        <b>8.7.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="../article/p008.html">
+            
+                <a href="../article/p008.html">
+            
+                    
+                        <b>8.8.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="../article/p009.html">
+            
+                <a href="../article/p009.html">
+            
+                    
+                        <b>8.9.</b>
+                    
+                    反射使用实例详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="../article/p010.html">
+            
+                <a href="../article/p010.html">
+            
+                    
+                        <b>8.10.</b>
+                    
+                    内存区域和GC机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="../article/p011.html">
+            
+                <a href="../article/p011.html">
+            
+                    
+                        <b>8.11.</b>
+                    
+                    成为Java GC专家(1)：深入浅出Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="../article/p012.html">
+            
+                <a href="../article/p012.html">
+            
+                    
+                        <b>8.12.</b>
+                    
+                    成为Java GC专家(2)：如何监控Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="../article/p013.html">
+            
+                <a href="../article/p013.html">
+            
+                    
+                        <b>8.13.</b>
+                    
+                    成为Java GC专家(3)：如何优化Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.14" data-path="../article/p014.html">
+            
+                <a href="../article/p014.html">
+            
+                    
+                        <b>8.14.</b>
+                    
+                    成为Java GC专家(4)：Apache的MaxClients参数详解及其在Tomcat执行FullGC时的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.15" data-path="../article/p015.html">
+            
+                <a href="../article/p015.html">
+            
+                    
+                        <b>8.15.</b>
+                    
+                    面向对象的六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.16" data-path="../article/p016.html">
+            
+                <a href="../article/p016.html">
+            
+                    
+                        <b>8.16.</b>
+                    
+                    Java集合专题总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >树与图</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6811;&#x4E0E;&#x56FE;"><b> </b>&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6811;&#x4E0E;&#x56FE;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x5E73;&#x8861;"><b>1. </b>&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x5E73;&#x8861;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x4E00;&#x68F5;&#x9AD8;&#x5EA6;&#x6700;&#x5C0F;&#x7684;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;"><b>2. </b>&#x521B;&#x5EFA;&#x4E00;&#x68F5;&#x9AD8;&#x5EA6;&#x6700;&#x5C0F;&#x7684;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x542B;&#x6709;&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x6811;&#x67D0;&#x4E00;&#x6DF1;&#x5EA6;&#x4E0A;&#x6240;&#x6709;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;"><b>3. </b>&#x521B;&#x5EFA;&#x542B;&#x6709;&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x6811;&#x67D0;&#x4E00;&#x6DF1;&#x5EA6;&#x4E0A;&#x6240;&#x6709;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x4E3A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;"><b>4. </b>&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x4E3A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;</a></li><li><span class="title-icon "></span><a href="#&#x627E;&#x51FA;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#x4E2D;&#x6307;&#x5B9A;&#x7ED3;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#xFF08;&#x4E5F;&#x5373;&#x4E2D;&#x5E8F;&#x540E;&#x7EE7;&#xFF09;"><b>5. </b>&#x627E;&#x51FA;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#x4E2D;&#x6307;&#x5B9A;&#x7ED3;&#x70B9;&#x7684;&#x201C;&#x4E0B;&#x4E00;&#x4E2A;&#x201D;&#x7ED3;&#x70B9;&#xFF08;&#x4E5F;&#x5373;&#x4E2D;&#x5E8F;&#x540E;&#x7EE7;&#xFF09;</a></li></ul></ul></div><a href="#&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6811;&#x4E0E;&#x56FE;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6811;&#x4E0E;&#x56FE;"><a name="&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6811;&#x4E0E;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6811;&#x4E0E;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6811;&#x4E0E;&#x56FE;</h1>
+<hr>
+<h2 id="&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x5E73;&#x8861;"><a name="&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x5E73;&#x8861;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x5E73;&#x8861;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x5E73;&#x8861;</h2>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x5E73;&#x8861;&#x6811;&#x7684;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#xFF0C;&#x5176;&#x4E24;&#x68F5;&#x5B50;&#x6811;&#x7684;&#x9AD8;&#x5EA6;&#x5DEE;&#x4E0D;&#x8D85;&#x8FC7;1&#x3002;</p>
+<p>&#x8FD8;&#x7B97;&#x5E78;&#x8FD0;&#xFF0C;&#x6B64;&#x9898;&#x81F3;&#x5C11;&#x660E;&#x786E;&#x7ED9;&#x51FA;&#x4E86;&#x5E73;&#x8861;&#x6811;&#x7684;&#x5B9A;&#x4E49;&#xFF1A;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#xFF0C;&#x5176;&#x4E24;&#x68F5;&#x5B50;&#x6811;&#x7684;&#x9AD8;&#x5EA6;&#x5DEE;&#x4E0D;&#x5927;&#x4E8E;1&#x3002;&#x6839;&#x636E;&#x8BE5;&#x5B9A;&#x4E49;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x4E00;&#x79CD;&#x89E3;&#x6CD5;&#xFF0C;&#x5373;&#x76F4;&#x63A5;&#x9012;&#x5F52;&#x8BBF;&#x95EE;&#x6574;&#x68F5;&#x6811;&#xFF0C;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#x4E24;&#x68F5;&#x5B50;&#x6811;&#x7684;&#x9AD8;&#x5EA6;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">getHeight</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> null<span class="token punctuation">)</span> 
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// &#x7EC8;&#x6B62;&#x6761;&#x4EF6;</span>
+    <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token function">getHeight</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">getHeight</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isBalanced</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> null<span class="token punctuation">)</span> 
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// &#x7EC8;&#x6B62;&#x6761;&#x4EF6;</span>
+
+    <span class="token keyword">int</span> heightDiff <span class="token operator">=</span> <span class="token function">getHeight</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token function">getHeight</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>heightDiff<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token comment">// &#x9012;&#x5F52;</span>
+        <span class="token keyword">return</span> <span class="token function">isBalanced</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isBalanced</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x867D;&#x7136;&#x53EF;&#x884C;&#xFF0C;&#x4F46;&#x6548;&#x7387;&#x4E0D;&#x592A;&#x9AD8;&#xFF0C;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4F1A;&#x9012;&#x5F52;&#x8BBF;&#x95EE;&#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#x7684;&#x6574;&#x68F5;&#x5B50;&#x6811;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;getHeight&#x4F1A;&#x88AB;&#x53CD;&#x590D;&#x8C03;&#x7528;&#x8BA1;&#x7B97;&#x540C;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#x7684;&#x9AD8;&#x5EA6;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;<code>O(N log N)</code>&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5220;&#x51CF;&#x90E8;&#x5206;getHeight&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x4ED4;&#x7EC6;&#x67E5;&#x770B;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F60;&#x6216;&#x8BB8;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;getHeight&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x68C0;&#x67E5;&#x9AD8;&#x5EA6;&#xFF0C;&#x8FD8;&#x80FD;&#x68C0;&#x67E5;&#x8FD9;&#x68F5;&#x6811;&#x662F;&#x5426;&#x5E73;&#x8861;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x5B50;&#x6811;&#x4E0D;&#x5E73;&#x8861;&#x65F6;&#x53C8;&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;&#xFF1F;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;-1&#x3002;</p>
+<p>&#x6539;&#x8FDB;&#x8FC7;&#x7684;&#x7B97;&#x6CD5;&#x4F1A;&#x4ECE;&#x6839;&#x7ED3;&#x70B9;&#x9012;&#x5F52;&#x5411;&#x4E0B;&#x68C0;&#x67E5;&#x6BCF;&#x68F5;&#x5B50;&#x6811;&#x7684;&#x9AD8;&#x5EA6;&#x3002;&#x6211;&#x4EEC;&#x4F1A;&#x901A;&#x8FC7;checkHeight&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x9012;&#x5F52;&#x65B9;&#x5F0F;&#x83B7;&#x53D6;&#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#x5DE6;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x9AD8;&#x5EA6;&#x3002;&#x82E5;&#x5B50;&#x6811;&#x662F;&#x5E73;&#x8861;&#x7684;&#xFF0C;&#x5219;checkHeight&#x8FD4;&#x56DE;&#x8BE5;&#x5B50;&#x6811;&#x7684;&#x5B9E;&#x9645;&#x9AD8;&#x5EA6;&#x3002;&#x82E5;&#x5B50;&#x6811;&#x4E0D;&#x5E73;&#x8861;&#xFF0C;&#x5219;checkHeight&#x8FD4;&#x56DE;-1&#x3002;checkHeight&#x4F1A;&#x7ACB;&#x5373;&#x4E2D;&#x65AD;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;-1&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x8BE5;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">checkHeight</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// &#x9AD8;&#x5EA6;&#x4E3A;0</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/* &#x68C0;&#x67E5;&#x5DE6;&#x5B50;&#x6811;&#x662F;&#x5426;&#x5E73;&#x8861;*/</span>
+    <span class="token keyword">int</span> leftHeight <span class="token operator">=</span> <span class="token function">checkHeight</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>leftHeight <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// &#x4E0D;&#x5E73;&#x8861;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/* &#x68C0;&#x67E5;&#x5DE6;&#x5B50;&#x6811;&#x662F;&#x5426;&#x5E73;&#x8861;*/</span>
+    <span class="token keyword">int</span> rightHeight <span class="token operator">=</span> <span class="token function">checkHeight</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>rightHeight <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// &#x4E0D;&#x5E73;&#x8861;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/* &#x68C0;&#x67E5;&#x5F53;&#x524D;&#x7ED3;&#x70B9;&#x662F;&#x5426;&#x5E73;&#x8861;*/</span>
+    <span class="token keyword">int</span> heightDiff <span class="token operator">=</span> leftHeight <span class="token operator">-</span> rightHeight<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>heightDiff<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// &#x4E0D;&#x5E73;&#x8861;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">/* &#x8FD4;&#x56DE;&#x9AD8;&#x5EA6;*/</span>
+        <span class="token keyword">return</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>leftHeight<span class="token punctuation">,</span> rightHeight<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isBalanced</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">checkHeight</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x9700;&#x8981;<code>O(N)</code>&#x7684;&#x65F6;&#x95F4;&#x548C;<code>O(H)</code>&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x5176;&#x4E2D;H&#x4E3A;&#x6811;&#x7684;&#x9AD8;&#x5EA6;&#x3002;</p>
+<h2 id="&#x521B;&#x5EFA;&#x4E00;&#x68F5;&#x9AD8;&#x5EA6;&#x6700;&#x5C0F;&#x7684;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;"><a name="&#x521B;&#x5EFA;&#x4E00;&#x68F5;&#x9AD8;&#x5EA6;&#x6700;&#x5C0F;&#x7684;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x4E00;&#x68F5;&#x9AD8;&#x5EA6;&#x6700;&#x5C0F;&#x7684;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x521B;&#x5EFA;&#x4E00;&#x68F5;&#x9AD8;&#x5EA6;&#x6700;&#x5C0F;&#x7684;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;</h2>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x6574;&#x6570;&#x6570;&#x7EC4;&#xFF0C;&#x5143;&#x7D20;&#x5404;&#x4E0D;&#x76F8;&#x540C;&#x4E14;&#x6309;&#x5347;&#x5E8F;&#x6392;&#x5217;&#x3002;</p>
+<p>&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x68F5;&#x9AD8;&#x5EA6;&#x6700;&#x5C0F;&#x7684;&#x6811;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x8BA9;&#x5DE6;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x7ED3;&#x70B9;&#x6570;&#x91CF;&#x8D8A;&#x63A5;&#x8FD1;&#x8D8A;&#x597D;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x8BA9;&#x6570;&#x7EC4;&#x4E2D;&#x95F4;&#x7684;&#x503C;&#x6210;&#x4E3A;&#x6839;&#x7ED3;&#x70B9;&#xFF0C;&#x8FD9;&#x4E48;&#x4E00;&#x6765;&#xFF0C;&#x6570;&#x7EC4;&#x5DE6;&#x8FB9;&#x4E00;&#x534A;&#x5C31;&#x6210;&#x4E3A;&#x5DE6;&#x5B50;&#x6811;&#xFF0C;&#x53F3;&#x8FB9;&#x4E00;&#x534A;&#x6210;&#x4E3A;&#x53F3;&#x5B50;&#x6811;&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x4EE5;&#x7C7B;&#x4F3C;&#x65B9;&#x5F0F;&#x6784;&#x9020;&#x6574;&#x68F5;&#x6811;&#x3002;&#x6570;&#x7EC4;&#x6BCF;&#x4E00;&#x533A;&#x6BB5;&#x7684;&#x4E2D;&#x95F4;&#x5143;&#x7D20;&#x6210;&#x4E3A;&#x5B50;&#x6811;&#x7684;&#x6839;&#x7ED3;&#x70B9;&#xFF0C;&#x5DE6;&#x534A;&#x90E8;&#x5206;&#x6210;&#x4E3A;&#x5DE6;&#x5B50;&#x6811;&#xFF0C;&#x53F3;&#x534A;&#x90E8;&#x5206;&#x6210;&#x4E3A;&#x53F3;&#x5B50;&#x6811;&#x3002;</p>
+<p>&#x4E00;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528;&#x7B80;&#x5355;&#x7684;root.insertNode(int v)&#x65B9;&#x6CD5;&#xFF0C;&#x4ECE;&#x6839;&#x7ED3;&#x70B9;&#x5F00;&#x59CB;&#xFF0C;&#x4EE5;&#x9012;&#x5F52;&#x65B9;&#x5F0F;&#x5C06;&#x503C;v&#x63D2;&#x5165;&#x6811;&#x4E2D;&#x3002;&#x8FD9;&#x4E48;&#x505A;&#x7684;&#x786E;&#x80FD;&#x6784;&#x9020;&#x6700;&#x5C0F;&#x9AD8;&#x5EA6;&#x7684;&#x6811;&#xFF0C;&#x4F46;&#x6548;&#x7387;&#x5E76;&#x4E0D;&#x662F;&#x592A;&#x9AD8;&#x3002;&#x6BCF;&#x6B21;&#x63D2;&#x5165;&#x64CD;&#x4F5C;&#x90FD;&#x8981;&#x904D;&#x5386;&#x6574;&#x68F5;&#x6811;&#xFF0C;&#x65F6;&#x95F4;&#x5F00;&#x9500;&#x4E3A;<code>O(N log N)</code>&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x79CD;&#x505A;&#x6CD5;&#x662F;&#x4EE5;&#x9012;&#x5F52;&#x65B9;&#x5F0F;&#x8FD0;&#x7528;createMinimalBST&#x65B9;&#x6CD5;&#xFF0C;&#x4ECE;&#x800C;&#x6D88;&#x9664;&#x90E8;&#x5206;&#x591A;&#x4F59;&#x7684;&#x904D;&#x5386;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x4F20;&#x5165;&#x6570;&#x7EC4;&#x7684;&#x4E00;&#x4E2A;&#x533A;&#x6BB5;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x5C0F;&#x6811;&#x7684;&#x6839;&#x7ED3;&#x70B9;&#x3002;</p>
+<p>&#x8BE5;&#x7B97;&#x6CD5;&#x7B80;&#x8FF0;&#x5982;&#x4E0B;&#x3002;</p>
+<ol>
+<li>&#x5C06;&#x6570;&#x7EC4;&#x4E2D;&#x95F4;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x6811;&#x4E2D;&#x3002;</li>
+<li>&#x5C06;&#x6570;&#x7EC4;&#x5DE6;&#x534A;&#x8FB9;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x5DE6;&#x5B50;&#x6811;&#x3002;</li>
+<li>&#x5C06;&#x6570;&#x7EC4;&#x53F3;&#x534A;&#x8FB9;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x53F3;&#x5B50;&#x6811;&#x3002;</li>
+<li>&#x9012;&#x5F52;&#x5904;&#x7406;&#x3002;</li>
+</ol>
+<p>&#x4E0B;&#x9762;&#x662F;&#x8BE5;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;</p>
+<pre class="language-"><code class="lang-java">TreeNode <span class="token function">createMinimalBST</span><span class="token punctuation">(</span><span class="token keyword">int</span> arr<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> start<span class="token punctuation">,</span> <span class="token keyword">int</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>end <span class="token operator">&lt;</span> start<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">int</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>start <span class="token operator">+</span> end<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    TreeNode n <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    n<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token function">createMinimalBST</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> start<span class="token punctuation">,</span> mid <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    n<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token function">createMinimalBST</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> mid <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> end<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> n<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+TreeNode <span class="token function">createMinimalBST</span><span class="token punctuation">(</span><span class="token keyword">int</span> array<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">createMinimalBST</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> array<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5C3D;&#x7BA1;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x590D;&#x6742;&#xFF0C;&#x4F46;&#x5728;&#x7F16;&#x5199;&#x8FC7;&#x7A0B;&#x4E2D;&#x5F88;&#x5BB9;&#x6613;&#x72AF;&#x4E86;&#x5DEE;&#x4E00;&#x9519;&#x8BEF;&#xFF08;off-by-one&#xFF09;&#x3002;&#x5BF9;&#x8FD9;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#xFF0C;&#x52A1;&#x5FC5;&#x8FDB;&#x884C;&#x8BE6;&#x5C3D;&#x6D4B;&#x8BD5;&#x3002;</p>
+<h2 id="&#x521B;&#x5EFA;&#x542B;&#x6709;&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x6811;&#x67D0;&#x4E00;&#x6DF1;&#x5EA6;&#x4E0A;&#x6240;&#x6709;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;"><a name="&#x521B;&#x5EFA;&#x542B;&#x6709;&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x6811;&#x67D0;&#x4E00;&#x6DF1;&#x5EA6;&#x4E0A;&#x6240;&#x6709;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x542B;&#x6709;&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x6811;&#x67D0;&#x4E00;&#x6DF1;&#x5EA6;&#x4E0A;&#x6240;&#x6709;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x521B;&#x5EFA;&#x542B;&#x6709;&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x6811;&#x67D0;&#x4E00;&#x6DF1;&#x5EA6;&#x4E0A;&#x6240;&#x6709;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;</h2>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;&#xFF0C;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x7B97;&#x6CD5;&#xFF0C;&#x521B;&#x5EFA;&#x542B;&#x6709;&#x67D0;&#x4E00;&#x6DF1;&#x5EA6;&#x4E0A;&#x6240;&#x6709;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x82E5;&#x4E00;&#x68F5;&#x6811;&#x7684;&#x6DF1;&#x5EA6;&#x4E3A;D&#xFF0C;&#x5219;&#x4F1A;&#x521B;&#x5EFA;&#x51FA;D&#x4E2A;&#x94FE;&#x8868;&#x3002;</p>
+<p>&#x4E4D;&#x4E00;&#x770B;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x8BA4;&#x4E3A;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x9700;&#x8981;&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x9010;&#x4E00;&#x904D;&#x5386;&#xFF0C;&#x4F46;&#x5176;&#x5B9E;&#x5E76;&#x65E0;&#x5FC5;&#x8981;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x4EFB;&#x610F;&#x65B9;&#x5F0F;&#x904D;&#x5386;&#x6574;&#x68F5;&#x6811;&#xFF0C;&#x53EA;&#x8981;&#x8BB0;&#x4F4F;&#x7ED3;&#x70B9;&#x4F4D;&#x4E8E;&#x54EA;&#x4E00;&#x5C42;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x524D;&#x5E8F;&#x904D;&#x5386;&#x7B97;&#x6CD5;&#x7A0D;&#x4F5C;&#x4FEE;&#x6539;&#xFF0C;&#x5C06;level + 1&#x4F20;&#x5165;&#x4E0B;&#x4E00;&#x4E2A;&#x9012;&#x5F52;&#x8C03;&#x7528;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4F7F;&#x7528;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">createLevelLinkedList</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">,</span>
+    ArrayList<span class="token operator">&lt;</span>LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token operator">&gt;</span> lists<span class="token punctuation">,</span> <span class="token keyword">int</span> level<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> null<span class="token punctuation">)</span> 
+        <span class="token keyword">return</span><span class="token punctuation">;</span> <span class="token comment">// &#x7EC8;&#x6B62;&#x6761;&#x4EF6;</span>
+
+    LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span> list <span class="token operator">=</span> null<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>lists<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> level<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x8BE5;&#x5C42;&#x4E0D;&#x5728;&#x94FE;&#x8868;&#x4E2D;</span>
+        list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">/* &#x4EE5;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#x6240;&#x6709;&#x5C42;&#x7EA7;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x82E5;&#x8FD9;&#x662F;&#x7B2C;&#x4E00;&#x6B21;
+         * &#x8BBF;&#x95EE;&#x7B2C;i&#x5C42;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x6211;&#x4EEC;&#x5DF2;&#x8BBF;&#x95EE;&#x8FC7;&#x7B2C;0&#x5230;i-1&#x5C42;&#x3002;
+         * &#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x5730;&#x5C06;&#x8FD9;&#x4E00;&#x5C42;&#x52A0;&#x5230;&#x94FE;&#x8868;
+         * &#x672B;&#x7AEF;&#x3002;*/</span>
+        lists<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        list <span class="token operator">=</span> lists<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>level<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">createLevelLinkedList</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> lists<span class="token punctuation">,</span> level <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">createLevelLinkedList</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> lists<span class="token punctuation">,</span> level <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+ArrayList<span class="token operator">&lt;</span>LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token operator">&gt;</span> <span class="token function">createLevelLinkedList</span><span class="token punctuation">(</span>
+        TreeNode root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ArrayList<span class="token operator">&lt;</span>LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token operator">&gt;</span> lists <span class="token operator">=</span>
+        <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span>LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">createLevelLinkedList</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> lists<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> lists<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x53E6;&#x4E00;&#x79CD;&#x505A;&#x6CD5;&#x662F;&#x5BF9;&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;&#x7A0D;&#x52A0;&#x4FEE;&#x6539;&#xFF0C;&#x5373;&#x4ECE;&#x6839;&#x7ED3;&#x70B9;&#x5F00;&#x59CB;&#x8FED;&#x4EE3;&#xFF0C;&#x7136;&#x540E;&#x7B2C;2&#x5C42;&#xFF0C;&#x7B2C;3&#x5C42;&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x5904;&#x4E8E;&#x7B2C;i&#x5C42;&#x65F6;&#xFF0C;&#x5219;&#x8868;&#x660E;&#x6211;&#x4EEC;&#x5DF2;&#x8BBF;&#x95EE;&#x8FC7;&#x7B2C;i-1&#x5C42;&#x7684;&#x6240;&#x6709;&#x7ED3;&#x70B9;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8981;&#x5F97;&#x5230;i&#x5C42;&#x7684;&#x7ED3;&#x70B9;&#xFF0C;&#x53EA;&#x9700;&#x76F4;&#x63A5;&#x67E5;&#x770B;i-1&#x5C42;&#x7ED3;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x7ED3;&#x70B9;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x8BE5;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;</p>
+<pre class="language-"><code class="lang-java">ArrayList<span class="token operator">&lt;</span>LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token operator">&gt;</span> <span class="token function">createLevelLinkedList</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ArrayList<span class="token operator">&lt;</span>LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token operator">&gt;</span> result <span class="token operator">=</span>
+        <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token operator">&lt;</span>LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">/* &#x8BBF;&#x95EE;&#x6839;&#x7ED3;&#x70B9;*/</span>
+    LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span> current <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        current<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>current<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        result<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x52A0;&#x5165;&#x4E0A;&#x4E00;&#x5C42;</span>
+        LinkedList<span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span> parents <span class="token operator">=</span> current<span class="token punctuation">;</span> <span class="token comment">// &#x8F6C;&#x5230;&#x4E0B;&#x4E00;&#x5C42;</span>
+        current <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token generics function"><span class="token punctuation">&lt;</span>TreeNode<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>TreeNode parent <span class="token operator">:</span> parents<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">/* &#x8BBF;&#x95EE;&#x5B50;&#x7ED3;&#x70B9;*/</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>parent<span class="token punctuation">.</span>left <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                current<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>parent<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>parent<span class="token punctuation">.</span>right <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                current<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>parent<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x95EE;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x89E3;&#x6CD5;&#x54EA;&#x4E00;&#x79CD;&#x6548;&#x7387;&#x66F4;&#x9AD8;&#xFF1F;&#x4E24;&#x8005;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x7686;&#x4E3A;<code>O(N)</code>&#xFF0C;&#x90A3;&#x4E48;&#x7A7A;&#x95F4;&#x6548;&#x7387;&#x5462;&#xFF1F;&#x4E4D;&#x4E00;&#x770B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x4F1A;&#x4EE5;&#x4E3A;&#x7B2C;&#x4E8C;&#x79CD;&#x89E3;&#x6CD5;&#x7684;&#x7A7A;&#x95F4;&#x6548;&#x7387;&#x66F4;&#x9AD8;&#x3002;</p>
+<p>&#x5728;&#x67D0;&#x79CD;&#x610F;&#x4E49;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E48;&#x8BF4;&#x4E5F;&#x5BF9;&#x3002;&#x7B2C;&#x4E00;&#x79CD;&#x89E3;&#x6CD5;&#x4F1A;&#x7528;&#x5230;<code>O(log N)</code>&#x6B21;&#x9012;&#x5F52;&#x8C03;&#x7528;&#xFF08;&#x5728;&#x5E73;&#x8861;&#x6811;&#x4E2D;&#xFF09;&#xFF0C;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x90FD;&#x4F1A;&#x5728;&#x6808;&#x91CC;&#x589E;&#x52A0;&#x4E00;&#x7EA7;&#x3002;&#x7B2C;&#x4E8C;&#x79CD;&#x89E3;&#x6CD5;&#x91C7;&#x7528;&#x8FED;&#x4EE3;&#x904D;&#x5386;&#x6CD5;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x8FD9;&#x90E8;&#x5206;&#x989D;&#x5916;&#x7A7A;&#x95F4;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x4E24;&#x79CD;&#x89E3;&#x6CD5;&#x90FD;&#x8981;&#x8FD4;&#x56DE;<code>O(N)</code>&#x6570;&#x636E;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x9012;&#x5F52;&#x5B9E;&#x73B0;&#x6240;&#x9700;&#x7684;&#x989D;&#x5916;<code>O(log N)</code>&#x7A7A;&#x95F4;&#xFF0C;&#x8DDF;&#x5FC5;&#x987B;&#x4F20;&#x56DE;&#x7684;<code>O(N)</code>&#x6570;&#x636E;&#x76F8;&#x6BD4;&#xFF0C;&#x5E76;&#x4E0D;&#x7B97;&#x591A;&#x3002;&#x867D;&#x7136;&#x7B2C;&#x4E00;&#x79CD;&#x89E3;&#x6CD5;&#x786E;&#x5B9E;&#x4F7F;&#x7528;&#x4E86;&#x8F83;&#x591A;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x4F46;&#x4ECE;&#x5927;O&#x8BB0;&#x6CD5;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x770B;&#xFF0C;&#x4E24;&#x8005;&#x6548;&#x7387;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<h2 id="&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x4E3A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;"><a name="&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x4E3A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x4E3A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x68C0;&#x67E5;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;&#x662F;&#x5426;&#x4E3A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;</h2>
+<p>&#x6B64;&#x9898;&#x6709;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x89E3;&#x6CD5;&#x3002;&#x7B2C;&#x4E00;&#x79CD;&#x662F;&#x5229;&#x7528;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#xFF0C;&#x7B2C;&#x4E8C;&#x79CD;&#x5219;&#x5EFA;&#x7ACB;&#x5728;<code>left &lt;= current &lt; right</code>&#x8FD9;&#x9879;&#x7279;&#x6027;&#x4E4B;&#x4E0A;&#x3002;</p>
+<h4 id="&#x89E3;&#x6CD5;1&#xFF1A;&#x4E2D;&#x5E8F;&#x904D;&#x5386;"><a name="&#x89E3;&#x6CD5;1&#xFF1A;&#x4E2D;&#x5E8F;&#x904D;&#x5386;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x6CD5;1&#xFF1A;&#x4E2D;&#x5E8F;&#x904D;&#x5386;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x6CD5;1&#xFF1A;&#x4E2D;&#x5E8F;&#x904D;&#x5386;</h4>
+<p>&#x770B;&#x5230;&#x6B64;&#x9898;&#xFF0C;&#x95EA;&#x8FC7;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x60F3;&#x6CD5;&#x53EF;&#x80FD;&#x662F;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#xFF0C;&#x5C06;&#x6240;&#x6709;&#x5143;&#x7D20;&#x590D;&#x5236;&#x5230;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x68C0;&#x67E5;&#x8BE5;&#x6570;&#x7EC4;&#x662F;&#x5426;&#x6709;&#x5E8F;&#x3002;&#x8FD9;&#x79CD;&#x89E3;&#x6CD5;&#x8981;&#x591A;&#x7528;&#x4E00;&#x70B9;&#x5185;&#x5B58;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x6CA1;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x552F;&#x4E00;&#x7684;&#x95EE;&#x9898;&#x5728;&#x4E8E;&#xFF0C;&#x5B83;&#x65E0;&#x6CD5;&#x6B63;&#x786E;&#x5904;&#x7406;&#x6811;&#x4E2D;&#x7684;&#x91CD;&#x590D;&#x503C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8BE5;&#x7B97;&#x6CD5;&#x65E0;&#x6CD5;&#x533A;&#x5206;&#x4E0B;&#x9762;&#x8FD9;&#x4E24;&#x68F5;&#x6811;&#xFF08;&#x5176;&#x4E2D;&#x4E00;&#x68F5;&#x662F;&#x65E0;&#x6548;&#x7684;&#xFF09;&#xFF0C;&#x56E0;&#x4E3A;&#x4E24;&#x8005;&#x7684;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#x7ED3;&#x679C;&#x76F8;&#x540C;&#x3002;</p>
+<pre class="language-"><code>Valid BST [20.left = 20]
+Invalid BST [20.right = 20]
+</code></pre><p>&#x4E0D;&#x8FC7;&#xFF0C;&#x8981;&#x662F;&#x5047;&#x5B9A;&#x8FD9;&#x68F5;&#x6811;&#x4E0D;&#x5F97;&#x5305;&#x542B;&#x91CD;&#x590D;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x8FD8;&#x662F;&#x884C;&#x4E4B;&#x6709;&#x6548;&#x7684;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x4F2A;&#x7801;&#x5927;&#x81F4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">copyBST</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> null<span class="token punctuation">)</span> 
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token function">copyBST</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> array<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    array<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> root<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+    index<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token function">copyBST</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> array<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">checkBST</span><span class="token punctuation">(</span>TreeNode root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span><span class="token punctuation">[</span>root<span class="token punctuation">.</span>size<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token function">copyBST</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> array<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> array<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x5FC5;&#x987B;&#x8BB0;&#x5F55;&#x6570;&#x7EC4;&#x5728;&#x903B;&#x8F91;&#x4E0A;&#x7684;&#x201C;&#x5C3E;&#x90E8;&#x201D;&#xFF0C;&#x7528;&#x5B83;&#x6765;&#x5206;&#x914D;&#x7A7A;&#x95F4;&#x4EE5;&#x50A8;&#x5B58;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x4ED4;&#x7EC6;&#x5BA1;&#x89C6;&#x8FD9;&#x4E2A;&#x89E3;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x6570;&#x7EC4;&#x5B9E;&#x65E0;&#x5FC5;&#x8981;&#x3002;&#x9664;&#x4E86;&#x7528;&#x6765;&#x6BD4;&#x8F83;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x548C;&#x524D;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x522B;&#x65E0;&#x4ED6;&#x7528;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x5728;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x65F6;&#xFF0C;&#x76F4;&#x63A5;&#x8BB0;&#x4E0B;&#x6700;&#x540E;&#x7684;&#x5143;&#x7D20;&#xFF1F;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x8BE5;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> last_printed <span class="token operator">=</span> Integer<span class="token punctuation">.</span>MIN_VALUE<span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">checkBST</span><span class="token punctuation">(</span>TreeNode n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> null<span class="token punctuation">)</span> 
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// &#x9012;&#x5F52;&#x68C0;&#x67E5;&#x5DE6;&#x5B50;&#x6811;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">checkBST</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">)</span> 
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// &#x68C0;&#x67E5;&#x5F53;&#x524D;&#x7ED3;&#x70B9;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n<span class="token punctuation">.</span>data <span class="token operator">&lt;=</span> last_printed<span class="token punctuation">)</span> 
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    last_printed <span class="token operator">=</span> n<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+
+    <span class="token comment">// &#x9012;&#x5F52;&#x68C0;&#x67E5;&#x53F3;&#x5B50;&#x6811;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">checkBST</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">)</span> 
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// &#x5168;&#x90E8;&#x68C0;&#x67E5;&#x5B8C;&#x6BD5;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8981;&#x662F;&#x4E0D;&#x559C;&#x6B22;&#x4F7F;&#x7528;&#x9759;&#x6001;&#x53D8;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x7A0D;&#x4F5C;&#x4FEE;&#x6539;&#xFF0C;&#x4F7F;&#x7528;&#x5305;&#x88F9;&#x7C7B;&#x5B58;&#x653E;&#x8FD9;&#x4E2A;&#x6574;&#x6570;&#x503C;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">class</span> <span class="token class-name">WrapInt</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6216;&#x8005;&#xFF0C;&#x82E5;&#x7528;C++&#x6216;&#x5176;&#x4ED6;&#x652F;&#x6301;&#x6309;&#x5F15;&#x7528;&#x4F20;&#x503C;&#x7684;&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x505A;&#x3002;</p>
+<h4 id="&#x89E3;&#x6CD5;2&#xFF1A;&#x6700;&#x5C0F;&#x6700;&#x5927;&#x6CD5;"><a name="&#x89E3;&#x6CD5;2&#xFF1A;&#x6700;&#x5C0F;&#x6700;&#x5927;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x6CD5;2&#xFF1A;&#x6700;&#x5C0F;&#x6700;&#x5927;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x6CD5;2&#xFF1A;&#x6700;&#x5C0F;/&#x6700;&#x5927;&#x6CD5;</h4>
+<p>&#x7B2C;&#x4E8C;&#x79CD;&#x89E3;&#x6CD5;&#x5229;&#x7528;&#x7684;&#x662F;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#x7684;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x4E00;&#x68F5;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x6811;&#x624D;&#x6210;&#x5176;&#x4E3A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#xFF1F;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x8FD9;&#x68F5;&#x6811;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0B;&#x6761;&#x4EF6;&#xFF1A;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#xFF0C;<code>left.data &lt;= current.data &lt; right.data</code>&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x8FD8;&#x4E0D;&#x591F;&#x3002;&#x8BD5;&#x770B;&#x4E0B;&#x9762;&#x8FD9;&#x68F5;&#x5C0F;&#x6811;&#xFF1A;</p>
+<div style="width:150px; margin:0 auto;">     <a href="images/tree_bragh_p001.jpg" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/tree_bragh_p001.jpg" alt="">
+     </a></div>
+
+<p>&#x5C3D;&#x7BA1;&#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#x90FD;&#x6BD4;&#x5DE6;&#x5B50;&#x7ED3;&#x70B9;&#x5927;&#xFF0C;&#x6BD4;&#x53F3;&#x5B50;&#x7ED3;&#x70B9;&#x5C0F;&#xFF0C;&#x4F46;&#x8FD9;&#x663E;&#x7136;&#x4E0D;&#x662F;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#xFF0C;&#x5176;&#x4E2D;25&#x7684;&#x4F4D;&#x7F6E;&#x4E0D;&#x5BF9;&#x3002;</p>
+<p>&#x66F4;&#x51C6;&#x786E;&#x5730;&#x8BF4;&#xFF0C;&#x6210;&#x4E3A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#x7684;&#x6761;&#x4EF6;&#x662F;&#xFF1A;&#x6240;&#x6709;&#x5DE6;&#x8FB9;&#x7684;&#x7ED3;&#x70B9;&#x5FC5;&#x987B;&#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&#x5F53;&#x524D;&#x7ED3;&#x70B9;&#xFF0C;&#x800C;&#x5F53;&#x524D;&#x7ED3;&#x70B9;&#x5FC5;&#x987B;&#x5C0F;&#x4E8E;&#x6240;&#x6709;&#x53F3;&#x8FB9;&#x7684;&#x7ED3;&#x70B9;&#x3002;</p>
+<p>&#x5229;&#x7528;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x4F20;&#x9012;&#x6700;&#x5C0F;&#x548C;&#x6700;&#x5927;&#x503C;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x5728;&#x8FED;&#x4EE3;&#x904D;&#x5386;&#x6574;&#x4E2A;&#x6811;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x7528;&#x9010;&#x6E10;&#x53D8;&#x7A84;&#x7684;&#x8303;&#x56F4;&#x6765;&#x68C0;&#x67E5;&#x5404;&#x4E2A;&#x7ED3;&#x70B9;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x9762;&#x8FD9;&#x68F5;&#x6811;&#x4E3A;&#x4F8B;&#xFF1A;</p>
+<div style="width:400px; margin:0 auto;">     <a href="images/tree_bragh_p002.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="images/tree_bragh_p002.png" alt="">
+     </a></div>
+
+<p>&#x9996;&#x5148;&#xFF0C;&#x4ECE;<code>(min = INT_MIN, max = INT_MAX)</code>&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5F00;&#x59CB;&#xFF0C;&#x6839;&#x7ED3;&#x70B9;&#x663E;&#x7136;&#x843D;&#x5728;&#x5176;&#x4E2D;&#x3002;&#x7136;&#x540E;&#x5904;&#x7406;&#x5DE6;&#x5B50;&#x6811;&#xFF0C;&#x68C0;&#x67E5;&#x8FD9;&#x4E9B;&#x7ED3;&#x70B9;&#x662F;&#x5426;&#x843D;&#x5728;<code>(min = INT_MIN, max = 20)</code>&#x8303;&#x56F4;&#x5185;&#x3002;&#x7136;&#x540E;&#x518D;&#x5904;&#x7406;&#xFF08;&#x503C;&#x4E3A;10&#x7684;&#x7ED3;&#x70B9;&#xFF09;&#x53F3;&#x5B50;&#x6811;&#xFF0C;&#x68C0;&#x67E5;&#x7ED3;&#x70B9;&#x662F;&#x5426;&#x843D;&#x5728;<code>(min = 20, max = INT_MAX)</code>&#x8303;&#x56F4;&#x5185;&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x7EE7;&#x7EED;&#x4F9D;&#x6B64;&#x904D;&#x5386;&#x6574;&#x68F5;&#x6811;&#x3002;&#x8FDB;&#x5165;&#x5DE6;&#x5B50;&#x6811;&#x65F6;&#xFF0C;&#x66F4;&#x65B0;max&#x3002;&#x8FDB;&#x5165;&#x53F3;&#x5B50;&#x6811;&#x65F6;&#xFF0C;&#x66F4;&#x65B0;min&#x3002;&#x53EA;&#x8981;&#x6709;&#x4EFB;&#x4E00;&#x7ED3;&#x70B9;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;&#x68C0;&#x67E5;&#xFF0C;&#x5219;&#x505C;&#x6B62;&#x5E76;&#x8FD4;&#x56DE;false&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x89E3;&#x6CD5;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;<code>O(N)</code>&#xFF0C;&#x5176;&#x4E2D;N&#x4E3A;&#x6574;&#x68F5;&#x6811;&#x7684;&#x7ED3;&#x70B9;&#x6570;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BC1;&#x660E;&#x8FD9;&#x5DF2;&#x7ECF;&#x662F;&#x6700;&#x4F73;&#x505A;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x4EFB;&#x4F55;&#x7B97;&#x6CD5;&#x90FD;&#x5FC5;&#x987B;&#x8BBF;&#x95EE;&#x5168;&#x90E8;N&#x4E2A;&#x7ED3;&#x70B9;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x7528;&#x4E86;&#x9012;&#x5F52;&#xFF0C;&#x5BF9;&#x4E8E;&#x5E73;&#x8861;&#x6811;&#xFF0C;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;<code>O(log N)</code>&#x3002;&#x5728;&#x8C03;&#x7528;&#x6808;&#x4E0A;&#xFF0C;&#x5171;&#x6709;<code>O(log N)</code>&#x4E2A;&#x9012;&#x5F52;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x9012;&#x5F52;&#x7684;&#x6DF1;&#x5EA6;&#x6700;&#x5927;&#x4F1A;&#x5230;&#x8FD9;&#x68F5;&#x6811;&#x7684;&#x6DF1;&#x5EA6;&#x3002;</p>
+<p>&#x8BE5;&#x89E3;&#x6CD5;&#x7684;&#x9012;&#x5F52;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">boolean</span> <span class="token function">checkBST</span><span class="token punctuation">(</span>TreeNode n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">checkBST</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> Integer<span class="token punctuation">.</span>MIN_VALUE<span class="token punctuation">,</span> Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">boolean</span> <span class="token function">checkBST</span><span class="token punctuation">(</span>TreeNode n<span class="token punctuation">,</span> <span class="token keyword">int</span> min<span class="token punctuation">,</span> <span class="token keyword">int</span> max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n<span class="token punctuation">.</span>data <span class="token operator">&lt;</span> min <span class="token operator">||</span> n<span class="token punctuation">.</span>data <span class="token operator">&gt;=</span> max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">checkBST</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>left<span class="token punctuation">,</span> min<span class="token punctuation">,</span> n<span class="token punctuation">.</span>data<span class="token punctuation">)</span> 
+            <span class="token operator">||</span> <span class="token operator">!</span><span class="token function">checkBST</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>right<span class="token punctuation">,</span> n<span class="token punctuation">.</span>data<span class="token punctuation">,</span> max<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8BB0;&#x4F4F;&#xFF0C;&#x5728;&#x9012;&#x5F52;&#x7B97;&#x6CD5;&#x4E2D;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x786E;&#x5B9A;&#x7EC8;&#x6B62;&#x6761;&#x4EF6;&#x4EE5;&#x53CA;&#x7ED3;&#x70B9;&#x4E3A;&#x7A7A;&#x7684;&#x60C5;&#x51B5;&#x5F97;&#x5230;&#x59A5;&#x5584;&#x5904;&#x7406;&#x3002;</p>
+<h2 id="&#x627E;&#x51FA;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#x4E2D;&#x6307;&#x5B9A;&#x7ED3;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#xFF08;&#x4E5F;&#x5373;&#x4E2D;&#x5E8F;&#x540E;&#x7EE7;&#xFF09;"><a name="&#x627E;&#x51FA;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#x4E2D;&#x6307;&#x5B9A;&#x7ED3;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#xFF08;&#x4E5F;&#x5373;&#x4E2D;&#x5E8F;&#x540E;&#x7EE7;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x627E;&#x51FA;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#x4E2D;&#x6307;&#x5B9A;&#x7ED3;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#xFF08;&#x4E5F;&#x5373;&#x4E2D;&#x5E8F;&#x540E;&#x7EE7;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x627E;&#x51FA;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#x4E2D;&#x6307;&#x5B9A;&#x7ED3;&#x70B9;&#x7684;&#x201C;&#x4E0B;&#x4E00;&#x4E2A;&#x201D;&#x7ED3;&#x70B9;&#xFF08;&#x4E5F;&#x5373;&#x4E2D;&#x5E8F;&#x540E;&#x7EE7;&#xFF09;</h2>
+<p>&#x53EF;&#x4EE5;&#x5047;&#x5B9A;&#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#x90FD;&#x542B;&#x6709;&#x6307;&#x5411;&#x7236;&#x7ED3;&#x70B9;&#x7684;&#x8FDE;&#x63A5;</p>
+<p>&#x56DE;&#x60F3;&#x4E00;&#x4E0B;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#xFF0C;&#x5B83;&#x4F1A;&#x904D;&#x5386;&#x5DE6;&#x5B50;&#x6811;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x5F53;&#x524D;&#x7ED3;&#x70B9;&#xFF0C;&#x63A5;&#x7740;&#x662F;&#x53F3;&#x5B50;&#x6811;&#x3002;&#x8981;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5FC5;&#x987B;&#x975E;&#x5E38;&#x5C0F;&#x5FC3;&#xFF0C;&#x60F3;&#x60F3;&#x5177;&#x4F53;&#x662F;&#x600E;&#x4E48;&#x56DE;&#x4E8B;&#x3002;</p>
+<p>&#x5047;&#x5B9A;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x5047;&#x60F3;&#x7684;&#x7ED3;&#x70B9;&#x3002;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x8BBF;&#x95EE;&#x987A;&#x5E8F;&#x4E3A;&#x5DE6;&#x5B50;&#x6811;&#xFF0C;&#x5F53;&#x524D;&#x7ED3;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x53F3;&#x5B50;&#x6811;&#x3002;&#x663E;&#x7136;&#xFF0C;&#x4E0B;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#x5E94;&#x8BE5;&#x4F4D;&#x4E8E;&#x53F3;&#x8FB9;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x5230;&#x5E95;&#x662F;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x54EA;&#x4E2A;&#x7ED3;&#x70B9;&#x5462;&#xFF1F;&#x5982;&#x679C;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#x53F3;&#x5B50;&#x6811;&#xFF0C;&#x90A3;&#x5B83;&#x5C31;&#x4F1A;&#x662F;&#x63A5;&#x4E0B;&#x6765;&#x7B2C;&#x4E00;&#x4E2A;&#x88AB;&#x8BBF;&#x95EE;&#x7684;&#x7ED3;&#x70B9;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B83;&#x5E94;&#x8BE5;&#x662F;&#x53F3;&#x5B50;&#x6811;&#x6700;&#x5DE6;&#x8FB9;&#x7684;&#x7ED3;&#x70B9;&#x3002;&#x591F;&#x7B80;&#x5355;&#x5427;&#xFF01;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x82E5;&#x8FD9;&#x4E2A;&#x7ED3;&#x70B9;&#x6CA1;&#x6709;&#x53F3;&#x5B50;&#x6811;&#xFF0C;&#x53C8;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5C31;&#x6709;&#x70B9;&#x68D8;&#x624B;&#x4E86;&#x3002;</p>
+<p>&#x82E5;&#x7ED3;&#x70B9;n&#x6CA1;&#x6709;&#x53F3;&#x5B50;&#x6811;&#xFF0C;&#x90A3;&#x5C31;&#x8868;&#x793A;&#x5DF2;&#x904D;&#x8BBF;n&#x7684;&#x5B50;&#x6811;&#x3002;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x56DE;&#x5230;n&#x7684;&#x7236;&#x7ED3;&#x70B9;&#xFF0C;&#x8BB0;&#x4F5C;q&#x3002;</p>
+<p>&#x82E5;n&#x5728;q&#x7684;&#x5DE6;&#x8FB9;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x4E0B;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x8BBF;&#x95EE;&#x7684;&#x7ED3;&#x70B9;&#x5C31;&#x662F;q&#xFF08;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#xFF0C;left -&gt; current -&gt;right&#xFF09;&#x3002;</p>
+<p>&#x82E5;n&#x5728;q&#x7684;&#x53F3;&#x8FB9;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x5DF2;&#x904D;&#x8BBF;q&#x7684;&#x5B50;&#x6811;&#x3002;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4ECE;q&#x5F80;&#x4E0A;&#x8BBF;&#x95EE;&#xFF0C;&#x76F4;&#x81F3;&#x627E;&#x5230;&#x6211;&#x4EEC;&#x8FD8;&#x672A;&#x5B8C;&#x5168;&#x904D;&#x8BBF;&#x8FC7;&#x7684;&#x7ED3;&#x70B9;x&#x3002;&#x600E;&#x4E48;&#x624D;&#x80FD;&#x77E5;&#x9053;&#x8FD8;&#x672A;&#x5B8C;&#x5168;&#x904D;&#x5386;&#x7ED3;&#x70B9;x&#x5462;&#xFF1F;&#x4E4B;&#x524D;&#x4ECE;&#x5DE6;&#x7ED3;&#x70B9;&#x8BBF;&#x95EE;&#x81F3;&#x5176;&#x7236;&#x7ED3;&#x70B9;&#x65F6;&#xFF0C;&#x5C31;&#x5DF2;&#x78B0;&#x5230;&#x4E86;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x3002;&#x5DE6;&#x7ED3;&#x70B9;&#x5DF2;&#x5B8C;&#x5168;&#x904D;&#x5386;&#xFF0C;&#x4F46;&#x5176;&#x7236;&#x7ED3;&#x70B9;&#x5C1A;&#x672A;&#x5B8C;&#x5168;&#x904D;&#x5386;&#x3002;</p>
+<p>&#x4F2A;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java">Node <span class="token function">inorderSucc</span><span class="token punctuation">(</span>Node n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n has a right subtree<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> leftmost child of right subtree
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>n is a right child of n<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            n <span class="token operator">=</span> n<span class="token punctuation">.</span>parent<span class="token punctuation">;</span> <span class="token comment">// &#x5F80;&#x4E0A;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> n<span class="token punctuation">.</span>parent<span class="token punctuation">;</span> <span class="token comment">// &#x7236;&#x7ED3;&#x70B9;&#x8FD8;&#x672A;&#x904D;&#x5386;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E14;&#x6162;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x8DEF;&#x5F80;&#x4E0A;&#x904D;&#x8BBF;&#x8FD9;&#x68F5;&#x6811;&#x90FD;&#x6CA1;&#x53D1;&#x73B0;&#x5DE6;&#x7ED3;&#x70B9;&#x5462;&#xFF1F;&#x53EA;&#x6709;&#x5F53;&#x6211;&#x4EEC;&#x9047;&#x5230;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#x7684;&#x6700;&#x672B;&#x7AEF;&#x65F6;&#xFF0C;&#x624D;&#x4F1A;&#x51FA;&#x73B0;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5DF2;&#x4F4D;&#x4E8E;&#x6811;&#x7684;&#x6700;&#x53F3;&#x8FB9;&#xFF0C;&#x90A3;&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x6709;&#x4E2D;&#x5E8F;&#x540E;&#x7EE7;&#xFF0C;&#x6B64;&#x65F6;&#x8BE5;&#x8FD4;&#x56DE;null&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x8BE5;&#x7B97;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#xFF08;&#x5DF2;&#x6B63;&#x786E;&#x5904;&#x7406;&#x7ED3;&#x70B9;&#x4E3A;&#x7A7A;&#x7684;&#x60C5;&#x51B5;&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> TreeNode <span class="token function">inorderSucc</span><span class="token punctuation">(</span>TreeNode n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> null<span class="token punctuation">)</span> 
+        <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+
+    <span class="token comment">/* &#x627E;&#x5230;&#x53F3;&#x5B50;&#x7ED3;&#x70B9;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x53F3;&#x5B50;&#x6811;&#x91CC;
+     * &#x6700;&#x5DE6;&#x8FB9;&#x7684;&#x7ED3;&#x70B9;*/</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n<span class="token punctuation">.</span>right <span class="token operator">!=</span> null<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token function">leftMostChild</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        TreeNode q <span class="token operator">=</span> n<span class="token punctuation">;</span>
+        TreeNode x <span class="token operator">=</span> q<span class="token punctuation">.</span>parent<span class="token punctuation">;</span>
+        <span class="token comment">// &#x5411;&#x4E0A;&#x76F4;&#x81F3;&#x4F4D;&#x4E8E;&#x5DE6;&#x8FB9;&#x800C;&#x4E0D;&#x662F;&#x53F3;&#x8FB9;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>x <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> x<span class="token punctuation">.</span>left <span class="token operator">!=</span> q<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            q <span class="token operator">=</span> x<span class="token punctuation">;</span>
+            x <span class="token operator">=</span> x<span class="token punctuation">.</span>parent<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> TreeNode <span class="token function">leftMostChild</span><span class="token punctuation">(</span>TreeNode n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>n<span class="token punctuation">.</span>left <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        n <span class="token operator">=</span> n<span class="token punctuation">.</span>left<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> n<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E0D;&#x662F;&#x4E16;&#x4E0A;&#x6700;&#x590D;&#x6742;&#x7684;&#x7B97;&#x6CD5;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x8981;&#x5199;&#x51FA;&#x5B8C;&#x7F8E;&#x65E0;&#x7455;&#x7684;&#x4EE3;&#x7801;&#x5374;&#x6709;&#x96BE;&#x5EA6;&#x3002;&#x9762;&#x5BF9;&#x8FD9;&#x7C7B;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x8F83;&#x5B9E;&#x7528;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x7528;&#x4F2A;&#x7801;&#x52FE;&#x52D2;&#x5927;&#x7EB2;&#xFF0C;&#x4ED4;&#x7EC6;&#x63CF;&#x7ED8;&#x5404;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"></p><p class="paragraph footer__quote--normal" style="color: #000 !important;">Everything you need to prepare for your technical interview.</p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">modified at</span>
+2019-03-12
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="string.html" class="navigation navigation-prev " aria-label="Previous page: 字符串">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="other.html" class="navigation navigation-next " aria-label="Next page: 杂项">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"树与图","level":"5.4","depth":1,"next":{"title":"杂项","level":"5.5","depth":1,"path":"data_structure/other.md","ref":"data_structure/other.md","articles":[]},"previous":{"title":"字符串","level":"5.3","depth":1,"path":"data_structure/string.md","ref":"data_structure/string.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","-sharing","folding-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex","fancybox","insert-logo-link-style","page-copyright"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/edu2act/interview"},"splitter":{},"page-copyright":{"wisdom":"Everything you need to prepare for your technical interview.","noPowered":true,"copyright":"Copyright &#169; edu2act","styles (normal, symmetrical)":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd","signature":"edu2act","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"modified at"},"insert-logo-link-style":{"src":"images/logo.png","style":"background: none; width: 220px;","link":"http://github.com/edu2act"},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/apple-touch-icon.png","appleTouchMore":{"120x120":"images/apple-touch-icon-120x120.png","180x180":"images/apple-touch-icon-180x180.png"}},"prism-themes":{},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"data_structure/tree_bragh.md","mtime":"2019-03-12T01:02:44.472Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-03-12T01:02:54.938Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
