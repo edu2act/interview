@@ -1,0 +1,1497 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>栈与队列 · Java面试题</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="Eetze">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="sort_search.html" />
+    
+    
+    <link rel="prev" href="tree_bragh.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../images/apple-touch-icon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+                <span>
+            
+                    
+                        <b>2.</b>
+                    
+                    Java基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="../java_core/grammar.html">
+            
+                <a href="../java_core/grammar.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../java_core/exception.html">
+            
+                <a href="../java_core/exception.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../java_core/collection.html">
+            
+                <a href="../java_core/collection.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../java_core/thread.html">
+            
+                <a href="../java_core/thread.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../java_core/io.html">
+            
+                <a href="../java_core/io.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    IO流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../java_core/socket.html">
+            
+                <a href="../java_core/socket.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    Socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+                <span>
+            
+                    
+                        <b>3.</b>
+                    
+                    JavaWeb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="../java_web/jsp_servlet.html">
+            
+                <a href="../java_web/jsp_servlet.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Jsp&Servlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../java_web/jdbc.html">
+            
+                <a href="../java_web/jdbc.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../java_web/spring.html">
+            
+                <a href="../java_web/spring.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Spring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../java_web/hibernate.html">
+            
+                <a href="../java_web/hibernate.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    Hibernate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../java_web/mybatis.html">
+            
+                <a href="../java_web/mybatis.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+                <span>
+            
+                    
+                        <b>4.</b>
+                    
+                    Android
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="../android/basic.html">
+            
+                <a href="../android/basic.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    基本常识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../android/activity.html">
+            
+                <a href="../android/activity.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../android/service.html">
+            
+                <a href="../android/service.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../android/broad_cast_receiver.html">
+            
+                <a href="../android/broad_cast_receiver.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    BroadCastReceiver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../android/content_provider.html">
+            
+                <a href="../android/content_provider.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    ContentProvider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../android/intent.html">
+            
+                <a href="../android/intent.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../android/layout.html">
+            
+                <a href="../android/layout.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../android/listview.html">
+            
+                <a href="../android/listview.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    ListView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../android/jni_ndk.html">
+            
+                <a href="../android/jni_ndk.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    JNI&NDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../android/fragment.html">
+            
+                <a href="../android/fragment.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../android/multi_threading.html">
+            
+                <a href="../android/multi_threading.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../android/network.html">
+            
+                <a href="../android/network.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    网络访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+                <span>
+            
+                    
+                        <b>5.</b>
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="linked_list.html">
+            
+                <a href="linked_list.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="tree_bragh.html">
+            
+                <a href="tree_bragh.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    树与图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.5" data-path="stack_queue.html">
+            
+                <a href="stack_queue.html">
+            
+                    
+                        <b>5.5.</b>
+                    
+                    栈与队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="sort_search.html">
+            
+                <a href="sort_search.html">
+            
+                    
+                        <b>5.6.</b>
+                    
+                    排序与查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+                <span>
+            
+                    
+                        <b>6.</b>
+                    
+                    设计模式
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="../hr/hr.html">
+            
+                <a href="../hr/hr.html">
+            
+                    
+                        <b>7.</b>
+                    
+                    人事面试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+                <span>
+            
+                    
+                        <b>8.</b>
+                    
+                    相关文章
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="../article/p001.html">
+            
+                <a href="../article/p001.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    什么是低耦合高内聚
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../article/p002.html">
+            
+                <a href="../article/p002.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    Java中的作用域的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../article/p003.html">
+            
+                <a href="../article/p003.html">
+            
+                    
+                        <b>8.3.</b>
+                    
+                    重载(Overload)与重写(Override)的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../article/p004.html">
+            
+                <a href="../article/p004.html">
+            
+                    
+                        <b>8.4.</b>
+                    
+                    String、StringBuffer、StringBuilder的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="../article/p005.html">
+            
+                <a href="../article/p005.html">
+            
+                    
+                        <b>8.5.</b>
+                    
+                    类加载与初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="../article/p006.html">
+            
+                <a href="../article/p006.html">
+            
+                    
+                        <b>8.6.</b>
+                    
+                    RTTI和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="../article/p007.html">
+            
+                <a href="../article/p007.html">
+            
+                    
+                        <b>8.7.</b>
+                    
+                    提高Java反射速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="../article/p008.html">
+            
+                <a href="../article/p008.html">
+            
+                    
+                        <b>8.8.</b>
+                    
+                    反射性能测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="../article/p009.html">
+            
+                <a href="../article/p009.html">
+            
+                    
+                        <b>8.9.</b>
+                    
+                    反射使用实例详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="../article/p010.html">
+            
+                <a href="../article/p010.html">
+            
+                    
+                        <b>8.10.</b>
+                    
+                    内存区域和GC机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="../article/p011.html">
+            
+                <a href="../article/p011.html">
+            
+                    
+                        <b>8.11.</b>
+                    
+                    成为Java GC专家(1)：深入浅出Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="../article/p012.html">
+            
+                <a href="../article/p012.html">
+            
+                    
+                        <b>8.12.</b>
+                    
+                    成为Java GC专家(2)：如何监控Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="../article/p013.html">
+            
+                <a href="../article/p013.html">
+            
+                    
+                        <b>8.13.</b>
+                    
+                    成为Java GC专家(3)：如何优化Java垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.14" data-path="../article/p014.html">
+            
+                <a href="../article/p014.html">
+            
+                    
+                        <b>8.14.</b>
+                    
+                    成为Java GC专家(4)：Apache的MaxClients参数详解及其在Tomcat执行FullGC时的影响
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.15" data-path="../article/p015.html">
+            
+                <a href="../article/p015.html">
+            
+                    
+                        <b>8.15.</b>
+                    
+                    面向对象的六大原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.16" data-path="../article/p016.html">
+            
+                <a href="../article/p016.html">
+            
+                    
+                        <b>8.16.</b>
+                    
+                    Java集合专题总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >栈与队列</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6808;&#x4E0E;&#x961F;&#x5217;"><b> </b>&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6808;&#x4E0E;&#x961F;&#x5217;</a></li><ul><li><span class="title-icon "></span><a href="#&#x53EA;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x5B9E;&#x73B0;&#x4E09;&#x4E2A;&#x6808;"><b>1. </b>&#x53EA;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x5B9E;&#x73B0;&#x4E09;&#x4E2A;&#x6808;</a></li><li><span class="title-icon "></span><a href="#&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x6808;&#x5B9E;&#x73B0;pop&#x3001;push&#x548C;min&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;"><b>2. </b>&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x6808;&#x5B9E;&#x73B0;pop&#x3001;push&#x548C;min&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;setofstacks"><b>3. </b>&#x5B9E;&#x73B0;SetOfStacks</a></li></ul></ul></div><a href="#&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6808;&#x4E0E;&#x961F;&#x5217;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6808;&#x4E0E;&#x961F;&#x5217;"><a name="&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6808;&#x4E0E;&#x961F;&#x5217;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6808;&#x4E0E;&#x961F;&#x5217;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x6570;&#x636E;&#x7ED3;&#x6784;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6808;&#x4E0E;&#x961F;&#x5217;</h1>
+<hr>
+<h2 id="&#x53EA;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x5B9E;&#x73B0;&#x4E09;&#x4E2A;&#x6808;"><a name="&#x53EA;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x5B9E;&#x73B0;&#x4E09;&#x4E2A;&#x6808;" class="anchor-navigation-ex-anchor" href="#&#x53EA;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x5B9E;&#x73B0;&#x4E09;&#x4E2A;&#x6808;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x53EA;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x5B9E;&#x73B0;&#x4E09;&#x4E2A;&#x6808;</h2>
+<p>&#x63CF;&#x8FF0;&#x5982;&#x4F55;&#x53EA;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x5B9E;&#x73B0;&#x4E09;&#x4E2A;&#x6808;&#xFF1F;</p>
+<p>&#x548C;&#x8BB8;&#x591A;&#x95EE;&#x9898;&#x4E00;&#x6837;&#xFF0C;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x6CD5;&#x57FA;&#x672C;&#x4E0A;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x8981;&#x5BF9;&#x6808;&#x652F;&#x6301;&#x5230;&#x4EC0;&#x4E48;&#x7A0B;&#x5EA6;&#x3002;&#x82E5;&#x6BCF;&#x4E2A;&#x6808;&#x5206;&#x914D;&#x56FA;&#x5B9A;&#x5927;&#x5C0F;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x5C31;&#x80FD;&#x6EE1;&#x8DB3;&#x9700;&#x8981;&#xFF0C;&#x90A3;&#x4E48;&#x7167;&#x505A;&#x4FBF;&#x662F;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x8FD9;&#x4E48;&#x505A;&#x7684;&#x8BDD;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6808;&#x7684;&#x7A7A;&#x95F4;&#x4E0D;&#x591F;&#x7528;&#x4E86;&#xFF0C;&#x800C;&#x540C;&#x65F6;&#x5176;&#x4ED6;&#x7684;&#x6808;&#x5374;&#x51E0;&#x4E4E;&#x662F;&#x7A7A;&#x7684;&#x3002;&#x53E6;&#x4E00;&#x79CD;&#x505A;&#x6CD5;&#x662F;&#x5F39;&#x6027;&#x5904;&#x7406;&#x6808;&#x7684;&#x7A7A;&#x95F4;&#x5206;&#x914D;&#xFF0C;&#x4F46;&#x8FD9;&#x4E48;&#x4E00;&#x6765;&#xFF0C;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x53C8;&#x4F1A;&#x5927;&#x5927;&#x589E;&#x52A0;&#x3002;</p>
+<h4 id="&#x65B9;&#x6CD5;1&#xFF1A;&#x56FA;&#x5B9A;&#x5206;&#x5272;"><a name="&#x65B9;&#x6CD5;1&#xFF1A;&#x56FA;&#x5B9A;&#x5206;&#x5272;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;1&#xFF1A;&#x56FA;&#x5B9A;&#x5206;&#x5272;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;1&#xFF1A;&#x56FA;&#x5B9A;&#x5206;&#x5272;</h4>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x6574;&#x4E2A;&#x6570;&#x7EC4;&#x5212;&#x5206;&#x4E3A;&#x4E09;&#x7B49;&#x4EFD;&#xFF0C;&#x5C06;&#x6BCF;&#x4E2A;&#x6808;&#x7684;&#x589E;&#x957F;&#x9650;&#x5236;&#x5728;&#x5404;&#x81EA;&#x7684;&#x7A7A;&#x95F4;&#x91CC;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x8BB0;&#x53F7;&#x201C;[&#x201D;&#x8868;&#x793A;&#x5305;&#x542B;&#x7AEF;&#x70B9;&#xFF0C;&#x201C;(&#x201D;&#x8868;&#x793A;&#x4E0D;&#x5305;&#x542B;&#x7AEF;&#x70B9;&#x3002;</p>
+<ul>
+<li>&#x6808;1&#xFF0C;&#x4F7F;&#x7528;[0, n/3)&#x3002;</li>
+<li>&#x6808;2&#xFF0C;&#x4F7F;&#x7528;[n/3, 2n/3)&#x3002;</li>
+<li>&#x6808;3&#xFF0C;&#x4F7F;&#x7528;[2n/3, n)&#x3002;</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x662F;&#x8BE5;&#x89E3;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">int</span> stackSize <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> buffer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span> <span class="token punctuation">[</span>stackSize <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> stackPointer <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// &#x7528;&#x4E8E;&#x8FFD;&#x8E2A;&#x6808;&#x9876;&#x5143;&#x7D20;&#x7684;&#x6307;&#x9488;</span>
+
+<span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">,</span> <span class="token keyword">int</span> value<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+    <span class="token comment">/* &#x68C0;&#x67E5;&#x6709;&#x65E0;&#x7A7A;&#x95F2;&#x7A7A;&#x95F4;*/</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>stackPointer<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&gt;=</span> stackSize<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Exception</span><span class="token punctuation">(</span>&#x201C;Out of space<span class="token punctuation">.</span>&#x201D;<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/* &#x6808;&#x6307;&#x9488;&#x81EA;&#x589E;&#xFF0C;&#x7136;&#x540E;&#x66F4;&#x65B0;&#x6808;&#x9876;&#x5143;&#x7D20;&#x7684;&#x503C;*/</span>
+    stackPointer<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
+    buffer<span class="token punctuation">[</span><span class="token function">absTopOfStack</span><span class="token punctuation">(</span>stackNum<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>stackPointer<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Exception</span><span class="token punctuation">(</span>&#x201C;Trying to pop an empty stack<span class="token punctuation">.</span>&#x201D;<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">int</span> value <span class="token operator">=</span> buffer<span class="token punctuation">[</span><span class="token function">absTopOfStack</span><span class="token punctuation">(</span>stackNum<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// &#x83B7;&#x53D6;&#x6808;&#x9876;&#x5143;&#x7D20;&#x7684;&#x503C;</span>
+    buffer<span class="token punctuation">[</span><span class="token function">absTopOfStack</span><span class="token punctuation">(</span>stackNum<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// &#x6E05;&#x96F6;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x5143;&#x7D20;&#x7684;&#x503C;</span>
+    stackPointer<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span><span class="token operator">--</span><span class="token punctuation">;</span> <span class="token comment">// &#x6307;&#x9488;&#x81EA;&#x51CF;</span>
+    <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">peek</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> index <span class="token operator">=</span> <span class="token function">absTopOfStack</span><span class="token punctuation">(</span>stackNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> buffer<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> stackPointer<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* &#x8FD4;&#x56DE;&#x6808;&#x201C;stackNum&#x201D;&#x6808;&#x9876;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x7EDD;&#x5BF9;&#x91CF;*/</span>
+<span class="token keyword">int</span> <span class="token function">absTopOfStack</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> stackNum <span class="token operator">*</span> stackSize <span class="token operator">+</span> stackPointer<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x77E5;&#x9053;&#x4E0E;&#x8FD9;&#x4E9B;&#x6808;&#x7684;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x76F8;&#x5173;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x7B97;&#x6CD5;&#x505A;&#x76F8;&#x5E94;&#x7684;&#x6539;&#x8FDB;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x82E5;&#x9884;&#x4F30;Stack 1&#x7684;&#x5143;&#x7D20;&#x6BD4;Stack 2&#x591A;&#x5F88;&#x591A;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x7ED9;Stack 1&#x591A;&#x5206;&#x914D;&#x4E00;&#x70B9;&#x7A7A;&#x95F4;&#xFF0C;&#x7ED9;Stack 2&#x5C11;&#x5206;&#x914D;&#x4E00;&#x4E9B;&#x7A7A;&#x95F4;&#x3002;</p>
+<h4 id="&#x65B9;&#x6CD5;2&#xFF1A;&#x5F39;&#x6027;&#x5206;&#x5272;"><a name="&#x65B9;&#x6CD5;2&#xFF1A;&#x5F39;&#x6027;&#x5206;&#x5272;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x6CD5;2&#xFF1A;&#x5F39;&#x6027;&#x5206;&#x5272;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65B9;&#x6CD5;2&#xFF1A;&#x5F39;&#x6027;&#x5206;&#x5272;</h4>
+<p>&#x7B2C;&#x4E8C;&#x79CD;&#x505A;&#x6CD5;&#x662F;&#x5141;&#x8BB8;&#x6808;&#x5757;&#x7684;&#x5927;&#x5C0F;&#x7075;&#x6D3B;&#x53EF;&#x53D8;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x6808;&#x7684;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x8D85;&#x51FA;&#x5176;&#x521D;&#x59CB;&#x5BB9;&#x91CF;&#x65F6;&#xFF0C;&#x5C31;&#x5C06;&#x8FD9;&#x4E2A;&#x6808;&#x6269;&#x5BB9;&#x81F3;&#x8BB8;&#x53EF;&#x7684;&#x5BB9;&#x91CF;&#xFF0C;&#x5FC5;&#x8981;&#x65F6;&#x8FD8;&#x8981;&#x642C;&#x79FB;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5C06;&#x6570;&#x7EC4;&#x8BBE;&#x8BA1;&#x6210;&#x73AF;&#x72B6;&#x7684;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6808;&#x53EF;&#x80FD;&#x4ECE;&#x6570;&#x7EC4;&#x672B;&#x5C3E;&#x5F00;&#x59CB;&#xFF0C;&#x73AF;&#x7ED5;&#x5230;&#x6570;&#x7EC4;&#x5F00;&#x5934;&#x3002;</p>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x79CD;&#x89E3;&#x6CD5;&#x7684;&#x4EE3;&#x7801;&#x8FDC;&#x6BD4;&#x9762;&#x8BD5;&#x4E2D;&#x5E38;&#x89C1;&#x7684;&#x8981;&#x590D;&#x6742;&#x5F97;&#x591A;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8BD5;&#x7740;&#x63D0;&#x4F9B;&#x4F2A;&#x7801;&#xFF0C;&#x6216;&#x662F;&#x5176;&#x4E2D;&#x67D0;&#x51E0;&#x90E8;&#x5206;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F46;&#x8981;&#x5B8C;&#x6574;&#x5B9E;&#x73B0;&#x7684;&#x8BDD;&#xFF0C;&#x96BE;&#x5EA6;&#x5C31;&#x6709;&#x70B9;&#x5927;&#x4E86;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">/* StackData&#x662F;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7C7B;&#xFF0C;&#x5B58;&#x653E;&#x6BCF;&#x4E2A;&#x6808;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#xFF0C;
+ * &#x4F46;&#x5E76;&#x672A;&#x5B58;&#x653E;&#x6808;&#x7684;&#x5B9E;&#x9645;&#x5143;&#x7D20;*/</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StackData</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> start<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> pointer<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> size <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> capacity<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">StackData</span><span class="token punctuation">(</span><span class="token keyword">int</span> _start<span class="token punctuation">,</span> <span class="token keyword">int</span> _capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        start <span class="token operator">=</span> _start<span class="token punctuation">;</span>
+        pointer <span class="token operator">=</span> _start <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        capacity <span class="token operator">=</span> _capacity<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isWithinStack</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">,</span> <span class="token keyword">int</span> total_size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">/* &#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x6808;&#x56DE;&#x7ED5;&#x4E86;&#xFF0C;&#x9996;&#x90E8;&#xFF08;&#x53F3;&#x4FA7;&#xFF09;&#x56DE;&#x7ED5;&#x5230;
+         * &#x5DE6;&#x8FB9;*/</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>start <span class="token operator">&lt;=</span> index <span class="token operator">&amp;&amp;</span> index <span class="token operator">&lt;</span> start <span class="token operator">+</span> capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// &#x4E0D;&#x56DE;&#x7ED5;&#xFF0C;&#x6216;&#x56DE;&#x7ED5;&#x65F6;&#x7684;&#x201C;&#x9996;&#x90E8;&#x201D;&#xFF08;&#x53F3;&#x4FA7;&#xFF09;</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>start <span class="token operator">+</span> capacity <span class="token operator">&gt;</span> total_size <span class="token operator">&amp;&amp;</span>
+                index <span class="token operator">&lt;</span> <span class="token punctuation">(</span>start <span class="token operator">+</span> capacity<span class="token punctuation">)</span> <span class="token operator">%</span> total_size<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// &#x56DE;&#x7ED5;&#x65F6;&#x7684;&#x5C3E;&#x90E8;&#xFF08;&#x5DE6;&#x4FA7;&#xFF09;</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">QuestionB</span> <span class="token punctuation">{</span>
+    <span class="token keyword">static</span> <span class="token keyword">int</span> number_of_stacks <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token keyword">int</span> default_size <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token keyword">int</span> total_size <span class="token operator">=</span> default_size <span class="token operator">*</span> number_of_stacks<span class="token punctuation">;</span>
+    <span class="token keyword">static</span> StackData <span class="token punctuation">[</span><span class="token punctuation">]</span> stacks <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token keyword">new</span> <span class="token class-name">StackData</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> default_size<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token keyword">new</span> <span class="token class-name">StackData</span><span class="token punctuation">(</span>default_size<span class="token punctuation">,</span> default_size<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token keyword">new</span> <span class="token class-name">StackData</span><span class="token punctuation">(</span>default_size <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">,</span> default_size<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> buffer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">int</span> <span class="token punctuation">[</span>total_size<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String <span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        <span class="token function">push</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">push</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">push</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> v <span class="token operator">=</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">numberOfElements</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> stacks<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>size <span class="token operator">+</span> stacks<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>size <span class="token operator">+</span> stacks<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>size<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">nextElement</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">==</span> total_size<span class="token punctuation">)</span> 
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> 
+            <span class="token keyword">return</span> index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">previousElement</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> 
+            <span class="token keyword">return</span> total_size <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> 
+            <span class="token keyword">return</span> index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">shift</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        StackData stack <span class="token operator">=</span> stacks<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>stack<span class="token punctuation">.</span>size <span class="token operator">&gt;=</span> stack<span class="token punctuation">.</span>capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> nextStack <span class="token operator">=</span> <span class="token punctuation">(</span>stackNum <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> number_of_stacks<span class="token punctuation">;</span>
+            <span class="token function">shift</span><span class="token punctuation">(</span>nextStack<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x817E;&#x51FA;&#x82E5;&#x5E72;&#x7A7A;&#x95F4;</span>
+            stack<span class="token punctuation">.</span>capacity<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// &#x4EE5;&#x76F8;&#x53CD;&#x987A;&#x5E8F;&#x642C;&#x79FB;&#x5143;&#x7D20;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token punctuation">(</span>stack<span class="token punctuation">.</span>start <span class="token operator">+</span> stack<span class="token punctuation">.</span>capacity <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> total_size<span class="token punctuation">;</span>
+                stack<span class="token punctuation">.</span><span class="token function">isWithinStack</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> total_size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            i <span class="token operator">=</span> <span class="token function">previousElement</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            buffer<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> buffer<span class="token punctuation">[</span><span class="token function">previousElement</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        buffer<span class="token punctuation">[</span>stack<span class="token punctuation">.</span>start<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        stack<span class="token punctuation">.</span>start <span class="token operator">=</span> <span class="token function">nextElement</span><span class="token punctuation">(</span>stack<span class="token punctuation">.</span>start<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x79FB;&#x52A8;&#x6808;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;</span>
+        stack<span class="token punctuation">.</span>pointer <span class="token operator">=</span> <span class="token function">nextElement</span><span class="token punctuation">(</span>stack<span class="token punctuation">.</span>pointer<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x79FB;&#x52A8;&#x6307;&#x9488;</span>
+        stack<span class="token punctuation">.</span>capacity<span class="token operator">--</span><span class="token punctuation">;</span> <span class="token comment">// &#x6062;&#x590D;&#x5230;&#x539F;&#x5148;&#x7684;&#x5BB9;&#x91CF;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/* &#x642C;&#x79FB;&#x5230;&#x5176;&#x4ED6;&#x6808;&#x4E0A;&#xFF0C;&#x4EE5;&#x6269;&#x5927;&#x6808;&#x7684;&#x5BB9;&#x91CF;*/</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">expand</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">(</span>stackNum <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">%</span> number_of_stacks<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        stacks<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span><span class="token punctuation">.</span>capacity<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">,</span> <span class="token keyword">int</span> value<span class="token punctuation">)</span>
+            <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        StackData stack <span class="token operator">=</span> stacks<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">/* &#x68C0;&#x67E5;&#x7A7A;&#x95F4;&#x591F;&#x4E0D;&#x591F;*/</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>stack<span class="token punctuation">.</span>size <span class="token operator">&gt;=</span> stack<span class="token punctuation">.</span>capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">numberOfElements</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> total_size<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x5168;&#x90E8;&#x90FD;&#x6EE1;&#x4E86;</span>
+                <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Exception</span><span class="token punctuation">(</span>&#x201C;Out of space<span class="token punctuation">.</span>&#x201D;<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token comment">// &#x53EA;&#x662F;&#x9700;&#x8981;&#x642C;&#x79FB;&#x5143;&#x7D20;</span>
+                <span class="token function">expand</span><span class="token punctuation">(</span>stackNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">/* &#x627E;&#x51FA;&#x9876;&#x7AEF;&#x5143;&#x7D20;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x503C;&#xFF0C;&#x5E76;&#x52A0;1&#xFF0C;
+         * &#x5E76;&#x589E;&#x52A0;&#x6808;&#x6307;&#x9488;*/</span>
+        stack<span class="token punctuation">.</span>size<span class="token operator">++</span><span class="token punctuation">;</span>
+        stack<span class="token punctuation">.</span>pointer <span class="token operator">=</span> <span class="token function">nextElement</span><span class="token punctuation">(</span>stack<span class="token punctuation">.</span>pointer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        buffer<span class="token punctuation">[</span>stack<span class="token punctuation">.</span>pointer<span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        StackData stack <span class="token operator">=</span> stacks<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>stack<span class="token punctuation">.</span>size <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Exception</span><span class="token punctuation">(</span>&#x201C;Trying to pop an empty stack<span class="token punctuation">.</span>&#x201D;<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">int</span> value <span class="token operator">=</span> buffer<span class="token punctuation">[</span>stack<span class="token punctuation">.</span>pointer<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        buffer<span class="token punctuation">[</span>stack<span class="token punctuation">.</span>pointer<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        stack<span class="token punctuation">.</span>pointer <span class="token operator">=</span> <span class="token function">previousElement</span><span class="token punctuation">(</span>stack<span class="token punctuation">.</span>pointer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        stack<span class="token punctuation">.</span>size<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">peek</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        StackData stack <span class="token operator">=</span> stacks<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> buffer<span class="token punctuation">[</span>stack<span class="token punctuation">.</span>pointer<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token keyword">int</span> stackNum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        StackData stack <span class="token operator">=</span> stacks<span class="token punctuation">[</span>stackNum<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> stack<span class="token punctuation">.</span>size <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x9047;&#x5230;&#x7C7B;&#x4F3C;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5E94;&#x8BE5;&#x529B;&#x6C42;&#x7F16;&#x5199;&#x6E05;&#x6670;&#x3001;&#x53EF;&#x7EF4;&#x62A4;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x5F88;&#x91CD;&#x8981;&#x3002;&#x4F60;&#x5E94;&#x8BE5;&#x5F15;&#x5165;&#x989D;&#x5916;&#x7684;&#x7C7B;&#xFF0C;&#x6BD4;&#x5982;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x4E86;StackData&#xFF0C;&#x5E76;&#x5C06;&#x5927;&#x5757;&#x4EE3;&#x7801;&#x72EC;&#x7ACB;&#x4E3A;&#x5355;&#x72EC;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x4E2A;&#x5EFA;&#x8BAE;&#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;&#x771F;&#x6B63;&#x7684;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x3002;</p>
+<h2 id="&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x6808;&#x5B9E;&#x73B0;pop&#x3001;push&#x548C;min&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;"><a name="&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x6808;&#x5B9E;&#x73B0;pop&#x3001;push&#x548C;min&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x6808;&#x5B9E;&#x73B0;pop&#x3001;push&#x548C;min&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x6808;&#x5B9E;&#x73B0;pop&#x3001;push&#x548C;min&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;</h2>
+<p>&#x8BF7;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x6808;&#xFF0C;&#x9664;pop&#x4E0E;push&#x65B9;&#x6CD5;&#xFF0C;&#x8FD8;&#x652F;&#x6301;min&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x8FD4;&#x56DE;&#x6808;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x6700;&#x5C0F;&#x503C;&#x3002;push&#x3001;pop&#x548C;min&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x5FC5;&#x987B;&#x4E3A;O(1)&#x3002;</p>
+<p>&#x65E2;&#x7136;&#x662F;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x7ECF;&#x5E38;&#x53D8;&#x52A8;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x66F4;&#x5C0F;&#x7684;&#x5143;&#x7D20;&#x52A0;&#x5165;&#x65F6;&#xFF0C;&#x624D;&#x4F1A;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#x4E00;&#x79CD;&#x89E3;&#x6CD5;&#x662F;&#x5728;Stack&#x7C7B;&#x91CC;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;int&#x578B;&#x7684;minValue&#x3002;&#x5F53;minValue&#x51FA;&#x6808;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x641C;&#x7D22;&#x6574;&#x4E2A;&#x6808;&#xFF0C;&#x627E;&#x51FA;&#x65B0;&#x7684;&#x6700;&#x5C0F;&#x503C;&#x3002;&#x53EF;&#x60DC;&#xFF0C;&#x8FD9;&#x4E0D;&#x7B26;&#x5408;&#x5165;&#x6808;&#x548C;&#x51FA;&#x6808;&#x64CD;&#x4F5C;&#x65F6;&#x95F4;&#x4E3A;O(1)&#x7684;&#x8981;&#x6C42;&#x3002;</p>
+<p>&#x4E3A;&#x8FDB;&#x4E00;&#x6B65;&#x7406;&#x89E3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x4E0B;&#x9762;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x77ED;&#x7684;&#x4F8B;&#x5B50;&#x52A0;&#x4EE5;&#x8BF4;&#x660E;&#xFF1A;</p>
+<pre class="language-"><code>push(5); // &#x6808;&#x4E3A;{5}&#xFF0C;&#x6700;&#x5C0F;&#x503C;&#x4E3A;5
+push(6); // &#x6808;&#x4E3A;{6, 5}&#xFF0C;&#x6700;&#x5C0F;&#x503C;&#x4E3A;5
+push(3); // &#x6808;&#x4E3A;{3, 6, 5}&#xFF0C;&#x6700;&#x5C0F;&#x503C;&#x4E3A;3
+push(7); // &#x6808;&#x4E3A;{7, 3, 6, 5}&#xFF0C;&#x6700;&#x5C0F;&#x503C;&#x4E3A;3
+pop(); // &#x5F39;&#x51FA;7&#xFF0C;&#x6808;&#x4E3A;{3, 6, 5}&#xFF0C;&#x6700;&#x5C0F;&#x503C;&#x4E3A;3
+pop(); // &#x5F39;&#x51FA;3&#xFF0C;&#x6808;&#x4E3A;{6, 5}&#xFF0C;&#x6700;&#x5C0F;&#x503C;&#x4E3A;5
+</code></pre><p>&#x6CE8;&#x610F;&#x89C2;&#x5BDF;&#xFF0C;&#x5F53;&#x6808;&#x56DE;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x72B6;&#x6001;&#xFF08;{6, 5}&#xFF09;&#x65F6;&#xFF0C;&#x6700;&#x5C0F;&#x503C;&#x4E5F;&#x56DE;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x72B6;&#x6001;&#xFF08;5&#xFF09;&#xFF0C;&#x8FD9;&#x5C31;&#x5BFC;&#x51FA;&#x4E86;&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E8C;&#x79CD;&#x89E3;&#x6CD5;&#x3002;</p>
+<p>&#x53EA;&#x8981;&#x8BB0;&#x4E0B;&#x6BCF;&#x79CD;&#x72B6;&#x6001;&#x7684;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x8F7B;&#x6613;&#x83B7;&#x53D6;&#x6700;&#x5C0F;&#x503C;&#x3002;&#x5B9E;&#x73B0;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#x8BB0;&#x5F55;&#x5F53;&#x524D;&#x6700;&#x5C0F;&#x503C;&#x5373;&#x53EF;&#x3002;&#x8FD9;&#x4E48;&#x4E00;&#x6765;&#xFF0C;&#x8981;&#x627E;&#x5230;min&#xFF0C;&#x76F4;&#x63A5;&#x67E5;&#x770B;&#x6808;&#x9876;&#x5143;&#x7D20;&#x5C31;&#x80FD;&#x5F97;&#x5230;&#x6700;&#x5C0F;&#x503C;&#x3002;</p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5165;&#x6808;&#x65F6;&#xFF0C;&#x8BE5;&#x5143;&#x7D20;&#x4F1A;&#x8BB0;&#x4E0B;&#x5F53;&#x524D;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x5C06;min&#x8BB0;&#x5F55;&#x5728;&#x81EA;&#x8EAB;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;min&#x6210;&#x5458;&#x4E2D;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StackWithMin</span> <span class="token keyword">extends</span> <span class="token class-name">Stack</span><span class="token generics function"><span class="token punctuation">&lt;</span>NodeWithMin<span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> newMin <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">NodeWithMin</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> newMin<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">;</span> <span class="token comment">// &#x9519;&#x8BEF;&#x503C;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>min<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">NodeWithMin</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> value<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> min<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">NodeWithMin</span><span class="token punctuation">(</span><span class="token keyword">int</span> v<span class="token punctuation">,</span> <span class="token keyword">int</span> min<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        value <span class="token operator">=</span> v<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>min <span class="token operator">=</span> min<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x6709;&#x4E2A;&#x7F3A;&#x70B9;&#xFF1A;&#x5F53;&#x6808;&#x5F88;&#x5927;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x8981;&#x8BB0;&#x5F55;min&#xFF0C;&#x5C31;&#x4F1A;&#x6D6A;&#x8D39;&#x5927;&#x91CF;&#x7A7A;&#x95F4;&#x3002;&#x8FD8;&#x6709;&#x6CA1;&#x6709;&#x66F4;&#x597D;&#x7684;&#x505A;&#x6CD5;&#xFF1F;</p>
+<p>&#x5229;&#x7528;&#x989D;&#x5916;&#x7684;&#x6808;&#x6765;&#x8BB0;&#x5F55;&#x8FD9;&#x4E9B;min&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x8BB8;&#x53EF;&#x4EE5;&#x6BD4;&#x4E4B;&#x524D;&#x505A;&#x5F97;&#x66F4;&#x597D;&#x4E00;&#x70B9;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StackWithMin2</span> <span class="token keyword">extends</span> <span class="token class-name">Stack</span><span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+    Stack<span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span> s2<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">StackWithMin2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        s2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Stack</span><span class="token generics function"><span class="token punctuation">&lt;</span>Integer<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> value<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">&lt;=</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            s2<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> Integer <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> value <span class="token operator">=</span> <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">==</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            s2<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">min</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>s2<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> s2<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x4E48;&#x505A;&#x53EF;&#x4EE5;&#x8282;&#x7701;&#x7A7A;&#x95F4;&#xFF1F;&#x5047;&#x8BBE;&#x6709;&#x4E2A;&#x5F88;&#x5927;&#x7684;&#x6808;&#xFF0C;&#x800C;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x521A;&#x597D;&#x662F;&#x6700;&#x5C0F;&#x503C;&#x3002;&#x5BF9;&#x4E8E;&#x7B2C;&#x4E00;&#x79CD;&#x89E3;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BB0;&#x5F55;n&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x5176;&#x4E2D;n&#x4E3A;&#x6808;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5BF9;&#x4E8E;&#x7B2C;&#x4E8C;&#x79CD;&#x89E3;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x5B58;&#x50A8;&#x51E0;&#x9879;&#x6570;&#x636E;&#xFF1A;&#x7B2C;&#x4E8C;&#x4E2A;&#x6808;&#xFF08;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x6808;&#x672C;&#x8EAB;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x82E5;&#x5E72;&#x6210;&#x5458;&#x3002;</p>
+<h2 id="&#x5B9E;&#x73B0;setofstacks"><a name="&#x5B9E;&#x73B0;setofstacks" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;setofstacks"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x5B9E;&#x73B0;SetOfStacks</h2>
+<p>&#x8BBE;&#x60F3;&#x6709;&#x4E00;&#x5806;&#x76D8;&#x5B50;&#xFF0C;&#x5806;&#x592A;&#x9AD8;&#x53EF;&#x80FD;&#x4F1A;&#x5012;&#x4E0B;&#x6765;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x73B0;&#x5B9E;&#x751F;&#x6D3B;&#x4E2D;&#xFF0C;&#x76D8;&#x5B50;&#x5806;&#x5230;&#x4E00;&#x5B9A;&#x9AD8;&#x5EA6;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4F1A;&#x53E6;&#x5916;&#x5806;&#x4E00;&#x5806;&#x76D8;&#x5B50;&#x3002;&#x8BF7;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x7ED3;&#x6784;SetOfStacks&#xFF0C;&#x6A21;&#x62DF;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x3002;SetOfStacks&#x5E94;&#x8BE5;&#x7531;&#x591A;&#x4E2A;&#x6808;&#x7EC4;&#x6210;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x524D;&#x4E00;&#x4E2A;&#x6808;&#x586B;&#x6EE1;&#x65F6;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6808;&#x3002;&#x6B64;&#x5916;&#xFF0C;SetOfStacks.push()&#x548C;SetOfStacks.pop()&#x5E94;&#x8BE5;&#x4E0E;&#x666E;&#x901A;&#x6808;&#x7684;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x76F8;&#x540C;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;pop()&#x8FD4;&#x56DE;&#x7684;&#x503C;&#xFF0C;&#x5E94;&#x8BE5;&#x8DDF;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6808;&#x65F6;&#x7684;&#x60C5;&#x51B5;&#x4E00;&#x6837;&#xFF09;&#x3002;</p>
+<h4 id="&#x8FDB;&#x9636;"><a name="&#x8FDB;&#x9636;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x9636;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDB;&#x9636;</h4>
+<p>&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;popAt(int index)&#x65B9;&#x6CD5;&#xFF0C;&#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x5B50;&#x6808;&#xFF0C;&#x6267;&#x884C;pop&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x9898;&#x610F;&#xFF0C;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5E94;&#x8BE5;&#x7C7B;&#x4F3C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">class</span> <span class="token class-name">SetOfStacks</span> <span class="token punctuation">{</span>
+    ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>Stack<span class="token punctuation">&gt;</span></span> stacks <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics function"><span class="token punctuation">&lt;</span>Stack<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5176;&#x4E2D;push()&#x7684;&#x884C;&#x4E3A;&#x5FC5;&#x987B;&#x8DDF;&#x5355;&#x4E00;&#x6808;&#x7684;&#x4E00;&#x6837;&#xFF0C;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;push()&#x8981;&#x5BF9;&#x6808;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6808;&#x8C03;&#x7528;push()&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x8FD9;&#x91CC;&#x5904;&#x7406;&#x8D77;&#x6765;&#x5FC5;&#x987B;&#x5C0F;&#x5FC3;&#x4E00;&#x70B9;&#xFF1A;&#x82E5;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6808;&#x88AB;&#x586B;&#x6EE1;&#xFF0C;&#x5C31;&#x9700;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6808;&#x3002;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5927;&#x81F4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Stack last <span class="token operator">=</span> <span class="token function">getLastStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>last <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>last<span class="token punctuation">.</span><span class="token function">isFull</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x6DFB;&#x52A0;&#x5230;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6808;&#x4E2D;</span>
+        last<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token comment">// &#x5FC5;&#x987B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6808;</span>
+        Stack stack <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Stack</span><span class="token punctuation">(</span>capacity<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        stacks<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>stack<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x90A3;&#x4E48;&#xFF0C;pop()&#x8BE5;&#x600E;&#x4E48;&#x505A;&#xFF1F;&#x5B83;&#x7684;&#x884C;&#x4E3A;&#x4E0E;push()&#x7C7B;&#x4F3C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5E94;&#x8BE5;&#x64CD;&#x4F5C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6808;&#x3002;&#x82E5;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6808;&#x4E3A;&#x7A7A;&#xFF08;&#x6267;&#x884C;&#x51FA;&#x6808;&#x64CD;&#x4F5C;&#x540E;&#xFF09;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x4ECE;&#x6808;&#x6570;&#x7EC4;&#x4E2D;&#x79FB;&#x9664;&#x8FD9;&#x4E2A;&#x6808;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Stack last <span class="token operator">=</span> <span class="token function">getLastStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> v <span class="token operator">=</span> last<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>last<span class="token punctuation">.</span>size <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> stacks<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>stacks<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> v<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x8FDB;&#x9636;&#xFF1A;&#x5B9E;&#x73B0;popatint-index"><a name="&#x8FDB;&#x9636;&#xFF1A;&#x5B9E;&#x73B0;popatint-index" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x9636;&#xFF1A;&#x5B9E;&#x73B0;popatint-index"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDB;&#x9636;&#xFF1A;&#x5B9E;&#x73B0;popAt(int index)</h4>
+<p>&#x8FD9;&#x4E2A;&#x5B9E;&#x73B0;&#x8D77;&#x6765;&#x6709;&#x70B9;&#x68D8;&#x624B;&#xFF0C;&#x4E0D;&#x8FC7;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x60F3;&#x4E00;&#x4E2A;&#x201C;&#x63A8;&#x5165;&#x201D;&#x52A8;&#x4F5C;&#x3002;&#x4ECE;&#x6808;1&#x5F39;&#x51FA;&#x5143;&#x7D20;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x79FB;&#x51FA;&#x6808;2&#x7684;&#x6808;&#x5E95;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x63A8;&#x5230;&#x6808;1&#x4E2D;&#x3002;&#x968F;&#x540E;&#xFF0C;&#x5C06;&#x6808;3&#x7684;&#x6808;&#x5E95;&#x5143;&#x7D20;&#x63A8;&#x5165;&#x6808;2&#xFF0C;&#x5C06;&#x6808;4&#x7684;&#x6808;&#x5E95;&#x5143;&#x7D20;&#x63A8;&#x5165;&#x6808;3&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x6307;&#x51FA;&#xFF0C;&#x4F55;&#x5FC5;&#x6267;&#x884C;&#x201C;&#x63A8;&#x5165;&#x201D;&#x64CD;&#x4F5C;&#xFF0C;&#x6709;&#x4E9B;&#x6808;&#x4E0D;&#x586B;&#x6EE1;&#x4E0D;&#x662F;&#x4E5F;&#x633A;&#x597D;&#x7684;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x8FD9;&#x8FD8;&#x4F1A;&#x6539;&#x5584;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF08;&#x5143;&#x7D20;&#x5F88;&#x591A;&#x65F6;&#x5C24;&#x5176;&#x660E;&#x663E;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x82E5;&#x4E4B;&#x540E;&#x6709;&#x4EBA;&#x5047;&#x5B9A;&#x6240;&#x6709;&#x7684;&#x6808;&#xFF08;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6808;&#x9664;&#x5916;&#xFF09;&#x90FD;&#x662F;&#x586B;&#x6EE1;&#x7684;&#xFF0C;&#x5C31;&#x53EF;&#x80FD;&#x4F1A;&#x8BA9;&#x6211;&#x4EEC;&#x9677;&#x5165;&#x68D8;&#x624B;&#x7684;&#x5883;&#x5730;&#x3002;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5E76;&#x6CA1;&#x6709;&#x201C;&#x6807;&#x51C6;&#x7B54;&#x6848;&#x201D;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x8DDF;&#x9762;&#x8BD5;&#x5B98;&#x8BA8;&#x8BBA;&#x79CD;&#x505A;&#x6CD5;&#x7684;&#x4F18;&#x52A3;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SetOfStacks</span> <span class="token punctuation">{</span>
+    ArrayList<span class="token generics function"><span class="token punctuation">&lt;</span>Stack<span class="token punctuation">&gt;</span></span> stacks <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics function"><span class="token punctuation">&lt;</span>Stack<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> capacity<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">SetOfStacks</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>capacity <span class="token operator">=</span> capacity<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> Stack <span class="token function">getLastStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>stacks<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> 
+            <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> stacks<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>stacks<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* &#x53C2;&#x770B;&#x4E4B;&#x524D;&#x7684;&#x4EE3;&#x7801;*/</span> <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* &#x53C2;&#x770B;&#x4E4B;&#x524D;&#x7684;&#x4EE3;&#x7801;*/</span> <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Stack last <span class="token operator">=</span> <span class="token function">getLastStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> last <span class="token operator">==</span> null <span class="token operator">||</span> last<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">popAt</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">leftShift</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">leftShift</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">,</span> <span class="token keyword">boolean</span> removeTop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Stack stack <span class="token operator">=</span> stacks<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> removed_item<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>removeTop<span class="token punctuation">)</span> 
+            removed_item <span class="token operator">=</span> stack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span> 
+            removed_item <span class="token operator">=</span> stack<span class="token punctuation">.</span><span class="token function">removeBottom</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>stack<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            stacks<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>stacks<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> v <span class="token operator">=</span> <span class="token function">leftShift</span><span class="token punctuation">(</span>index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> removed_item<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Stack</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> capacity<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> Node top<span class="token punctuation">,</span> bottom<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> size <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">Stack</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>capacity <span class="token operator">=</span> capacity<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isFull</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> capacity <span class="token operator">==</span> size<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">join</span><span class="token punctuation">(</span>Node above<span class="token punctuation">,</span> Node below<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>below <span class="token operator">!=</span> null<span class="token punctuation">)</span> below<span class="token punctuation">.</span>above <span class="token operator">=</span> above<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>above <span class="token operator">!=</span> null<span class="token punctuation">)</span> above<span class="token punctuation">.</span>below <span class="token operator">=</span> below<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">int</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>size <span class="token operator">&gt;=</span> capacity<span class="token punctuation">)</span> 
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        size<span class="token operator">++</span><span class="token punctuation">;</span>
+        Node n <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Node</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>size <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> 
+            bottom <span class="token operator">=</span> n<span class="token punctuation">;</span>
+        <span class="token function">join</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> top<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        top <span class="token operator">=</span> n<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Node t <span class="token operator">=</span> top<span class="token punctuation">;</span>
+        top <span class="token operator">=</span> top<span class="token punctuation">.</span>below<span class="token punctuation">;</span>
+        size<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> t<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> size <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">removeBottom</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Node b <span class="token operator">=</span> bottom<span class="token punctuation">;</span>
+        bottom <span class="token operator">=</span> bottom<span class="token punctuation">.</span>above<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>bottom <span class="token operator">!=</span> null<span class="token punctuation">)</span> 
+            bottom<span class="token punctuation">.</span>below <span class="token operator">=</span> null<span class="token punctuation">;</span>
+        size<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> b<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5728;&#x6982;&#x5FF5;&#x4E0A;&#x5E76;&#x4E0D;&#x662F;&#x5F88;&#x96BE;&#xFF0C;&#x4F46;&#x8981;&#x5B8C;&#x6574;&#x5B9E;&#x73B0;&#x9700;&#x8981;&#x7F16;&#x5199;&#x5927;&#x91CF;&#x4EE3;&#x7801;&#x3002;&#x9762;&#x8BD5;&#x5B98;&#x4E00;&#x822C;&#x4E0D;&#x4F1A;&#x8981;&#x6C42;&#x4F60;&#x5199;&#x51FA;&#x5168;&#x90E8;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x8FD9;&#x7C7B;&#x95EE;&#x9898;&#xFF0C;&#x6709;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x5C31;&#x662F;&#x5C3D;&#x91CF;&#x5C06;&#x4EE3;&#x7801;&#x5206;&#x79BB;&#x51FA;&#x6765;&#xFF0C;&#x5199;&#x6210;&#x72EC;&#x7ACB;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;popAt&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x7684;leftShift&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x4F1A;&#x66F4;&#x52A0;&#x6E05;&#x6670;&#xFF0C;&#x800C;&#x4F60;&#x5728;&#x5904;&#x7406;&#x7EC6;&#x8282;&#x4E4B;&#x524D;&#xFF0C;&#x4E5F;&#x6709;&#x673A;&#x4F1A;&#x5148;&#x94FA;&#x8BBE;&#x597D;&#x4EE3;&#x7801;&#x7684;&#x9AA8;&#x67B6;&#x3002;</p>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"></p><p class="paragraph footer__quote--normal" style="color: #000 !important;">Everything you need to prepare for your technical interview.</p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">modified at</span>
+2019-03-19
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tree_bragh.html" class="navigation navigation-prev " aria-label="Previous page: 树与图">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="sort_search.html" class="navigation navigation-next " aria-label="Next page: 排序与查找">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"栈与队列","level":"5.5","depth":1,"next":{"title":"排序与查找","level":"5.6","depth":1,"path":"data_structure/sort_search.md","ref":"data_structure/sort_search.md","articles":[]},"previous":{"title":"树与图","level":"5.4","depth":1,"path":"data_structure/tree_bragh.md","ref":"data_structure/tree_bragh.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon","-sharing","folding-chapters","-highlight","prism","prism-themes","splitter","-lunr","-search","search-plus","github","anchor-navigation-ex","fancybox","insert-logo-link-style","page-copyright","mathjax"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"Java":"java","XML":"xml"}},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/edu2act/interview"},"splitter":{},"page-copyright":{"wisdom":"Everything you need to prepare for your technical interview.","noPowered":true,"copyright":"Copyright &#169; edu2act","styles (normal, symmetrical)":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd","signature":"edu2act","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"modified at"},"insert-logo-link-style":{"src":"images/logo.png","style":"background: none; width: 220px;","link":"http://github.com/edu2act","target":""},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"anchor-navigation-ex":{"associatedWithSummary":false,"multipleH1":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/apple-touch-icon.png","appleTouchMore":{"120x120":"images/apple-touch-icon-120x120.png","180x180":"images/apple-touch-icon-180x180.png"}},"prism-themes":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"theme-default":{"showLevel":true,"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"search-plus":{}},"theme":"default","author":"Eetze","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java面试题","language":"zh-hans","gitbook":">=3.0.0","description":"逐步完善中..."},"file":{"path":"data_structure/stack_queue.md","mtime":"2019-03-19T09:24:02.227Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-03-19T09:27:54.675Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo-link-style/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
