@@ -5,7 +5,7 @@
 >  本仓库正在整理上传Java相关面试题目，题目正在逐步添加中。如发现题目问题或面试题目及相关文章推荐请[留言](https://github.com/edu2act/interview/issues)。
 
 - 在线查看：[https://edu2act.github.io/interview/](https://edu2act.github.io/interview/)
-- 题目数量：384
+- 题目数量：417
 
 <table> 
   <thead> 
@@ -111,7 +111,28 @@
       <td style="text-align:center">6</td> 
     </tr> 
     <tr> 
-     <td colspan="2" style="text-align:center">数据结构</td> 
+      <td rowspan="6" style="text-align:center">数据结构</td>
+      <td style="text-align:center">数组</td> 
+      <td style="text-align:center">8</td> 
+    </tr> 
+    <tr> 
+      <td style="text-align:center">链表</td> 
+      <td style="text-align:center">8</td> 
+    </tr> 
+    <tr> 
+      <td style="text-align:center">字符串</td> 
+      <td style="text-align:center">6</td> 
+    </tr> 
+    <tr> 
+      <td style="text-align:center">树与图</td> 
+      <td style="text-align:center">8</td> 
+    </tr> 
+    <tr> 
+      <td style="text-align:center">栈与队列</td> 
+      <td style="text-align:center">3</td> 
+    </tr> 
+    <tr> 
+      <td style="text-align:center">排序与查找</td> 
       <td style="text-align:center">0</td> 
     </tr> 
     <tr> 
